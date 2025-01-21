@@ -1,1 +1,3 @@
 # 292F
+
+This project aims to systematically investigate the extent and nature of graph hallucinations across various state-of-the-art LLMs. We are going to prompt 11 different LLMs and use different prompting strategies such as direct, reasoning, and white box to see the impact this will have on the hallucinations. We will then parse the edge list returned, and regenerate the graph using NetworkX and compare it to ground truth using Graph Atlas Distance (GAD) and Graph Edit Distance (GED). We will then aggregate our results to assess the levels of hallucination each LLM displays as well as the impact of different prompting strategies on the hallucination. 
