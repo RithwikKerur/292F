@@ -1,0 +1,123 @@
+{
+    "circuit": [
+        {
+            "gate": "H",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q7"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "Z",
+            "qubits": [
+                "Q8"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q0",
+                "Q2"
+            ],
+            "time": 2
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q3",
+                "Q5"
+            ],
+            "time": 2
+        },
+        {
+            "gate": "SWAP",
+            "qubits": [
+                "Q4",
+                "Q6"
+            ],
+            "time": 2
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q2"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q3"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q5"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q4"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q6"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q7"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q8"
+            ],
+            "time": 3
+        }
+    ],
+    "result": true,
+    "fullOutput": {
+        "valid_output_structure": true,
+        "valid_gate_types": true,
+        "valid_qubits": true,
+        "valid_dag": true,
+        "valid_gate_precedences": true,
+        "valid_cnot_adjacency": true,
+        "valid_swap_constraints": true,
+        "valid_measurements": true,
+        "valid_gate_restrictions": true,
+        "layered_operations": true,
+        "depth_constraint": true,
+        "gate_optimization": true,
+        "final_state_compliance": true,
+        "errors": [],
+        "overall_passed": true
+    }
+}
