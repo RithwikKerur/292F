@@ -1,0 +1,356 @@
+{
+    "users": [
+        {
+            "id": "U0",
+            "trust_score": 38,
+            "category": "regular"
+        },
+        {
+            "id": "U1",
+            "trust_score": 43,
+            "category": "regular"
+        },
+        {
+            "id": "U2",
+            "trust_score": 76,
+            "category": "expert"
+        },
+        {
+            "id": "U3",
+            "trust_score": 84,
+            "category": "celebrity"
+        },
+        {
+            "id": "U4",
+            "trust_score": 32,
+            "category": "regular"
+        },
+        {
+            "id": "U5",
+            "trust_score": 80,
+            "category": "celebrity"
+        },
+        {
+            "id": "U6",
+            "trust_score": 87,
+            "category": "celebrity"
+        },
+        {
+            "id": "U7",
+            "trust_score": 50,
+            "category": "regular"
+        },
+        {
+            "id": "U8",
+            "trust_score": 30,
+            "category": "regular"
+        },
+        {
+            "id": "U9",
+            "trust_score": 47,
+            "category": "regular"
+        },
+        {
+            "id": "U10",
+            "trust_score": 74,
+            "category": "expert"
+        },
+        {
+            "id": "U11",
+            "trust_score": 35,
+            "category": "regular"
+        },
+        {
+            "id": "U12",
+            "trust_score": 59,
+            "category": "regular"
+        },
+        {
+            "id": "U13",
+            "trust_score": 37,
+            "category": "regular"
+        },
+        {
+            "id": "U14",
+            "trust_score": 90,
+            "category": "celebrity"
+        },
+        {
+            "id": "U15",
+            "trust_score": 78,
+            "category": "expert"
+        },
+        {
+            "id": "U16",
+            "trust_score": 10,
+            "category": "regular"
+        },
+        {
+            "id": "U17",
+            "trust_score": 48,
+            "category": "regular"
+        },
+        {
+            "id": "U18",
+            "trust_score": 18,
+            "category": "regular"
+        },
+        {
+            "id": "U19",
+            "trust_score": 70,
+            "category": "expert"
+        }
+    ],
+    "edges": [
+        {
+            "from": "U0",
+            "to": "U1"
+        },
+        {
+            "from": "U0",
+            "to": "U3"
+        },
+        {
+            "from": "U0",
+            "to": "U4"
+        },
+        {
+            "from": "U1",
+            "to": "U3"
+        },
+        {
+            "from": "U1",
+            "to": "U4"
+        },
+        {
+            "from": "U1",
+            "to": "U5"
+        },
+        {
+            "from": "U2",
+            "to": "U0"
+        },
+        {
+            "from": "U2",
+            "to": "U1"
+        },
+        {
+            "from": "U2",
+            "to": "U3"
+        },
+        {
+            "from": "U3",
+            "to": "U18"
+        },
+        {
+            "from": "U3",
+            "to": "U8"
+        },
+        {
+            "from": "U3",
+            "to": "U5"
+        },
+        {
+            "from": "U3",
+            "to": "U19"
+        },
+        {
+            "from": "U3",
+            "to": "U7"
+        },
+        {
+            "from": "U3",
+            "to": "U4"
+        },
+        {
+            "from": "U4",
+            "to": "U5"
+        },
+        {
+            "from": "U4",
+            "to": "U6"
+        },
+        {
+            "from": "U4",
+            "to": "U7"
+        },
+        {
+            "from": "U5",
+            "to": "U10"
+        },
+        {
+            "from": "U5",
+            "to": "U9"
+        },
+        {
+            "from": "U5",
+            "to": "U17"
+        },
+        {
+            "from": "U5",
+            "to": "U6"
+        },
+        {
+            "from": "U5",
+            "to": "U1"
+        },
+        {
+            "from": "U6",
+            "to": "U15"
+        },
+        {
+            "from": "U6",
+            "to": "U2"
+        },
+        {
+            "from": "U6",
+            "to": "U10"
+        },
+        {
+            "from": "U6",
+            "to": "U4"
+        },
+        {
+            "from": "U6",
+            "to": "U8"
+        },
+        {
+            "from": "U6",
+            "to": "U7"
+        },
+        {
+            "from": "U6",
+            "to": "U9"
+        },
+        {
+            "from": "U7",
+            "to": "U8"
+        },
+        {
+            "from": "U7",
+            "to": "U9"
+        },
+        {
+            "from": "U8",
+            "to": "U9"
+        },
+        {
+            "from": "U9",
+            "to": "U11"
+        },
+        {
+            "from": "U9",
+            "to": "U12"
+        },
+        {
+            "from": "U10",
+            "to": "U7"
+        },
+        {
+            "from": "U11",
+            "to": "U12"
+        },
+        {
+            "from": "U12",
+            "to": "U13"
+        },
+        {
+            "from": "U12",
+            "to": "U14"
+        },
+        {
+            "from": "U12",
+            "to": "U16"
+        },
+        {
+            "from": "U13",
+            "to": "U14"
+        },
+        {
+            "from": "U13",
+            "to": "U16"
+        },
+        {
+            "from": "U13",
+            "to": "U17"
+        },
+        {
+            "from": "U14",
+            "to": "U0"
+        },
+        {
+            "from": "U14",
+            "to": "U3"
+        },
+        {
+            "from": "U14",
+            "to": "U10"
+        },
+        {
+            "from": "U14",
+            "to": "U13"
+        },
+        {
+            "from": "U14",
+            "to": "U17"
+        },
+        {
+            "from": "U14",
+            "to": "U15"
+        },
+        {
+            "from": "U14",
+            "to": "U16"
+        },
+        {
+            "from": "U15",
+            "to": "U16"
+        },
+        {
+            "from": "U15",
+            "to": "U17"
+        },
+        {
+            "from": "U16",
+            "to": "U17"
+        },
+        {
+            "from": "U16",
+            "to": "U18"
+        },
+        {
+            "from": "U17",
+            "to": "U18"
+        },
+        {
+            "from": "U19",
+            "to": "U15"
+        },
+        {
+            "from": "U19",
+            "to": "U16"
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "valid_no_self_loops": true,
+        "valid_celebrity_outgoing": true,
+        "valid_regular_to_expert": false,
+        "valid_acyclic": false,
+        "valid_user_attributes": true,
+        "valid_edge_structure": true,
+        "valid_total_users": true,
+        "valid_categories": true,
+        "valid_trust_scores": true,
+        "errors": [
+            "Regular user 'U0' is influencing expert 'U3'.",
+            "Regular user 'U1' is influencing expert 'U3'.",
+            "Regular user 'U1' is influencing expert 'U5'.",
+            "Regular user 'U4' is influencing expert 'U5'.",
+            "Regular user 'U4' is influencing expert 'U6'.",
+            "Regular user 'U12' is influencing expert 'U14'.",
+            "Regular user 'U13' is influencing expert 'U14'.",
+            "Cycle detected in the network; the graph must be acyclic."
+        ]
+    }
+}

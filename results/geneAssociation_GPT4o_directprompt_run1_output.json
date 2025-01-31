@@ -1,0 +1,428 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "Gene_0",
+            "function": "Function_0"
+        },
+        {
+            "id": "G1",
+            "name": "Gene_1",
+            "function": "Function_1"
+        },
+        {
+            "id": "G2",
+            "name": "Gene_2",
+            "function": "Function_2"
+        },
+        {
+            "id": "G3",
+            "name": "Gene_3",
+            "function": "Function_3"
+        },
+        {
+            "id": "G4",
+            "name": "Gene_4",
+            "function": "Function_4"
+        },
+        {
+            "id": "G5",
+            "name": "Gene_5",
+            "function": "Function_5"
+        },
+        {
+            "id": "G6",
+            "name": "Gene_6",
+            "function": "Function_6"
+        },
+        {
+            "id": "G7",
+            "name": "Gene_7",
+            "function": "Function_7"
+        },
+        {
+            "id": "G8",
+            "name": "Gene_8",
+            "function": "Function_8"
+        },
+        {
+            "id": "G9",
+            "name": "Gene_9",
+            "function": "Function_9"
+        },
+        {
+            "id": "G10",
+            "name": "Gene_10",
+            "function": "Function_10"
+        },
+        {
+            "id": "G11",
+            "name": "Gene_11",
+            "function": "Function_11"
+        },
+        {
+            "id": "G12",
+            "name": "Gene_12",
+            "function": "Function_12"
+        },
+        {
+            "id": "G13",
+            "name": "Gene_13",
+            "function": "Function_13"
+        },
+        {
+            "id": "G14",
+            "name": "Gene_14",
+            "function": "Function_14"
+        },
+        {
+            "id": "G15",
+            "name": "Gene_15",
+            "function": "Function_15"
+        },
+        {
+            "id": "G16",
+            "name": "Gene_16",
+            "function": "Function_16"
+        },
+        {
+            "id": "G17",
+            "name": "Gene_17",
+            "function": "Function_17"
+        },
+        {
+            "id": "G18",
+            "name": "Gene_18",
+            "function": "Function_18"
+        },
+        {
+            "id": "G19",
+            "name": "Gene_19",
+            "function": "Function_19"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Disease_0",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D1",
+            "name": "Disease_1",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D2",
+            "name": "Disease_2",
+            "severity_level": "High"
+        },
+        {
+            "id": "D3",
+            "name": "Disease_3",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D4",
+            "name": "Disease_4",
+            "severity_level": "High"
+        },
+        {
+            "id": "D5",
+            "name": "Disease_5",
+            "severity_level": "High"
+        },
+        {
+            "id": "D6",
+            "name": "Disease_6",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D7",
+            "name": "Disease_7",
+            "severity_level": "High"
+        },
+        {
+            "id": "D8",
+            "name": "Disease_8",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D9",
+            "name": "Disease_9",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D10",
+            "name": "Disease_10",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D11",
+            "name": "Disease_11",
+            "severity_level": "High"
+        },
+        {
+            "id": "D12",
+            "name": "Disease_12",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D13",
+            "name": "Disease_13",
+            "severity_level": "High"
+        },
+        {
+            "id": "D14",
+            "name": "Disease_14",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D15",
+            "name": "Disease_15",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D16",
+            "name": "Disease_16",
+            "severity_level": "High"
+        },
+        {
+            "id": "D17",
+            "name": "Disease_17",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D18",
+            "name": "Disease_18",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D19",
+            "name": "Disease_19",
+            "severity_level": "High"
+        }
+    ],
+    "associations": [
+        {
+            "from": "G0",
+            "to": "D5",
+            "strength": 0.57
+        },
+        {
+            "from": "G0",
+            "to": "D9",
+            "strength": 0.17
+        },
+        {
+            "from": "G0",
+            "to": "D7",
+            "strength": 0.94
+        },
+        {
+            "from": "G0",
+            "to": "D0",
+            "strength": 0.23
+        },
+        {
+            "from": "G1",
+            "to": "D13",
+            "strength": 0.39
+        },
+        {
+            "from": "G1",
+            "to": "D14",
+            "strength": 0.86
+        },
+        {
+            "from": "G2",
+            "to": "D15",
+            "strength": 0.38
+        },
+        {
+            "from": "G2",
+            "to": "D10",
+            "strength": 0.8
+        },
+        {
+            "from": "G3",
+            "to": "D11",
+            "strength": 0.98
+        },
+        {
+            "from": "G3",
+            "to": "D13",
+            "strength": 0.98
+        },
+        {
+            "from": "G3",
+            "to": "D4",
+            "strength": 0.9
+        },
+        {
+            "from": "G3",
+            "to": "D5",
+            "strength": 0.14
+        },
+        {
+            "from": "G3",
+            "to": "D8",
+            "strength": 0.14
+        },
+        {
+            "from": "G4",
+            "to": "D14",
+            "strength": 0.87
+        },
+        {
+            "from": "G4",
+            "to": "D16",
+            "strength": 0.13
+        },
+        {
+            "from": "G4",
+            "to": "D2",
+            "strength": 0.51
+        },
+        {
+            "from": "G4",
+            "to": "D19",
+            "strength": 0.76
+        },
+        {
+            "from": "G5",
+            "to": "D15",
+            "strength": 1.0
+        },
+        {
+            "from": "G5",
+            "to": "D8",
+            "strength": 0.75
+        },
+        {
+            "from": "G5",
+            "to": "D19",
+            "strength": 0.72
+        },
+        {
+            "from": "G6",
+            "to": "D10",
+            "strength": 0.7
+        },
+        {
+            "from": "G6",
+            "to": "D2",
+            "strength": 0.38
+        },
+        {
+            "from": "G7",
+            "to": "D10",
+            "strength": 0.14
+        },
+        {
+            "from": "G7",
+            "to": "D2",
+            "strength": 0.26
+        },
+        {
+            "from": "G8",
+            "to": "D16",
+            "strength": 0.61
+        },
+        {
+            "from": "G8",
+            "to": "D14",
+            "strength": 0.93
+        },
+        {
+            "from": "G8",
+            "to": "D1",
+            "strength": 0.21
+        },
+        {
+            "from": "G8",
+            "to": "D12",
+            "strength": 0.84
+        },
+        {
+            "from": "G9",
+            "to": "D8",
+            "strength": 0.12
+        },
+        {
+            "from": "G9",
+            "to": "D19",
+            "strength": 0.83
+        },
+        {
+            "from": "G10",
+            "to": "D10",
+            "strength": 0.87
+        },
+        {
+            "from": "G10",
+            "to": "D6",
+            "strength": 0.36
+        },
+        {
+            "from": "G10",
+            "to": "D1",
+            "strength": 0.99
+        },
+        {
+            "from": "G10",
+            "to": "D8",
+            "strength": 0.64
+        },
+        {
+            "from": "G11",
+            "to": "D2",
+            "strength": 0.79
+        },
+        {
+            "from": "G11",
+            "to": "D11",
+            "strength": 0.26
+        },
+        {
+            "from": "G11",
+            "to": "D10",
+            "strength": 0.96
+        },
+        {
+            "from": "G11",
+            "to": "D4",
+            "strength": 0.28
+        },
+        {
+            "from": "G11",
+            "to": "D18",
+            "strength": 0.98
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": true,
+                "message": ""
+            },
+            "valid_associations": {
+                "passed": true,
+                "message": ""
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D0' has 1 associations; expected between 3 and 10. Disease 'D1' has 2 associations; expected between 3 and 10. Disease 'D3' has 0 associations; expected between 3 and 10. Disease 'D4' has 2 associations; expected between 3 and 10. Disease 'D5' has 2 associations; expected between 3 and 10. Disease 'D6' has 1 associations; expected between 3 and 10. Disease 'D7' has 1 associations; expected between 3 and 10. Disease 'D9' has 1 associations; expected between 3 and 10. Disease 'D11' has 2 associations; expected between 3 and 10. Disease 'D12' has 1 associations; expected between 3 and 10. Disease 'D13' has 2 associations; expected between 3 and 10. Disease 'D15' has 2 associations; expected between 3 and 10. Disease 'D16' has 2 associations; expected between 3 and 10. Disease 'D17' has 0 associations; expected between 3 and 10. Disease 'D18' has 1 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": true,
+                "message": ""
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Degree Constraints Check Failed."
+        ]
+    }
+}

@@ -1,0 +1,237 @@
+{
+    "circuit": [
+        {
+            "gate": "H",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q1"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q0",
+                "Q2"
+            ],
+            "time": 2
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q1",
+                "Q3"
+            ],
+            "time": 2
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q2"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "Z",
+            "qubits": [
+                "Q3"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q4"
+            ],
+            "time": 4
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q4",
+                "Q5"
+            ],
+            "time": 5
+        },
+        {
+            "gate": "SWAP",
+            "qubits": [
+                "Q2",
+                "Q5"
+            ],
+            "time": 6
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q6"
+            ],
+            "time": 7
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q6",
+                "Q8"
+            ],
+            "time": 8
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q8"
+            ],
+            "time": 9
+        },
+        {
+            "gate": "SWAP",
+            "qubits": [
+                "Q3",
+                "Q8"
+            ],
+            "time": 10
+        },
+        {
+            "gate": "Z",
+            "qubits": [
+                "Q7"
+            ],
+            "time": 11
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q7",
+                "Q9"
+            ],
+            "time": 12
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q9"
+            ],
+            "time": 13
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 14
+        },
+        {
+            "gate": "Z",
+            "qubits": [
+                "Q5"
+            ],
+            "time": 15
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q4",
+                "Q7"
+            ],
+            "time": 16
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 17
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q1"
+            ],
+            "time": 18
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q2"
+            ],
+            "time": 19
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q3"
+            ],
+            "time": 20
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q4"
+            ],
+            "time": 21
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q5"
+            ],
+            "time": 22
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q6"
+            ],
+            "time": 23
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q7"
+            ],
+            "time": 24
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q8"
+            ],
+            "time": 25
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q9"
+            ],
+            "time": 26
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "valid_output_structure": true,
+        "valid_gate_types": true,
+        "valid_qubits": true,
+        "valid_dag": true,
+        "valid_gate_precedences": true,
+        "valid_cnot_adjacency": false,
+        "valid_swap_constraints": false,
+        "valid_measurements": true,
+        "valid_gate_restrictions": true,
+        "layered_operations": true,
+        "depth_constraint": true,
+        "gate_optimization": true,
+        "final_state_compliance": true,
+        "errors": [
+            "CNOT gate at index 7 operates on adjacent qubits 'Q4' and 'Q5'. Must have at least one qubit gap.",
+            "SWAP gate at index 8 operates on qubits 'Q2' and 'Q5' with differing gate sequences up to this point.",
+            "SWAP gate at index 12 operates on qubits 'Q3' and 'Q8' with differing gate sequences up to this point."
+        ],
+        "overall_passed": false
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "cities": [
+        {
+            "id": "C0",
+            "population": 1000
+        },
+        {
+            "id": "C1",
+            "population": 500
+        },
+        {
+            "id": "C2",
+            "population": 750
+        },
+        {
+            "id": "C3",
+            "population": 600
+        },
+        {
+            "id": "C4",
+            "population": 900
+        },
+        {
+            "id": "C5",
+            "population": 400
+        },
+        {
+            "id": "C6",
+            "population": 800
+        },
+        {
+            "id": "C7",
+            "population": 650
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "connectivity": {
+            "passed": true,
+            "message": ""
+        },
+        "road_capacity": {
+            "passed": true,
+            "message": ""
+        },
+        "cost_optimization": {
+            "passed": true,
+            "message": ""
+        },
+        "population_accessibility": {
+            "passed": false,
+            "message": ""
+        },
+        "strategic_road_placement": {
+            "passed": false,
+            "message": ""
+        },
+        "redundancy": {
+            "passed": false,
+            "message": "Insufficient redundancy due to connectivity or population accessibility issues."
+        },
+        "overall_passed": false,
+        "errors": [
+            "City 'C4' has only 1 incoming road(s); requires at least two.",
+            "Critical city 'C7' has only 2 outgoing road(s); requires at least three.",
+            "Insufficient redundancy due to connectivity or population accessibility issues."
+        ]
+    }
+}
