@@ -1,0 +1,233 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "BRCA1",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G1",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G2",
+            "name": "CHEK2",
+            "function": "Cell cycle control"
+        },
+        {
+            "id": "G3",
+            "name": "CDKN2A",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G4",
+            "name": "PTEN",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G5",
+            "name": "FHIT",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G6",
+            "name": "GATA3",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G7",
+            "name": "PRDM1",
+            "function": "Histone modification"
+        },
+        {
+            "id": "G8",
+            "name": "SOX2",
+            "function": "Embryonic development"
+        },
+        {
+            "id": "G9",
+            "name": "BCL2L12",
+            "function": "Apoptosis regulation"
+        },
+        {
+            "id": "G10",
+            "name": "STAP1",
+            "function": "Tissue repair"
+        },
+        {
+            "id": "G11",
+            "name": "TRIM28",
+            "function": "Transcription regulation"
+        },
+        {
+            "id": "G12",
+            "name": "SIRT6",
+            "function": "Telomere maintenance"
+        },
+        {
+            "id": "G13",
+            "name": "SMARCB1",
+            "function": "Chromatin remodeling"
+        },
+        {
+            "id": "G14",
+            "name": "ZNF365",
+            "function": "Transcription regulation"
+        },
+        {
+            "id": "G15",
+            "name": "SPRED2",
+            "function": "Cell migration"
+        },
+        {
+            "id": "G16",
+            "name": "HOXA5",
+            "function": "Embryonic development"
+        },
+        {
+            "id": "G17",
+            "name": "GLI1",
+            "function": "Developmental biology"
+        },
+        {
+            "id": "G18",
+            "name": "ARID1A",
+            "function": "Transcription regulation"
+        },
+        {
+            "id": "G19",
+            "name": "BCL2L11",
+            "function": "Apoptosis regulation"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Cancer"
+        },
+        {
+            "id": "D1",
+            "name": "Neurodegeneration"
+        },
+        {
+            "id": "D2",
+            "name": "Autoimmune disease"
+        },
+        {
+            "id": "D3",
+            "name": "Infectious disease"
+        },
+        {
+            "id": "D4",
+            "name": "Genetic disorder"
+        },
+        {
+            "id": "D5",
+            "name": "Neurological disorder"
+        },
+        {
+            "id": "D6",
+            "name": "Metabolic disorder"
+        },
+        {
+            "id": "D7",
+            "name": "Cardiovascular disease"
+        },
+        {
+            "id": "D8",
+            "name": "Psychiatric disorder"
+        },
+        {
+            "id": "D9",
+            "name": "Musculoskeletal disorder"
+        },
+        {
+            "id": "D10",
+            "name": "Respiratory disease"
+        },
+        {
+            "id": "D11",
+            "name": "Gastrointestinal disorder"
+        },
+        {
+            "id": "D12",
+            "name": "Endocrine disorder"
+        },
+        {
+            "id": "D13",
+            "name": "Musculoskeletal tumor"
+        },
+        {
+            "id": "D14",
+            "name": "Neurological tumor"
+        },
+        {
+            "id": "D15",
+            "name": "Cancer of unknown primary"
+        },
+        {
+            "id": "D16",
+            "name": "Metabolic syndrome"
+        },
+        {
+            "id": "D17",
+            "name": "Autoimmune encephalitis"
+        },
+        {
+            "id": "D18",
+            "name": "Neurodegenerative disease"
+        },
+        {
+            "id": "D19",
+            "name": "Infectious disease of unknown origin"
+        }
+    ],
+    "associations": [
+        {
+            "from": "G0",
+            "to": "D0",
+            "strength": 0.85
+        },
+        {
+            "from": "G0",
+            "to": "D2",
+            "strength": 0.6
+        },
+        {
+            "from": "G1",
+            "to": "D0",
+            "strength": 0.9
+        },
+        {
+            "from": "G1",
+            "to": "D3",
+            "strength": 0.7
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": true,
+                "message": ""
+            },
+            "valid_associations": {
+                "passed": true,
+                "message": ""
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Gene 'G2' has 0 associations; expected between 2 and 5. Gene 'G3' has 0 associations; expected between 2 and 5. Gene 'G4' has 0 associations; expected between 2 and 5. Gene 'G5' has 0 associations; expected between 2 and 5. Gene 'G6' has 0 associations; expected between 2 and 5. Gene 'G7' has 0 associations; expected between 2 and 5. Gene 'G8' has 0 associations; expected between 2 and 5. Gene 'G9' has 0 associations; expected between 2 and 5. Gene 'G10' has 0 associations; expected between 2 and 5. Gene 'G11' has 0 associations; expected between 2 and 5. Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D0' has 2 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 1 associations; expected between 3 and 10. Disease 'D3' has 1 associations; expected between 3 and 10. Disease 'D4' has 0 associations; expected between 3 and 10. Disease 'D5' has 0 associations; expected between 3 and 10. Disease 'D6' has 0 associations; expected between 3 and 10. Disease 'D7' has 0 associations; expected between 3 and 10. Disease 'D8' has 0 associations; expected between 3 and 10. Disease 'D9' has 0 associations; expected between 3 and 10. Disease 'D10' has 0 associations; expected between 3 and 10. Disease 'D11' has 0 associations; expected between 3 and 10. Disease 'D12' has 0 associations; expected between 3 and 10. Disease 'D13' has 0 associations; expected between 3 and 10. Disease 'D14' has 0 associations; expected between 3 and 10. Disease 'D15' has 0 associations; expected between 3 and 10. Disease 'D16' has 0 associations; expected between 3 and 10. Disease 'D17' has 0 associations; expected between 3 and 10. Disease 'D18' has 0 associations; expected between 3 and 10. Disease 'D19' has 0 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": true,
+                "message": ""
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Degree Constraints Check Failed."
+        ]
+    }
+}

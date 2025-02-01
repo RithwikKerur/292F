@@ -1,0 +1,248 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "BRCA1",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G1",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G2",
+            "name": "EGFR",
+            "function": "Receptor tyrosine kinase"
+        },
+        {
+            "id": "G3",
+            "name": "PIK3CA",
+            "function": "Phosphatidylinositol 3-kinase"
+        },
+        {
+            "id": "G4",
+            "name": "ERBB2",
+            "function": "Receptor tyrosine kinase"
+        },
+        {
+            "id": "G5",
+            "name": "NTRK1",
+            "function": "Neurotrophin receptor"
+        },
+        {
+            "id": "G6",
+            "name": "BRCA2",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G7",
+            "name": "CHEK2",
+            "function": "Cell cycle checkpoint"
+        },
+        {
+            "id": "G8",
+            "name": "TP53L1",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G9",
+            "name": "CDKN1A",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G10",
+            "name": "MTSR1",
+            "function": "Mitotic stress response"
+        },
+        {
+            "id": "G11",
+            "name": "ATRIP",
+            "function": "DNA damage response"
+        },
+        {
+            "id": "G12",
+            "name": "RAD51B",
+            "function": "Homologous recombination"
+        },
+        {
+            "id": "G13",
+            "name": "PARP1",
+            "function": "Nucleotide metabolism"
+        },
+        {
+            "id": "G14",
+            "name": "KDM6A",
+            "function": "Histone demethylase"
+        },
+        {
+            "id": "G15",
+            "name": "SMARCB1",
+            "function": "Chromatin remodeling"
+        },
+        {
+            "id": "G16",
+            "name": "MTRR",
+            "function": "Folate metabolism"
+        },
+        {
+            "id": "G17",
+            "name": "NQO2",
+            "function": "Antioxidant defense"
+        },
+        {
+            "id": "G18",
+            "name": "PRKACB",
+            "function": "Cyclic AMP response element modulator"
+        },
+        {
+            "id": "G19",
+            "name": "AKR1A1",
+            "function": "Alcohol metabolism"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Breast Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D1",
+            "name": "Lung Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D2",
+            "name": "Melanoma",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D3",
+            "name": "Prostate Cancer",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D4",
+            "name": "Ovarian Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D5",
+            "name": "Colorectal Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D6",
+            "name": "Leukemia",
+            "severity_level": "High"
+        },
+        {
+            "id": "D7",
+            "name": "Thyroid Cancer",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D8",
+            "name": "Pancreatic Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D9",
+            "name": "Glioblastoma",
+            "severity_level": "High"
+        },
+        {
+            "id": "D10",
+            "name": "Endometrial Cancer",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D11",
+            "name": "Squamous Cell Carcinoma",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D12",
+            "name": "Adrenal Carcinoma",
+            "severity_level": "High"
+        },
+        {
+            "id": "D13",
+            "name": "Osteosarcoma",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D14",
+            "name": "Anaplastic Thyroid Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D15",
+            "name": "Cholangiocarcinoma",
+            "severity_level": "High"
+        },
+        {
+            "id": "D16",
+            "name": "Gastrointestinal Stromal Tumors",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D17",
+            "name": "Pheochromocytoma",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D18",
+            "name": "Hepatocellular Carcinoma",
+            "severity_level": "High"
+        },
+        {
+            "id": "D19",
+            "name": "Adrenal Medullary Carcinoma",
+            "severity_level": "Low"
+        }
+    ],
+    "associations": [
+        {
+            "from": "G0",
+            "to": "D0",
+            "strength": 0.85
+        },
+        {
+            "from": "G0",
+            "to": "D2",
+            "strength": 0.6
+        },
+        {
+            "from": "G1",
+            "to": "D0",
+            "strength": 0.9
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": true,
+                "message": ""
+            },
+            "valid_associations": {
+                "passed": true,
+                "message": ""
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Gene 'G1' has 1 associations; expected between 2 and 5. Gene 'G2' has 0 associations; expected between 2 and 5. Gene 'G3' has 0 associations; expected between 2 and 5. Gene 'G4' has 0 associations; expected between 2 and 5. Gene 'G5' has 0 associations; expected between 2 and 5. Gene 'G6' has 0 associations; expected between 2 and 5. Gene 'G7' has 0 associations; expected between 2 and 5. Gene 'G8' has 0 associations; expected between 2 and 5. Gene 'G9' has 0 associations; expected between 2 and 5. Gene 'G10' has 0 associations; expected between 2 and 5. Gene 'G11' has 0 associations; expected between 2 and 5. Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D0' has 2 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 1 associations; expected between 3 and 10. Disease 'D3' has 0 associations; expected between 3 and 10. Disease 'D4' has 0 associations; expected between 3 and 10. Disease 'D5' has 0 associations; expected between 3 and 10. Disease 'D6' has 0 associations; expected between 3 and 10. Disease 'D7' has 0 associations; expected between 3 and 10. Disease 'D8' has 0 associations; expected between 3 and 10. Disease 'D9' has 0 associations; expected between 3 and 10. Disease 'D10' has 0 associations; expected between 3 and 10. Disease 'D11' has 0 associations; expected between 3 and 10. Disease 'D12' has 0 associations; expected between 3 and 10. Disease 'D13' has 0 associations; expected between 3 and 10. Disease 'D14' has 0 associations; expected between 3 and 10. Disease 'D15' has 0 associations; expected between 3 and 10. Disease 'D16' has 0 associations; expected between 3 and 10. Disease 'D17' has 0 associations; expected between 3 and 10. Disease 'D18' has 0 associations; expected between 3 and 10. Disease 'D19' has 0 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": true,
+                "message": ""
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Degree Constraints Check Failed."
+        ]
+    }
+}

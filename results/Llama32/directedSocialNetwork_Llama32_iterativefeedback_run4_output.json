@@ -1,0 +1,184 @@
+{
+    "users": [
+        {
+            "id": "U0",
+            "trust_score": 43,
+            "category": "regular"
+        },
+        {
+            "id": "U1",
+            "trust_score": 91,
+            "category": "celebrity"
+        },
+        {
+            "id": "U2",
+            "trust_score": 13,
+            "category": "regular"
+        },
+        {
+            "id": "U3",
+            "trust_score": 67,
+            "category": "expert"
+        },
+        {
+            "id": "U4",
+            "trust_score": 56,
+            "category": "celebrity"
+        },
+        {
+            "id": "U5",
+            "trust_score": 82,
+            "category": "celebrity"
+        },
+        {
+            "id": "U6",
+            "trust_score": 31,
+            "category": "regular"
+        },
+        {
+            "id": "U7",
+            "trust_score": 78,
+            "category": "expert"
+        },
+        {
+            "id": "U8",
+            "trust_score": 92,
+            "category": "celebrity"
+        },
+        {
+            "id": "U9",
+            "trust_score": 58,
+            "category": "expert"
+        },
+        {
+            "id": "U10",
+            "trust_score": 85,
+            "category": "celebrity"
+        },
+        {
+            "id": "U11",
+            "trust_score": 39,
+            "category": "regular"
+        },
+        {
+            "id": "U12",
+            "trust_score": 67,
+            "category": "expert"
+        },
+        {
+            "id": "U13",
+            "trust_score": 34,
+            "category": "celebrity"
+        },
+        {
+            "id": "U14",
+            "trust_score": 98,
+            "category": "celebrity"
+        },
+        {
+            "id": "U15",
+            "trust_score": 55,
+            "category": "expert"
+        },
+        {
+            "id": "U16",
+            "trust_score": 20,
+            "category": "regular"
+        },
+        {
+            "id": "U17",
+            "trust_score": 90,
+            "category": "celebrity"
+        },
+        {
+            "id": "U18",
+            "trust_score": 41,
+            "category": "regular"
+        },
+        {
+            "id": "U19",
+            "trust_score": 89,
+            "category": "celebrity"
+        }
+    ],
+    "edges": [
+        {
+            "from": "U0",
+            "to": "U1"
+        },
+        {
+            "from": "U1",
+            "to": "U2"
+        },
+        {
+            "from": "U2",
+            "to": "U3"
+        },
+        {
+            "from": "U3",
+            "to": "U4"
+        },
+        {
+            "from": "U4",
+            "to": "U5"
+        },
+        {
+            "from": "U5",
+            "to": "U6"
+        },
+        {
+            "from": "U7",
+            "to": "U8"
+        },
+        {
+            "from": "U9",
+            "to": "U10"
+        },
+        {
+            "from": "U11",
+            "to": "U12"
+        },
+        {
+            "from": "U13",
+            "to": "U14"
+        },
+        {
+            "from": "U15",
+            "to": "U16"
+        },
+        {
+            "from": "U17",
+            "to": "U18"
+        },
+        {
+            "from": "U19",
+            "to": "U0"
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "valid_no_self_loops": true,
+        "valid_celebrity_outgoing": false,
+        "valid_regular_to_expert": false,
+        "valid_acyclic": true,
+        "valid_user_attributes": true,
+        "valid_edge_structure": true,
+        "valid_total_users": true,
+        "valid_categories": false,
+        "valid_trust_scores": true,
+        "errors": [
+            "User 'U4' has 'trust_score' 56 but category 'celebrity'. Should be 'expert' or 'regular'.",
+            "User 'U13' has 'trust_score' 34 but category 'celebrity'. Should be 'regular'.",
+            "Celebrity 'U1' has 1 outgoing edges; expected at least 5.",
+            "Celebrity 'U4' has 1 outgoing edges; expected at least 5.",
+            "Celebrity 'U5' has 1 outgoing edges; expected at least 5.",
+            "Celebrity 'U8' has 0 outgoing edges; expected at least 5.",
+            "Celebrity 'U10' has 0 outgoing edges; expected at least 5.",
+            "Celebrity 'U13' has 1 outgoing edges; expected at least 5.",
+            "Celebrity 'U14' has 0 outgoing edges; expected at least 5.",
+            "Celebrity 'U17' has 1 outgoing edges; expected at least 5.",
+            "Celebrity 'U19' has 1 outgoing edges; expected at least 5.",
+            "Regular user 'U0' is influencing expert 'U1'."
+        ]
+    }
+}

@@ -1,0 +1,238 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "BRCA1",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G1",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G2",
+            "name": "PRSS1",
+            "function": "Protease inhibitor"
+        },
+        {
+            "id": "G3",
+            "name": "EGFR",
+            "function": "Receptor tyrosine kinase"
+        },
+        {
+            "id": "G4",
+            "name": "PDK1",
+            "function": "Phosphatidylinositol 3-kinase activator"
+        },
+        {
+            "id": "G5",
+            "name": "STAT3",
+            "function": "Signal transducer and activator of transcription"
+        },
+        {
+            "id": "G6",
+            "name": "MAPKAPK2",
+            "function": "Mitogen-activated protein kinase-activating protein kinase 2"
+        },
+        {
+            "id": "G7",
+            "name": "NF-\u03baB",
+            "function": "Nuclear factor kappa B"
+        },
+        {
+            "id": "G8",
+            "name": "CREB",
+            "function": "Cyclic AMP response element-binding protein"
+        },
+        {
+            "id": "G9",
+            "name": "ELAV1",
+            "function": "Eukaryotic translation elongation factor 2-like protein 1"
+        },
+        {
+            "id": "G10",
+            "name": "eIF4E",
+            "function": "Eukaryotic translation initiation factor 4E"
+        },
+        {
+            "id": "G11",
+            "name": "S6K1",
+            "function": "Ribosomal protein S6 kinase beta-1"
+        },
+        {
+            "id": "G12",
+            "name": "PDK2",
+            "function": "Phosphatidylinositol 3-kinase activator"
+        },
+        {
+            "id": "G13",
+            "name": "mTOR",
+            "function": "Mechanistic target of rapamycin"
+        },
+        {
+            "id": "G14",
+            "name": "SREBF1",
+            "function": "Sterol regulatory element-binding protein 1"
+        },
+        {
+            "id": "G15",
+            "name": "PPAR\u03b1",
+            "function": "Peroxisome proliferator-activated receptor alpha"
+        },
+        {
+            "id": "G16",
+            "name": "ROR\u03b3t",
+            "function": "Retinoic acid-related orphan receptor gamma t"
+        },
+        {
+            "id": "G17",
+            "name": "STAT1",
+            "function": "Signal transducer and activator of transcription 1"
+        },
+        {
+            "id": "G18",
+            "name": "JNK2",
+            "function": "c-Jun N-terminal kinase group B member 2"
+        },
+        {
+            "id": "G19",
+            "name": "p38\u03b1",
+            "function": "p38 mitogen-activated protein kinase alpha subunit"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Cancer"
+        },
+        {
+            "id": "D1",
+            "name": "Inflammatory bowel disease"
+        },
+        {
+            "id": "D2",
+            "name": "Alzheimer's disease"
+        },
+        {
+            "id": "D3",
+            "name": "Type 2 diabetes"
+        },
+        {
+            "id": "D4",
+            "name": "Mental retardation"
+        },
+        {
+            "id": "D5",
+            "name": "Parkinson's disease"
+        },
+        {
+            "id": "D6",
+            "name": "Muscular dystrophy"
+        },
+        {
+            "id": "D7",
+            "name": "Autism spectrum disorder"
+        },
+        {
+            "id": "D8",
+            "name": "Lupus"
+        },
+        {
+            "id": "D9",
+            "name": "Rheumatoid arthritis"
+        },
+        {
+            "id": "D10",
+            "name": "Fibromyalgia"
+        },
+        {
+            "id": "D11",
+            "name": "Chronic obstructive pulmonary disease"
+        },
+        {
+            "id": "D12",
+            "name": "Asthma"
+        },
+        {
+            "id": "D13",
+            "name": "Psoriasis"
+        },
+        {
+            "id": "D14",
+            "name": "Sickle cell anemia"
+        },
+        {
+            "id": "D15",
+            "name": "Cystic fibrosis"
+        },
+        {
+            "id": "D16",
+            "name": "Huntington's disease"
+        },
+        {
+            "id": "D17",
+            "name": "Amyotrophic lateral sclerosis"
+        },
+        {
+            "id": "D18",
+            "name": "Spinal muscular atrophy"
+        },
+        {
+            "id": "D19",
+            "name": "Fragile X syndrome"
+        }
+    ],
+    "associations": [
+        {
+            "from": "G0",
+            "to": "D0",
+            "strength": 0.85
+        },
+        {
+            "from": "G1",
+            "to": "D0",
+            "strength": 0.9
+        },
+        {
+            "from": "G2",
+            "to": "D5",
+            "strength": 0.7
+        },
+        {
+            "from": "G3",
+            "to": "D9",
+            "strength": 0.8
+        },
+        {
+            "from": "G4",
+            "to": "D2",
+            "strength": 0.6
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": true,
+                "message": ""
+            },
+            "valid_associations": {
+                "passed": true,
+                "message": ""
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Gene 'G0' has 1 associations; expected between 2 and 5. Gene 'G1' has 1 associations; expected between 2 and 5. Gene 'G2' has 1 associations; expected between 2 and 5. Gene 'G3' has 1 associations; expected between 2 and 5. Gene 'G4' has 1 associations; expected between 2 and 5. Gene 'G5' has 0 associations; expected between 2 and 5. Gene 'G6' has 0 associations; expected between 2 and 5. Gene 'G7' has 0 associations; expected between 2 and 5. Gene 'G8' has 0 associations; expected between 2 and 5. Gene 'G9' has 0 associations; expected between 2 and 5. Gene 'G10' has 0 associations; expected between 2 and 5. Gene 'G11' has 0 associations; expected between 2 and 5. Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D0' has 2 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 1 associations; expected between 3 and 10. Disease 'D3' has 0 associations; expected between 3 and 10. Disease 'D4' has 0 associations; expected between 3 and 10. Disease 'D5' has 1 associations; expected between 3 and 10. Disease 'D6' has 0 associations; expected between 3 and 10. Disease 'D7' has 0 associations; expected between 3 and 10. Disease 'D8' has 0 associations; expected between 3 and 10. Disease 'D9' has 1 associations; expected between 3 and 10. Disease 'D10' has 0 associations; expected between 3 and 10. Disease 'D11' has 0 associations; expected between 3 and 10. Disease 'D12' has 0 associations; expected between 3 and 10. Disease 'D13' has 0 associations; expected between 3 and 10. Disease 'D14' has 0 associations; expected between 3 and 10. Disease 'D15' has 0 associations; expected between 3 and 10. Disease 'D16' has 0 associations; expected between 3 and 10. Disease 'D17' has 0 associations; expected between 3 and 10. Disease 'D18' has 0 associations; expected between 3 and 10. Disease 'D19' has 0 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": true,
+                "message": ""
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Degree Constraints Check Failed."
+        ]
+    }
+}

@@ -1,0 +1,312 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 500,
+            "time_window": [
+                9,
+                11
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 300,
+            "time_window": [
+                8,
+                12
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 400,
+            "time_window": [
+                7,
+                13
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 200,
+            "time_window": [
+                10,
+                14
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 250,
+            "time_window": [
+                9,
+                15
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 350,
+            "time_window": [
+                11,
+                16
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 300,
+            "time_window": [
+                8,
+                18
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 400,
+            "time_window": [
+                10,
+                20
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 200,
+            "time_window": [
+                11,
+                22
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 300,
+            "time_window": [
+                12,
+                24
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 400,
+            "time_window": [
+                7,
+                13
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 250,
+            "time_window": [
+                8,
+                14
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 350,
+            "time_window": [
+                9,
+                15
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 300,
+            "time_window": [
+                10,
+                16
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 200,
+            "time_window": [
+                11,
+                17
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V0",
+            "capacity": 100
+        },
+        {
+            "id": "V1",
+            "capacity": 150
+        },
+        {
+            "id": "V2",
+            "capacity": 200
+        },
+        {
+            "id": "V3",
+            "capacity": 250
+        },
+        {
+            "id": "V4",
+            "capacity": 300
+        },
+        {
+            "id": "V5",
+            "capacity": 350
+        },
+        {
+            "id": "V6",
+            "capacity": 400
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 30,
+            "hourly_adjust": {
+                "8-10": 15
+            },
+            "max_weight": 50
+        },
+        {
+            "from": "L0",
+            "to": "L2",
+            "base_time": 40,
+            "hourly_adjust": {
+                "8-10": 10
+            },
+            "max_weight": 60
+        },
+        {
+            "from": "L1",
+            "to": "L3",
+            "base_time": 35,
+            "hourly_adjust": {
+                "9-11": 12
+            },
+            "max_weight": 70
+        },
+        {
+            "from": "L2",
+            "to": "L4",
+            "base_time": 30,
+            "hourly_adjust": {
+                "10-12": 8
+            },
+            "max_weight": 80
+        },
+        {
+            "from": "L3",
+            "to": "L5",
+            "base_time": 45,
+            "hourly_adjust": {
+                "11-13": 15
+            },
+            "max_weight": 90
+        },
+        {
+            "from": "L4",
+            "to": "L6",
+            "base_time": 40,
+            "hourly_adjust": {
+                "12-14": 10
+            },
+            "max_weight": 100
+        },
+        {
+            "from": "L5",
+            "to": "L7",
+            "base_time": 35,
+            "hourly_adjust": {
+                "13-15": 12
+            },
+            "max_weight": 110
+        },
+        {
+            "from": "L6",
+            "to": "L8",
+            "base_time": 30,
+            "hourly_adjust": {
+                "14-16": 8
+            },
+            "max_weight": 120
+        },
+        {
+            "from": "L7",
+            "to": "L9",
+            "base_time": 40,
+            "hourly_adjust": {
+                "15-17": 10
+            },
+            "max_weight": 130
+        },
+        {
+            "from": "L8",
+            "to": "L10",
+            "base_time": 35,
+            "hourly_adjust": {
+                "16-18": 12
+            },
+            "max_weight": 140
+        },
+        {
+            "from": "L9",
+            "to": "L11",
+            "base_time": 30,
+            "hourly_adjust": {
+                "17-19": 8
+            },
+            "max_weight": 150
+        },
+        {
+            "from": "L10",
+            "to": "L12",
+            "base_time": 40,
+            "hourly_adjust": {
+                "18-20": 10
+            },
+            "max_weight": 160
+        },
+        {
+            "from": "L11",
+            "to": "L13",
+            "base_time": 35,
+            "hourly_adjust": {
+                "19-21": 12
+            },
+            "max_weight": 170
+        },
+        {
+            "from": "L12",
+            "to": "L14",
+            "base_time": 30,
+            "hourly_adjust": {
+                "20-22": 8
+            },
+            "max_weight": 180
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": " Errors found in 'vehicles' structure."
+        },
+        "storage_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "vehicle_capacity_compliance": {
+            "passed": false,
+            "message": "No valid vehicle capacities found."
+        },
+        "time_window_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": false,
+        "errors": [
+            "Vehicle V0 is missing required keys: {'speed'}.",
+            "Vehicle V1 is missing required keys: {'speed'}.",
+            "Vehicle V2 is missing required keys: {'speed'}.",
+            "Vehicle V3 is missing required keys: {'speed'}.",
+            "Vehicle V4 is missing required keys: {'speed'}.",
+            "Vehicle V5 is missing required keys: {'speed'}.",
+            "Vehicle V6 is missing required keys: {'speed'}.",
+            "Vehicle Capacity Compliance Check Failed."
+        ]
+    }
+}

@@ -1,0 +1,253 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "BRCA1",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G1",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G2",
+            "name": "CHEK2",
+            "function": "Cell cycle control"
+        },
+        {
+            "id": "G3",
+            "name": "CDKN2A",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G4",
+            "name": "PTEN",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G5",
+            "name": "FHIT",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G6",
+            "name": "SMAD4",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G7",
+            "name": "CDK4",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G8",
+            "name": "CCND1",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G9",
+            "name": "BCL2",
+            "function": "Apoptosis regulation"
+        },
+        {
+            "id": "G10",
+            "name": "TP63",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G11",
+            "name": "NANOG",
+            "function": "Stem cell maintenance"
+        },
+        {
+            "id": "G12",
+            "name": "SOX2",
+            "function": "Embryonic development"
+        },
+        {
+            "id": "G13",
+            "name": "FOXA1",
+            "function": "Transcription regulation"
+        },
+        {
+            "id": "G14",
+            "name": "RUNX1",
+            "function": "Gene expression regulation"
+        },
+        {
+            "id": "G15",
+            "name": "ARNT2",
+            "function": "Transcription regulation"
+        },
+        {
+            "id": "G16",
+            "name": "NR2F2",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G17",
+            "name": "ZNF341",
+            "function": "Gene expression regulation"
+        },
+        {
+            "id": "G18",
+            "name": "TLE4",
+            "function": "Transcription regulation"
+        },
+        {
+            "id": "G19",
+            "name": "JDP2",
+            "function": "Transcription regulation"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Breast Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D1",
+            "name": "Lung Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D2",
+            "name": "Colorectal Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D3",
+            "name": "Prostate Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D4",
+            "name": "Pancreatic Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D5",
+            "name": "Skin Cancer",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D6",
+            "name": "Muscular Dystrophy",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D7",
+            "name": "Neurodegenerative Disease",
+            "severity_level": "High"
+        },
+        {
+            "id": "D8",
+            "name": "Diabetes",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D9",
+            "name": "Rheumatoid Arthritis",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D10",
+            "name": "HIV Infection",
+            "severity_level": "High"
+        },
+        {
+            "id": "D11",
+            "name": "Cancer Susceptibility",
+            "severity_level": "High"
+        },
+        {
+            "id": "D12",
+            "name": "Metabolic Syndrome",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D13",
+            "name": "Neurological Disorder",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D14",
+            "name": "Cardiovascular Disease",
+            "severity_level": "High"
+        },
+        {
+            "id": "D15",
+            "name": "Mental Health Issue",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D16",
+            "name": "Gastrointestinal Disorder",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D17",
+            "name": "Respiratory Disease",
+            "severity_level": "High"
+        },
+        {
+            "id": "D18",
+            "name": "Endocrine Disorder",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D19",
+            "name": "Immune System Dysfunction",
+            "severity_level": "Low"
+        }
+    ],
+    "associations": [
+        {
+            "from": "G0",
+            "to": "D0",
+            "strength": 0.85
+        },
+        {
+            "from": "G0",
+            "to": "D2",
+            "strength": 0.6
+        },
+        {
+            "from": "G1",
+            "to": "D0",
+            "strength": 0.9
+        },
+        {
+            "from": "G1",
+            "to": "D3",
+            "strength": 0.7
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": true,
+                "message": ""
+            },
+            "valid_associations": {
+                "passed": true,
+                "message": ""
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Gene 'G2' has 0 associations; expected between 2 and 5. Gene 'G3' has 0 associations; expected between 2 and 5. Gene 'G4' has 0 associations; expected between 2 and 5. Gene 'G5' has 0 associations; expected between 2 and 5. Gene 'G6' has 0 associations; expected between 2 and 5. Gene 'G7' has 0 associations; expected between 2 and 5. Gene 'G8' has 0 associations; expected between 2 and 5. Gene 'G9' has 0 associations; expected between 2 and 5. Gene 'G10' has 0 associations; expected between 2 and 5. Gene 'G11' has 0 associations; expected between 2 and 5. Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D0' has 2 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 1 associations; expected between 3 and 10. Disease 'D3' has 1 associations; expected between 3 and 10. Disease 'D4' has 0 associations; expected between 3 and 10. Disease 'D5' has 0 associations; expected between 3 and 10. Disease 'D6' has 0 associations; expected between 3 and 10. Disease 'D7' has 0 associations; expected between 3 and 10. Disease 'D8' has 0 associations; expected between 3 and 10. Disease 'D9' has 0 associations; expected between 3 and 10. Disease 'D10' has 0 associations; expected between 3 and 10. Disease 'D11' has 0 associations; expected between 3 and 10. Disease 'D12' has 0 associations; expected between 3 and 10. Disease 'D13' has 0 associations; expected between 3 and 10. Disease 'D14' has 0 associations; expected between 3 and 10. Disease 'D15' has 0 associations; expected between 3 and 10. Disease 'D16' has 0 associations; expected between 3 and 10. Disease 'D17' has 0 associations; expected between 3 and 10. Disease 'D18' has 0 associations; expected between 3 and 10. Disease 'D19' has 0 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": true,
+                "message": ""
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Degree Constraints Check Failed."
+        ]
+    }
+}

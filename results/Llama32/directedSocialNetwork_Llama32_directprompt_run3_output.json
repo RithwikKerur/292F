@@ -1,0 +1,184 @@
+{
+    "users": [
+        {
+            "id": "U0",
+            "trust_score": 99,
+            "category": "celebrity"
+        },
+        {
+            "id": "U1",
+            "trust_score": 74,
+            "category": "regular"
+        },
+        {
+            "id": "U2",
+            "trust_score": 91,
+            "category": "expert"
+        },
+        {
+            "id": "U3",
+            "trust_score": 46,
+            "category": "regular"
+        },
+        {
+            "id": "U4",
+            "trust_score": 65,
+            "category": "regular"
+        },
+        {
+            "id": "U5",
+            "trust_score": 28,
+            "category": "regular"
+        },
+        {
+            "id": "U6",
+            "trust_score": 85,
+            "category": "regular"
+        },
+        {
+            "id": "U7",
+            "trust_score": 39,
+            "category": "regular"
+        },
+        {
+            "id": "U8",
+            "trust_score": 57,
+            "category": "regular"
+        },
+        {
+            "id": "U9",
+            "trust_score": 82,
+            "category": "regular"
+        },
+        {
+            "id": "U10",
+            "trust_score": 41,
+            "category": "regular"
+        },
+        {
+            "id": "U11",
+            "trust_score": 98,
+            "category": "celebrity"
+        },
+        {
+            "id": "U12",
+            "trust_score": 68,
+            "category": "expert"
+        },
+        {
+            "id": "U13",
+            "trust_score": 95,
+            "category": "regular"
+        },
+        {
+            "id": "U14",
+            "trust_score": 25,
+            "category": "regular"
+        },
+        {
+            "id": "U15",
+            "trust_score": 72,
+            "category": "regular"
+        },
+        {
+            "id": "U16",
+            "trust_score": 58,
+            "category": "regular"
+        },
+        {
+            "id": "U17",
+            "trust_score": 93,
+            "category": "regular"
+        },
+        {
+            "id": "U18",
+            "trust_score": 11,
+            "category": "regular"
+        },
+        {
+            "id": "U19",
+            "trust_score": 77,
+            "category": "expert"
+        }
+    ],
+    "edges": [
+        {
+            "from": "U0",
+            "to": "U1"
+        },
+        {
+            "from": "U0",
+            "to": "U2"
+        },
+        {
+            "from": "U0",
+            "to": "U8"
+        },
+        {
+            "from": "U1",
+            "to": "U3"
+        },
+        {
+            "from": "U1",
+            "to": "U4"
+        },
+        {
+            "from": "U1",
+            "to": "U7"
+        },
+        {
+            "from": "U2",
+            "to": "U5"
+        },
+        {
+            "from": "U2",
+            "to": "U11"
+        },
+        {
+            "from": "U3",
+            "to": "U10"
+        },
+        {
+            "from": "U4",
+            "to": "U6"
+        },
+        {
+            "from": "U5",
+            "to": "U15"
+        },
+        {
+            "from": "U7",
+            "to": "U14"
+        },
+        {
+            "from": "U8",
+            "to": "U9"
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "valid_no_self_loops": true,
+        "valid_celebrity_outgoing": false,
+        "valid_regular_to_expert": false,
+        "valid_acyclic": true,
+        "valid_user_attributes": true,
+        "valid_edge_structure": true,
+        "valid_total_users": true,
+        "valid_categories": false,
+        "valid_trust_scores": true,
+        "errors": [
+            "User 'U1' has 'trust_score' 74 but category 'regular'. Should be 'expert'.",
+            "User 'U2' has 'trust_score' 91 but category 'expert'. Should be 'celebrity'.",
+            "User 'U6' has 'trust_score' 85 but category 'regular'. Should be 'celebrity'.",
+            "User 'U9' has 'trust_score' 82 but category 'regular'. Should be 'celebrity'.",
+            "User 'U13' has 'trust_score' 95 but category 'regular'. Should be 'celebrity'.",
+            "User 'U15' has 'trust_score' 72 but category 'regular'. Should be 'expert'.",
+            "User 'U17' has 'trust_score' 93 but category 'regular'. Should be 'celebrity'.",
+            "Celebrity 'U0' has 3 outgoing edges; expected at least 5.",
+            "Celebrity 'U11' has 0 outgoing edges; expected at least 5.",
+            "Regular user 'U4' is influencing expert 'U6'.",
+            "Regular user 'U5' is influencing expert 'U15'.",
+            "Regular user 'U8' is influencing expert 'U9'."
+        ]
+    }
+}
