@@ -1,0 +1,162 @@
+{
+    "circuit": [
+        {
+            "gate": "H",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q2"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q4",
+                "Q8"
+            ],
+            "time": 5
+        },
+        {
+            "gate": "Z",
+            "qubits": [
+                "Q9"
+            ],
+            "time": 7
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q6"
+            ],
+            "time": 8
+        },
+        {
+            "gate": "SWAP",
+            "qubits": [
+                "Q3",
+                "Q4"
+            ],
+            "time": 10
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q5"
+            ],
+            "time": 12
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q1"
+            ],
+            "time": 13
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q7"
+            ],
+            "time": 15
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q2",
+                "Q5"
+            ],
+            "time": 17
+        },
+        {
+            "gate": "Z",
+            "qubits": [
+                "Q3"
+            ],
+            "time": 19
+        },
+        {
+            "gate": "SWAP",
+            "qubits": [
+                "Q0",
+                "Q1"
+            ],
+            "time": 21
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q8"
+            ],
+            "time": 22
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q6"
+            ],
+            "time": 24
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q4",
+                "Q3"
+            ],
+            "time": 26
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q9"
+            ],
+            "time": 28
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q7"
+            ],
+            "time": 29
+        },
+        {
+            "gate": "Z",
+            "qubits": [
+                "Q5"
+            ],
+            "time": 30
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "valid_output_structure": true,
+        "valid_gate_types": true,
+        "valid_qubits": true,
+        "valid_dag": true,
+        "valid_gate_precedences": true,
+        "valid_cnot_adjacency": false,
+        "valid_swap_constraints": false,
+        "valid_measurements": true,
+        "valid_gate_restrictions": true,
+        "layered_operations": true,
+        "depth_constraint": true,
+        "gate_optimization": true,
+        "final_state_compliance": false,
+        "errors": [
+            "CNOT gate at index 14 operates on adjacent qubits 'Q4' and 'Q3'. Must have at least one qubit gap.",
+            "SWAP gate at index 5 operates on qubits 'Q3' and 'Q4' with differing gate sequences up to this point.",
+            "SWAP gate at index 11 operates on qubits 'Q0' and 'Q1' with differing gate sequences up to this point.",
+            "Qubit 'Q0' does not end with a Measurement or a gate to reset to |0\u27e9.",
+            "Qubit 'Q2' does not end with a Measurement or a gate to reset to |0\u27e9.",
+            "Qubit 'Q4' does not end with a Measurement or a gate to reset to |0\u27e9.",
+            "Qubit 'Q3' does not end with a Measurement or a gate to reset to |0\u27e9.",
+            "Qubit 'Q1' does not end with a Measurement or a gate to reset to |0\u27e9."
+        ],
+        "overall_passed": false
+    }
+}

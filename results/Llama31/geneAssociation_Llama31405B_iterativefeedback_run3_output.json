@@ -1,0 +1,288 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "BRCA1",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G1",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G2",
+            "name": "EGFR",
+            "function": "Cell growth regulation"
+        },
+        {
+            "id": "G3",
+            "name": "KRAS",
+            "function": "Cell signaling pathway"
+        },
+        {
+            "id": "G4",
+            "name": "CDKN2A",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G5",
+            "name": "SMAD4",
+            "function": "Transcription regulation"
+        },
+        {
+            "id": "G6",
+            "name": "MLH1",
+            "function": "DNA mismatch repair"
+        },
+        {
+            "id": "G7",
+            "name": "MSH2",
+            "function": "DNA mismatch repair"
+        },
+        {
+            "id": "G8",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G9",
+            "name": "BRCA2",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G10",
+            "name": "EGFR",
+            "function": "Cell growth regulation"
+        },
+        {
+            "id": "G11",
+            "name": "KRAS",
+            "function": "Cell signaling pathway"
+        },
+        {
+            "id": "G12",
+            "name": "SMAD4",
+            "function": "Transcription regulation"
+        },
+        {
+            "id": "G13",
+            "name": "MLH1",
+            "function": "DNA mismatch repair"
+        },
+        {
+            "id": "G14",
+            "name": "MSH2",
+            "function": "DNA mismatch repair"
+        },
+        {
+            "id": "G15",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G16",
+            "name": "BRCA1",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G17",
+            "name": "EGFR",
+            "function": "Cell growth regulation"
+        },
+        {
+            "id": "G18",
+            "name": "KRAS",
+            "function": "Cell signaling pathway"
+        },
+        {
+            "id": "G19",
+            "name": "SMAD4",
+            "function": "Transcription regulation"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Breast Cancer"
+        },
+        {
+            "id": "D1",
+            "name": "Colorectal Cancer"
+        },
+        {
+            "id": "D2",
+            "name": "Lung Cancer"
+        },
+        {
+            "id": "D3",
+            "name": "Prostate Cancer"
+        },
+        {
+            "id": "D4",
+            "name": "Brain Cancer"
+        },
+        {
+            "id": "D5",
+            "name": "Pancreatic Cancer"
+        },
+        {
+            "id": "D6",
+            "name": "Stomach Cancer"
+        },
+        {
+            "id": "D7",
+            "name": "Skin Cancer"
+        },
+        {
+            "id": "D8",
+            "name": "Leukemia"
+        },
+        {
+            "id": "D9",
+            "name": "Lymphoma"
+        },
+        {
+            "id": "D10",
+            "name": "Bone Cancer"
+        },
+        {
+            "id": "D11",
+            "name": "Kidney Cancer"
+        },
+        {
+            "id": "D12",
+            "name": "Liver Cancer"
+        },
+        {
+            "id": "D13",
+            "name": "Ovarian Cancer"
+        },
+        {
+            "id": "D14",
+            "name": "Cervical Cancer"
+        },
+        {
+            "id": "D15",
+            "name": "Uterine Cancer"
+        },
+        {
+            "id": "D16",
+            "name": "Thyroid Cancer"
+        }
+    ],
+    "associations": [
+        {
+            "gene_id": "G0",
+            "disease_id": "D1"
+        },
+        {
+            "gene_id": "G0",
+            "disease_id": "D2"
+        },
+        {
+            "gene_id": "G1",
+            "disease_id": "D3"
+        },
+        {
+            "gene_id": "G2",
+            "disease_id": "D4"
+        },
+        {
+            "gene_id": "G3",
+            "disease_id": "D5"
+        },
+        {
+            "gene_id": "G4",
+            "disease_id": "D6"
+        },
+        {
+            "gene_id": "G5",
+            "disease_id": "D7"
+        },
+        {
+            "gene_id": "G6",
+            "disease_id": "D8"
+        },
+        {
+            "gene_id": "G7",
+            "disease_id": "D9"
+        },
+        {
+            "gene_id": "G8",
+            "disease_id": "D10"
+        },
+        {
+            "gene_id": "G9",
+            "disease_id": "D11"
+        },
+        {
+            "gene_id": "G10",
+            "disease_id": "D12"
+        },
+        {
+            "gene_id": "G11",
+            "disease_id": "D13"
+        },
+        {
+            "gene_id": "G12",
+            "disease_id": "D14"
+        },
+        {
+            "gene_id": "G13",
+            "disease_id": "D15"
+        },
+        {
+            "gene_id": "G14",
+            "disease_id": "D16"
+        },
+        {
+            "gene_id": "G15",
+            "disease_id": "D0"
+        },
+        {
+            "gene_id": "G16",
+            "disease_id": "D6"
+        },
+        {
+            "gene_id": "G17",
+            "disease_id": "D5"
+        },
+        {
+            "gene_id": "G18",
+            "disease_id": "D4"
+        },
+        {
+            "gene_id": "G19",
+            "disease_id": "D3"
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": false,
+                "message": "diseases count is 17; expected 20."
+            },
+            "valid_associations": {
+                "passed": false,
+                "message": "Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0)."
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Gene 'G0' has 0 associations; expected between 2 and 5. Gene 'G1' has 0 associations; expected between 2 and 5. Gene 'G2' has 0 associations; expected between 2 and 5. Gene 'G3' has 0 associations; expected between 2 and 5. Gene 'G4' has 0 associations; expected between 2 and 5. Gene 'G5' has 0 associations; expected between 2 and 5. Gene 'G6' has 0 associations; expected between 2 and 5. Gene 'G7' has 0 associations; expected between 2 and 5. Gene 'G8' has 0 associations; expected between 2 and 5. Gene 'G9' has 0 associations; expected between 2 and 5. Gene 'G10' has 0 associations; expected between 2 and 5. Gene 'G11' has 0 associations; expected between 2 and 5. Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D0' has 0 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 0 associations; expected between 3 and 10. Disease 'D3' has 0 associations; expected between 3 and 10. Disease 'D4' has 0 associations; expected between 3 and 10. Disease 'D5' has 0 associations; expected between 3 and 10. Disease 'D6' has 0 associations; expected between 3 and 10. Disease 'D7' has 0 associations; expected between 3 and 10. Disease 'D8' has 0 associations; expected between 3 and 10. Disease 'D9' has 0 associations; expected between 3 and 10. Disease 'D10' has 0 associations; expected between 3 and 10. Disease 'D11' has 0 associations; expected between 3 and 10. Disease 'D12' has 0 associations; expected between 3 and 10. Disease 'D13' has 0 associations; expected between 3 and 10. Disease 'D14' has 0 associations; expected between 3 and 10. Disease 'D15' has 0 associations; expected between 3 and 10. Disease 'D16' has 0 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": false,
+                "message": "Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'."
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Defined Counts Check Failed.",
+            "Valid Associations Check Failed.",
+            "Degree Constraints Check Failed.",
+            "Duplicate Associations Check Failed."
+        ]
+    }
+}

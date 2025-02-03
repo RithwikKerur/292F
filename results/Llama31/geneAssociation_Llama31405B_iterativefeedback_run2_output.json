@@ -1,0 +1,338 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "BRCA1",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G1",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G2",
+            "name": "KRAS",
+            "function": "Signaling pathway regulation"
+        },
+        {
+            "id": "G3",
+            "name": "EGFR",
+            "function": "Cell surface receptor activity"
+        },
+        {
+            "id": "G4",
+            "name": "PIK3CA",
+            "function": "Phosphatidylinositol kinase activity"
+        },
+        {
+            "id": "G5",
+            "name": "AKT1",
+            "function": "Protein kinase activity"
+        },
+        {
+            "id": "G6",
+            "name": "PDGFRA",
+            "function": "Receptor tyrosine kinase activity"
+        },
+        {
+            "id": "G7",
+            "name": "NRAS",
+            "function": "GTP binding activity"
+        },
+        {
+            "id": "G8",
+            "name": "BRAF",
+            "function": "Serine/threonine protein kinase activity"
+        },
+        {
+            "id": "G9",
+            "name": "MET",
+            "function": "Tyrosine protein kinase activity"
+        },
+        {
+            "id": "G10",
+            "name": "ALK",
+            "function": "Receptor tyrosine kinase activity"
+        },
+        {
+            "id": "G11",
+            "name": "ROS1",
+            "function": "Tyrosine protein kinase activity"
+        },
+        {
+            "id": "G12",
+            "name": "RET",
+            "function": "Receptor tyrosine kinase activity"
+        },
+        {
+            "id": "G13",
+            "name": "TRK",
+            "function": "Neurotrophin receptor activity"
+        },
+        {
+            "id": "G14",
+            "name": "HER2",
+            "function": "Receptor tyrosine kinase activity"
+        },
+        {
+            "id": "G15",
+            "name": "PDGFRA",
+            "function": "Receptor tyrosine kinase activity"
+        },
+        {
+            "id": "G16",
+            "name": "DDR2",
+            "function": "Transmembrane receptor activity"
+        },
+        {
+            "id": "G17",
+            "name": "EGFR",
+            "function": "Cell surface receptor activity"
+        },
+        {
+            "id": "G18",
+            "name": "KRAS",
+            "function": "Signaling pathway regulation"
+        },
+        {
+            "id": "G19",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Breast Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D1",
+            "name": "Lung Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D2",
+            "name": "Colorectal Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D3",
+            "name": "Skin Melanoma",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D4",
+            "name": "Prostate Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D5",
+            "name": "Pancreatic Cancer",
+            "severity_level": "Very High"
+        },
+        {
+            "id": "D6",
+            "name": "Glioblastoma",
+            "severity_level": "Very High"
+        },
+        {
+            "id": "D7",
+            "name": "Ovarian Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D8",
+            "name": "Endometrial Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D9",
+            "name": "Cervical Cancer",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D10",
+            "name": "Esophageal Cancer",
+            "severity_level": "Very High"
+        },
+        {
+            "id": "D11",
+            "name": "Kidney Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D12",
+            "name": "Liver Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D13",
+            "name": "Stomach Cancer",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D14",
+            "name": "Testicular Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D15",
+            "name": "Thyroid Cancer",
+            "severity_level": "Very High"
+        },
+        {
+            "id": "D16",
+            "name": "Uterine Sarcoma",
+            "severity_level": "High"
+        },
+        {
+            "id": "D17",
+            "name": "Vulvar Cancer",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D18",
+            "name": "Adrenocortical Carcinoma",
+            "severity_level": "Very High"
+        },
+        {
+            "id": "D19",
+            "name": "Malignant Peripheral Nerve Sheath Tumor",
+            "severity_level": "High"
+        }
+    ],
+    "associations": [
+        {
+            "from": "G0",
+            "to": "D0",
+            "strength": 0.85
+        },
+        {
+            "from": "G0",
+            "to": "D2",
+            "strength": 0.6
+        },
+        {
+            "from": "G1",
+            "to": "D0",
+            "strength": 0.9
+        },
+        {
+            "from": "G2",
+            "to": "D4",
+            "strength": 0.7
+        },
+        {
+            "from": "G3",
+            "to": "D5",
+            "strength": 0.8
+        },
+        {
+            "from": "G4",
+            "to": "D6",
+            "strength": 0.9
+        },
+        {
+            "from": "G5",
+            "to": "D7",
+            "strength": 0.65
+        },
+        {
+            "from": "G6",
+            "to": "D8",
+            "strength": 0.75
+        },
+        {
+            "from": "G7",
+            "to": "D9",
+            "strength": 0.85
+        },
+        {
+            "from": "G8",
+            "to": "D10",
+            "strength": 0.6
+        },
+        {
+            "from": "G9",
+            "to": "D11",
+            "strength": 0.7
+        },
+        {
+            "from": "G10",
+            "to": "D12",
+            "strength": 0.8
+        },
+        {
+            "from": "G11",
+            "to": "D13",
+            "strength": 0.9
+        },
+        {
+            "from": "G12",
+            "to": "D14",
+            "strength": 0.75
+        },
+        {
+            "from": "G13",
+            "to": "D15",
+            "strength": 0.65
+        },
+        {
+            "from": "G14",
+            "to": "D16",
+            "strength": 0.8
+        },
+        {
+            "from": "G15",
+            "to": "D17",
+            "strength": 0.9
+        },
+        {
+            "from": "G16",
+            "to": "D18",
+            "strength": 0.7
+        },
+        {
+            "from": "G17",
+            "to": "D19",
+            "strength": 0.85
+        },
+        {
+            "from": "G18",
+            "to": "D0",
+            "strength": 0.6
+        },
+        {
+            "from": "G19",
+            "to": "D1",
+            "strength": 0.9
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": true,
+                "message": ""
+            },
+            "valid_associations": {
+                "passed": true,
+                "message": ""
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Gene 'G1' has 1 associations; expected between 2 and 5. Gene 'G2' has 1 associations; expected between 2 and 5. Gene 'G3' has 1 associations; expected between 2 and 5. Gene 'G4' has 1 associations; expected between 2 and 5. Gene 'G5' has 1 associations; expected between 2 and 5. Gene 'G6' has 1 associations; expected between 2 and 5. Gene 'G7' has 1 associations; expected between 2 and 5. Gene 'G8' has 1 associations; expected between 2 and 5. Gene 'G9' has 1 associations; expected between 2 and 5. Gene 'G10' has 1 associations; expected between 2 and 5. Gene 'G11' has 1 associations; expected between 2 and 5. Gene 'G12' has 1 associations; expected between 2 and 5. Gene 'G13' has 1 associations; expected between 2 and 5. Gene 'G14' has 1 associations; expected between 2 and 5. Gene 'G15' has 1 associations; expected between 2 and 5. Gene 'G16' has 1 associations; expected between 2 and 5. Gene 'G17' has 1 associations; expected between 2 and 5. Gene 'G18' has 1 associations; expected between 2 and 5. Gene 'G19' has 1 associations; expected between 2 and 5. Disease 'D1' has 1 associations; expected between 3 and 10. Disease 'D2' has 1 associations; expected between 3 and 10. Disease 'D3' has 0 associations; expected between 3 and 10. Disease 'D4' has 1 associations; expected between 3 and 10. Disease 'D5' has 1 associations; expected between 3 and 10. Disease 'D6' has 1 associations; expected between 3 and 10. Disease 'D7' has 1 associations; expected between 3 and 10. Disease 'D8' has 1 associations; expected between 3 and 10. Disease 'D9' has 1 associations; expected between 3 and 10. Disease 'D10' has 1 associations; expected between 3 and 10. Disease 'D11' has 1 associations; expected between 3 and 10. Disease 'D12' has 1 associations; expected between 3 and 10. Disease 'D13' has 1 associations; expected between 3 and 10. Disease 'D14' has 1 associations; expected between 3 and 10. Disease 'D15' has 1 associations; expected between 3 and 10. Disease 'D16' has 1 associations; expected between 3 and 10. Disease 'D17' has 1 associations; expected between 3 and 10. Disease 'D18' has 1 associations; expected between 3 and 10. Disease 'D19' has 1 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": true,
+                "message": ""
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Degree Constraints Check Failed."
+        ]
+    }
+}

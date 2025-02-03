@@ -1,0 +1,114 @@
+{
+    "cities": [
+        {
+            "id": 1,
+            "name": "City A",
+            "incoming_roads": 2
+        },
+        {
+            "id": 2,
+            "name": "City B",
+            "incoming_roads": 2
+        },
+        {
+            "id": 3,
+            "name": "City C",
+            "incoming_roads": 0
+        },
+        {
+            "id": 4,
+            "name": "Critical City D",
+            "outgoing_roads": 3
+        }
+    ],
+    "roads": [
+        {
+            "from": 1,
+            "to": 2,
+            "type": "highway"
+        },
+        {
+            "from": 1,
+            "to": 4,
+            "type": "highway"
+        },
+        {
+            "from": 2,
+            "to": 1,
+            "type": "highway"
+        },
+        {
+            "from": 2,
+            "to": 3,
+            "type": "secondary_road"
+        },
+        {
+            "from": 4,
+            "to": 1,
+            "type": "highway"
+        },
+        {
+            "from": 4,
+            "to": 2,
+            "type": "highway"
+        },
+        {
+            "from": 4,
+            "to": 3,
+            "type": "secondary_road"
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "connectivity": {
+            "passed": false,
+            "message": "The network is not strongly connected."
+        },
+        "road_capacity": {
+            "passed": true,
+            "message": ""
+        },
+        "cost_optimization": {
+            "passed": true,
+            "message": ""
+        },
+        "population_accessibility": {
+            "passed": true,
+            "message": ""
+        },
+        "strategic_road_placement": {
+            "passed": false,
+            "message": ""
+        },
+        "redundancy": {
+            "passed": false,
+            "message": "Insufficient redundancy due to connectivity or population accessibility issues."
+        },
+        "max_edges_constraint": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": false,
+        "errors": [
+            "City 1 is missing 'id' or 'population'.",
+            "City 2 is missing 'id' or 'population'.",
+            "City 3 is missing 'id' or 'population'.",
+            "City 4 is missing 'id' or 'population'.",
+            "Road from 1 to 2 is missing required attributes.",
+            "Road from 1 to 4 is missing required attributes.",
+            "Road from 2 to 1 is missing required attributes.",
+            "Road from 2 to 3 is missing required attributes.",
+            "Road from 4 to 1 is missing required attributes.",
+            "Road from 4 to 2 is missing required attributes.",
+            "Road from 4 to 3 is missing required attributes.",
+            "The network is not strongly connected.",
+            "Critical city 'C0' has only 0 outgoing road(s); requires at least three.",
+            "Critical city 'C7' has only 0 outgoing road(s); requires at least three.",
+            "Insufficient redundancy due to connectivity or population accessibility issues."
+        ]
+    }
+}

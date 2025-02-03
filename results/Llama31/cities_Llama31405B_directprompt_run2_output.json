@@ -1,0 +1,258 @@
+{
+    "cities": [
+        {
+            "id": 1,
+            "name": "City C0",
+            "population": 1000
+        },
+        {
+            "id": 2,
+            "name": "City C1",
+            "population": 500
+        },
+        {
+            "id": 3,
+            "name": "City C2",
+            "population": 750
+        },
+        {
+            "id": 4,
+            "name": "City C3",
+            "population": 600
+        },
+        {
+            "id": 5,
+            "name": "City C4",
+            "population": 900
+        },
+        {
+            "id": 6,
+            "name": "City C5",
+            "population": 400
+        },
+        {
+            "id": 7,
+            "name": "City C6",
+            "population": 800
+        },
+        {
+            "id": 8,
+            "name": "Critical City C7",
+            "outgoing_roads": 3
+        }
+    ],
+    "roads": [
+        {
+            "from": 1,
+            "to": 2,
+            "type": "highway",
+            "distance": 150,
+            "cost": 112.5
+        },
+        {
+            "from": 1,
+            "to": 8,
+            "type": "highway",
+            "distance": 200,
+            "cost": 150
+        },
+        {
+            "from": 2,
+            "to": 1,
+            "type": "highway",
+            "distance": 150,
+            "cost": 112.5
+        },
+        {
+            "from": 2,
+            "to": 3,
+            "type": "secondary_road",
+            "distance": 100,
+            "cost": 75
+        },
+        {
+            "from": 2,
+            "to": 8,
+            "type": "highway",
+            "distance": 150,
+            "cost": 112.5
+        },
+        {
+            "from": 3,
+            "to": 2,
+            "type": "secondary_road",
+            "distance": 100,
+            "cost": 75
+        },
+        {
+            "from": 3,
+            "to": 4,
+            "type": "secondary_road",
+            "distance": 120,
+            "cost": 90
+        },
+        {
+            "from": 3,
+            "to": 8,
+            "type": "secondary_road",
+            "distance": 100,
+            "cost": 75
+        },
+        {
+            "from": 4,
+            "to": 1,
+            "type": "highway",
+            "distance": 200,
+            "cost": 150
+        },
+        {
+            "from": 4,
+            "to": 2,
+            "type": "highway",
+            "distance": 150,
+            "cost": 112.5
+        },
+        {
+            "from": 4,
+            "to": 6,
+            "type": "secondary_road",
+            "distance": 180,
+            "cost": 135
+        },
+        {
+            "from": 4,
+            "to": 3,
+            "type": "secondary_road",
+            "distance": 120,
+            "cost": 90
+        },
+        {
+            "from": 5,
+            "to": 8,
+            "type": "highway",
+            "distance": 220,
+            "cost": 165
+        },
+        {
+            "from": 6,
+            "to": 4,
+            "type": "secondary_road",
+            "distance": 180,
+            "cost": 135
+        },
+        {
+            "from": 7,
+            "to": 1,
+            "type": "highway",
+            "distance": 210,
+            "cost": 157.5
+        },
+        {
+            "from": 7,
+            "to": 2,
+            "type": "highway",
+            "distance": 160,
+            "cost": 120
+        },
+        {
+            "from": 7,
+            "to": 3,
+            "type": "secondary_road",
+            "distance": 130,
+            "cost": 97.5
+        },
+        {
+            "from": 8,
+            "to": 1,
+            "type": "highway",
+            "distance": 200,
+            "cost": 150
+        },
+        {
+            "from": 8,
+            "to": 2,
+            "type": "highway",
+            "distance": 150,
+            "cost": 112.5
+        },
+        {
+            "from": 8,
+            "to": 4,
+            "type": "highway",
+            "distance": 100,
+            "cost": 75
+        },
+        {
+            "from": 8,
+            "to": 6,
+            "type": "secondary_road",
+            "distance": 140,
+            "cost": 105
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "connectivity": {
+            "passed": false,
+            "message": "The network is not strongly connected."
+        },
+        "road_capacity": {
+            "passed": true,
+            "message": ""
+        },
+        "cost_optimization": {
+            "passed": true,
+            "message": ""
+        },
+        "population_accessibility": {
+            "passed": false,
+            "message": ""
+        },
+        "strategic_road_placement": {
+            "passed": false,
+            "message": ""
+        },
+        "redundancy": {
+            "passed": false,
+            "message": "Insufficient redundancy due to connectivity or population accessibility issues."
+        },
+        "max_edges_constraint": {
+            "passed": false,
+            "message": "City '5' is not reachable from '1' in at most 3 edges.; City '7' is not reachable from '1' in at most 3 edges.; City '5' is not reachable from '2' in at most 3 edges.; City '7' is not reachable from '2' in at most 3 edges.; City '5' is not reachable from '3' in at most 3 edges.; City '7' is not reachable from '3' in at most 3 edges.; City '5' is not reachable from '4' in at most 3 edges.; City '7' is not reachable from '4' in at most 3 edges.; City '7' is not reachable from '5' in at most 3 edges.; City '5' is not reachable from '6' in at most 3 edges.; City '7' is not reachable from '6' in at most 3 edges.; City '5' is not reachable from '7' in at most 3 edges."
+        },
+        "overall_passed": false,
+        "errors": [
+            "City 8 is missing 'id' or 'population'.",
+            "Road 'to' city '8' is not defined.",
+            "Road 'to' city '8' is not defined.",
+            "Road 'to' city '8' is not defined.",
+            "Road 'to' city '8' is not defined.",
+            "Road 'from' city '8' is not defined.",
+            "Road 'from' city '8' is not defined.",
+            "Road 'from' city '8' is not defined.",
+            "Road 'from' city '8' is not defined.",
+            "The network is not strongly connected.",
+            "City '5' has only 0 incoming road(s); requires at least two.",
+            "City '7' has only 0 incoming road(s); requires at least two.",
+            "Critical city 'C0' has only 0 outgoing road(s); requires at least three.",
+            "Critical city 'C7' has only 0 outgoing road(s); requires at least three.",
+            "Insufficient redundancy due to connectivity or population accessibility issues.",
+            "City '5' is not reachable from '1' in at most 3 edges.",
+            "City '7' is not reachable from '1' in at most 3 edges.",
+            "City '5' is not reachable from '2' in at most 3 edges.",
+            "City '7' is not reachable from '2' in at most 3 edges.",
+            "City '5' is not reachable from '3' in at most 3 edges.",
+            "City '7' is not reachable from '3' in at most 3 edges.",
+            "City '5' is not reachable from '4' in at most 3 edges.",
+            "City '7' is not reachable from '4' in at most 3 edges.",
+            "City '7' is not reachable from '5' in at most 3 edges.",
+            "City '5' is not reachable from '6' in at most 3 edges.",
+            "City '7' is not reachable from '6' in at most 3 edges.",
+            "City '5' is not reachable from '7' in at most 3 edges."
+        ]
+    }
+}

@@ -1,0 +1,202 @@
+{
+    "cities": [
+        {
+            "id": 1,
+            "name": "C0",
+            "population": 1000,
+            "incoming_roads": 2
+        },
+        {
+            "id": 2,
+            "name": "C1",
+            "population": 500,
+            "incoming_roads": 3
+        },
+        {
+            "id": 3,
+            "name": "C2",
+            "population": 200,
+            "incoming_roads": 4
+        },
+        {
+            "id": 4,
+            "name": "C3",
+            "population": 300,
+            "incoming_roads": 5
+        },
+        {
+            "id": 5,
+            "name": "C4",
+            "population": 400,
+            "incoming_roads": 0
+        },
+        {
+            "id": 6,
+            "name": "C5",
+            "population": 500,
+            "incoming_roads": 2
+        },
+        {
+            "id": 7,
+            "name": "C6",
+            "population": 600,
+            "incoming_roads": 0
+        },
+        {
+            "id": 8,
+            "name": "C7",
+            "population": 700,
+            "incoming_roads": 1
+        }
+    ],
+    "roads": [
+        {
+            "from": 1,
+            "to": 2,
+            "cost": 10
+        },
+        {
+            "from": 1,
+            "to": 3,
+            "cost": 20
+        },
+        {
+            "from": 1,
+            "to": 4,
+            "cost": 30
+        },
+        {
+            "from": 2,
+            "to": 5,
+            "cost": 40
+        },
+        {
+            "from": 2,
+            "to": 6,
+            "cost": 50
+        },
+        {
+            "from": 3,
+            "to": 7,
+            "cost": 60
+        },
+        {
+            "from": 4,
+            "to": 8,
+            "cost": 70
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "connectivity": {
+            "passed": false,
+            "message": "The network is not strongly connected."
+        },
+        "road_capacity": {
+            "passed": true,
+            "message": ""
+        },
+        "cost_optimization": {
+            "passed": true,
+            "message": ""
+        },
+        "population_accessibility": {
+            "passed": false,
+            "message": ""
+        },
+        "strategic_road_placement": {
+            "passed": false,
+            "message": ""
+        },
+        "redundancy": {
+            "passed": false,
+            "message": "Insufficient redundancy due to connectivity or population accessibility issues."
+        },
+        "max_edges_constraint": {
+            "passed": false,
+            "message": "City '2' is not reachable from '1' in at most 3 edges.; City '3' is not reachable from '1' in at most 3 edges.; City '4' is not reachable from '1' in at most 3 edges.; City '5' is not reachable from '1' in at most 3 edges.; City '6' is not reachable from '1' in at most 3 edges.; City '7' is not reachable from '1' in at most 3 edges.; City '8' is not reachable from '1' in at most 3 edges.; City '1' is not reachable from '2' in at most 3 edges.; City '3' is not reachable from '2' in at most 3 edges.; City '4' is not reachable from '2' in at most 3 edges.; City '5' is not reachable from '2' in at most 3 edges.; City '6' is not reachable from '2' in at most 3 edges.; City '7' is not reachable from '2' in at most 3 edges.; City '8' is not reachable from '2' in at most 3 edges.; City '1' is not reachable from '3' in at most 3 edges.; City '2' is not reachable from '3' in at most 3 edges.; City '4' is not reachable from '3' in at most 3 edges.; City '5' is not reachable from '3' in at most 3 edges.; City '6' is not reachable from '3' in at most 3 edges.; City '7' is not reachable from '3' in at most 3 edges.; City '8' is not reachable from '3' in at most 3 edges.; City '1' is not reachable from '4' in at most 3 edges.; City '2' is not reachable from '4' in at most 3 edges.; City '3' is not reachable from '4' in at most 3 edges.; City '5' is not reachable from '4' in at most 3 edges.; City '6' is not reachable from '4' in at most 3 edges.; City '7' is not reachable from '4' in at most 3 edges.; City '8' is not reachable from '4' in at most 3 edges.; City '1' is not reachable from '5' in at most 3 edges.; City '2' is not reachable from '5' in at most 3 edges.; City '3' is not reachable from '5' in at most 3 edges.; City '4' is not reachable from '5' in at most 3 edges.; City '6' is not reachable from '5' in at most 3 edges.; City '7' is not reachable from '5' in at most 3 edges.; City '8' is not reachable from '5' in at most 3 edges.; City '1' is not reachable from '6' in at most 3 edges.; City '2' is not reachable from '6' in at most 3 edges.; City '3' is not reachable from '6' in at most 3 edges.; City '4' is not reachable from '6' in at most 3 edges.; City '5' is not reachable from '6' in at most 3 edges.; City '7' is not reachable from '6' in at most 3 edges.; City '8' is not reachable from '6' in at most 3 edges.; City '1' is not reachable from '7' in at most 3 edges.; City '2' is not reachable from '7' in at most 3 edges.; City '3' is not reachable from '7' in at most 3 edges.; City '4' is not reachable from '7' in at most 3 edges.; City '5' is not reachable from '7' in at most 3 edges.; City '6' is not reachable from '7' in at most 3 edges.; City '8' is not reachable from '7' in at most 3 edges.; City '1' is not reachable from '8' in at most 3 edges.; City '2' is not reachable from '8' in at most 3 edges.; City '3' is not reachable from '8' in at most 3 edges.; City '4' is not reachable from '8' in at most 3 edges.; City '5' is not reachable from '8' in at most 3 edges.; City '6' is not reachable from '8' in at most 3 edges.; City '7' is not reachable from '8' in at most 3 edges."
+        },
+        "overall_passed": false,
+        "errors": [
+            "Road from 1 to 2 is missing required attributes.",
+            "Road from 1 to 3 is missing required attributes.",
+            "Road from 1 to 4 is missing required attributes.",
+            "Road from 2 to 5 is missing required attributes.",
+            "Road from 2 to 6 is missing required attributes.",
+            "Road from 3 to 7 is missing required attributes.",
+            "Road from 4 to 8 is missing required attributes.",
+            "The network is not strongly connected.",
+            "City '1' has only 0 incoming road(s); requires at least two.",
+            "City '2' has only 1 incoming road(s); requires at least two.",
+            "City '3' has only 1 incoming road(s); requires at least two.",
+            "City '4' has only 1 incoming road(s); requires at least two.",
+            "City '5' has only 1 incoming road(s); requires at least two.",
+            "City '6' has only 1 incoming road(s); requires at least two.",
+            "City '7' has only 1 incoming road(s); requires at least two.",
+            "City '8' has only 1 incoming road(s); requires at least two.",
+            "Critical city 'C0' has only 0 outgoing road(s); requires at least three.",
+            "Critical city 'C7' has only 0 outgoing road(s); requires at least three.",
+            "Insufficient redundancy due to connectivity or population accessibility issues.",
+            "City '2' is not reachable from '1' in at most 3 edges.",
+            "City '3' is not reachable from '1' in at most 3 edges.",
+            "City '4' is not reachable from '1' in at most 3 edges.",
+            "City '5' is not reachable from '1' in at most 3 edges.",
+            "City '6' is not reachable from '1' in at most 3 edges.",
+            "City '7' is not reachable from '1' in at most 3 edges.",
+            "City '8' is not reachable from '1' in at most 3 edges.",
+            "City '1' is not reachable from '2' in at most 3 edges.",
+            "City '3' is not reachable from '2' in at most 3 edges.",
+            "City '4' is not reachable from '2' in at most 3 edges.",
+            "City '5' is not reachable from '2' in at most 3 edges.",
+            "City '6' is not reachable from '2' in at most 3 edges.",
+            "City '7' is not reachable from '2' in at most 3 edges.",
+            "City '8' is not reachable from '2' in at most 3 edges.",
+            "City '1' is not reachable from '3' in at most 3 edges.",
+            "City '2' is not reachable from '3' in at most 3 edges.",
+            "City '4' is not reachable from '3' in at most 3 edges.",
+            "City '5' is not reachable from '3' in at most 3 edges.",
+            "City '6' is not reachable from '3' in at most 3 edges.",
+            "City '7' is not reachable from '3' in at most 3 edges.",
+            "City '8' is not reachable from '3' in at most 3 edges.",
+            "City '1' is not reachable from '4' in at most 3 edges.",
+            "City '2' is not reachable from '4' in at most 3 edges.",
+            "City '3' is not reachable from '4' in at most 3 edges.",
+            "City '5' is not reachable from '4' in at most 3 edges.",
+            "City '6' is not reachable from '4' in at most 3 edges.",
+            "City '7' is not reachable from '4' in at most 3 edges.",
+            "City '8' is not reachable from '4' in at most 3 edges.",
+            "City '1' is not reachable from '5' in at most 3 edges.",
+            "City '2' is not reachable from '5' in at most 3 edges.",
+            "City '3' is not reachable from '5' in at most 3 edges.",
+            "City '4' is not reachable from '5' in at most 3 edges.",
+            "City '6' is not reachable from '5' in at most 3 edges.",
+            "City '7' is not reachable from '5' in at most 3 edges.",
+            "City '8' is not reachable from '5' in at most 3 edges.",
+            "City '1' is not reachable from '6' in at most 3 edges.",
+            "City '2' is not reachable from '6' in at most 3 edges.",
+            "City '3' is not reachable from '6' in at most 3 edges.",
+            "City '4' is not reachable from '6' in at most 3 edges.",
+            "City '5' is not reachable from '6' in at most 3 edges.",
+            "City '7' is not reachable from '6' in at most 3 edges.",
+            "City '8' is not reachable from '6' in at most 3 edges.",
+            "City '1' is not reachable from '7' in at most 3 edges.",
+            "City '2' is not reachable from '7' in at most 3 edges.",
+            "City '3' is not reachable from '7' in at most 3 edges.",
+            "City '4' is not reachable from '7' in at most 3 edges.",
+            "City '5' is not reachable from '7' in at most 3 edges.",
+            "City '6' is not reachable from '7' in at most 3 edges.",
+            "City '8' is not reachable from '7' in at most 3 edges.",
+            "City '1' is not reachable from '8' in at most 3 edges.",
+            "City '2' is not reachable from '8' in at most 3 edges.",
+            "City '3' is not reachable from '8' in at most 3 edges.",
+            "City '4' is not reachable from '8' in at most 3 edges.",
+            "City '5' is not reachable from '8' in at most 3 edges.",
+            "City '6' is not reachable from '8' in at most 3 edges.",
+            "City '7' is not reachable from '8' in at most 3 edges."
+        ]
+    }
+}
