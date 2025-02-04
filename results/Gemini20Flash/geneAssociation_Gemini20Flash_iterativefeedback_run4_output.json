@@ -1,0 +1,438 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "BRCA1",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G1",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G2",
+            "name": "EGFR",
+            "function": "Cell growth"
+        },
+        {
+            "id": "G3",
+            "name": "KRAS",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G4",
+            "name": "VEGF",
+            "function": "Angiogenesis"
+        },
+        {
+            "id": "G5",
+            "name": "ERBB2",
+            "function": "Cell proliferation"
+        },
+        {
+            "id": "G6",
+            "name": "MYC",
+            "function": "Transcription regulation"
+        },
+        {
+            "id": "G7",
+            "name": "BCL2",
+            "function": "Apoptosis regulation"
+        },
+        {
+            "id": "G8",
+            "name": "CDKN2A",
+            "function": "Cell cycle control"
+        },
+        {
+            "id": "G9",
+            "name": "RB1",
+            "function": "Cell cycle control"
+        },
+        {
+            "id": "G10",
+            "name": "PTEN",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G11",
+            "name": "PIK3CA",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G12",
+            "name": "AKT1",
+            "function": "Cell survival"
+        },
+        {
+            "id": "G13",
+            "name": "MET",
+            "function": "Cell growth"
+        },
+        {
+            "id": "G14",
+            "name": "PDGFRA",
+            "function": "Cell growth"
+        },
+        {
+            "id": "G15",
+            "name": "KIT",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G16",
+            "name": "FLT3",
+            "function": "Cell proliferation"
+        },
+        {
+            "id": "G17",
+            "name": "JAK2",
+            "function": "Signal transduction"
+        },
+        {
+            "id": "G18",
+            "name": "STAT3",
+            "function": "Transcription activation"
+        },
+        {
+            "id": "G19",
+            "name": "NF1",
+            "function": "Tumor suppression"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Breast Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D1",
+            "name": "Lung Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D2",
+            "name": "Colorectal Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D3",
+            "name": "Melanoma",
+            "severity_level": "High"
+        },
+        {
+            "id": "D4",
+            "name": "Leukemia",
+            "severity_level": "High"
+        },
+        {
+            "id": "D5",
+            "name": "Prostate Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D6",
+            "name": "Ovarian Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D7",
+            "name": "Pancreatic Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D8",
+            "name": "Brain Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D9",
+            "name": "Kidney Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D10",
+            "name": "Bladder Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D11",
+            "name": "Liver Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D12",
+            "name": "Thyroid Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D13",
+            "name": "Lymphoma",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D14",
+            "name": "Multiple Myeloma",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D15",
+            "name": "Alzheimer's Disease",
+            "severity_level": "High"
+        },
+        {
+            "id": "D16",
+            "name": "Parkinson's Disease",
+            "severity_level": "High"
+        },
+        {
+            "id": "D17",
+            "name": "Heart Disease",
+            "severity_level": "High"
+        },
+        {
+            "id": "D18",
+            "name": "Diabetes",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D19",
+            "name": "Arthritis",
+            "severity_level": "Medium"
+        }
+    ],
+    "associations": [
+        {
+            "from": "G0",
+            "to": "D0",
+            "strength": 0.85
+        },
+        {
+            "from": "G0",
+            "to": "D6",
+            "strength": 0.7
+        },
+        {
+            "from": "G0",
+            "to": "D1",
+            "strength": 0.6
+        },
+        {
+            "from": "G0",
+            "to": "D2",
+            "strength": 0.72
+        },
+        {
+            "from": "G0",
+            "to": "D3",
+            "strength": 0.65
+        },
+        {
+            "from": "G1",
+            "to": "D0",
+            "strength": 0.9
+        },
+        {
+            "from": "G1",
+            "to": "D1",
+            "strength": 0.8
+        },
+        {
+            "from": "G1",
+            "to": "D2",
+            "strength": 0.75
+        },
+        {
+            "from": "G1",
+            "to": "D4",
+            "strength": 0.82
+        },
+        {
+            "from": "G1",
+            "to": "D5",
+            "strength": 0.78
+        },
+        {
+            "from": "G2",
+            "to": "D1",
+            "strength": 0.88
+        },
+        {
+            "from": "G2",
+            "to": "D2",
+            "strength": 0.72
+        },
+        {
+            "from": "G2",
+            "to": "D3",
+            "strength": 0.65
+        },
+        {
+            "from": "G2",
+            "to": "D7",
+            "strength": 0.75
+        },
+        {
+            "from": "G2",
+            "to": "D8",
+            "strength": 0.68
+        },
+        {
+            "from": "G3",
+            "to": "D2",
+            "strength": 0.92
+        },
+        {
+            "from": "G3",
+            "to": "D3",
+            "strength": 0.85
+        },
+        {
+            "from": "G3",
+            "to": "D4",
+            "strength": 0.78
+        },
+        {
+            "from": "G3",
+            "to": "D9",
+            "strength": 0.8
+        },
+        {
+            "from": "G3",
+            "to": "D10",
+            "strength": 0.72
+        },
+        {
+            "from": "G4",
+            "to": "D0",
+            "strength": 0.75
+        },
+        {
+            "from": "G4",
+            "to": "D1",
+            "strength": 0.68
+        },
+        {
+            "from": "G4",
+            "to": "D11",
+            "strength": 0.82
+        },
+        {
+            "from": "G4",
+            "to": "D12",
+            "strength": 0.7
+        },
+        {
+            "from": "G4",
+            "to": "D13",
+            "strength": 0.65
+        },
+        {
+            "from": "G5",
+            "to": "D0",
+            "strength": 0.82
+        },
+        {
+            "from": "G5",
+            "to": "D6",
+            "strength": 0.77
+        },
+        {
+            "from": "G5",
+            "to": "D1",
+            "strength": 0.65
+        },
+        {
+            "from": "G5",
+            "to": "D14",
+            "strength": 0.85
+        },
+        {
+            "from": "G5",
+            "to": "D15",
+            "strength": 0.72
+        },
+        {
+            "from": "G6",
+            "to": "D4",
+            "strength": 0.89
+        },
+        {
+            "from": "G6",
+            "to": "D5",
+            "strength": 0.76
+        },
+        {
+            "from": "G6",
+            "to": "D8",
+            "strength": 0.7
+        },
+        {
+            "from": "G6",
+            "to": "D16",
+            "strength": 0.82
+        },
+        {
+            "from": "G6",
+            "to": "D17",
+            "strength": 0.75
+        },
+        {
+            "from": "G7",
+            "to": "D4",
+            "strength": 0.72
+        },
+        {
+            "from": "G7",
+            "to": "D5",
+            "strength": 0.65
+        },
+        {
+            "from": "G7",
+            "to": "D13",
+            "strength": 0.8
+        },
+        {
+            "from": "G7",
+            "to": "D18",
+            "strength": 0.78
+        },
+        {
+            "from": "G7",
+            "to": "D19",
+            "strength": 0.62
+        },
+        {
+            "from": "G8",
+            "to": "D2",
+            "strength": 0.85
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": true,
+                "message": ""
+            },
+            "valid_associations": {
+                "passed": true,
+                "message": ""
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Gene 'G8' has 1 associations; expected between 2 and 5. Gene 'G9' has 0 associations; expected between 2 and 5. Gene 'G10' has 0 associations; expected between 2 and 5. Gene 'G11' has 0 associations; expected between 2 and 5. Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D6' has 2 associations; expected between 3 and 10. Disease 'D7' has 1 associations; expected between 3 and 10. Disease 'D8' has 2 associations; expected between 3 and 10. Disease 'D9' has 1 associations; expected between 3 and 10. Disease 'D10' has 1 associations; expected between 3 and 10. Disease 'D11' has 1 associations; expected between 3 and 10. Disease 'D12' has 1 associations; expected between 3 and 10. Disease 'D13' has 2 associations; expected between 3 and 10. Disease 'D14' has 1 associations; expected between 3 and 10. Disease 'D15' has 1 associations; expected between 3 and 10. Disease 'D16' has 1 associations; expected between 3 and 10. Disease 'D17' has 1 associations; expected between 3 and 10. Disease 'D18' has 1 associations; expected between 3 and 10. Disease 'D19' has 1 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": true,
+                "message": ""
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Degree Constraints Check Failed."
+        ]
+    }
+}
