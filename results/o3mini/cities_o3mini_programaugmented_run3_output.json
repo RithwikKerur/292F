@@ -37,128 +37,134 @@
         {
             "from": "C0",
             "to": "C1",
-            "distance": 212.6,
-            "cost": 242.2
+            "distance": 50.0,
+            "cost": 50.0
         },
         {
-            "from": "C1",
+            "from": "C0",
             "to": "C2",
-            "distance": 132.6,
-            "cost": 173.9
+            "distance": 50.0,
+            "cost": 50.0
         },
         {
-            "from": "C2",
+            "from": "C0",
             "to": "C3",
-            "distance": 207.3,
-            "cost": 262.2
+            "distance": 50.0,
+            "cost": 50.0
         },
         {
-            "from": "C3",
+            "from": "C0",
             "to": "C4",
-            "distance": 108.2,
-            "cost": 111.2
-        },
-        {
-            "from": "C4",
-            "to": "C5",
-            "distance": 266.0,
-            "cost": 378.5
-        },
-        {
-            "from": "C5",
-            "to": "C6",
-            "distance": 178.7,
-            "cost": 233.2
-        },
-        {
-            "from": "C6",
-            "to": "C7",
-            "distance": 290.5,
-            "cost": 365.5
-        },
-        {
-            "from": "C7",
-            "to": "C0",
-            "distance": 107.0,
-            "cost": 111.9
-        },
-        {
-            "from": "C1",
-            "to": "C0",
-            "distance": 198.5,
-            "cost": 263.8
-        },
-        {
-            "from": "C5",
-            "to": "C1",
-            "distance": 298.8,
-            "cost": 417.7
-        },
-        {
-            "from": "C6",
-            "to": "C2",
-            "distance": 284.1,
-            "cost": 404.3
-        },
-        {
-            "from": "C1",
-            "to": "C3",
-            "distance": 233.4,
-            "cost": 277.4
-        },
-        {
-            "from": "C7",
-            "to": "C4",
-            "distance": 156.9,
-            "cost": 205.6
-        },
-        {
-            "from": "C3",
-            "to": "C5",
-            "distance": 260.2,
-            "cost": 374.8
-        },
-        {
-            "from": "C3",
-            "to": "C6",
-            "distance": 169.5,
-            "cost": 233.7
-        },
-        {
-            "from": "C2",
-            "to": "C7",
-            "distance": 286.8,
-            "cost": 410.2
+            "distance": 50.0,
+            "cost": 50.0
         },
         {
             "from": "C0",
             "to": "C5",
-            "distance": 246.1,
-            "cost": 324.9
+            "distance": 50.0,
+            "cost": 50.0
         },
         {
             "from": "C0",
             "to": "C6",
-            "distance": 138.7,
-            "cost": 145.5
+            "distance": 50.0,
+            "cost": 50.0
         },
         {
-            "from": "C7",
-            "to": "C6",
-            "distance": 108.8,
-            "cost": 152.0
+            "from": "C1",
+            "to": "C7",
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C2",
+            "to": "C7",
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C3",
+            "to": "C7",
+            "distance": 50.0,
+            "cost": 50.0
         },
         {
             "from": "C4",
             "to": "C7",
-            "distance": 169.5,
-            "cost": 231.9
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C5",
+            "to": "C7",
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C6",
+            "to": "C7",
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C1",
+            "to": "C2",
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C2",
+            "to": "C3",
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C3",
+            "to": "C4",
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C4",
+            "to": "C5",
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C5",
+            "to": "C6",
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C6",
+            "to": "C1",
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C7",
+            "to": "C0",
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C4",
+            "to": "C0",
+            "distance": 50.0,
+            "cost": 50.0
         },
         {
             "from": "C7",
             "to": "C1",
-            "distance": 123.6,
-            "cost": 153.5
+            "distance": 50.0,
+            "cost": 50.0
+        },
+        {
+            "from": "C7",
+            "to": "C2",
+            "distance": 50.0,
+            "cost": 50.0
         }
     ],
     "result": true,

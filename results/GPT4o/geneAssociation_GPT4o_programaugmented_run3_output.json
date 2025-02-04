@@ -105,22 +105,22 @@
         {
             "id": "D0",
             "name": "Disease_0",
-            "severity_level": "Low"
+            "severity_level": "High"
         },
         {
             "id": "D1",
             "name": "Disease_1",
-            "severity_level": "High"
+            "severity_level": "Low"
         },
         {
             "id": "D2",
             "name": "Disease_2",
-            "severity_level": "Low"
+            "severity_level": "Medium"
         },
         {
             "id": "D3",
             "name": "Disease_3",
-            "severity_level": "High"
+            "severity_level": "Low"
         },
         {
             "id": "D4",
@@ -130,7 +130,7 @@
         {
             "id": "D5",
             "name": "Disease_5",
-            "severity_level": "Low"
+            "severity_level": "Medium"
         },
         {
             "id": "D6",
@@ -140,22 +140,22 @@
         {
             "id": "D7",
             "name": "Disease_7",
-            "severity_level": "Low"
+            "severity_level": "High"
         },
         {
             "id": "D8",
             "name": "Disease_8",
-            "severity_level": "Medium"
+            "severity_level": "Low"
         },
         {
             "id": "D9",
             "name": "Disease_9",
-            "severity_level": "Medium"
+            "severity_level": "Low"
         },
         {
             "id": "D10",
             "name": "Disease_10",
-            "severity_level": "High"
+            "severity_level": "Medium"
         },
         {
             "id": "D11",
@@ -170,7 +170,7 @@
         {
             "id": "D13",
             "name": "Disease_13",
-            "severity_level": "High"
+            "severity_level": "Medium"
         },
         {
             "id": "D14",
@@ -180,17 +180,17 @@
         {
             "id": "D15",
             "name": "Disease_15",
-            "severity_level": "Low"
+            "severity_level": "Medium"
         },
         {
             "id": "D16",
             "name": "Disease_16",
-            "severity_level": "Low"
+            "severity_level": "Medium"
         },
         {
             "id": "D17",
             "name": "Disease_17",
-            "severity_level": "Medium"
+            "severity_level": "High"
         },
         {
             "id": "D18",
@@ -200,379 +200,384 @@
         {
             "id": "D19",
             "name": "Disease_19",
-            "severity_level": "Low"
+            "severity_level": "High"
         }
     ],
     "associations": [
         {
             "from": "G0",
-            "to": "D5",
-            "strength": 0.51
-        },
-        {
-            "from": "G0",
-            "to": "D14",
-            "strength": 0.8
-        },
-        {
-            "from": "G0",
-            "to": "D9",
-            "strength": 0.45
-        },
-        {
-            "from": "G0",
-            "to": "D15",
+            "to": "D16",
             "strength": 0.38
         },
         {
             "from": "G0",
-            "to": "D8",
-            "strength": 0.52
+            "to": "D12",
+            "strength": 0.92
         },
         {
             "from": "G1",
             "to": "D5",
-            "strength": 0.71
+            "strength": 0.87
         },
         {
             "from": "G1",
             "to": "D16",
-            "strength": 0.05
-        },
-        {
-            "from": "G1",
-            "to": "D6",
-            "strength": 0.05
+            "strength": 0.54
         },
         {
             "from": "G2",
-            "to": "D17",
-            "strength": 0.0
+            "to": "D8",
+            "strength": 0.02
+        },
+        {
+            "from": "G2",
+            "to": "D2",
+            "strength": 0.86
+        },
+        {
+            "from": "G2",
+            "to": "D16",
+            "strength": 0.78
         },
         {
             "from": "G2",
             "to": "D9",
-            "strength": 0.97
+            "strength": 0.34
+        },
+        {
+            "from": "G2",
+            "to": "D12",
+            "strength": 0.66
         },
         {
             "from": "G3",
-            "to": "D17",
-            "strength": 0.27
+            "to": "D12",
+            "strength": 0.52
         },
         {
             "from": "G3",
-            "to": "D4",
-            "strength": 0.51
+            "to": "D14",
+            "strength": 0.12
         },
         {
             "from": "G3",
-            "to": "D13",
-            "strength": 0.78
+            "to": "D8",
+            "strength": 0.64
         },
         {
             "from": "G3",
-            "to": "D16",
+            "to": "D3",
             "strength": 0.22
         },
         {
-            "from": "G3",
-            "to": "D5",
-            "strength": 0.4
+            "from": "G4",
+            "to": "D6",
+            "strength": 0.48
         },
         {
             "from": "G4",
-            "to": "D2",
-            "strength": 0.09
+            "to": "D7",
+            "strength": 0.34
         },
         {
             "from": "G4",
+            "to": "D9",
+            "strength": 0.88
+        },
+        {
+            "from": "G4",
+            "to": "D1",
+            "strength": 0.54
+        },
+        {
+            "from": "G5",
             "to": "D19",
-            "strength": 0.44
-        },
-        {
-            "from": "G4",
-            "to": "D13",
             "strength": 0.25
         },
         {
             "from": "G5",
-            "to": "D10",
-            "strength": 0.86
+            "to": "D14",
+            "strength": 0.6
         },
         {
             "from": "G5",
-            "to": "D5",
-            "strength": 0.57
-        },
-        {
-            "from": "G6",
-            "to": "D16",
-            "strength": 0.29
-        },
-        {
-            "from": "G6",
-            "to": "D13",
-            "strength": 0.81
-        },
-        {
-            "from": "G6",
             "to": "D10",
-            "strength": 0.69
+            "strength": 0.39
         },
         {
             "from": "G6",
-            "to": "D17",
-            "strength": 0.91
+            "to": "D4",
+            "strength": 0.82
         },
         {
             "from": "G6",
-            "to": "D2",
-            "strength": 0.26
+            "to": "D11",
+            "strength": 0.61
+        },
+        {
+            "from": "G6",
+            "to": "D19",
+            "strength": 0.11
         },
         {
             "from": "G7",
-            "to": "D8",
-            "strength": 0.97
+            "to": "D0",
+            "strength": 0.09
+        },
+        {
+            "from": "G7",
+            "to": "D19",
+            "strength": 0.31
+        },
+        {
+            "from": "G7",
+            "to": "D9",
+            "strength": 0.01
         },
         {
             "from": "G7",
             "to": "D5",
+            "strength": 0.16
+        },
+        {
+            "from": "G7",
+            "to": "D18",
+            "strength": 0.65
+        },
+        {
+            "from": "G8",
+            "to": "D7",
+            "strength": 0.63
+        },
+        {
+            "from": "G8",
+            "to": "D2",
+            "strength": 0.13
+        },
+        {
+            "from": "G8",
+            "to": "D19",
+            "strength": 0.8
+        },
+        {
+            "from": "G9",
+            "to": "D8",
             "strength": 0.08
         },
         {
-            "from": "G8",
-            "to": "D3",
-            "strength": 0.99
-        },
-        {
-            "from": "G8",
-            "to": "D13",
-            "strength": 0.33
-        },
-        {
             "from": "G9",
-            "to": "D4",
-            "strength": 0.89
+            "to": "D11",
+            "strength": 0.69
         },
         {
-            "from": "G9",
-            "to": "D17",
-            "strength": 0.56
+            "from": "G10",
+            "to": "D8",
+            "strength": 0.84
         },
         {
-            "from": "G9",
-            "to": "D10",
-            "strength": 0.64
-        },
-        {
-            "from": "G9",
-            "to": "D6",
-            "strength": 0.7
+            "from": "G10",
+            "to": "D2",
+            "strength": 0.43
         },
         {
             "from": "G10",
             "to": "D12",
-            "strength": 0.64
-        },
-        {
-            "from": "G10",
-            "to": "D8",
-            "strength": 0.92
-        },
-        {
-            "from": "G10",
-            "to": "D16",
-            "strength": 0.88
+            "strength": 0.02
         },
         {
             "from": "G11",
-            "to": "D5",
-            "strength": 0.08
+            "to": "D15",
+            "strength": 0.34
         },
         {
             "from": "G11",
-            "to": "D3",
-            "strength": 0.56
+            "to": "D6",
+            "strength": 0.55
+        },
+        {
+            "from": "G11",
+            "to": "D1",
+            "strength": 0.48
         },
         {
             "from": "G12",
             "to": "D11",
-            "strength": 0.79
+            "strength": 0.29
         },
         {
             "from": "G12",
-            "to": "D16",
-            "strength": 0.16
+            "to": "D5",
+            "strength": 0.44
         },
         {
             "from": "G13",
             "to": "D5",
-            "strength": 0.76
+            "strength": 0.75
         },
         {
             "from": "G13",
-            "to": "D14",
+            "to": "D2",
+            "strength": 0.82
+        },
+        {
+            "from": "G13",
+            "to": "D16",
+            "strength": 0.92
+        },
+        {
+            "from": "G13",
+            "to": "D4",
             "strength": 0.74
         },
         {
             "from": "G14",
-            "to": "D15",
-            "strength": 0.47
+            "to": "D10",
+            "strength": 0.36
         },
         {
             "from": "G14",
-            "to": "D14",
-            "strength": 0.04
+            "to": "D3",
+            "strength": 0.74
         },
         {
             "from": "G14",
-            "to": "D17",
-            "strength": 0.44
-        },
-        {
-            "from": "G15",
-            "to": "D1",
-            "strength": 0.33
-        },
-        {
-            "from": "G15",
-            "to": "D7",
+            "to": "D0",
             "strength": 0.56
         },
         {
-            "from": "G16",
-            "to": "D1",
-            "strength": 0.7
+            "from": "G15",
+            "to": "D18",
+            "strength": 0.52
         },
         {
-            "from": "G16",
-            "to": "D7",
-            "strength": 0.32
-        },
-        {
-            "from": "G16",
+            "from": "G15",
             "to": "D13",
-            "strength": 0.02
+            "strength": 0.66
+        },
+        {
+            "from": "G15",
+            "to": "D7",
+            "strength": 0.76
+        },
+        {
+            "from": "G15",
+            "to": "D12",
+            "strength": 0.41
+        },
+        {
+            "from": "G16",
+            "to": "D0",
+            "strength": 0.07
         },
         {
             "from": "G16",
             "to": "D3",
-            "strength": 0.05
+            "strength": 0.39
+        },
+        {
+            "from": "G16",
+            "to": "D8",
+            "strength": 0.94
+        },
+        {
+            "from": "G16",
+            "to": "D12",
+            "strength": 0.91
         },
         {
             "from": "G17",
-            "to": "D14",
-            "strength": 0.02
+            "to": "D17",
+            "strength": 0.34
         },
         {
             "from": "G17",
-            "to": "D2",
-            "strength": 0.64
+            "to": "D7",
+            "strength": 0.71
         },
         {
             "from": "G17",
-            "to": "D15",
-            "strength": 0.55
+            "to": "D0",
+            "strength": 0.69
+        },
+        {
+            "from": "G17",
+            "to": "D5",
+            "strength": 0.83
         },
         {
             "from": "G18",
-            "to": "D9",
+            "to": "D7",
+            "strength": 0.75
+        },
+        {
+            "from": "G18",
+            "to": "D4",
             "strength": 0.91
         },
         {
             "from": "G18",
-            "to": "D17",
-            "strength": 0.42
+            "to": "D13",
+            "strength": 0.59
         },
         {
-            "from": "G18",
+            "from": "G19",
             "to": "D3",
-            "strength": 0.75
+            "strength": 0.4
         },
         {
             "from": "G19",
             "to": "D0",
-            "strength": 0.9
+            "strength": 0.01
         },
         {
-            "from": "G19",
-            "to": "D10",
-            "strength": 0.56
-        },
-        {
-            "from": "G19",
-            "to": "D12",
-            "strength": 0.23
-        },
-        {
-            "from": "G10",
-            "to": "D0",
-            "strength": 0.45
-        },
-        {
-            "from": "G11",
-            "to": "D0",
-            "strength": 0.85
-        },
-        {
-            "from": "G13",
+            "from": "G2",
             "to": "D1",
-            "strength": 0.64
+            "strength": 0.65
         },
         {
-            "from": "G11",
-            "to": "D4",
-            "strength": 0.47
-        },
-        {
-            "from": "G13",
+            "from": "G6",
             "to": "D6",
-            "strength": 0.6
-        },
-        {
-            "from": "G18",
-            "to": "D7",
-            "strength": 0.04
-        },
-        {
-            "from": "G12",
-            "to": "D11",
-            "strength": 0.63
-        },
-        {
-            "from": "G5",
-            "to": "D11",
-            "strength": 0.95
-        },
-        {
-            "from": "G14",
-            "to": "D12",
-            "strength": 0.78
-        },
-        {
-            "from": "G7",
-            "to": "D18",
-            "strength": 0.85
-        },
-        {
-            "from": "G1",
-            "to": "D18",
-            "strength": 0.46
-        },
-        {
-            "from": "G4",
-            "to": "D18",
-            "strength": 0.95
-        },
-        {
-            "from": "G7",
-            "to": "D19",
             "strength": 0.25
         },
         {
+            "from": "G9",
+            "to": "D10",
+            "strength": 0.89
+        },
+        {
+            "from": "G19",
+            "to": "D13",
+            "strength": 0.18
+        },
+        {
             "from": "G11",
-            "to": "D19",
-            "strength": 0.85
+            "to": "D14",
+            "strength": 1.0
+        },
+        {
+            "from": "G13",
+            "to": "D15",
+            "strength": 0.36
+        },
+        {
+            "from": "G16",
+            "to": "D15",
+            "strength": 0.15
+        },
+        {
+            "from": "G19",
+            "to": "D17",
+            "strength": 0.88
+        },
+        {
+            "from": "G11",
+            "to": "D17",
+            "strength": 0.68
+        },
+        {
+            "from": "G9",
+            "to": "D18",
+            "strength": 0.5
         }
     ],
     "result": false,
@@ -587,17 +592,17 @@
                 "message": ""
             },
             "degree_constraints": {
-                "passed": true,
-                "message": ""
+                "passed": false,
+                "message": "Gene 'G2' has 6 associations; expected between 2 and 5."
             },
             "duplicate_associations": {
-                "passed": false,
-                "message": "Duplicate association found between 'G12' and 'D11'."
+                "passed": true,
+                "message": ""
             }
         },
         "overall_passed": false,
         "errors": [
-            "Duplicate Associations Check Failed."
+            "Degree Constraints Check Failed."
         ]
     }
 }
