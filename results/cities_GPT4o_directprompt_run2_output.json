@@ -1,0 +1,186 @@
+{
+    "cities": [
+        {
+            "id": "C0",
+            "population": 1000
+        },
+        {
+            "id": "C1",
+            "population": 500
+        },
+        {
+            "id": "C2",
+            "population": 750
+        },
+        {
+            "id": "C3",
+            "population": 600
+        },
+        {
+            "id": "C4",
+            "population": 900
+        },
+        {
+            "id": "C5",
+            "population": 400
+        },
+        {
+            "id": "C6",
+            "population": 800
+        },
+        {
+            "id": "C7",
+            "population": 650
+        }
+    ],
+    "roads": [
+        {
+            "from": "C0",
+            "to": "C1",
+            "distance": 281,
+            "cost": 341.69
+        },
+        {
+            "from": "C0",
+            "to": "C3",
+            "distance": 171,
+            "cost": 197.24
+        },
+        {
+            "from": "C0",
+            "to": "C4",
+            "distance": 192,
+            "cost": 256.73
+        },
+        {
+            "from": "C1",
+            "to": "C2",
+            "distance": 219,
+            "cost": 303.79
+        },
+        {
+            "from": "C1",
+            "to": "C5",
+            "distance": 240,
+            "cost": 290.29
+        },
+        {
+            "from": "C2",
+            "to": "C3",
+            "distance": 118,
+            "cost": 168.1
+        },
+        {
+            "from": "C2",
+            "to": "C6",
+            "distance": 197,
+            "cost": 202.1
+        },
+        {
+            "from": "C3",
+            "to": "C4",
+            "distance": 158,
+            "cost": 183.35
+        },
+        {
+            "from": "C3",
+            "to": "C7",
+            "distance": 212,
+            "cost": 299.86
+        },
+        {
+            "from": "C4",
+            "to": "C5",
+            "distance": 238,
+            "cost": 295.86
+        },
+        {
+            "from": "C4",
+            "to": "C6",
+            "distance": 183,
+            "cost": 267.58
+        },
+        {
+            "from": "C5",
+            "to": "C7",
+            "distance": 219,
+            "cost": 282.91
+        },
+        {
+            "from": "C5",
+            "to": "C2",
+            "distance": 176,
+            "cost": 215.65
+        },
+        {
+            "from": "C6",
+            "to": "C7",
+            "distance": 230,
+            "cost": 344.56
+        },
+        {
+            "from": "C6",
+            "to": "C0",
+            "distance": 108,
+            "cost": 135.09
+        },
+        {
+            "from": "C7",
+            "to": "C1",
+            "distance": 154,
+            "cost": 165.81
+        },
+        {
+            "from": "C7",
+            "to": "C2",
+            "distance": 263,
+            "cost": 282.79
+        },
+        {
+            "from": "C7",
+            "to": "C5",
+            "distance": 146,
+            "cost": 164.78
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "connectivity": {
+            "passed": true,
+            "message": ""
+        },
+        "road_capacity": {
+            "passed": true,
+            "message": ""
+        },
+        "cost_optimization": {
+            "passed": true,
+            "message": ""
+        },
+        "population_accessibility": {
+            "passed": false,
+            "message": ""
+        },
+        "strategic_road_placement": {
+            "passed": true,
+            "message": ""
+        },
+        "redundancy": {
+            "passed": false,
+            "message": "Insufficient redundancy due to connectivity or population accessibility issues."
+        },
+        "max_edges_constraint": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": false,
+        "errors": [
+            "City 'C0' has only 1 incoming road(s); requires at least two.",
+            "Insufficient redundancy due to connectivity or population accessibility issues."
+        ]
+    }
+}
