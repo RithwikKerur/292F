@@ -1,0 +1,336 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 500,
+            "time_window": [
+                8,
+                16
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 400,
+            "time_window": [
+                9,
+                17
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 600,
+            "time_window": [
+                10,
+                18
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 450,
+            "time_window": [
+                9,
+                11
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 550,
+            "time_window": [
+                11,
+                19
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 350,
+            "time_window": [
+                8,
+                12
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 480,
+            "time_window": [
+                13,
+                20
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 520,
+            "time_window": [
+                10,
+                14
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 420,
+            "time_window": [
+                12,
+                16
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 580,
+            "time_window": [
+                14,
+                22
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 380,
+            "time_window": [
+                8,
+                10
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 460,
+            "time_window": [
+                15,
+                23
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 540,
+            "time_window": [
+                9,
+                13
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 410,
+            "time_window": [
+                11,
+                15
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 590,
+            "time_window": [
+                16,
+                24
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 100,
+            "speed": 60
+        },
+        {
+            "id": "V2",
+            "capacity": 120,
+            "speed": 70
+        },
+        {
+            "id": "V3",
+            "capacity": 150,
+            "speed": 55
+        },
+        {
+            "id": "V4",
+            "capacity": 110,
+            "speed": 65
+        },
+        {
+            "id": "V5",
+            "capacity": 130,
+            "speed": 75
+        },
+        {
+            "id": "V6",
+            "capacity": 140,
+            "speed": 50
+        },
+        {
+            "id": "V7",
+            "capacity": 160,
+            "speed": 80
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 30,
+            "hourly_adjust": {
+                "8-10": 15,
+                "15-17": 20
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L1",
+            "to": "L2",
+            "base_time": 45,
+            "hourly_adjust": {
+                "11-13": 10,
+                "16-18": 15
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L2",
+            "to": "L3",
+            "base_time": 25,
+            "hourly_adjust": {
+                "9-11": 5,
+                "17-19": 10
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L3",
+            "to": "L4",
+            "base_time": 35,
+            "hourly_adjust": {
+                "12-14": 12,
+                "18-20": 18
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L4",
+            "to": "L5",
+            "base_time": 10,
+            "hourly_adjust": {
+                "8-10": 10,
+                "19-21": 15
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L5",
+            "to": "L6",
+            "base_time": 10,
+            "hourly_adjust": {
+                "13-15": 15,
+                "20-22": 20
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L6",
+            "to": "L7",
+            "base_time": 30,
+            "hourly_adjust": {
+                "10-12": 8,
+                "14-16": 12
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L7",
+            "to": "L8",
+            "base_time": 45,
+            "hourly_adjust": {
+                "12-14": 10,
+                "16-18": 15
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L8",
+            "to": "L9",
+            "base_time": 25,
+            "hourly_adjust": {
+                "14-16": 5,
+                "21-23": 10
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L9",
+            "to": "L10",
+            "base_time": 5,
+            "hourly_adjust": {
+                "8-10": 12,
+                "22-24": 18
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L10",
+            "to": "L11",
+            "base_time": 5,
+            "hourly_adjust": {
+                "15-17": 10,
+                "23-24": 15
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L11",
+            "to": "L12",
+            "base_time": 10,
+            "hourly_adjust": {
+                "9-11": 15,
+                "0-2": 20
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L12",
+            "to": "L13",
+            "base_time": 30,
+            "hourly_adjust": {
+                "11-13": 8,
+                "13-15": 12
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L13",
+            "to": "L14",
+            "base_time": 10,
+            "hourly_adjust": {
+                "16-18": 10,
+                "14-16": 15
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L14",
+            "to": "L0",
+            "base_time": 5,
+            "hourly_adjust": {
+                "16-18": 5,
+                "0-2": 10
+            },
+            "max_weight": 200
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "storage_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "vehicle_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "time_window_compliance": {
+            "passed": false,
+            "message": "Edge from 'L5' to 'L6' with total travel time 30 minutes does not fit within the time windows of 'L5' [8-12] and 'L6' [13-20]. Edge from 'L9' to 'L10' with total travel time 23 minutes does not fit within the time windows of 'L9' [14-22] and 'L10' [8-10]. Edge from 'L10' to 'L11' with total travel time 20 minutes does not fit within the time windows of 'L10' [8-10] and 'L11' [15-23]. Edge from 'L11' to 'L12' with total travel time 30 minutes does not fit within the time windows of 'L11' [15-23] and 'L12' [9-13]. Edge from 'L13' to 'L14' with total travel time 25 minutes does not fit within the time windows of 'L13' [11-15] and 'L14' [16-24]. Edge from 'L14' to 'L0' with total travel time 15 minutes does not fit within the time windows of 'L14' [16-24] and 'L0' [8-16]."
+        },
+        "overall_passed": false,
+        "errors": [
+            "Time Window Compliance Check Failed."
+        ]
+    }
+}
