@@ -1,0 +1,351 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 500,
+            "time_window": [
+                8,
+                12
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 300,
+            "time_window": [
+                8,
+                16
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 200,
+            "time_window": [
+                9,
+                14
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 150,
+            "time_window": [
+                9,
+                11
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 400,
+            "time_window": [
+                7,
+                10
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 350,
+            "time_window": [
+                10,
+                13
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 250,
+            "time_window": [
+                8,
+                11
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 180,
+            "time_window": [
+                10,
+                14
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 220,
+            "time_window": [
+                10,
+                15
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 500,
+            "time_window": [
+                6,
+                14
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 300,
+            "time_window": [
+                8,
+                12
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 240,
+            "time_window": [
+                9,
+                17
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 280,
+            "time_window": [
+                7,
+                11
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 450,
+            "time_window": [
+                10,
+                16
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 320,
+            "time_window": [
+                8,
+                12
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 60,
+            "speed": 60
+        },
+        {
+            "id": "V2",
+            "capacity": 70,
+            "speed": 55
+        },
+        {
+            "id": "V3",
+            "capacity": 80,
+            "speed": 50
+        },
+        {
+            "id": "V4",
+            "capacity": 85,
+            "speed": 45
+        },
+        {
+            "id": "V5",
+            "capacity": 90,
+            "speed": 60
+        },
+        {
+            "id": "V6",
+            "capacity": 90,
+            "speed": 55
+        },
+        {
+            "id": "V7",
+            "capacity": 90,
+            "speed": 50
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 20,
+            "hourly_adjust": {
+                "7-9": 10,
+                "16-18": 15
+            },
+            "max_weight": 300
+        },
+        {
+            "from": "L1",
+            "to": "L2",
+            "base_time": 15,
+            "hourly_adjust": {
+                "9-11": 5
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L1",
+            "to": "L3",
+            "base_time": 25,
+            "hourly_adjust": {
+                "8-10": 10
+            },
+            "max_weight": 150
+        },
+        {
+            "from": "L2",
+            "to": "L4",
+            "base_time": 30,
+            "hourly_adjust": {
+                "9-12": 10
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L3",
+            "to": "L4",
+            "base_time": 10,
+            "hourly_adjust": {
+                "7-8": 5,
+                "11-12": 5
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L2",
+            "to": "L5",
+            "base_time": 40,
+            "hourly_adjust": {
+                "8-10": 15
+            },
+            "max_weight": 350
+        },
+        {
+            "from": "L4",
+            "to": "L6",
+            "base_time": 20,
+            "hourly_adjust": {
+                "7-9": 10
+            },
+            "max_weight": 250
+        },
+        {
+            "from": "L5",
+            "to": "L7",
+            "base_time": 35,
+            "hourly_adjust": {
+                "10-12": 10
+            },
+            "max_weight": 90
+        },
+        {
+            "from": "L6",
+            "to": "L7",
+            "base_time": 15,
+            "hourly_adjust": {
+                "8-10": 5,
+                "11-13": 5
+            },
+            "max_weight": 90
+        },
+        {
+            "from": "L6",
+            "to": "L8",
+            "base_time": 25,
+            "hourly_adjust": {
+                "9-11": 5
+            },
+            "max_weight": 220
+        },
+        {
+            "from": "L7",
+            "to": "L9",
+            "base_time": 45,
+            "hourly_adjust": {
+                "11-14": 15
+            },
+            "max_weight": 250
+        },
+        {
+            "from": "L8",
+            "to": "L9",
+            "base_time": 20,
+            "hourly_adjust": {
+                "8-10": 10
+            },
+            "max_weight": 250
+        },
+        {
+            "from": "L8",
+            "to": "L10",
+            "base_time": 35,
+            "hourly_adjust": {
+                "10-12": 10
+            },
+            "max_weight": 300
+        },
+        {
+            "from": "L9",
+            "to": "L11",
+            "base_time": 50,
+            "hourly_adjust": {
+                "7-9": 15,
+                "15-17": 10
+            },
+            "max_weight": 120
+        },
+        {
+            "from": "L10",
+            "to": "L11",
+            "base_time": 15,
+            "hourly_adjust": {
+                "8-10": 5
+            },
+            "max_weight": 120
+        },
+        {
+            "from": "L11",
+            "to": "L12",
+            "base_time": 25,
+            "hourly_adjust": {
+                "9-11": 5
+            },
+            "max_weight": 280
+        },
+        {
+            "from": "L12",
+            "to": "L13",
+            "base_time": 20,
+            "hourly_adjust": {
+                "7-9": 10
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L13",
+            "to": "L14",
+            "base_time": 30,
+            "hourly_adjust": {
+                "10-12": 5,
+                "14-16": 10
+            },
+            "max_weight": 320
+        }
+    ],
+    "result": true,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "storage_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "vehicle_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "time_window_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": true,
+        "errors": []
+    }
+}

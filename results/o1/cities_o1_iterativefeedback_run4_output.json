@@ -1,0 +1,231 @@
+{
+    "cities": [
+        {
+            "id": "C0",
+            "population": 1000
+        },
+        {
+            "id": "C1",
+            "population": 500
+        },
+        {
+            "id": "C2",
+            "population": 750
+        },
+        {
+            "id": "C3",
+            "population": 600
+        },
+        {
+            "id": "C4",
+            "population": 900
+        },
+        {
+            "id": "C5",
+            "population": 400
+        },
+        {
+            "id": "C6",
+            "population": 800
+        },
+        {
+            "id": "C7",
+            "population": 650
+        }
+    ],
+    "roads": [
+        {
+            "from": "C0",
+            "to": "C7",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C7",
+            "to": "C0",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C0",
+            "to": "C1",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C0",
+            "to": "C2",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C0",
+            "to": "C3",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C0",
+            "to": "C4",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C0",
+            "to": "C5",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C0",
+            "to": "C6",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C7",
+            "to": "C1",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C7",
+            "to": "C2",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C7",
+            "to": "C3",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C7",
+            "to": "C4",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C7",
+            "to": "C5",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C7",
+            "to": "C6",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C1",
+            "to": "C0",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C1",
+            "to": "C7",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C2",
+            "to": "C0",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C2",
+            "to": "C7",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C3",
+            "to": "C0",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C3",
+            "to": "C7",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C4",
+            "to": "C0",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C4",
+            "to": "C7",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C5",
+            "to": "C0",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C5",
+            "to": "C7",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C6",
+            "to": "C0",
+            "distance": 1.0,
+            "cost": 1.0
+        },
+        {
+            "from": "C6",
+            "to": "C7",
+            "distance": 1.0,
+            "cost": 1.0
+        }
+    ],
+    "result": true,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "connectivity": {
+            "passed": true,
+            "message": ""
+        },
+        "road_capacity": {
+            "passed": true,
+            "message": ""
+        },
+        "cost_optimization": {
+            "passed": true,
+            "message": ""
+        },
+        "population_accessibility": {
+            "passed": true,
+            "message": ""
+        },
+        "strategic_road_placement": {
+            "passed": true,
+            "message": ""
+        },
+        "redundancy": {
+            "passed": true,
+            "message": ""
+        },
+        "max_edges_constraint": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": true,
+        "errors": []
+    }
+}
