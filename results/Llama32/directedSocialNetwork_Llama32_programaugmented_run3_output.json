@@ -1,0 +1,114 @@
+{
+    "users": [
+        {
+            "id": "U0",
+            "trust_score": 42.35,
+            "category": "celebrity"
+        },
+        {
+            "id": "U1",
+            "trust_score": 91.19,
+            "category": "regular"
+        },
+        {
+            "id": "U2",
+            "trust_score": 13.51,
+            "category": "expert"
+        },
+        {
+            "id": "U3",
+            "trust_score": 67.82,
+            "category": "celebrity"
+        },
+        {
+            "id": "U4",
+            "trust_score": 34.19,
+            "category": "regular"
+        },
+        {
+            "id": "U5",
+            "trust_score": 85.63,
+            "category": "expert"
+        },
+        {
+            "id": "U6",
+            "trust_score": 58.29,
+            "category": "celebrity"
+        },
+        {
+            "id": "U7",
+            "trust_score": 39.87,
+            "category": "regular"
+        },
+        {
+            "id": "U8",
+            "trust_score": 79.42,
+            "category": "expert"
+        },
+        {
+            "id": "U9",
+            "trust_score": 29.11,
+            "category": "celebrity"
+        }
+    ],
+    "edges": [
+        {
+            "from": "U0",
+            "to": "U1"
+        },
+        {
+            "from": "U0",
+            "to": "U2"
+        },
+        {
+            "from": "U2",
+            "to": "U3"
+        },
+        {
+            "from": "U3",
+            "to": "U4"
+        },
+        {
+            "from": "U4",
+            "to": "U5"
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "valid_no_self_loops": true,
+        "valid_celebrity_outgoing": false,
+        "valid_regular_to_expert": false,
+        "valid_acyclic": true,
+        "valid_user_attributes": true,
+        "valid_edge_structure": true,
+        "valid_total_users": false,
+        "valid_categories": false,
+        "valid_trust_scores": false,
+        "errors": [
+            "Number of users is 10; expected 20.",
+            "User 'U0' has invalid 'trust_score': 42.35. Must be an integer between 0 and 100.",
+            "User 'U0' has 'trust_score' 42.35 but category 'celebrity'. Should be 'regular'.",
+            "User 'U1' has invalid 'trust_score': 91.19. Must be an integer between 0 and 100.",
+            "User 'U1' has 'trust_score' 91.19 but category 'regular'. Should be 'celebrity'.",
+            "User 'U2' has invalid 'trust_score': 13.51. Must be an integer between 0 and 100.",
+            "User 'U2' has 'trust_score' 13.51 but category 'expert'. Should be 'regular'.",
+            "User 'U3' has invalid 'trust_score': 67.82. Must be an integer between 0 and 100.",
+            "User 'U3' has 'trust_score' 67.82 but category 'celebrity'. Should be 'expert' or 'regular'.",
+            "User 'U4' has invalid 'trust_score': 34.19. Must be an integer between 0 and 100.",
+            "User 'U5' has invalid 'trust_score': 85.63. Must be an integer between 0 and 100.",
+            "User 'U5' has 'trust_score' 85.63 but category 'expert'. Should be 'celebrity'.",
+            "User 'U6' has invalid 'trust_score': 58.29. Must be an integer between 0 and 100.",
+            "User 'U6' has 'trust_score' 58.29 but category 'celebrity'. Should be 'expert' or 'regular'.",
+            "User 'U7' has invalid 'trust_score': 39.87. Must be an integer between 0 and 100.",
+            "User 'U8' has invalid 'trust_score': 79.42. Must be an integer between 0 and 100.",
+            "User 'U9' has invalid 'trust_score': 29.11. Must be an integer between 0 and 100.",
+            "User 'U9' has 'trust_score' 29.11 but category 'celebrity'. Should be 'regular'.",
+            "Missing user IDs: {'U19', 'U13', 'U16', 'U10', 'U18', 'U17', 'U14', 'U11', 'U12', 'U15'}.",
+            "Celebrity 'U0' has 2 outgoing edges; expected at least 5.",
+            "Celebrity 'U3' has 1 outgoing edges; expected at least 5.",
+            "Celebrity 'U6' has 0 outgoing edges; expected at least 5.",
+            "Celebrity 'U9' has 0 outgoing edges; expected at least 5.",
+            "Regular user 'U4' is influencing expert 'U5'."
+        ]
+    }
+}

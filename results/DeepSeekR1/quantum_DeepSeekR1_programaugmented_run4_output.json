@@ -1,0 +1,85 @@
+{
+    "circuit": [
+        {
+            "gate": "H",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "CNOT",
+            "control_qubit": "Q0",
+            "target_qubit": "Q2",
+            "time": 2
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q1"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "CNOT",
+            "control_qubit": "Q1",
+            "target_qubit": "Q2",
+            "time": 4
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 5
+        },
+        {
+            "gate": "CNOT",
+            "control_qubit": "Q0",
+            "target_qubit": "Q1",
+            "time": 6
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q2"
+            ],
+            "time": 7
+        },
+        {
+            "gate": "measure",
+            "qubits": [
+                "Q0",
+                "Q1",
+                "Q2"
+            ],
+            "output": [
+                "classical_0",
+                "classical_1",
+                "classical_2"
+            ]
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "valid_output_structure": false,
+        "valid_gate_types": true,
+        "valid_qubits": true,
+        "valid_dag": true,
+        "valid_gate_precedences": true,
+        "valid_cnot_adjacency": true,
+        "valid_swap_constraints": true,
+        "valid_measurements": true,
+        "valid_gate_restrictions": true,
+        "layered_operations": true,
+        "depth_constraint": true,
+        "gate_optimization": true,
+        "final_state_compliance": true,
+        "errors": [
+            "Gate operation at index 1 is missing keys: {'qubits'}.",
+            "Gate operation at index 3 is missing keys: {'qubits'}.",
+            "Gate operation at index 5 is missing keys: {'qubits'}.",
+            "Gate operation at index 7 is missing keys: {'time'}."
+        ]
+    }
+}

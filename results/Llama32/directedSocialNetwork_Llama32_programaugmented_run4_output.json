@@ -1,0 +1,146 @@
+{
+    "users": [
+        {
+            "id": 0,
+            "trust_score": 90,
+            "category": "Celebrity"
+        },
+        {
+            "id": 1,
+            "trust_score": 30,
+            "category": "Regular"
+        },
+        {
+            "id": 2,
+            "trust_score": 85,
+            "category": "Expert"
+        },
+        {
+            "id": 3,
+            "trust_score": 40,
+            "category": "Regular"
+        },
+        {
+            "id": 4,
+            "trust_score": 60,
+            "category": "Regular"
+        },
+        {
+            "id": 5,
+            "trust_score": 25,
+            "category": "Regular"
+        },
+        {
+            "id": 6,
+            "trust_score": 50,
+            "category": "Regular"
+        },
+        {
+            "id": 7,
+            "trust_score": 80,
+            "category": "Expert"
+        },
+        {
+            "id": 8,
+            "trust_score": 35,
+            "category": "Regular"
+        },
+        {
+            "id": 9,
+            "trust_score": 70,
+            "category": "Regular"
+        }
+    ],
+    "edges": [
+        {
+            "from": 0,
+            "to": 1
+        },
+        {
+            "from": 0,
+            "to": 2
+        },
+        {
+            "from": 2,
+            "to": 3
+        },
+        {
+            "from": 3,
+            "to": 4
+        },
+        {
+            "from": 4,
+            "to": 5
+        },
+        {
+            "from": 5,
+            "to": 6
+        },
+        {
+            "from": 6,
+            "to": 7
+        },
+        {
+            "from": 7,
+            "to": 8
+        },
+        {
+            "from": 8,
+            "to": 9
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "valid_no_self_loops": true,
+        "valid_celebrity_outgoing": true,
+        "valid_regular_to_expert": true,
+        "valid_acyclic": true,
+        "valid_user_attributes": false,
+        "valid_edge_structure": false,
+        "valid_total_users": false,
+        "valid_categories": false,
+        "valid_trust_scores": true,
+        "errors": [
+            "Number of users is 10; expected 20.",
+            "User ID '0' is invalid. Expected IDs from U0 to U19.",
+            "User '0' has 'trust_score' 90 but category 'Celebrity'. Should be 'celebrity'.",
+            "User ID '1' is invalid. Expected IDs from U0 to U19.",
+            "User '1' has 'trust_score' 30 but category 'Regular'. Should be 'regular'.",
+            "User ID '2' is invalid. Expected IDs from U0 to U19.",
+            "User '2' has 'trust_score' 85 but category 'Expert'. Should be 'celebrity'.",
+            "User ID '3' is invalid. Expected IDs from U0 to U19.",
+            "User '3' has 'trust_score' 40 but category 'Regular'. Should be 'regular'.",
+            "User ID '4' is invalid. Expected IDs from U0 to U19.",
+            "User '4' has 'trust_score' 60 but category 'Regular'. Should be 'expert' or 'regular'.",
+            "User ID '5' is invalid. Expected IDs from U0 to U19.",
+            "User '5' has 'trust_score' 25 but category 'Regular'. Should be 'regular'.",
+            "User ID '6' is invalid. Expected IDs from U0 to U19.",
+            "User '6' has 'trust_score' 50 but category 'Regular'. Should be 'expert' or 'regular'.",
+            "User ID '7' is invalid. Expected IDs from U0 to U19.",
+            "User '7' has 'trust_score' 80 but category 'Expert'. Should be 'celebrity'.",
+            "User ID '8' is invalid. Expected IDs from U0 to U19.",
+            "User '8' has 'trust_score' 35 but category 'Regular'. Should be 'regular'.",
+            "User ID '9' is invalid. Expected IDs from U0 to U19.",
+            "User '9' has 'trust_score' 70 but category 'Regular'. Should be 'expert'.",
+            "Missing user IDs: {'U9', 'U1', 'U4', 'U14', 'U12', 'U15', 'U19', 'U6', 'U16', 'U2', 'U13', 'U10', 'U18', 'U3', 'U17', 'U7', 'U8', 'U5', 'U0', 'U11'}.",
+            "Edge 'from' user '0' is not a valid user ID.",
+            "Edge 'to' user '1' is not a valid user ID.",
+            "Edge 'from' user '0' is not a valid user ID.",
+            "Edge 'to' user '2' is not a valid user ID.",
+            "Edge 'from' user '2' is not a valid user ID.",
+            "Edge 'to' user '3' is not a valid user ID.",
+            "Edge 'from' user '3' is not a valid user ID.",
+            "Edge 'to' user '4' is not a valid user ID.",
+            "Edge 'from' user '4' is not a valid user ID.",
+            "Edge 'to' user '5' is not a valid user ID.",
+            "Edge 'from' user '5' is not a valid user ID.",
+            "Edge 'to' user '6' is not a valid user ID.",
+            "Edge 'from' user '6' is not a valid user ID.",
+            "Edge 'to' user '7' is not a valid user ID.",
+            "Edge 'from' user '7' is not a valid user ID.",
+            "Edge 'to' user '8' is not a valid user ID.",
+            "Edge 'from' user '8' is not a valid user ID.",
+            "Edge 'to' user '9' is not a valid user ID."
+        ]
+    }
+}

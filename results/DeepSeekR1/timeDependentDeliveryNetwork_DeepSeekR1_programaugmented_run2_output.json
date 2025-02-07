@@ -1,0 +1,258 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 150000,
+            "time_window": [
+                720,
+                840
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 200000,
+            "time_window": [
+                900,
+                1020
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 300000,
+            "time_window": [
+                1800,
+                2100
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 250000,
+            "time_window": [
+                1200,
+                1320
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 180000,
+            "time_window": [
+                720,
+                840
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 220000,
+            "time_window": [
+                900,
+                1020
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 350000,
+            "time_window": [
+                1800,
+                2100
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 280000,
+            "time_window": [
+                1200,
+                1320
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 190000,
+            "time_window": [
+                720,
+                840
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 240000,
+            "time_window": [
+                900,
+                1020
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 320000,
+            "time_window": [
+                1800,
+                2100
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 270000,
+            "time_window": [
+                1200,
+                1320
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 200000,
+            "time_window": [
+                720,
+                840
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 260000,
+            "time_window": [
+                900,
+                1020
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 310000,
+            "time_window": [
+                1800,
+                2100
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 50000,
+            "speed": 60
+        },
+        {
+            "id": "V2",
+            "capacity": 70000,
+            "speed": 45
+        },
+        {
+            "id": "V3",
+            "capacity": 80000,
+            "speed": 55
+        },
+        {
+            "id": "V4",
+            "capacity": 60000,
+            "speed": 50
+        },
+        {
+            "id": "V5",
+            "capacity": 90000,
+            "speed": 48
+        },
+        {
+            "id": "V6",
+            "capacity": 100000,
+            "speed": 42
+        },
+        {
+            "id": "V7",
+            "capacity": 120000,
+            "speed": 35
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 810.0,
+            "hourly_adjust": {
+                "08:00": 30,
+                "17:00": -20
+            },
+            "max_weight": 50.0
+        },
+        {
+            "from": "L1",
+            "to": "L2",
+            "base_time": 1350.0,
+            "hourly_adjust": {
+                "09:00": 25,
+                "16:00": -15
+            },
+            "max_weight": 30.0
+        },
+        {
+            "from": "L2",
+            "to": "L3",
+            "base_time": 1500.0,
+            "hourly_adjust": {
+                "12:00": 5,
+                "19:00": -10
+            },
+            "max_weight": 40.0
+        },
+        {
+            "from": "L3",
+            "to": "L4",
+            "base_time": 960.0,
+            "hourly_adjust": {
+                "12:00": 5,
+                "18:00": -10
+            },
+            "max_weight": 30.0
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": false,
+            "message": "Errors found in 'locations' structure. Errors found in 'edges' structure."
+        },
+        "storage_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "vehicle_capacity_compliance": {
+            "passed": false,
+            "message": "Edge from 'L0' to 'L1' has 'max_weight' 50.0 kg, which is less than the maximum vehicle capacity of 120000 kg. Edge from 'L1' to 'L2' has 'max_weight' 30.0 kg, which is less than the maximum vehicle capacity of 120000 kg. Edge from 'L2' to 'L3' has 'max_weight' 40.0 kg, which is less than the maximum vehicle capacity of 120000 kg. Edge from 'L3' to 'L4' has 'max_weight' 30.0 kg, which is less than the maximum vehicle capacity of 120000 kg."
+        },
+        "time_window_compliance": {
+            "passed": false,
+            "message": "Edge from 'L0' to 'L1' with total travel time 840.0 minutes does not fit within the time windows of 'L0' [720-840] and 'L1' [900-1020]. Edge from 'L1' to 'L2' with total travel time 1375.0 minutes does not fit within the time windows of 'L1' [900-1020] and 'L2' [1800-2100]. Edge from 'L2' to 'L3' with total travel time 1505.0 minutes does not fit within the time windows of 'L2' [1800-2100] and 'L3' [1200-1320]. Edge from 'L3' to 'L4' with total travel time 965.0 minutes does not fit within the time windows of 'L3' [1200-1320] and 'L4' [720-840]."
+        },
+        "overall_passed": false,
+        "errors": [
+            "Location 'L0' has invalid 'time_window' values: [720, 840]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L1' has invalid 'time_window' values: [900, 1020]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L2' has invalid 'time_window' values: [1800, 2100]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L3' has invalid 'time_window' values: [1200, 1320]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L4' has invalid 'time_window' values: [720, 840]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L5' has invalid 'time_window' values: [900, 1020]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L6' has invalid 'time_window' values: [1800, 2100]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L7' has invalid 'time_window' values: [1200, 1320]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L8' has invalid 'time_window' values: [720, 840]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L9' has invalid 'time_window' values: [900, 1020]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L10' has invalid 'time_window' values: [1800, 2100]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L11' has invalid 'time_window' values: [1200, 1320]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L12' has invalid 'time_window' values: [720, 840]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L13' has invalid 'time_window' values: [900, 1020]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L14' has invalid 'time_window' values: [1800, 2100]. Must satisfy 0 <= start < end <= 24.",
+            "Edge from 'L0' to 'L1' has invalid 'base_time'. Must be a positive integer.",
+            "Edge from 'L0' to 'L1' has invalid time range '08:00' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L0' to 'L1' has invalid time range '17:00' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L0' to 'L1' has invalid 'max_weight'. Must be a positive integer.",
+            "Edge from 'L1' to 'L2' has invalid 'base_time'. Must be a positive integer.",
+            "Edge from 'L1' to 'L2' has invalid time range '09:00' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L1' to 'L2' has invalid time range '16:00' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L1' to 'L2' has invalid 'max_weight'. Must be a positive integer.",
+            "Edge from 'L2' to 'L3' has invalid 'base_time'. Must be a positive integer.",
+            "Edge from 'L2' to 'L3' has invalid time range '12:00' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L2' to 'L3' has invalid time range '19:00' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L2' to 'L3' has invalid 'max_weight'. Must be a positive integer.",
+            "Edge from 'L3' to 'L4' has invalid 'base_time'. Must be a positive integer.",
+            "Edge from 'L3' to 'L4' has invalid time range '12:00' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L3' to 'L4' has invalid time range '18:00' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L3' to 'L4' has invalid 'max_weight'. Must be a positive integer.",
+            "Vehicle Capacity Compliance Check Failed.",
+            "Time Window Compliance Check Failed."
+        ]
+    }
+}

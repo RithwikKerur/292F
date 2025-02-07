@@ -1,0 +1,114 @@
+{
+    "circuit": [
+        {
+            "gate": "H",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q0",
+                "Q2"
+            ],
+            "time": 2
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q2"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 4
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q1"
+            ],
+            "time": 5
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q1",
+                "Q2"
+            ],
+            "time": 6
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q3"
+            ],
+            "time": 7
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q2"
+            ],
+            "time": 8
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q4"
+            ],
+            "time": 9
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q4",
+                "Q5"
+            ],
+            "time": 10
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q6"
+            ],
+            "time": 11
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q5"
+            ],
+            "time": 12
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "valid_output_structure": true,
+        "valid_gate_types": true,
+        "valid_qubits": true,
+        "valid_dag": true,
+        "valid_gate_precedences": true,
+        "valid_cnot_adjacency": false,
+        "valid_swap_constraints": true,
+        "valid_measurements": true,
+        "valid_gate_restrictions": true,
+        "layered_operations": true,
+        "depth_constraint": true,
+        "gate_optimization": true,
+        "final_state_compliance": false,
+        "errors": [
+            "CNOT gate at index 5 operates on adjacent qubits 'Q1' and 'Q2'. Must have at least one qubit gap.",
+            "CNOT gate at index 9 operates on adjacent qubits 'Q4' and 'Q5'. Must have at least one qubit gap.",
+            "Qubit 'Q1' does not end with a Measurement or a gate to reset to |0\u27e9.",
+            "Qubit 'Q4' does not end with a Measurement or a gate to reset to |0\u27e9."
+        ],
+        "overall_passed": false
+    }
+}

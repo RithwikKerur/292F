@@ -1,0 +1,235 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 10000,
+            "time_window": [
+                6,
+                12
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 5000,
+            "time_window": [
+                8,
+                14
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 2000,
+            "time_window": [
+                10,
+                16
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 1500,
+            "time_window": [
+                12,
+                18
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 1000,
+            "time_window": [
+                14,
+                20
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 800,
+            "time_window": [
+                16,
+                22
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 600,
+            "time_window": [
+                18,
+                24
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 500,
+            "time_window": [
+                20,
+                26
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 400,
+            "time_window": [
+                22,
+                28
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 300,
+            "time_window": [
+                24,
+                30
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 200,
+            "time_window": [
+                26,
+                32
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 100,
+            "time_window": [
+                28,
+                34
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 80,
+            "time_window": [
+                30,
+                36
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 60,
+            "time_window": [
+                32,
+                38
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 50,
+            "time_window": [
+                34,
+                40
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 2000,
+            "speed": 20
+        },
+        {
+            "id": "V2",
+            "capacity": 1500,
+            "speed": 25
+        },
+        {
+            "id": "V3",
+            "capacity": 1000,
+            "speed": 30
+        },
+        {
+            "id": "V4",
+            "capacity": 800,
+            "speed": 35
+        },
+        {
+            "id": "V5",
+            "capacity": 600,
+            "speed": 40
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 30,
+            "hourly_adjust": {
+                "HH-HH": 15
+            },
+            "max_weight": 150
+        },
+        {
+            "from": "L1",
+            "to": "L2",
+            "base_time": 45,
+            "hourly_adjust": {
+                "HH-HH": 20
+            },
+            "max_weight": 180
+        },
+        {
+            "from": "L0",
+            "to": "L3",
+            "base_time": 60,
+            "hourly_adjust": {
+                "HH-HH": 25
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L1",
+            "to": "L4",
+            "base_time": 75,
+            "hourly_adjust": {
+                "HH-HH": 30
+            },
+            "max_weight": 220
+        },
+        {
+            "from": "L2",
+            "to": "L5",
+            "base_time": 90,
+            "hourly_adjust": {
+                "HH-HH": 35
+            },
+            "max_weight": 250
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": false,
+            "message": "Errors found in 'locations' structure. Errors found in 'edges' structure."
+        },
+        "storage_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "vehicle_capacity_compliance": {
+            "passed": false,
+            "message": "No valid vehicle capacities found."
+        },
+        "time_window_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": false,
+        "errors": [
+            "Location 'L7' has invalid 'time_window' values: [20, 26]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L8' has invalid 'time_window' values: [22, 28]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L9' has invalid 'time_window' values: [24, 30]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L10' has invalid 'time_window' values: [26, 32]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L11' has invalid 'time_window' values: [28, 34]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L12' has invalid 'time_window' values: [30, 36]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L13' has invalid 'time_window' values: [32, 38]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L14' has invalid 'time_window' values: [34, 40]. Must satisfy 0 <= start < end <= 24.",
+            "Number of vehicles is 5; expected 7.",
+            "Edge from 'L0' to 'L1' has invalid time range 'HH-HH' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L1' to 'L2' has invalid time range 'HH-HH' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L0' to 'L3' has invalid time range 'HH-HH' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L1' to 'L4' has invalid time range 'HH-HH' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L2' to 'L5' has invalid time range 'HH-HH' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Vehicle Capacity Compliance Check Failed."
+        ]
+    }
+}

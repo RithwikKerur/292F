@@ -1,0 +1,294 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 12500,
+            "time_window": [
+                7,
+                19
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 37500,
+            "time_window": [
+                6,
+                18
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 18750,
+            "time_window": [
+                4,
+                17
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 25000,
+            "time_window": [
+                8,
+                19
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 6250,
+            "time_window": [
+                5,
+                16
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 7500,
+            "time_window": [
+                3,
+                15
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 8750,
+            "time_window": [
+                4,
+                15
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 28125,
+            "time_window": [
+                9,
+                18
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 31250,
+            "time_window": [
+                6,
+                17
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 43750,
+            "time_window": [
+                7,
+                17
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 33750,
+            "time_window": [
+                8,
+                20
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 43750,
+            "time_window": [
+                9,
+                22
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 6250,
+            "time_window": [
+                5,
+                10
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 8125,
+            "time_window": [
+                7,
+                14
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 93750,
+            "time_window": [
+                6,
+                15
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 3000,
+            "speed": 20
+        },
+        {
+            "id": "V2",
+            "capacity": 4000,
+            "speed": 25
+        },
+        {
+            "id": "V3",
+            "capacity": 5000,
+            "speed": 30
+        },
+        {
+            "id": "V4",
+            "capacity": 6000,
+            "speed": 35
+        },
+        {
+            "id": "V5",
+            "capacity": 7000,
+            "speed": 40
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 2,
+            "hourly_adjust": {
+                "18-24": 3
+            },
+            "max_weight": 60
+        },
+        {
+            "from": "L0",
+            "to": "L5",
+            "base_time": 1,
+            "hourly_adjust": {
+                "19-23": 5
+            },
+            "max_weight": 75
+        },
+        {
+            "from": "L1",
+            "to": "L3",
+            "base_time": 6,
+            "hourly_adjust": {
+                "8-16": 4
+            },
+            "max_weight": 40
+        },
+        {
+            "from": "L1",
+            "to": "L6",
+            "base_time": 2,
+            "hourly_adjust": {
+                "5-24": 3
+            },
+            "max_weight": 60
+        },
+        {
+            "from": "L2",
+            "to": "L7",
+            "base_time": 8,
+            "hourly_adjust": {
+                "10-19": 5
+            },
+            "max_weight": 50
+        },
+        {
+            "from": "L2",
+            "to": "L10",
+            "base_time": 3,
+            "hourly_adjust": {
+                "6-24": 7
+            },
+            "max_weight": 80
+        },
+        {
+            "from": "L3",
+            "to": "L9",
+            "base_time": 5,
+            "hourly_adjust": {
+                "12-22": 4
+            },
+            "max_weight": 30
+        },
+        {
+            "from": "L4",
+            "to": "L7",
+            "base_time": 6,
+            "hourly_adjust": {
+                "8-16": 4
+            },
+            "max_weight": 45
+        },
+        {
+            "from": "L4",
+            "to": "L9",
+            "base_time": 3,
+            "hourly_adjust": {
+                "2-24": 7
+            },
+            "max_weight": 70
+        },
+        {
+            "from": "L5",
+            "to": "L10",
+            "base_time": 8,
+            "hourly_adjust": {
+                "6-13": 3
+            },
+            "max_weight": 90
+        },
+        {
+            "from": "L6",
+            "to": "L11",
+            "base_time": 7,
+            "hourly_adjust": {
+                "5-24": 4
+            },
+            "max_weight": 80
+        },
+        {
+            "from": "L7",
+            "to": "L13",
+            "base_time": 9,
+            "hourly_adjust": {
+                "12-22": 4
+            },
+            "max_weight": 50
+        },
+        {
+            "from": "L8",
+            "to": "L14",
+            "base_time": 5,
+            "hourly_adjust": {
+                "7-23": 6
+            },
+            "max_weight": 45
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "storage_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "vehicle_capacity_compliance": {
+            "passed": false,
+            "message": "No valid vehicle capacities found."
+        },
+        "time_window_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": false,
+        "errors": [
+            "Number of vehicles is 5; expected 7.",
+            "Vehicle Capacity Compliance Check Failed."
+        ]
+    }
+}

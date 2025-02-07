@@ -1,0 +1,220 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 10000,
+            "time_window": [
+                8,
+                17
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 5000,
+            "time_window": [
+                9,
+                18
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 20000,
+            "time_window": [
+                10,
+                19
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 15000,
+            "time_window": [
+                11,
+                20
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 2500,
+            "time_window": [
+                12,
+                21
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 12000,
+            "time_window": [
+                13,
+                22
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 3000,
+            "time_window": [
+                14,
+                23
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 8000,
+            "time_window": [
+                15,
+                24
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 10000,
+            "time_window": [
+                16,
+                25
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 2500,
+            "time_window": [
+                17,
+                26
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 12000,
+            "time_window": [
+                18,
+                27
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 5000,
+            "time_window": [
+                19,
+                28
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 20000,
+            "time_window": [
+                20,
+                29
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 15000,
+            "time_window": [
+                21,
+                30
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 2500,
+            "time_window": [
+                22,
+                31
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 5000,
+            "speed": 20
+        },
+        {
+            "id": "V2",
+            "capacity": 20000,
+            "speed": 15
+        },
+        {
+            "id": "V3",
+            "capacity": 15000,
+            "speed": 25
+        },
+        {
+            "id": "V4",
+            "capacity": 10000,
+            "speed": 30
+        },
+        {
+            "id": "V5",
+            "capacity": 2500,
+            "speed": 10
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 120,
+            "hourly_adjust": {
+                "12-13": 2
+            },
+            "max_weight": 1000
+        },
+        {
+            "from": "L1",
+            "to": "L2",
+            "base_time": 150,
+            "hourly_adjust": {
+                "13-14": 3
+            },
+            "max_weight": 2000
+        },
+        {
+            "from": "L2",
+            "to": "L3",
+            "base_time": 180,
+            "hourly_adjust": {
+                "14-15": 4
+            },
+            "max_weight": 3000
+        },
+        {
+            "from": "L3",
+            "to": "L4",
+            "base_time": 120,
+            "hourly_adjust": {
+                "15-16": 5
+            },
+            "max_weight": 1500
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": false,
+            "message": "Errors found in 'locations' structure."
+        },
+        "storage_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "vehicle_capacity_compliance": {
+            "passed": false,
+            "message": "No valid vehicle capacities found."
+        },
+        "time_window_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": false,
+        "errors": [
+            "Location 'L8' has invalid 'time_window' values: [16, 25]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L9' has invalid 'time_window' values: [17, 26]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L10' has invalid 'time_window' values: [18, 27]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L11' has invalid 'time_window' values: [19, 28]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L12' has invalid 'time_window' values: [20, 29]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L13' has invalid 'time_window' values: [21, 30]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L14' has invalid 'time_window' values: [22, 31]. Must satisfy 0 <= start < end <= 24.",
+            "Number of vehicles is 5; expected 7.",
+            "Vehicle Capacity Compliance Check Failed."
+        ]
+    }
+}
