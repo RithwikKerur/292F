@@ -1,0 +1,533 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "BRCA1",
+            "function": "DNA repair and tumor suppression"
+        },
+        {
+            "id": "G1",
+            "name": "TP53",
+            "function": "Cell cycle regulation and apoptosis"
+        },
+        {
+            "id": "G2",
+            "name": "CFTR",
+            "function": "Chloride channel regulation"
+        },
+        {
+            "id": "G3",
+            "name": "HTT",
+            "function": "Neuronal development"
+        },
+        {
+            "id": "G4",
+            "name": "PSEN1",
+            "function": "Protein processing"
+        },
+        {
+            "id": "G5",
+            "name": "APOE",
+            "function": "Lipid metabolism"
+        },
+        {
+            "id": "G6",
+            "name": "HBB",
+            "function": "Oxygen transport"
+        },
+        {
+            "id": "G7",
+            "name": "PRKACA",
+            "function": "Signal transduction"
+        },
+        {
+            "id": "G8",
+            "name": "IL6",
+            "function": "Immune response"
+        },
+        {
+            "id": "G9",
+            "name": "TNF",
+            "function": "Inflammatory response"
+        },
+        {
+            "id": "G10",
+            "name": "VEGFA",
+            "function": "Angiogenesis"
+        },
+        {
+            "id": "G11",
+            "name": "SOD1",
+            "function": "Antioxidant defense"
+        },
+        {
+            "id": "G12",
+            "name": "PARK2",
+            "function": "Protein degradation"
+        },
+        {
+            "id": "G13",
+            "name": "FMR1",
+            "function": "Synaptic plasticity"
+        },
+        {
+            "id": "G14",
+            "name": "DMD",
+            "function": "Muscle structure"
+        },
+        {
+            "id": "G15",
+            "name": "F8",
+            "function": "Blood coagulation"
+        },
+        {
+            "id": "G16",
+            "name": "PAH",
+            "function": "Amino acid metabolism"
+        },
+        {
+            "id": "G17",
+            "name": "LDLR",
+            "function": "Cholesterol uptake"
+        },
+        {
+            "id": "G18",
+            "name": "FOXP3",
+            "function": "Immune regulation"
+        },
+        {
+            "id": "G19",
+            "name": "MTHFR",
+            "function": "Folate metabolism"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Breast Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D1",
+            "name": "Cystic Fibrosis",
+            "severity_level": "High"
+        },
+        {
+            "id": "D2",
+            "name": "Huntington's Disease",
+            "severity_level": "High"
+        },
+        {
+            "id": "D3",
+            "name": "Alzheimer's Disease",
+            "severity_level": "High"
+        },
+        {
+            "id": "D4",
+            "name": "Sickle Cell Anemia",
+            "severity_level": "High"
+        },
+        {
+            "id": "D5",
+            "name": "Rheumatoid Arthritis",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D6",
+            "name": "Type 2 Diabetes",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D7",
+            "name": "ALS",
+            "severity_level": "High"
+        },
+        {
+            "id": "D8",
+            "name": "Parkinson's Disease",
+            "severity_level": "High"
+        },
+        {
+            "id": "D9",
+            "name": "Fragile X Syndrome",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D10",
+            "name": "Muscular Dystrophy",
+            "severity_level": "High"
+        },
+        {
+            "id": "D11",
+            "name": "Hemophilia",
+            "severity_level": "High"
+        },
+        {
+            "id": "D12",
+            "name": "Phenylketonuria",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D13",
+            "name": "Familial Hypercholesterolemia",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D14",
+            "name": "IPEX Syndrome",
+            "severity_level": "High"
+        },
+        {
+            "id": "D15",
+            "name": "Cardiovascular Disease",
+            "severity_level": "High"
+        },
+        {
+            "id": "D16",
+            "name": "Inflammatory Bowel Disease",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D17",
+            "name": "Osteoporosis",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D18",
+            "name": "Thrombosis",
+            "severity_level": "High"
+        },
+        {
+            "id": "D19",
+            "name": "Neural Tube Defects",
+            "severity_level": "High"
+        }
+    ],
+    "associations": [
+        {
+            "from": "G0",
+            "to": "D0",
+            "strength": 0.95
+        },
+        {
+            "from": "G0",
+            "to": "D15",
+            "strength": 0.65
+        },
+        {
+            "from": "G0",
+            "to": "D3",
+            "strength": 0.45
+        },
+        {
+            "from": "G1",
+            "to": "D0",
+            "strength": 0.9
+        },
+        {
+            "from": "G1",
+            "to": "D8",
+            "strength": 0.7
+        },
+        {
+            "from": "G1",
+            "to": "D15",
+            "strength": 0.8
+        },
+        {
+            "from": "G2",
+            "to": "D1",
+            "strength": 0.98
+        },
+        {
+            "from": "G2",
+            "to": "D16",
+            "strength": 0.55
+        },
+        {
+            "from": "G2",
+            "to": "D6",
+            "strength": 0.4
+        },
+        {
+            "from": "G3",
+            "to": "D2",
+            "strength": 0.99
+        },
+        {
+            "from": "G3",
+            "to": "D8",
+            "strength": 0.45
+        },
+        {
+            "from": "G4",
+            "to": "D3",
+            "strength": 0.9
+        },
+        {
+            "from": "G4",
+            "to": "D8",
+            "strength": 0.6
+        },
+        {
+            "from": "G4",
+            "to": "D0",
+            "strength": 0.4
+        },
+        {
+            "from": "G5",
+            "to": "D3",
+            "strength": 0.85
+        },
+        {
+            "from": "G5",
+            "to": "D13",
+            "strength": 0.8
+        },
+        {
+            "from": "G5",
+            "to": "D15",
+            "strength": 0.75
+        },
+        {
+            "from": "G5",
+            "to": "D17",
+            "strength": 0.6
+        },
+        {
+            "from": "G6",
+            "to": "D4",
+            "strength": 0.95
+        },
+        {
+            "from": "G6",
+            "to": "D18",
+            "strength": 0.7
+        },
+        {
+            "from": "G6",
+            "to": "D15",
+            "strength": 0.65
+        },
+        {
+            "from": "G7",
+            "to": "D6",
+            "strength": 0.75
+        },
+        {
+            "from": "G7",
+            "to": "D5",
+            "strength": 0.65
+        },
+        {
+            "from": "G7",
+            "to": "D16",
+            "strength": 0.6
+        },
+        {
+            "from": "G8",
+            "to": "D5",
+            "strength": 0.85
+        },
+        {
+            "from": "G8",
+            "to": "D16",
+            "strength": 0.8
+        },
+        {
+            "from": "G8",
+            "to": "D6",
+            "strength": 0.7
+        },
+        {
+            "from": "G8",
+            "to": "D17",
+            "strength": 0.65
+        },
+        {
+            "from": "G9",
+            "to": "D5",
+            "strength": 0.9
+        },
+        {
+            "from": "G9",
+            "to": "D16",
+            "strength": 0.85
+        },
+        {
+            "from": "G9",
+            "to": "D17",
+            "strength": 0.6
+        },
+        {
+            "from": "G10",
+            "to": "D0",
+            "strength": 0.8
+        },
+        {
+            "from": "G10",
+            "to": "D15",
+            "strength": 0.85
+        },
+        {
+            "from": "G10",
+            "to": "D16",
+            "strength": 0.7
+        },
+        {
+            "from": "G11",
+            "to": "D7",
+            "strength": 0.95
+        },
+        {
+            "from": "G11",
+            "to": "D8",
+            "strength": 0.75
+        },
+        {
+            "from": "G11",
+            "to": "D3",
+            "strength": 0.6
+        },
+        {
+            "from": "G12",
+            "to": "D8",
+            "strength": 0.9
+        },
+        {
+            "from": "G12",
+            "to": "D7",
+            "strength": 0.65
+        },
+        {
+            "from": "G12",
+            "to": "D3",
+            "strength": 0.55
+        },
+        {
+            "from": "G13",
+            "to": "D9",
+            "strength": 0.95
+        },
+        {
+            "from": "G13",
+            "to": "D3",
+            "strength": 0.5
+        },
+        {
+            "from": "G13",
+            "to": "D2",
+            "strength": 0.45
+        },
+        {
+            "from": "G14",
+            "to": "D10",
+            "strength": 0.98
+        },
+        {
+            "from": "G14",
+            "to": "D15",
+            "strength": 0.55
+        },
+        {
+            "from": "G14",
+            "to": "D17",
+            "strength": 0.45
+        },
+        {
+            "from": "G15",
+            "to": "D11",
+            "strength": 0.95
+        },
+        {
+            "from": "G15",
+            "to": "D18",
+            "strength": 0.85
+        },
+        {
+            "from": "G16",
+            "to": "D12",
+            "strength": 0.98
+        },
+        {
+            "from": "G16",
+            "to": "D19",
+            "strength": 0.6
+        },
+        {
+            "from": "G16",
+            "to": "D6",
+            "strength": 0.45
+        },
+        {
+            "from": "G17",
+            "to": "D13",
+            "strength": 0.95
+        },
+        {
+            "from": "G17",
+            "to": "D15",
+            "strength": 0.8
+        },
+        {
+            "from": "G17",
+            "to": "D18",
+            "strength": 0.65
+        },
+        {
+            "from": "G18",
+            "to": "D14",
+            "strength": 0.98
+        },
+        {
+            "from": "G18",
+            "to": "D5",
+            "strength": 0.75
+        },
+        {
+            "from": "G18",
+            "to": "D16",
+            "strength": 0.7
+        },
+        {
+            "from": "G19",
+            "to": "D19",
+            "strength": 0.9
+        },
+        {
+            "from": "G19",
+            "to": "D15",
+            "strength": 0.65
+        },
+        {
+            "from": "G19",
+            "to": "D6",
+            "strength": 0.5
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": true,
+                "message": ""
+            },
+            "valid_associations": {
+                "passed": true,
+                "message": ""
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Disease 'D1' has 1 associations; expected between 3 and 10. Disease 'D2' has 2 associations; expected between 3 and 10. Disease 'D4' has 1 associations; expected between 3 and 10. Disease 'D7' has 2 associations; expected between 3 and 10. Disease 'D9' has 1 associations; expected between 3 and 10. Disease 'D10' has 1 associations; expected between 3 and 10. Disease 'D11' has 1 associations; expected between 3 and 10. Disease 'D12' has 1 associations; expected between 3 and 10. Disease 'D13' has 2 associations; expected between 3 and 10. Disease 'D14' has 1 associations; expected between 3 and 10. Disease 'D19' has 2 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": true,
+                "message": ""
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Degree Constraints Check Failed."
+        ]
+    }
+}

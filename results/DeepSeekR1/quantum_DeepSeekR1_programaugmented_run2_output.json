@@ -1,0 +1,85 @@
+{
+    "circuit": [
+        {
+            "gate": "H",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q2"
+            ],
+            "time": 2
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q3"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q0",
+                "Q3"
+            ],
+            "time": 4
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q1"
+            ],
+            "time": 5
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q1"
+            ],
+            "time": 6
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q2"
+            ],
+            "time": 7
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q0",
+                "Q2",
+                "Q3"
+            ],
+            "time": 8
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "valid_output_structure": false,
+        "valid_gate_types": true,
+        "valid_qubits": true,
+        "valid_dag": true,
+        "valid_gate_precedences": true,
+        "valid_cnot_adjacency": true,
+        "valid_swap_constraints": true,
+        "valid_measurements": true,
+        "valid_gate_restrictions": true,
+        "layered_operations": true,
+        "depth_constraint": true,
+        "gate_optimization": true,
+        "final_state_compliance": true,
+        "errors": [
+            "CNOT gate at index 1 must operate on exactly two qubits.",
+            "Measure gate at index 3 must operate on exactly one qubit.",
+            "CNOT gate at index 5 must operate on exactly two qubits.",
+            "Measure gate at index 7 must operate on exactly one qubit."
+        ]
+    }
+}

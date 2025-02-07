@@ -1,0 +1,279 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "BRCA1",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G1",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G2",
+            "name": "PMS2",
+            "function": "DNA mismatch repair"
+        },
+        {
+            "id": "G3",
+            "name": "CHEK2",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G4",
+            "name": "CDH1",
+            "function": "Adhesion molecule"
+        },
+        {
+            "id": "G5",
+            "name": "NF1",
+            "function": "Ras superfamily GTPase"
+        },
+        {
+            "id": "G6",
+            "name": "SMAD2",
+            "function": "TGF-beta signaling pathway"
+        },
+        {
+            "id": "G7",
+            "name": "SMAD3",
+            "function": "TGF-beta signaling pathway"
+        },
+        {
+            "id": "G8",
+            "name": "SMAD4",
+            "function": "TGF-beta signaling pathway"
+        },
+        {
+            "id": "G9",
+            "name": "PTEN",
+            "function": "Cellular phosphatase"
+        },
+        {
+            "id": "G10",
+            "name": "RB1",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G11",
+            "name": "CDKN2A",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G12",
+            "name": "VHL",
+            "function": "Hypoxia-inducible factor"
+        },
+        {
+            "id": "G13",
+            "name": "GLI1",
+            "function": "Hedgehog signaling pathway"
+        },
+        {
+            "id": "G14",
+            "name": "SMAD7",
+            "function": "TGF-beta signaling pathway"
+        },
+        {
+            "id": "G15",
+            "name": "NFE2L2",
+            "function": "Nrf2 transcription factor"
+        },
+        {
+            "id": "G16",
+            "name": "TP63",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G17",
+            "name": "KDM6A",
+            "function": "Histone modification"
+        },
+        {
+            "id": "G18",
+            "name": "ZNF335B",
+            "function": "Transcription factor"
+        },
+        {
+            "id": "G19",
+            "name": "ARID1A",
+            "function": "DNA binding protein"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Breast Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D1",
+            "name": "Lung Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D2",
+            "name": "Colorectal Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D3",
+            "name": "Prostate Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D4",
+            "name": "Pancreatic Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D5",
+            "name": "Brain Tumor",
+            "severity_level": "High"
+        },
+        {
+            "id": "D6",
+            "name": "Ovarian Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D7",
+            "name": "Melanoma",
+            "severity_level": "High"
+        },
+        {
+            "id": "D8",
+            "name": "Kidney Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D9",
+            "name": "Liver Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D10",
+            "name": "Squamous Cell Carcinoma",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D11",
+            "name": "Basal Cell Carcinoma",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D12",
+            "name": "Adrenal Cancer",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D13",
+            "name": "Thyroid Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D14",
+            "name": "Esophageal Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D15",
+            "name": "Gastrointestinal Stromal Tumor",
+            "severity_level": "Low"
+        }
+    ],
+    "associations": [
+        {
+            "from": "G0",
+            "to": "D0",
+            "strength": 0.85
+        },
+        {
+            "from": "G0",
+            "to": "D2",
+            "strength": 0.6
+        },
+        {
+            "from": "G1",
+            "to": "D0",
+            "strength": 0.9
+        },
+        {
+            "from": "G1",
+            "to": "D4",
+            "strength": 0.7
+        },
+        {
+            "from": "G2",
+            "to": "D6",
+            "strength": 0.8
+        },
+        {
+            "from": "G3",
+            "to": "D8",
+            "strength": 0.75
+        },
+        {
+            "from": "G4",
+            "to": "D9",
+            "strength": 0.65
+        },
+        {
+            "from": "G5",
+            "to": "D10",
+            "strength": 0.6
+        },
+        {
+            "from": "G6",
+            "to": "D11",
+            "strength": 0.85
+        },
+        {
+            "from": "G7",
+            "to": "D12",
+            "strength": 0.7
+        },
+        {
+            "from": "G8",
+            "to": "D13",
+            "strength": 0.8
+        },
+        {
+            "from": "G9",
+            "to": "D14",
+            "strength": 0.75
+        },
+        {
+            "from": "G10",
+            "to": "D15",
+            "strength": 0.9
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": false,
+                "message": "diseases count is 16; expected 20."
+            },
+            "valid_associations": {
+                "passed": true,
+                "message": ""
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Gene 'G2' has 1 associations; expected between 2 and 5. Gene 'G3' has 1 associations; expected between 2 and 5. Gene 'G4' has 1 associations; expected between 2 and 5. Gene 'G5' has 1 associations; expected between 2 and 5. Gene 'G6' has 1 associations; expected between 2 and 5. Gene 'G7' has 1 associations; expected between 2 and 5. Gene 'G8' has 1 associations; expected between 2 and 5. Gene 'G9' has 1 associations; expected between 2 and 5. Gene 'G10' has 1 associations; expected between 2 and 5. Gene 'G11' has 0 associations; expected between 2 and 5. Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D0' has 2 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 1 associations; expected between 3 and 10. Disease 'D3' has 0 associations; expected between 3 and 10. Disease 'D4' has 1 associations; expected between 3 and 10. Disease 'D5' has 0 associations; expected between 3 and 10. Disease 'D6' has 1 associations; expected between 3 and 10. Disease 'D7' has 0 associations; expected between 3 and 10. Disease 'D8' has 1 associations; expected between 3 and 10. Disease 'D9' has 1 associations; expected between 3 and 10. Disease 'D10' has 1 associations; expected between 3 and 10. Disease 'D11' has 1 associations; expected between 3 and 10. Disease 'D12' has 1 associations; expected between 3 and 10. Disease 'D13' has 1 associations; expected between 3 and 10. Disease 'D14' has 1 associations; expected between 3 and 10. Disease 'D15' has 1 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": true,
+                "message": ""
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Defined Counts Check Failed.",
+            "Degree Constraints Check Failed."
+        ]
+    }
+}
