@@ -1,0 +1,531 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "Gene0",
+            "function": "Function0"
+        },
+        {
+            "id": "G1",
+            "name": "Gene1",
+            "function": "Function1"
+        },
+        {
+            "id": "G2",
+            "name": "Gene2",
+            "function": "Function2"
+        },
+        {
+            "id": "G3",
+            "name": "Gene3",
+            "function": "Function3"
+        },
+        {
+            "id": "G4",
+            "name": "Gene4",
+            "function": "Function4"
+        },
+        {
+            "id": "G5",
+            "name": "Gene5",
+            "function": "Function5"
+        },
+        {
+            "id": "G6",
+            "name": "Gene6",
+            "function": "Function6"
+        },
+        {
+            "id": "G7",
+            "name": "Gene7",
+            "function": "Function7"
+        },
+        {
+            "id": "G8",
+            "name": "Gene8",
+            "function": "Function8"
+        },
+        {
+            "id": "G9",
+            "name": "Gene9",
+            "function": "Function9"
+        },
+        {
+            "id": "G10",
+            "name": "Gene10",
+            "function": "Function10"
+        },
+        {
+            "id": "G11",
+            "name": "Gene11",
+            "function": "Function11"
+        },
+        {
+            "id": "G12",
+            "name": "Gene12",
+            "function": "Function12"
+        },
+        {
+            "id": "G13",
+            "name": "Gene13",
+            "function": "Function13"
+        },
+        {
+            "id": "G14",
+            "name": "Gene14",
+            "function": "Function14"
+        },
+        {
+            "id": "G15",
+            "name": "Gene15",
+            "function": "Function15"
+        },
+        {
+            "id": "G16",
+            "name": "Gene16",
+            "function": "Function16"
+        },
+        {
+            "id": "G17",
+            "name": "Gene17",
+            "function": "Function17"
+        },
+        {
+            "id": "G18",
+            "name": "Gene18",
+            "function": "Function18"
+        },
+        {
+            "id": "G19",
+            "name": "Gene19",
+            "function": "Function19"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Disease0",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D1",
+            "name": "Disease1",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D2",
+            "name": "Disease2",
+            "severity_level": "High"
+        },
+        {
+            "id": "D3",
+            "name": "Disease3",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D4",
+            "name": "Disease4",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D5",
+            "name": "Disease5",
+            "severity_level": "High"
+        },
+        {
+            "id": "D6",
+            "name": "Disease6",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D7",
+            "name": "Disease7",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D8",
+            "name": "Disease8",
+            "severity_level": "High"
+        },
+        {
+            "id": "D9",
+            "name": "Disease9",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D10",
+            "name": "Disease10",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D11",
+            "name": "Disease11",
+            "severity_level": "High"
+        },
+        {
+            "id": "D12",
+            "name": "Disease12",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D13",
+            "name": "Disease13",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D14",
+            "name": "Disease14",
+            "severity_level": "High"
+        },
+        {
+            "id": "D15",
+            "name": "Disease15",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D16",
+            "name": "Disease16",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D17",
+            "name": "Disease17",
+            "severity_level": "High"
+        },
+        {
+            "id": "D18",
+            "name": "Disease18",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D19",
+            "name": "Disease19",
+            "severity_level": "Medium"
+        }
+    ],
+    "associations": [
+        {
+            "from": "G0",
+            "to": "D0",
+            "strength": 0.0
+        },
+        {
+            "from": "G1",
+            "to": "D0",
+            "strength": 0.04
+        },
+        {
+            "from": "G2",
+            "to": "D0",
+            "strength": 0.08
+        },
+        {
+            "from": "G1",
+            "to": "D1",
+            "strength": 0.04
+        },
+        {
+            "from": "G2",
+            "to": "D1",
+            "strength": 0.08
+        },
+        {
+            "from": "G3",
+            "to": "D1",
+            "strength": 0.12
+        },
+        {
+            "from": "G2",
+            "to": "D2",
+            "strength": 0.08
+        },
+        {
+            "from": "G3",
+            "to": "D2",
+            "strength": 0.12
+        },
+        {
+            "from": "G4",
+            "to": "D2",
+            "strength": 0.16
+        },
+        {
+            "from": "G3",
+            "to": "D3",
+            "strength": 0.12
+        },
+        {
+            "from": "G4",
+            "to": "D3",
+            "strength": 0.16
+        },
+        {
+            "from": "G5",
+            "to": "D3",
+            "strength": 0.2
+        },
+        {
+            "from": "G4",
+            "to": "D4",
+            "strength": 0.16
+        },
+        {
+            "from": "G5",
+            "to": "D4",
+            "strength": 0.2
+        },
+        {
+            "from": "G6",
+            "to": "D4",
+            "strength": 0.24
+        },
+        {
+            "from": "G5",
+            "to": "D5",
+            "strength": 0.2
+        },
+        {
+            "from": "G6",
+            "to": "D5",
+            "strength": 0.24
+        },
+        {
+            "from": "G7",
+            "to": "D5",
+            "strength": 0.28
+        },
+        {
+            "from": "G6",
+            "to": "D6",
+            "strength": 0.24
+        },
+        {
+            "from": "G7",
+            "to": "D6",
+            "strength": 0.28
+        },
+        {
+            "from": "G8",
+            "to": "D6",
+            "strength": 0.32
+        },
+        {
+            "from": "G7",
+            "to": "D7",
+            "strength": 0.28
+        },
+        {
+            "from": "G8",
+            "to": "D7",
+            "strength": 0.32
+        },
+        {
+            "from": "G9",
+            "to": "D7",
+            "strength": 0.36
+        },
+        {
+            "from": "G8",
+            "to": "D8",
+            "strength": 0.32
+        },
+        {
+            "from": "G9",
+            "to": "D8",
+            "strength": 0.36
+        },
+        {
+            "from": "G10",
+            "to": "D8",
+            "strength": 0.4
+        },
+        {
+            "from": "G9",
+            "to": "D9",
+            "strength": 0.36
+        },
+        {
+            "from": "G10",
+            "to": "D9",
+            "strength": 0.4
+        },
+        {
+            "from": "G11",
+            "to": "D9",
+            "strength": 0.44
+        },
+        {
+            "from": "G10",
+            "to": "D10",
+            "strength": 0.4
+        },
+        {
+            "from": "G11",
+            "to": "D10",
+            "strength": 0.44
+        },
+        {
+            "from": "G12",
+            "to": "D10",
+            "strength": 0.48
+        },
+        {
+            "from": "G11",
+            "to": "D11",
+            "strength": 0.44
+        },
+        {
+            "from": "G12",
+            "to": "D11",
+            "strength": 0.48
+        },
+        {
+            "from": "G13",
+            "to": "D11",
+            "strength": 0.52
+        },
+        {
+            "from": "G12",
+            "to": "D12",
+            "strength": 0.48
+        },
+        {
+            "from": "G13",
+            "to": "D12",
+            "strength": 0.52
+        },
+        {
+            "from": "G14",
+            "to": "D12",
+            "strength": 0.56
+        },
+        {
+            "from": "G13",
+            "to": "D13",
+            "strength": 0.52
+        },
+        {
+            "from": "G14",
+            "to": "D13",
+            "strength": 0.56
+        },
+        {
+            "from": "G15",
+            "to": "D13",
+            "strength": 0.6
+        },
+        {
+            "from": "G14",
+            "to": "D14",
+            "strength": 0.56
+        },
+        {
+            "from": "G15",
+            "to": "D14",
+            "strength": 0.6
+        },
+        {
+            "from": "G16",
+            "to": "D14",
+            "strength": 0.64
+        },
+        {
+            "from": "G15",
+            "to": "D15",
+            "strength": 0.6
+        },
+        {
+            "from": "G16",
+            "to": "D15",
+            "strength": 0.64
+        },
+        {
+            "from": "G17",
+            "to": "D15",
+            "strength": 0.68
+        },
+        {
+            "from": "G16",
+            "to": "D16",
+            "strength": 0.64
+        },
+        {
+            "from": "G17",
+            "to": "D16",
+            "strength": 0.68
+        },
+        {
+            "from": "G18",
+            "to": "D16",
+            "strength": 0.72
+        },
+        {
+            "from": "G17",
+            "to": "D17",
+            "strength": 0.68
+        },
+        {
+            "from": "G18",
+            "to": "D17",
+            "strength": 0.72
+        },
+        {
+            "from": "G19",
+            "to": "D17",
+            "strength": 0.76
+        },
+        {
+            "from": "G18",
+            "to": "D18",
+            "strength": 0.72
+        },
+        {
+            "from": "G19",
+            "to": "D18",
+            "strength": 0.76
+        },
+        {
+            "from": "G0",
+            "to": "D18",
+            "strength": 0.8
+        },
+        {
+            "from": "G19",
+            "to": "D19",
+            "strength": 0.76
+        },
+        {
+            "from": "G0",
+            "to": "D19",
+            "strength": 0.8
+        },
+        {
+            "from": "G1",
+            "to": "D19",
+            "strength": 0.84
+        }
+    ],
+    "result": true,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": true,
+                "message": ""
+            },
+            "valid_associations": {
+                "passed": true,
+                "message": ""
+            },
+            "degree_constraints": {
+                "passed": true,
+                "message": ""
+            },
+            "duplicate_associations": {
+                "passed": true,
+                "message": ""
+            }
+        },
+        "overall_passed": true,
+        "errors": []
+    }
+}
