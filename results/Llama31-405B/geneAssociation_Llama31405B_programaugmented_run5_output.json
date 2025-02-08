@@ -1,0 +1,533 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "BRCA1",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G1",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G2",
+            "name": "PTEN",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G3",
+            "name": "RB1",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G4",
+            "name": "APC",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G5",
+            "name": "KRAS",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G6",
+            "name": "BRAF",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G7",
+            "name": "PIK3CA",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G8",
+            "name": "AKT1",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G9",
+            "name": "EGFR",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G10",
+            "name": "HER2",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G11",
+            "name": "CDKN2A",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G12",
+            "name": "CDK4",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G13",
+            "name": "CCND1",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G14",
+            "name": "CDK6",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G15",
+            "name": "SMAD4",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G16",
+            "name": "SMAD2",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G17",
+            "name": "SMAD3",
+            "function": "Cell signaling"
+        },
+        {
+            "id": "G18",
+            "name": "TP63",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G19",
+            "name": "TP73",
+            "function": "Tumor suppression"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Breast Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D1",
+            "name": "Lung Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D2",
+            "name": "Colorectal Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D3",
+            "name": "Prostate Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D4",
+            "name": "Skin Cancer",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D5",
+            "name": "Ovarian Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D6",
+            "name": "Pancreatic Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D7",
+            "name": "Liver Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D8",
+            "name": "Stomach Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D9",
+            "name": "Esophageal Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D10",
+            "name": "Thyroid Cancer",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D11",
+            "name": "Kidney Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D12",
+            "name": "Bladder Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D13",
+            "name": "Brain Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D14",
+            "name": "Leukemia",
+            "severity_level": "High"
+        },
+        {
+            "id": "D15",
+            "name": "Lymphoma",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D16",
+            "name": "Melanoma",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D17",
+            "name": "Sarcoma",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D18",
+            "name": "Glioma",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D19",
+            "name": "Cervical Cancer",
+            "severity_level": "Medium"
+        }
+    ],
+    "associations": [
+        {
+            "from": "G0",
+            "to": "D0",
+            "strength": 0.85
+        },
+        {
+            "from": "G0",
+            "to": "D2",
+            "strength": 0.6
+        },
+        {
+            "from": "G0",
+            "to": "D5",
+            "strength": 0.7
+        },
+        {
+            "from": "G1",
+            "to": "D0",
+            "strength": 0.9
+        },
+        {
+            "from": "G1",
+            "to": "D1",
+            "strength": 0.8
+        },
+        {
+            "from": "G1",
+            "to": "D3",
+            "strength": 0.75
+        },
+        {
+            "from": "G2",
+            "to": "D1",
+            "strength": 0.85
+        },
+        {
+            "from": "G2",
+            "to": "D4",
+            "strength": 0.65
+        },
+        {
+            "from": "G2",
+            "to": "D6",
+            "strength": 0.7
+        },
+        {
+            "from": "G3",
+            "to": "D2",
+            "strength": 0.8
+        },
+        {
+            "from": "G3",
+            "to": "D7",
+            "strength": 0.75
+        },
+        {
+            "from": "G3",
+            "to": "D8",
+            "strength": 0.7
+        },
+        {
+            "from": "G4",
+            "to": "D3",
+            "strength": 0.85
+        },
+        {
+            "from": "G4",
+            "to": "D9",
+            "strength": 0.8
+        },
+        {
+            "from": "G4",
+            "to": "D10",
+            "strength": 0.75
+        },
+        {
+            "from": "G5",
+            "to": "D4",
+            "strength": 0.9
+        },
+        {
+            "from": "G5",
+            "to": "D11",
+            "strength": 0.85
+        },
+        {
+            "from": "G5",
+            "to": "D12",
+            "strength": 0.8
+        },
+        {
+            "from": "G6",
+            "to": "D5",
+            "strength": 0.95
+        },
+        {
+            "from": "G6",
+            "to": "D13",
+            "strength": 0.9
+        },
+        {
+            "from": "G6",
+            "to": "D14",
+            "strength": 0.85
+        },
+        {
+            "from": "G7",
+            "to": "D6",
+            "strength": 0.9
+        },
+        {
+            "from": "G7",
+            "to": "D15",
+            "strength": 0.85
+        },
+        {
+            "from": "G7",
+            "to": "D16",
+            "strength": 0.8
+        },
+        {
+            "from": "G8",
+            "to": "D7",
+            "strength": 0.95
+        },
+        {
+            "from": "G8",
+            "to": "D17",
+            "strength": 0.9
+        },
+        {
+            "from": "G8",
+            "to": "D18",
+            "strength": 0.85
+        },
+        {
+            "from": "G9",
+            "to": "D8",
+            "strength": 0.9
+        },
+        {
+            "from": "G9",
+            "to": "D19",
+            "strength": 0.85
+        },
+        {
+            "from": "G9",
+            "to": "D0",
+            "strength": 0.8
+        },
+        {
+            "from": "G10",
+            "to": "D9",
+            "strength": 0.95
+        },
+        {
+            "from": "G10",
+            "to": "D1",
+            "strength": 0.9
+        },
+        {
+            "from": "G10",
+            "to": "D2",
+            "strength": 0.85
+        },
+        {
+            "from": "G11",
+            "to": "D10",
+            "strength": 0.9
+        },
+        {
+            "from": "G11",
+            "to": "D3",
+            "strength": 0.85
+        },
+        {
+            "from": "G11",
+            "to": "D4",
+            "strength": 0.8
+        },
+        {
+            "from": "G12",
+            "to": "D11",
+            "strength": 0.95
+        },
+        {
+            "from": "G12",
+            "to": "D5",
+            "strength": 0.9
+        },
+        {
+            "from": "G12",
+            "to": "D6",
+            "strength": 0.85
+        },
+        {
+            "from": "G13",
+            "to": "D12",
+            "strength": 0.9
+        },
+        {
+            "from": "G13",
+            "to": "D7",
+            "strength": 0.85
+        },
+        {
+            "from": "G13",
+            "to": "D8",
+            "strength": 0.8
+        },
+        {
+            "from": "G14",
+            "to": "D13",
+            "strength": 0.95
+        },
+        {
+            "from": "G14",
+            "to": "D9",
+            "strength": 0.9
+        },
+        {
+            "from": "G14",
+            "to": "D10",
+            "strength": 0.85
+        },
+        {
+            "from": "G15",
+            "to": "D14",
+            "strength": 0.9
+        },
+        {
+            "from": "G15",
+            "to": "D1",
+            "strength": 0.85
+        },
+        {
+            "from": "G15",
+            "to": "D2",
+            "strength": 0.8
+        },
+        {
+            "from": "G16",
+            "to": "D15",
+            "strength": 0.95
+        },
+        {
+            "from": "G16",
+            "to": "D3",
+            "strength": 0.9
+        },
+        {
+            "from": "G16",
+            "to": "D4",
+            "strength": 0.85
+        },
+        {
+            "from": "G17",
+            "to": "D16",
+            "strength": 0.9
+        },
+        {
+            "from": "G17",
+            "to": "D5",
+            "strength": 0.85
+        },
+        {
+            "from": "G17",
+            "to": "D6",
+            "strength": 0.8
+        },
+        {
+            "from": "G18",
+            "to": "D17",
+            "strength": 0.95
+        },
+        {
+            "from": "G18",
+            "to": "D7",
+            "strength": 0.9
+        },
+        {
+            "from": "G18",
+            "to": "D8",
+            "strength": 0.85
+        },
+        {
+            "from": "G19",
+            "to": "D18",
+            "strength": 0.9
+        },
+        {
+            "from": "G19",
+            "to": "D9",
+            "strength": 0.85
+        },
+        {
+            "from": "G19",
+            "to": "D10",
+            "strength": 0.8
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": true,
+                "message": ""
+            },
+            "valid_associations": {
+                "passed": true,
+                "message": ""
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Disease 'D11' has 2 associations; expected between 3 and 10. Disease 'D12' has 2 associations; expected between 3 and 10. Disease 'D13' has 2 associations; expected between 3 and 10. Disease 'D14' has 2 associations; expected between 3 and 10. Disease 'D15' has 2 associations; expected between 3 and 10. Disease 'D16' has 2 associations; expected between 3 and 10. Disease 'D17' has 2 associations; expected between 3 and 10. Disease 'D18' has 2 associations; expected between 3 and 10. Disease 'D19' has 1 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": true,
+                "message": ""
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Degree Constraints Check Failed."
+        ]
+    }
+}

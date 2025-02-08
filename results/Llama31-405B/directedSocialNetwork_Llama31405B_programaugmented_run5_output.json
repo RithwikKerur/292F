@@ -1,0 +1,197 @@
+{
+    "users": [
+        {
+            "id": "U0",
+            "trust_score": 90,
+            "category": "celebrity"
+        },
+        {
+            "id": "U1",
+            "trust_score": 40,
+            "category": "regular"
+        },
+        {
+            "id": "U2",
+            "trust_score": 75,
+            "category": "expert"
+        },
+        {
+            "id": "U3",
+            "trust_score": 30,
+            "category": "regular"
+        },
+        {
+            "id": "U4",
+            "trust_score": 85,
+            "category": "celebrity"
+        },
+        {
+            "id": "U5",
+            "trust_score": 20,
+            "category": "regular"
+        },
+        {
+            "id": "U6",
+            "trust_score": 70,
+            "category": "expert"
+        },
+        {
+            "id": "U7",
+            "trust_score": 50,
+            "category": "regular"
+        },
+        {
+            "id": "U8",
+            "trust_score": 95,
+            "category": "celebrity"
+        },
+        {
+            "id": "U9",
+            "trust_score": 10,
+            "category": "regular"
+        },
+        {
+            "id": "U10",
+            "trust_score": 80,
+            "category": "celebrity"
+        },
+        {
+            "id": "U11",
+            "trust_score": 25,
+            "category": "regular"
+        },
+        {
+            "id": "U12",
+            "trust_score": 65,
+            "category": "expert"
+        },
+        {
+            "id": "U13",
+            "trust_score": 45,
+            "category": "regular"
+        },
+        {
+            "id": "U14",
+            "trust_score": 60,
+            "category": "expert"
+        },
+        {
+            "id": "U15",
+            "trust_score": 35,
+            "category": "regular"
+        },
+        {
+            "id": "U16",
+            "trust_score": 55,
+            "category": "regular"
+        },
+        {
+            "id": "U17",
+            "trust_score": 15,
+            "category": "regular"
+        },
+        {
+            "id": "U18",
+            "trust_score": 5,
+            "category": "regular"
+        },
+        {
+            "id": "U19",
+            "trust_score": 65,
+            "category": "expert"
+        }
+    ],
+    "edges": [
+        {
+            "from": "U0",
+            "to": "U1"
+        },
+        {
+            "from": "U0",
+            "to": "U2"
+        },
+        {
+            "from": "U0",
+            "to": "U3"
+        },
+        {
+            "from": "U0",
+            "to": "U4"
+        },
+        {
+            "from": "U0",
+            "to": "U5"
+        },
+        {
+            "from": "U4",
+            "to": "U6"
+        },
+        {
+            "from": "U4",
+            "to": "U7"
+        },
+        {
+            "from": "U4",
+            "to": "U8"
+        },
+        {
+            "from": "U4",
+            "to": "U9"
+        },
+        {
+            "from": "U4",
+            "to": "U10"
+        },
+        {
+            "from": "U8",
+            "to": "U11"
+        },
+        {
+            "from": "U8",
+            "to": "U12"
+        },
+        {
+            "from": "U8",
+            "to": "U13"
+        },
+        {
+            "from": "U8",
+            "to": "U14"
+        },
+        {
+            "from": "U8",
+            "to": "U15"
+        },
+        {
+            "from": "U10",
+            "to": "U16"
+        },
+        {
+            "from": "U10",
+            "to": "U17"
+        },
+        {
+            "from": "U10",
+            "to": "U18"
+        },
+        {
+            "from": "U10",
+            "to": "U19"
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "valid_no_self_loops": true,
+        "valid_celebrity_outgoing": false,
+        "valid_regular_to_expert": true,
+        "valid_acyclic": true,
+        "valid_user_attributes": true,
+        "valid_edge_structure": true,
+        "valid_total_users": true,
+        "valid_categories": true,
+        "valid_trust_scores": true,
+        "errors": [
+            "Celebrity 'U10' has 4 outgoing edges; expected at least 5."
+        ]
+    }
+}
