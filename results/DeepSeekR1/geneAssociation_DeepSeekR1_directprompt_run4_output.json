@@ -1,0 +1,348 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "BRCA1",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G1",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G2",
+            "name": "EGFR",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G3",
+            "name": "PIK3CA",
+            "function": "Cancer signaling pathways"
+        },
+        {
+            "id": "G4",
+            "name": "FGFR2",
+            "function": "Tumor progression"
+        },
+        {
+            "id": "G5",
+            "name": "EGF",
+            "function": "Cell proliferation"
+        },
+        {
+            "id": "G6",
+            "name": "NF-\u03baB",
+            "function": "Immune response and inflammation"
+        },
+        {
+            "id": "G7",
+            "name": "Rb",
+            "function": "Cell cycle control"
+        },
+        {
+            "id": "G8",
+            "name": "MYC",
+            "function": "Unregulated cell cycle progression"
+        },
+        {
+            "id": "G9",
+            "name": "PI3K",
+            "function": "Metabolic regulation in cancer cells"
+        },
+        {
+            "id": "G10",
+            "name": "MAPK/ERK",
+            "function": "Cell signaling and proliferation"
+        },
+        {
+            "id": "G11",
+            "name": "STAT3",
+            "function": "Immune response and inflammation"
+        },
+        {
+            "id": "G12",
+            "name": "EGFRe",
+            "function": "Tumor invasion and metastasis"
+        },
+        {
+            "id": "G13",
+            "name": "CDKN1A (p53)",
+            "function": "Apoptosis, DNA repair, and cell cycle control"
+        },
+        {
+            "id": "G14",
+            "name": "CCND1",
+            "function": "Cell proliferation and spindle assembly"
+        },
+        {
+            "id": "G15",
+            "name": "BRAF",
+            "function": "Cancer signaling pathways (MAPK/ERK)"
+        },
+        {
+            "id": "G16",
+            "name": "MET",
+            "function": "Tumor invasion, invasion angle, and migration capability"
+        },
+        {
+            "id": "G17",
+            "name": "PDGFRA",
+            "function": "Vascular sprouting and tumor growth promotion"
+        },
+        {
+            "id": "G18",
+            "name": "SMAD4",
+            "function": "Immune response and inflammation via VEGF signaling"
+        },
+        {
+            "id": "G19",
+            "name": "HSPA5",
+            "function": "Protease regulation in extracellular matrix remodeling"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Breast Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D1",
+            "name": "Lung Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D2",
+            "name": "Ovarian Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D3",
+            "name": "Prostate Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D4",
+            "name": "Cervical Cancer",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D5",
+            "name": "Pancreatic Cancer",
+            "severity_level": "Low"
+        },
+        {
+            "id": "D6",
+            "name": "Melanoma",
+            "severity_level": "High"
+        },
+        {
+            "id": "D7",
+            "name": " Hodgkin lymphoma",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D8",
+            "name": "Non-Hodgkin lymphoma",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D9",
+            "name": "Acute myeloid leukemia",
+            "severity_level": "High"
+        },
+        {
+            "id": "D10",
+            "name": "Chronic lymphocytic leukemia",
+            "severity_level": "High"
+        },
+        {
+            "id": "D11",
+            "name": "Myelodysplasia",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D12",
+            "name": "Multiple myeloma",
+            "severity_level": "High"
+        },
+        {
+            "id": "D13",
+            "name": "Myelophthisic macrocellular leukemia",
+            "severity_level": "High"
+        },
+        {
+            "id": "D14",
+            "name": "Follicular lymphoma non-HL",
+            "severity_level": "Medium"
+        },
+        {
+            "id": "D15",
+            "name": "B cell chronic lymphocytic leukemia",
+            "severity_level": "High"
+        },
+        {
+            "id": "D16",
+            "name": "Large B-cell lymphoma",
+            "severity_level": "High"
+        },
+        {
+            "id": "D17",
+            "name": " mantle cell lymphoma",
+            "severity_level": "High"
+        },
+        {
+            "id": "D18",
+            "name": " mantle cell lymphoma",
+            "severity_level": "High"
+        },
+        {
+            "id": "D19",
+            "name": " mantle cell lymphoma",
+            "severity_level": "High"
+        }
+    ],
+    "associations": [
+        {
+            "from": "G0",
+            "to": "D0",
+            "strength": 0.85
+        },
+        {
+            "from": "G0",
+            "to": "D2",
+            "strength": 0.75
+        },
+        {
+            "from": "G1",
+            "to": "D1",
+            "strength": 0.92
+        },
+        {
+            "from": "G1",
+            "to": "D3",
+            "strength": 0.88
+        },
+        {
+            "from": "G2",
+            "to": "D4",
+            "strength": 0.67
+        },
+        {
+            "from": "G2",
+            "to": "D5",
+            "strength": 0.55
+        },
+        {
+            "from": "G3",
+            "to": "D6",
+            "strength": 0.91
+        },
+        {
+            "from": "G4",
+            "to": "D7",
+            "strength": 0.84
+        },
+        {
+            "from": "G5",
+            "to": "D8",
+            "strength": 0.82
+        },
+        {
+            "from": "G6",
+            "to": "D7",
+            "strength": 0.79
+        },
+        {
+            "from": "G7",
+            "to": "D9",
+            "strength": 0.91
+        },
+        {
+            "from": "G8",
+            "to": "D10",
+            "strength": 0.86
+        },
+        {
+            "from": "G9",
+            "to": "D4",
+            "strength": 0.73
+        },
+        {
+            "from": "G10",
+            "to": "D5",
+            "strength": 0.61
+        },
+        {
+            "from": "G11",
+            "to": "D2",
+            "strength": 0.89
+        },
+        {
+            "from": "G12",
+            "to": "D3",
+            "strength": 0.76
+        },
+        {
+            "from": "G13",
+            "to": "D4",
+            "strength": 0.59
+        },
+        {
+            "from": "G14",
+            "to": "D5",
+            "strength": 0.48
+        },
+        {
+            "from": "G15",
+            "to": "D6",
+            "strength": 0.72
+        },
+        {
+            "from": "G16",
+            "to": "D7",
+            "strength": 0.65
+        },
+        {
+            "from": "G17",
+            "to": "D8",
+            "strength": 0.59
+        },
+        {
+            "from": "G18",
+            "to": "D9",
+            "strength": 0.43
+        },
+        {
+            "from": "G19",
+            "to": "D6",
+            "strength": 0.37
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": true,
+                "message": ""
+            },
+            "valid_associations": {
+                "passed": true,
+                "message": ""
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Gene 'G3' has 1 associations; expected between 2 and 5. Gene 'G4' has 1 associations; expected between 2 and 5. Gene 'G5' has 1 associations; expected between 2 and 5. Gene 'G6' has 1 associations; expected between 2 and 5. Gene 'G7' has 1 associations; expected between 2 and 5. Gene 'G8' has 1 associations; expected between 2 and 5. Gene 'G9' has 1 associations; expected between 2 and 5. Gene 'G10' has 1 associations; expected between 2 and 5. Gene 'G11' has 1 associations; expected between 2 and 5. Gene 'G12' has 1 associations; expected between 2 and 5. Gene 'G13' has 1 associations; expected between 2 and 5. Gene 'G14' has 1 associations; expected between 2 and 5. Gene 'G15' has 1 associations; expected between 2 and 5. Gene 'G16' has 1 associations; expected between 2 and 5. Gene 'G17' has 1 associations; expected between 2 and 5. Gene 'G18' has 1 associations; expected between 2 and 5. Gene 'G19' has 1 associations; expected between 2 and 5. Disease 'D0' has 1 associations; expected between 3 and 10. Disease 'D1' has 1 associations; expected between 3 and 10. Disease 'D2' has 2 associations; expected between 3 and 10. Disease 'D3' has 2 associations; expected between 3 and 10. Disease 'D8' has 2 associations; expected between 3 and 10. Disease 'D9' has 2 associations; expected between 3 and 10. Disease 'D10' has 1 associations; expected between 3 and 10. Disease 'D11' has 0 associations; expected between 3 and 10. Disease 'D12' has 0 associations; expected between 3 and 10. Disease 'D13' has 0 associations; expected between 3 and 10. Disease 'D14' has 0 associations; expected between 3 and 10. Disease 'D15' has 0 associations; expected between 3 and 10. Disease 'D16' has 0 associations; expected between 3 and 10. Disease 'D17' has 0 associations; expected between 3 and 10. Disease 'D18' has 0 associations; expected between 3 and 10. Disease 'D19' has 0 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": true,
+                "message": ""
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Degree Constraints Check Failed."
+        ]
+    }
+}

@@ -1,0 +1,405 @@
+{
+    "genes": [
+        {
+            "id": "G0",
+            "name": "BRCA1",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G1",
+            "name": "TP53",
+            "function": "Tumor suppression"
+        },
+        {
+            "id": "G2",
+            "name": "EGFR",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G3",
+            "name": "PIK3CA",
+            "function": "Cancer signaling"
+        },
+        {
+            "id": "G4",
+            "name": "BRCA2",
+            "function": "DNA repair"
+        },
+        {
+            "id": "G5",
+            "name": "RB1",
+            "function": "Cell cycle arrest"
+        },
+        {
+            "id": "G6",
+            "name": "SMAD4",
+            "function": "Signaling cascade"
+        },
+        {
+            "id": "G7",
+            "name": "EGF",
+            "function": "Signal transduction"
+        },
+        {
+            "id": "G8",
+            "name": "HER2",
+            "function": "Protein modification"
+        },
+        {
+            "id": "G9",
+            "name": "PDGFRA",
+            "function": "Tumor growth"
+        },
+        {
+            "id": "G10",
+            "name": "VEGF",
+            "function": "Angiogenesis"
+        },
+        {
+            "id": "G11",
+            "name": "MAPKAPK2",
+            "function": "Signaling cascade"
+        },
+        {
+            "id": "G12",
+            "name": "MYC",
+            "function": "Cell cycle progression"
+        },
+        {
+            "id": "G13",
+            "name": "AKT",
+            "function": "Signal transduction"
+        },
+        {
+            "id": "G14",
+            "name": "NFkB",
+            "function": "Immune response"
+        },
+        {
+            "id": "G15",
+            "name": "NFYB",
+            "function": "Nutrient sensing"
+        },
+        {
+            "id": "G16",
+            "name": "RAS",
+            "function": "Cell cycle regulation"
+        },
+        {
+            "id": "G17",
+            "name": "PTEN",
+            "function": "Oxidative stress response"
+        },
+        {
+            "id": "G18",
+            "name": "TGF-beta",
+            "function": "Signaling cascade"
+        },
+        {
+            "id": "G19",
+            "name": "HER3",
+            "function": "Protein modification"
+        }
+    ],
+    "diseases": [
+        {
+            "id": "D0",
+            "name": "Breast Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D1",
+            "name": "Lung Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D2",
+            "name": "Skin Cancer",
+            "severity_level": "Moderate"
+        },
+        {
+            "id": "D3",
+            "name": "Prostate Cancer",
+            "severity_level": "Moderate"
+        },
+        {
+            "id": "D4",
+            "name": "Ovarian Cancer",
+            "severity_level": "High"
+        },
+        {
+            "id": "D5",
+            "name": "Pancreatic Cancer",
+            "severity_level": "Very High"
+        },
+        {
+            "id": "D6",
+            "name": "Acute Lymphoblastic Leukemia (ALL)",
+            "severity_level": "High"
+        },
+        {
+            "id": "D7",
+            "name": "Myelodysplastic Syndrome (MDS)",
+            "severity_level": "Moderate"
+        },
+        {
+            "id": "D8",
+            "name": "Allograft Rejection",
+            "severity_level": "High"
+        },
+        {
+            "id": "D9",
+            "name": "Autoimmune Diseases",
+            "severity_level": "Moderate"
+        },
+        {
+            "id": "D10",
+            "name": "Neurodegenerative Diseases",
+            "severity_level": "Moderate"
+        },
+        {
+            "id": "D11",
+            "name": "Musculoskeletal Disorders",
+            "severity_level": "High"
+        },
+        {
+            "id": "D12",
+            "name": "Cardiovascular Diseases",
+            "severity_level": "High"
+        },
+        {
+            "id": "D13",
+            "name": "Neurological Conditions",
+            "severity_level": "Moderate"
+        },
+        {
+            "id": "D14",
+            "name": "Respiratory Conditions",
+            "severity_level": "High"
+        },
+        {
+            "id": "D15",
+            "name": "Metabolic Disorders",
+            "severity_level": "Moderate"
+        },
+        {
+            "id": "D16",
+            "name": "Neuro infectious Diseases",
+            "severity_level": "Moderate"
+        },
+        {
+            "id": "D17",
+            "name": "Viral Hepatitis",
+            "severity_level": "Moderate"
+        },
+        {
+            "id": "D18",
+            "name": "Acute Myelitis",
+            "severity_level": "High"
+        },
+        {
+            "id": "D19",
+            "name": "Osteoporosis",
+            "severity_level": "Moderate"
+        }
+    ],
+    "associations": [
+        {
+            "disease_id": "D0",
+            "gene_id": "G1",
+            "strength": 0.75
+        },
+        {
+            "disease_id": "D0",
+            "gene_id": "G4",
+            "strength": 0.65
+        },
+        {
+            "disease_id": "D0",
+            "gene_id": "G12",
+            "strength": 0.85
+        },
+        {
+            "disease_id": "D1",
+            "gene_id": "G9",
+            "strength": 0.7
+        },
+        {
+            "disease_id": "D1",
+            "gene_id": "G14",
+            "strength": 0.65
+        },
+        {
+            "disease_id": "D2",
+            "gene_id": "G3",
+            "strength": 0.55
+        },
+        {
+            "disease_id": "D2",
+            "gene_id": "G7",
+            "strength": 0.8
+        },
+        {
+            "disease_id": "D3",
+            "gene_id": "G19",
+            "strength": 0.6
+        },
+        {
+            "disease_id": "D3",
+            "gene_id": "G15",
+            "strength": 0.55
+        },
+        {
+            "disease_id": "D4",
+            "gene_id": "G2",
+            "strength": 0.85
+        },
+        {
+            "disease_id": "D4",
+            "gene_id": "G6",
+            "strength": 0.75
+        },
+        {
+            "disease_id": "D5",
+            "gene_id": "G10",
+            "strength": 0.9
+        },
+        {
+            "disease_id": "D5",
+            "gene_id": "G8",
+            "strength": 0.85
+        },
+        {
+            "disease_id": "D6",
+            "gene_id": "G17",
+            "strength": 0.7
+        },
+        {
+            "disease_id": "D6",
+            "gene_id": "G13",
+            "strength": 0.6
+        },
+        {
+            "disease_id": "D7",
+            "gene_id": "G5",
+            "strength": 0.8
+        },
+        {
+            "disease_id": "D7",
+            "gene_id": "G16",
+            "strength": 0.75
+        },
+        {
+            "disease_id": "D8",
+            "gene_id": "G11",
+            "strength": 0.95
+        },
+        {
+            "disease_id": "D8",
+            "gene_id": "G18",
+            "strength": 0.85
+        },
+        {
+            "disease_id": "D10",
+            "gene_id": "G14",
+            "strength": 0.55
+        },
+        {
+            "disease_id": "D10",
+            "gene_id": "G8",
+            "strength": 0.6
+        },
+        {
+            "disease_id": "D11",
+            "gene_id": "G2",
+            "strength": 0.7
+        },
+        {
+            "disease_id": "D11",
+            "gene_id": "G3",
+            "strength": 0.55
+        },
+        {
+            "disease_id": "D12",
+            "gene_id": "G4",
+            "strength": 0.85
+        },
+        {
+            "disease_id": "D12",
+            "gene_id": "G9",
+            "strength": 0.75
+        },
+        {
+            "disease_id": "D13",
+            "gene_id": "G15",
+            "strength": 0.6
+        },
+        {
+            "disease_id": "D14",
+            "gene_id": "G7",
+            "strength": 0.8
+        },
+        {
+            "disease_id": "D14",
+            "gene_id": "G6",
+            "strength": 0.95
+        },
+        {
+            "disease_id": "D15",
+            "gene_id": "G3",
+            "strength": 0.65
+        },
+        {
+            "disease_id": "D16",
+            "gene_id": "G8",
+            "strength": 0.9
+        },
+        {
+            "disease_id": "D16",
+            "gene_id": "G14",
+            "strength": 0.75
+        },
+        {
+            "disease_id": "D17",
+            "gene_id": "G3",
+            "strength": 0.85
+        },
+        {
+            "disease_id": "D18",
+            "gene_id": "G5",
+            "strength": 0.8
+        },
+        {
+            "disease_id": "D18",
+            "gene_id": "G6",
+            "strength": 0.75
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "constraints": {
+            "defined_counts": {
+                "passed": true,
+                "message": ""
+            },
+            "valid_associations": {
+                "passed": false,
+                "message": "Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'."
+            },
+            "degree_constraints": {
+                "passed": false,
+                "message": "Gene 'G0' has 0 associations; expected between 2 and 5. Gene 'G1' has 0 associations; expected between 2 and 5. Gene 'G2' has 0 associations; expected between 2 and 5. Gene 'G3' has 0 associations; expected between 2 and 5. Gene 'G4' has 0 associations; expected between 2 and 5. Gene 'G5' has 0 associations; expected between 2 and 5. Gene 'G6' has 0 associations; expected between 2 and 5. Gene 'G7' has 0 associations; expected between 2 and 5. Gene 'G8' has 0 associations; expected between 2 and 5. Gene 'G9' has 0 associations; expected between 2 and 5. Gene 'G10' has 0 associations; expected between 2 and 5. Gene 'G11' has 0 associations; expected between 2 and 5. Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D0' has 0 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 0 associations; expected between 3 and 10. Disease 'D3' has 0 associations; expected between 3 and 10. Disease 'D4' has 0 associations; expected between 3 and 10. Disease 'D5' has 0 associations; expected between 3 and 10. Disease 'D6' has 0 associations; expected between 3 and 10. Disease 'D7' has 0 associations; expected between 3 and 10. Disease 'D8' has 0 associations; expected between 3 and 10. Disease 'D9' has 0 associations; expected between 3 and 10. Disease 'D10' has 0 associations; expected between 3 and 10. Disease 'D11' has 0 associations; expected between 3 and 10. Disease 'D12' has 0 associations; expected between 3 and 10. Disease 'D13' has 0 associations; expected between 3 and 10. Disease 'D14' has 0 associations; expected between 3 and 10. Disease 'D15' has 0 associations; expected between 3 and 10. Disease 'D16' has 0 associations; expected between 3 and 10. Disease 'D17' has 0 associations; expected between 3 and 10. Disease 'D18' has 0 associations; expected between 3 and 10. Disease 'D19' has 0 associations; expected between 3 and 10."
+            },
+            "duplicate_associations": {
+                "passed": false,
+                "message": "Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'."
+            }
+        },
+        "overall_passed": false,
+        "errors": [
+            "Valid Associations Check Failed.",
+            "Degree Constraints Check Failed.",
+            "Duplicate Associations Check Failed."
+        ]
+    }
+}

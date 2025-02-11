@@ -1,0 +1,251 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 500,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 600,
+            "time_window": [
+                8,
+                18
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 700,
+            "time_window": [
+                10,
+                20
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 400,
+            "time_window": [
+                6,
+                16
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 800,
+            "time_window": [
+                9,
+                21
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 300,
+            "time_window": [
+                7,
+                17
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 600,
+            "time_window": [
+                8,
+                20
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 900,
+            "time_window": [
+                12,
+                22
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 400,
+            "time_window": [
+                5,
+                15
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 700,
+            "time_window": [
+                10,
+                22
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 300,
+            "time_window": [
+                8,
+                18
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 500,
+            "time_window": [
+                6,
+                14
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 800,
+            "time_window": [
+                9,
+                21
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 750,
+            "time_window": [
+                11,
+                23
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 500,
+            "time_window": [
+                10,
+                23
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 500,
+            "speed": 60
+        },
+        {
+            "id": "V2",
+            "capacity": 700,
+            "speed": 45
+        },
+        {
+            "id": "V3",
+            "capacity": 800,
+            "speed": 55
+        },
+        {
+            "id": "V4",
+            "capacity": 600,
+            "speed": 50
+        },
+        {
+            "id": "V5",
+            "capacity": 900,
+            "speed": 70
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 600,
+            "hourly_adjust": {
+                "08": 10,
+                "09": 15,
+                "10": 20,
+                "11": 25,
+                "12": 30
+            },
+            "max_weight": 4000
+        },
+        {
+            "from": "L1",
+            "to": "L2",
+            "base_time": 700,
+            "hourly_adjust": {
+                "10": 8,
+                "11": 12,
+                "12": 16,
+                "13": 20,
+                "14": 24
+            },
+            "max_weight": 5000
+        },
+        {
+            "from": "L2",
+            "to": "L3",
+            "base_time": 800,
+            "hourly_adjust": {
+                "12": 6,
+                "13": 9,
+                "14": 12,
+                "15": 15,
+                "16": 18
+            },
+            "max_weight": 6000
+        },
+        {
+            "from": "L3",
+            "to": "L4",
+            "base_time": 900,
+            "hourly_adjust": {
+                "12": 5,
+                "13": 7,
+                "14": 10,
+                "15": 13,
+                "16": 16
+            },
+            "max_weight": 7000
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": " Errors found in 'edges' structure."
+        },
+        "storage_capacity_compliance": {
+            "passed": false,
+            "message": "Total incoming 'max_weight' to location 'L1' is 4000 kg, exceeding its storage capacity of 600 kg. Total incoming 'max_weight' to location 'L2' is 5000 kg, exceeding its storage capacity of 700 kg. Total incoming 'max_weight' to location 'L3' is 6000 kg, exceeding its storage capacity of 400 kg. Total incoming 'max_weight' to location 'L4' is 7000 kg, exceeding its storage capacity of 800 kg."
+        },
+        "vehicle_capacity_compliance": {
+            "passed": false,
+            "message": "No valid vehicle capacities found."
+        },
+        "time_window_compliance": {
+            "passed": false,
+            "message": "Edge from 'L1' to 'L2' with total travel time 724 minutes does not fit within the time windows of 'L1' [8-18] and 'L2' [10-20]. Edge from 'L2' to 'L3' with total travel time 818 minutes does not fit within the time windows of 'L2' [10-20] and 'L3' [6-16]. Edge from 'L3' to 'L4' with total travel time 916 minutes does not fit within the time windows of 'L3' [6-16] and 'L4' [9-21]."
+        },
+        "overall_passed": false,
+        "errors": [
+            "Number of vehicles is 5; expected 7.",
+            "Edge from 'L0' to 'L1' has invalid time range '08' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L0' to 'L1' has invalid time range '09' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L0' to 'L1' has invalid time range '10' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L0' to 'L1' has invalid time range '11' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L0' to 'L1' has invalid time range '12' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L1' to 'L2' has invalid time range '10' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L1' to 'L2' has invalid time range '11' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L1' to 'L2' has invalid time range '12' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L1' to 'L2' has invalid time range '13' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L1' to 'L2' has invalid time range '14' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L2' to 'L3' has invalid time range '12' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L2' to 'L3' has invalid time range '13' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L2' to 'L3' has invalid time range '14' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L2' to 'L3' has invalid time range '15' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L2' to 'L3' has invalid time range '16' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L3' to 'L4' has invalid time range '12' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L3' to 'L4' has invalid time range '13' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L3' to 'L4' has invalid time range '14' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L3' to 'L4' has invalid time range '15' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Edge from 'L3' to 'L4' has invalid time range '16' in 'hourly_adjust'. Expected format 'HH-HH'.",
+            "Storage Capacity Compliance Check Failed.",
+            "Vehicle Capacity Compliance Check Failed.",
+            "Time Window Compliance Check Failed."
+        ]
+    }
+}

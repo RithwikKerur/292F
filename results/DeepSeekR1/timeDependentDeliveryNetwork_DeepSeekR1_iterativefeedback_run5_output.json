@@ -1,0 +1,192 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 500,
+            "time_window": [
+                12,
+                16
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 700,
+            "time_window": [
+                8,
+                14
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 600,
+            "time_window": [
+                10,
+                18
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 800,
+            "time_window": [
+                5,
+                22
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 750,
+            "time_window": [
+                9,
+                17
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 650,
+            "time_window": [
+                11,
+                20
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 850,
+            "time_window": [
+                7,
+                23
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 900,
+            "time_window": [
+                4,
+                19
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 700,
+            "time_window": [
+                13,
+                15
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 600,
+            "time_window": [
+                2,
+                11
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 800,
+            "time_window": [
+                1,
+                10
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 750,
+            "time_window": [
+                3,
+                9
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 650,
+            "time_window": [
+                14,
+                18
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 850,
+            "time_window": [
+                1,
+                7
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 900,
+            "time_window": [
+                2,
+                6
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 4000,
+            "speed": 80
+        },
+        {
+            "id": "V2",
+            "capacity": 5000,
+            "speed": 70
+        },
+        {
+            "id": "V3",
+            "capacity": 6000,
+            "speed": 90
+        },
+        {
+            "id": "V4",
+            "capacity": 7000,
+            "speed": 80
+        },
+        {
+            "id": "V5",
+            "capacity": 4500,
+            "speed": 100
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 360,
+            "hourly_adjust": {},
+            "max_weight": 400
+        },
+        {
+            "from": "L1",
+            "to": "L2",
+            "base_time": 360,
+            "hourly_adjust": {},
+            "max_weight": 400
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "storage_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "vehicle_capacity_compliance": {
+            "passed": false,
+            "message": "No valid vehicle capacities found."
+        },
+        "time_window_compliance": {
+            "passed": false,
+            "message": "Edge from 'L0' to 'L1' with total travel time 360 minutes does not fit within the time windows of 'L0' [12-16] and 'L1' [8-14]."
+        },
+        "overall_passed": false,
+        "errors": [
+            "Number of vehicles is 5; expected 7.",
+            "Vehicle Capacity Compliance Check Failed.",
+            "Time Window Compliance Check Failed."
+        ]
+    }
+}

@@ -1,0 +1,207 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 500,
+            "time_window": [
+                9,
+                17
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 480,
+            "time_window": [
+                10,
+                18
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 460,
+            "time_window": [
+                11,
+                19
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 440,
+            "time_window": [
+                12,
+                20
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 420,
+            "time_window": [
+                13,
+                21
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 400,
+            "time_window": [
+                14,
+                22
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 380,
+            "time_window": [
+                15,
+                23
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 360,
+            "time_window": [
+                16,
+                24
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 340,
+            "time_window": [
+                17,
+                25
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 320,
+            "time_window": [
+                18,
+                26
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 300,
+            "time_window": [
+                19,
+                27
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 280,
+            "time_window": [
+                20,
+                28
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 260,
+            "time_window": [
+                21,
+                29
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 240,
+            "time_window": [
+                22,
+                30
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 220,
+            "time_window": [
+                23,
+                31
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 200,
+            "speed": 60
+        },
+        {
+            "id": "V2",
+            "capacity": 300,
+            "speed": 70
+        },
+        {
+            "id": "V3",
+            "capacity": 400,
+            "speed": 50
+        },
+        {
+            "id": "V4",
+            "capacity": 180,
+            "speed": 80
+        },
+        {
+            "id": "V5",
+            "capacity": 250,
+            "speed": 65
+        },
+        {
+            "id": "V6",
+            "capacity": 320,
+            "speed": 75
+        },
+        {
+            "id": "V7",
+            "capacity": 190,
+            "speed": 85
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 200
+        },
+        {
+            "from": "L1",
+            "to": "L2",
+            "base_time": 45,
+            "hourly_adjust": {},
+            "max_weight": 300
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": false,
+            "message": "Errors found in 'locations' structure."
+        },
+        "storage_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "vehicle_capacity_compliance": {
+            "passed": false,
+            "message": "Edge from 'L0' to 'L1' has 'max_weight' 200 kg, which is less than the maximum vehicle capacity of 400 kg. Edge from 'L1' to 'L2' has 'max_weight' 300 kg, which is less than the maximum vehicle capacity of 400 kg."
+        },
+        "time_window_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": false,
+        "errors": [
+            "Location 'L8' has invalid 'time_window' values: [17, 25]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L9' has invalid 'time_window' values: [18, 26]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L10' has invalid 'time_window' values: [19, 27]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L11' has invalid 'time_window' values: [20, 28]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L12' has invalid 'time_window' values: [21, 29]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L13' has invalid 'time_window' values: [22, 30]. Must satisfy 0 <= start < end <= 24.",
+            "Location 'L14' has invalid 'time_window' values: [23, 31]. Must satisfy 0 <= start < end <= 24.",
+            "Vehicle Capacity Compliance Check Failed."
+        ]
+    }
+}
