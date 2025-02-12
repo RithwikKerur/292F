@@ -1,0 +1,319 @@
+{
+    "users": [
+        {
+            "id": "U0",
+            "trust_score": 85,
+            "category": "celebrity"
+        },
+        {
+            "id": "U1",
+            "trust_score": 45,
+            "category": "regular"
+        },
+        {
+            "id": "U2",
+            "trust_score": 75,
+            "category": "expert"
+        },
+        {
+            "id": "U3",
+            "trust_score": 82,
+            "category": "celebrity"
+        },
+        {
+            "id": "U4",
+            "trust_score": 40,
+            "category": "regular"
+        },
+        {
+            "id": "U5",
+            "trust_score": 78,
+            "category": "expert"
+        },
+        {
+            "id": "U6",
+            "trust_score": 88,
+            "category": "celebrity"
+        },
+        {
+            "id": "U7",
+            "trust_score": 35,
+            "category": "regular"
+        },
+        {
+            "id": "U8",
+            "trust_score": 72,
+            "category": "expert"
+        },
+        {
+            "id": "U9",
+            "trust_score": 90,
+            "category": "celebrity"
+        },
+        {
+            "id": "U10",
+            "trust_score": 50,
+            "category": "regular"
+        },
+        {
+            "id": "U11",
+            "trust_score": 76,
+            "category": "expert"
+        },
+        {
+            "id": "U12",
+            "trust_score": 84,
+            "category": "celebrity"
+        },
+        {
+            "id": "U13",
+            "trust_score": 30,
+            "category": "regular"
+        },
+        {
+            "id": "U14",
+            "trust_score": 71,
+            "category": "expert"
+        },
+        {
+            "id": "U15",
+            "trust_score": 89,
+            "category": "celebrity"
+        },
+        {
+            "id": "U16",
+            "trust_score": 42,
+            "category": "regular"
+        },
+        {
+            "id": "U17",
+            "trust_score": 74,
+            "category": "expert"
+        },
+        {
+            "id": "U18",
+            "trust_score": 83,
+            "category": "celebrity"
+        },
+        {
+            "id": "U19",
+            "trust_score": 38,
+            "category": "regular"
+        }
+    ],
+    "edges": [
+        {
+            "from": "U0",
+            "to": "U1"
+        },
+        {
+            "from": "U0",
+            "to": "U2"
+        },
+        {
+            "from": "U0",
+            "to": "U4"
+        },
+        {
+            "from": "U0",
+            "to": "U7"
+        },
+        {
+            "from": "U0",
+            "to": "U10"
+        },
+        {
+            "from": "U3",
+            "to": "U1"
+        },
+        {
+            "from": "U3",
+            "to": "U4"
+        },
+        {
+            "from": "U3",
+            "to": "U7"
+        },
+        {
+            "from": "U3",
+            "to": "U10"
+        },
+        {
+            "from": "U3",
+            "to": "U13"
+        },
+        {
+            "from": "U6",
+            "to": "U1"
+        },
+        {
+            "from": "U6",
+            "to": "U4"
+        },
+        {
+            "from": "U6",
+            "to": "U7"
+        },
+        {
+            "from": "U6",
+            "to": "U10"
+        },
+        {
+            "from": "U6",
+            "to": "U13"
+        },
+        {
+            "from": "U9",
+            "to": "U1"
+        },
+        {
+            "from": "U9",
+            "to": "U4"
+        },
+        {
+            "from": "U9",
+            "to": "U7"
+        },
+        {
+            "from": "U9",
+            "to": "U10"
+        },
+        {
+            "from": "U9",
+            "to": "U13"
+        },
+        {
+            "from": "U12",
+            "to": "U1"
+        },
+        {
+            "from": "U12",
+            "to": "U4"
+        },
+        {
+            "from": "U12",
+            "to": "U7"
+        },
+        {
+            "from": "U12",
+            "to": "U10"
+        },
+        {
+            "from": "U12",
+            "to": "U13"
+        },
+        {
+            "from": "U15",
+            "to": "U1"
+        },
+        {
+            "from": "U15",
+            "to": "U4"
+        },
+        {
+            "from": "U15",
+            "to": "U7"
+        },
+        {
+            "from": "U15",
+            "to": "U10"
+        },
+        {
+            "from": "U15",
+            "to": "U13"
+        },
+        {
+            "from": "U18",
+            "to": "U1"
+        },
+        {
+            "from": "U18",
+            "to": "U4"
+        },
+        {
+            "from": "U18",
+            "to": "U7"
+        },
+        {
+            "from": "U18",
+            "to": "U10"
+        },
+        {
+            "from": "U18",
+            "to": "U13"
+        },
+        {
+            "from": "U2",
+            "to": "U5"
+        },
+        {
+            "from": "U2",
+            "to": "U8"
+        },
+        {
+            "from": "U2",
+            "to": "U11"
+        },
+        {
+            "from": "U2",
+            "to": "U14"
+        },
+        {
+            "from": "U2",
+            "to": "U17"
+        },
+        {
+            "from": "U5",
+            "to": "U8"
+        },
+        {
+            "from": "U5",
+            "to": "U11"
+        },
+        {
+            "from": "U5",
+            "to": "U14"
+        },
+        {
+            "from": "U5",
+            "to": "U17"
+        },
+        {
+            "from": "U8",
+            "to": "U11"
+        },
+        {
+            "from": "U8",
+            "to": "U14"
+        },
+        {
+            "from": "U8",
+            "to": "U17"
+        },
+        {
+            "from": "U11",
+            "to": "U14"
+        },
+        {
+            "from": "U11",
+            "to": "U17"
+        },
+        {
+            "from": "U14",
+            "to": "U17"
+        }
+    ],
+    "result": true,
+    "fullOutput": {
+        "valid_no_self_loops": true,
+        "valid_celebrity_outgoing": true,
+        "valid_regular_to_expert": true,
+        "valid_acyclic": true,
+        "valid_user_attributes": true,
+        "valid_edge_structure": true,
+        "valid_total_users": true,
+        "valid_categories": true,
+        "valid_trust_scores": true,
+        "errors": []
+    }
+}
