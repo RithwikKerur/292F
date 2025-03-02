@@ -1,159 +1,161 @@
 {
-    "users": [
-        {
-            "id": "U0",
-            "trust_score": 85,
-            "category": "celebrity"
-        },
-        {
-            "id": "U1",
-            "trust_score": 72,
-            "category": "regular"
-        },
-        {
-            "id": "U2",
-            "trust_score": 90,
-            "category": "expert"
-        },
-        {
-            "id": "U3",
-            "trust_score": 68,
-            "category": "celebrity"
-        },
-        {
-            "id": "U4",
-            "trust_score": 75,
-            "category": "regular"
-        },
-        {
-            "id": "U5",
-            "trust_score": 92,
-            "category": "expert"
-        },
-        {
-            "id": "U6",
-            "trust_score": 80,
-            "category": "celebrity"
-        },
-        {
-            "id": "U7",
-            "trust_score": 74,
-            "category": "regular"
-        },
-        {
-            "id": "U8",
-            "trust_score": 88,
-            "category": "expert"
-        },
-        {
-            "id": "U9",
-            "trust_score": 65,
-            "category": "celebrity"
-        },
-        {
-            "id": "U10",
-            "trust_score": 72,
-            "category": "regular"
-        },
-        {
-            "id": "U11",
-            "trust_score": 91,
-            "category": "expert"
-        },
-        {
-            "id": "U12",
-            "trust_score": 83,
-            "category": "celebrity"
-        },
-        {
-            "id": "U13",
-            "trust_score": 76,
-            "category": "regular"
-        },
-        {
-            "id": "U14",
-            "trust_score": 95,
-            "category": "expert"
-        },
-        {
-            "id": "U15",
-            "trust_score": 82,
-            "category": "celebrity"
-        },
-        {
-            "id": "U16",
-            "trust_score": 70,
-            "category": "regular"
-        },
-        {
-            "id": "U17",
-            "trust_score": 89,
-            "category": "expert"
-        },
-        {
-            "id": "U18",
-            "trust_score": 67,
-            "category": "celebrity"
-        },
-        {
-            "id": "U19",
-            "trust_score": 73,
-            "category": "regular"
-        }
-    ],
-    "edges": [
-        {
-            "from": "U0",
-            "to": "U1",
-            "weight": 0.85
-        },
-        {
-            "from": "U1",
-            "to": "U2",
-            "weight": 0.72
-        },
-        {
-            "from": "U2",
-            "to": "U3",
-            "weight": 0.9
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "valid_no_self_loops": true,
-        "valid_celebrity_outgoing": false,
-        "valid_regular_to_expert": false,
-        "valid_acyclic": true,
-        "valid_user_attributes": true,
-        "valid_edge_structure": true,
-        "valid_total_users": true,
-        "valid_categories": false,
-        "valid_trust_scores": true,
-        "errors": [
-            "User 'U1' has 'trust_score' 72 but category 'regular'. Should be 'expert'.",
-            "User 'U2' has 'trust_score' 90 but category 'expert'. Should be 'celebrity'.",
-            "User 'U3' has 'trust_score' 68 but category 'celebrity'. Should be 'expert' or 'regular'.",
-            "User 'U4' has 'trust_score' 75 but category 'regular'. Should be 'expert'.",
-            "User 'U5' has 'trust_score' 92 but category 'expert'. Should be 'celebrity'.",
-            "User 'U7' has 'trust_score' 74 but category 'regular'. Should be 'expert'.",
-            "User 'U8' has 'trust_score' 88 but category 'expert'. Should be 'celebrity'.",
-            "User 'U9' has 'trust_score' 65 but category 'celebrity'. Should be 'expert' or 'regular'.",
-            "User 'U10' has 'trust_score' 72 but category 'regular'. Should be 'expert'.",
-            "User 'U11' has 'trust_score' 91 but category 'expert'. Should be 'celebrity'.",
-            "User 'U13' has 'trust_score' 76 but category 'regular'. Should be 'expert'.",
-            "User 'U14' has 'trust_score' 95 but category 'expert'. Should be 'celebrity'.",
-            "User 'U16' has 'trust_score' 70 but category 'regular'. Should be 'expert'.",
-            "User 'U17' has 'trust_score' 89 but category 'expert'. Should be 'celebrity'.",
-            "User 'U18' has 'trust_score' 67 but category 'celebrity'. Should be 'expert' or 'regular'.",
-            "User 'U19' has 'trust_score' 73 but category 'regular'. Should be 'expert'.",
-            "Celebrity 'U0' has 1 outgoing edges; expected at least 5.",
-            "Celebrity 'U3' has 0 outgoing edges; expected at least 5.",
-            "Celebrity 'U6' has 0 outgoing edges; expected at least 5.",
-            "Celebrity 'U9' has 0 outgoing edges; expected at least 5.",
-            "Celebrity 'U12' has 0 outgoing edges; expected at least 5.",
-            "Celebrity 'U15' has 0 outgoing edges; expected at least 5.",
-            "Celebrity 'U18' has 0 outgoing edges; expected at least 5.",
-            "Regular user 'U1' is influencing expert 'U2'."
-        ]
+  "users": [
+    {
+      "id": "U0",
+      "trust_score": 85,
+      "category": "celebrity"
+    },
+    {
+      "id": "U1",
+      "trust_score": 72,
+      "category": "regular"
+    },
+    {
+      "id": "U2",
+      "trust_score": 90,
+      "category": "expert"
+    },
+    {
+      "id": "U3",
+      "trust_score": 68,
+      "category": "celebrity"
+    },
+    {
+      "id": "U4",
+      "trust_score": 75,
+      "category": "regular"
+    },
+    {
+      "id": "U5",
+      "trust_score": 92,
+      "category": "expert"
+    },
+    {
+      "id": "U6",
+      "trust_score": 80,
+      "category": "celebrity"
+    },
+    {
+      "id": "U7",
+      "trust_score": 74,
+      "category": "regular"
+    },
+    {
+      "id": "U8",
+      "trust_score": 88,
+      "category": "expert"
+    },
+    {
+      "id": "U9",
+      "trust_score": 65,
+      "category": "celebrity"
+    },
+    {
+      "id": "U10",
+      "trust_score": 72,
+      "category": "regular"
+    },
+    {
+      "id": "U11",
+      "trust_score": 91,
+      "category": "expert"
+    },
+    {
+      "id": "U12",
+      "trust_score": 83,
+      "category": "celebrity"
+    },
+    {
+      "id": "U13",
+      "trust_score": 76,
+      "category": "regular"
+    },
+    {
+      "id": "U14",
+      "trust_score": 95,
+      "category": "expert"
+    },
+    {
+      "id": "U15",
+      "trust_score": 82,
+      "category": "celebrity"
+    },
+    {
+      "id": "U16",
+      "trust_score": 70,
+      "category": "regular"
+    },
+    {
+      "id": "U17",
+      "trust_score": 89,
+      "category": "expert"
+    },
+    {
+      "id": "U18",
+      "trust_score": 67,
+      "category": "celebrity"
+    },
+    {
+      "id": "U19",
+      "trust_score": 73,
+      "category": "regular"
     }
+  ],
+  "edges": [
+    {
+      "from": "U0",
+      "to": "U1",
+      "weight": 0.85
+    },
+    {
+      "from": "U1",
+      "to": "U2",
+      "weight": 0.72
+    },
+    {
+      "from": "U2",
+      "to": "U3",
+      "weight": 0.9
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "valid_no_self_loops": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_celebrity_outgoing": {
+      "passed": false,
+      "message": "Celebrity 'U0' has 1 outgoing edges; expected at least 5. Celebrity 'U3' has 0 outgoing edges; expected at least 5. Celebrity 'U6' has 0 outgoing edges; expected at least 5. Celebrity 'U9' has 0 outgoing edges; expected at least 5. Celebrity 'U12' has 0 outgoing edges; expected at least 5. Celebrity 'U15' has 0 outgoing edges; expected at least 5. Celebrity 'U18' has 0 outgoing edges; expected at least 5."
+    },
+    "valid_regular_to_expert": {
+      "passed": false,
+      "message": "Regular user 'U1' is influencing expert 'U2'."
+    },
+    "valid_acyclic": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_user_attributes": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_edge_structure": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_total_users": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_categories": {
+      "passed": false,
+      "message": "User 'U19' has trust_score 73 but category 'regular'; should be 'expert'."
+    },
+    "valid_trust_scores": {
+      "passed": true,
+      "message": ""
+    },
+    "overall_passed": false
+  }
 }

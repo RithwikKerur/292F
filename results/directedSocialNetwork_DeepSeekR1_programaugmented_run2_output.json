@@ -1,0 +1,242 @@
+{
+  "users": [
+    {
+      "id": "U0",
+      "trust_score": 28,
+      "category": "regular"
+    },
+    {
+      "id": "U1",
+      "trust_score": 78,
+      "category": "expert"
+    },
+    {
+      "id": "U2",
+      "trust_score": 68,
+      "category": "regular"
+    },
+    {
+      "id": "U3",
+      "trust_score": 18,
+      "category": "regular"
+    },
+    {
+      "id": "U4",
+      "trust_score": 79,
+      "category": "expert"
+    },
+    {
+      "id": "U5",
+      "trust_score": 38,
+      "category": "regular"
+    },
+    {
+      "id": "U6",
+      "trust_score": 29,
+      "category": "regular"
+    },
+    {
+      "id": "U7",
+      "trust_score": 75,
+      "category": "expert"
+    },
+    {
+      "id": "U8",
+      "trust_score": 54,
+      "category": "expert"
+    },
+    {
+      "id": "U9",
+      "trust_score": 61,
+      "category": "expert"
+    },
+    {
+      "id": "U10",
+      "trust_score": 64,
+      "category": "expert"
+    },
+    {
+      "id": "U11",
+      "trust_score": 72,
+      "category": "expert"
+    },
+    {
+      "id": "U12",
+      "trust_score": 24,
+      "category": "regular"
+    },
+    {
+      "id": "U13",
+      "trust_score": 45,
+      "category": "regular"
+    },
+    {
+      "id": "U14",
+      "trust_score": 48,
+      "category": "regular"
+    },
+    {
+      "id": "U15",
+      "trust_score": 9,
+      "category": "regular"
+    },
+    {
+      "id": "U16",
+      "trust_score": 57,
+      "category": "expert"
+    },
+    {
+      "id": "U17",
+      "trust_score": 28,
+      "category": "regular"
+    },
+    {
+      "id": "U18",
+      "trust_score": 64,
+      "category": "regular"
+    },
+    {
+      "id": "U19",
+      "trust_score": 98,
+      "category": "celebrity"
+    }
+  ],
+  "edges": [
+    {
+      "from": "U0",
+      "to": "U3"
+    },
+    {
+      "from": "U1",
+      "to": "U5"
+    },
+    {
+      "from": "U2",
+      "to": "U19"
+    },
+    {
+      "from": "U3",
+      "to": "U17"
+    },
+    {
+      "from": "U4",
+      "to": "U14"
+    },
+    {
+      "from": "U5",
+      "to": "U13"
+    },
+    {
+      "from": "U6",
+      "to": "U0"
+    },
+    {
+      "from": "U7",
+      "to": "U2"
+    },
+    {
+      "from": "U8",
+      "to": "U14"
+    },
+    {
+      "from": "U9",
+      "to": "U11"
+    },
+    {
+      "from": "U10",
+      "to": "U4"
+    },
+    {
+      "from": "U11",
+      "to": "U15"
+    },
+    {
+      "from": "U12",
+      "to": "U13"
+    },
+    {
+      "from": "U13",
+      "to": "U17"
+    },
+    {
+      "from": "U14",
+      "to": "U19"
+    },
+    {
+      "from": "U15",
+      "to": "U2"
+    },
+    {
+      "from": "U16",
+      "to": "U14"
+    },
+    {
+      "from": "U17",
+      "to": "U18"
+    },
+    {
+      "from": "U18",
+      "to": "U13"
+    },
+    {
+      "from": "U19",
+      "to": "U10"
+    },
+    {
+      "from": "U19",
+      "to": "U13"
+    },
+    {
+      "from": "U19",
+      "to": "U5"
+    },
+    {
+      "from": "U19",
+      "to": "U7"
+    },
+    {
+      "from": "U19",
+      "to": "U15"
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "valid_no_self_loops": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_celebrity_outgoing": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_regular_to_expert": {
+      "passed": false,
+      "message": "Regular user 'U2' is influencing expert 'U19'. Regular user 'U14' is influencing expert 'U19'."
+    },
+    "valid_acyclic": {
+      "passed": false,
+      "message": "Cycle detected in the network; the graph must be acyclic."
+    },
+    "valid_user_attributes": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_edge_structure": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_total_users": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_categories": {
+      "passed": false,
+      "message": "User 'U18' has trust_score 64 which is between 50 and 70; no valid category defined."
+    },
+    "valid_trust_scores": {
+      "passed": true,
+      "message": ""
+    },
+    "overall_passed": false
+  }
+}

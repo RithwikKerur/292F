@@ -1,0 +1,310 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 2000,
+            "time_window": [
+                6,
+                18
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 500,
+            "time_window": [
+                8,
+                12
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 500,
+            "time_window": [
+                9,
+                15
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 600,
+            "time_window": [
+                10,
+                16
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 500,
+            "time_window": [
+                7,
+                14
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 500,
+            "time_window": [
+                11,
+                17
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 700,
+            "time_window": [
+                8,
+                18
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 500,
+            "time_window": [
+                6,
+                12
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 500,
+            "time_window": [
+                10,
+                15
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 500,
+            "time_window": [
+                9,
+                13
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 600,
+            "time_window": [
+                7,
+                11
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 500,
+            "time_window": [
+                12,
+                18
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 600,
+            "time_window": [
+                8,
+                16
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 500,
+            "time_window": [
+                10,
+                14
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 500,
+            "time_window": [
+                13,
+                17
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 100,
+            "speed": 60
+        },
+        {
+            "id": "V2",
+            "capacity": 150,
+            "speed": 55
+        },
+        {
+            "id": "V3",
+            "capacity": 200,
+            "speed": 65
+        },
+        {
+            "id": "V4",
+            "capacity": 250,
+            "speed": 70
+        },
+        {
+            "id": "V5",
+            "capacity": 300,
+            "speed": 50
+        },
+        {
+            "id": "V6",
+            "capacity": 350,
+            "speed": 75
+        },
+        {
+            "id": "V7",
+            "capacity": 400,
+            "speed": 80
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 120,
+            "hourly_adjust": {
+                "7-9": 30
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L2",
+            "base_time": 90,
+            "hourly_adjust": {
+                "8-10": 20
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L3",
+            "base_time": 60,
+            "hourly_adjust": {
+                "9-11": 15
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L4",
+            "base_time": 150,
+            "hourly_adjust": {
+                "6-8": 45
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L5",
+            "base_time": 180,
+            "hourly_adjust": {
+                "10-12": 30
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L6",
+            "base_time": 45,
+            "hourly_adjust": {
+                "7-9": 10
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L7",
+            "base_time": 200,
+            "hourly_adjust": {
+                "5-7": 60
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L8",
+            "base_time": 75,
+            "hourly_adjust": {
+                "9-11": 25
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L9",
+            "base_time": 90,
+            "hourly_adjust": {
+                "8-10": 20
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L10",
+            "base_time": 100,
+            "hourly_adjust": {
+                "6-8": 30
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L11",
+            "base_time": 150,
+            "hourly_adjust": {
+                "11-13": 45
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L12",
+            "base_time": 120,
+            "hourly_adjust": {
+                "7-9": 30
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L13",
+            "base_time": 80,
+            "hourly_adjust": {
+                "10-12": 20
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L14",
+            "base_time": 130,
+            "hourly_adjust": {
+                "12-14": 40
+            },
+            "max_weight": 400
+        }
+    ],
+    "result": true,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "storage_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "vehicle_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "time_window_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": true,
+        "errors": []
+    }
+}

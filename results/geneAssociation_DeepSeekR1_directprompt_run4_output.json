@@ -1,0 +1,712 @@
+{
+  "genes": [
+    {
+      "id": "G0",
+      "name": "Gene_0",
+      "function": "Function of Gene_0"
+    },
+    {
+      "id": "G1",
+      "name": "Gene_1",
+      "function": "Function of Gene_1"
+    },
+    {
+      "id": "G2",
+      "name": "Gene_2",
+      "function": "Function of Gene_2"
+    },
+    {
+      "id": "G3",
+      "name": "Gene_3",
+      "function": "Function of Gene_3"
+    },
+    {
+      "id": "G4",
+      "name": "Gene_4",
+      "function": "Function of Gene_4"
+    },
+    {
+      "id": "G5",
+      "name": "Gene_5",
+      "function": "Function of Gene_5"
+    },
+    {
+      "id": "G6",
+      "name": "Gene_6",
+      "function": "Function of Gene_6"
+    },
+    {
+      "id": "G7",
+      "name": "Gene_7",
+      "function": "Function of Gene_7"
+    },
+    {
+      "id": "G8",
+      "name": "Gene_8",
+      "function": "Function of Gene_8"
+    },
+    {
+      "id": "G9",
+      "name": "Gene_9",
+      "function": "Function of Gene_9"
+    },
+    {
+      "id": "G10",
+      "name": "Gene_10",
+      "function": "Function of Gene_10"
+    },
+    {
+      "id": "G11",
+      "name": "Gene_11",
+      "function": "Function of Gene_11"
+    },
+    {
+      "id": "G12",
+      "name": "Gene_12",
+      "function": "Function of Gene_12"
+    },
+    {
+      "id": "G13",
+      "name": "Gene_13",
+      "function": "Function of Gene_13"
+    },
+    {
+      "id": "G14",
+      "name": "Gene_14",
+      "function": "Function of Gene_14"
+    },
+    {
+      "id": "G15",
+      "name": "Gene_15",
+      "function": "Function of Gene_15"
+    },
+    {
+      "id": "G16",
+      "name": "Gene_16",
+      "function": "Function of Gene_16"
+    },
+    {
+      "id": "G17",
+      "name": "Gene_17",
+      "function": "Function of Gene_17"
+    },
+    {
+      "id": "G18",
+      "name": "Gene_18",
+      "function": "Function of Gene_18"
+    },
+    {
+      "id": "G19",
+      "name": "Gene_19",
+      "function": "Function of Gene_19"
+    }
+  ],
+  "diseases": [
+    {
+      "id": "D0",
+      "name": "Disease_0",
+      "severity_level": "High"
+    },
+    {
+      "id": "D1",
+      "name": "Disease_1",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D2",
+      "name": "Disease_2",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D3",
+      "name": "Disease_3",
+      "severity_level": "High"
+    },
+    {
+      "id": "D4",
+      "name": "Disease_4",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D5",
+      "name": "Disease_5",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D6",
+      "name": "Disease_6",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D7",
+      "name": "Disease_7",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D8",
+      "name": "Disease_8",
+      "severity_level": "High"
+    },
+    {
+      "id": "D9",
+      "name": "Disease_9",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D10",
+      "name": "Disease_10",
+      "severity_level": "High"
+    },
+    {
+      "id": "D11",
+      "name": "Disease_11",
+      "severity_level": "High"
+    },
+    {
+      "id": "D12",
+      "name": "Disease_12",
+      "severity_level": "High"
+    },
+    {
+      "id": "D13",
+      "name": "Disease_13",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D14",
+      "name": "Disease_14",
+      "severity_level": "High"
+    },
+    {
+      "id": "D15",
+      "name": "Disease_15",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D16",
+      "name": "Disease_16",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D17",
+      "name": "Disease_17",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D18",
+      "name": "Disease_18",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D19",
+      "name": "Disease_19",
+      "severity_level": "Low"
+    }
+  ],
+  "associations": [
+    {
+      "from": "G0",
+      "to": "D16",
+      "strength": 0.6
+    },
+    {
+      "from": "G0",
+      "to": "D17",
+      "strength": 0.42
+    },
+    {
+      "from": "G0",
+      "to": "D18",
+      "strength": 0.28
+    },
+    {
+      "from": "G1",
+      "to": "D13",
+      "strength": 0.34
+    },
+    {
+      "from": "G1",
+      "to": "D6",
+      "strength": 0.96
+    },
+    {
+      "from": "G1",
+      "to": "D3",
+      "strength": 0.09
+    },
+    {
+      "from": "G2",
+      "to": "D11",
+      "strength": 0.6
+    },
+    {
+      "from": "G2",
+      "to": "D14",
+      "strength": 0.54
+    },
+    {
+      "from": "G2",
+      "to": "D2",
+      "strength": 0.55
+    },
+    {
+      "from": "G2",
+      "to": "D18",
+      "strength": 0.19
+    },
+    {
+      "from": "G3",
+      "to": "D7",
+      "strength": 0.77
+    },
+    {
+      "from": "G3",
+      "to": "D8",
+      "strength": 0.45
+    },
+    {
+      "from": "G3",
+      "to": "D5",
+      "strength": 0.37
+    },
+    {
+      "from": "G4",
+      "to": "D2",
+      "strength": 0.61
+    },
+    {
+      "from": "G4",
+      "to": "D17",
+      "strength": 0.73
+    },
+    {
+      "from": "G4",
+      "to": "D14",
+      "strength": 0.38
+    },
+    {
+      "from": "G5",
+      "to": "D1",
+      "strength": 0.23
+    },
+    {
+      "from": "G5",
+      "to": "D10",
+      "strength": 0.4
+    },
+    {
+      "from": "G6",
+      "to": "D18",
+      "strength": 0.88
+    },
+    {
+      "from": "G6",
+      "to": "D6",
+      "strength": 0.66
+    },
+    {
+      "from": "G6",
+      "to": "D14",
+      "strength": 0.14
+    },
+    {
+      "from": "G7",
+      "to": "D17",
+      "strength": 0.54
+    },
+    {
+      "from": "G7",
+      "to": "D18",
+      "strength": 0.4
+    },
+    {
+      "from": "G7",
+      "to": "D4",
+      "strength": 0.51
+    },
+    {
+      "from": "G8",
+      "to": "D3",
+      "strength": 0.15
+    },
+    {
+      "from": "G8",
+      "to": "D13",
+      "strength": 0.6
+    },
+    {
+      "from": "G8",
+      "to": "D12",
+      "strength": 0.6
+    },
+    {
+      "from": "G8",
+      "to": "D16",
+      "strength": 0.25
+    },
+    {
+      "from": "G9",
+      "to": "D17",
+      "strength": 0.75
+    },
+    {
+      "from": "G9",
+      "to": "D3",
+      "strength": 0.29
+    },
+    {
+      "from": "G9",
+      "to": "D14",
+      "strength": 0.0
+    },
+    {
+      "from": "G9",
+      "to": "D16",
+      "strength": 0.76
+    },
+    {
+      "from": "G10",
+      "to": "D16",
+      "strength": 0.61
+    },
+    {
+      "from": "G10",
+      "to": "D11",
+      "strength": 0.76
+    },
+    {
+      "from": "G11",
+      "to": "D15",
+      "strength": 0.02
+    },
+    {
+      "from": "G11",
+      "to": "D9",
+      "strength": 0.24
+    },
+    {
+      "from": "G11",
+      "to": "D18",
+      "strength": 0.95
+    },
+    {
+      "from": "G12",
+      "to": "D2",
+      "strength": 0.98
+    },
+    {
+      "from": "G12",
+      "to": "D4",
+      "strength": 0.66
+    },
+    {
+      "from": "G12",
+      "to": "D8",
+      "strength": 0.53
+    },
+    {
+      "from": "G12",
+      "to": "D6",
+      "strength": 0.93
+    },
+    {
+      "from": "G13",
+      "to": "D12",
+      "strength": 1.0
+    },
+    {
+      "from": "G13",
+      "to": "D14",
+      "strength": 0.9
+    },
+    {
+      "from": "G13",
+      "to": "D3",
+      "strength": 0.25
+    },
+    {
+      "from": "G14",
+      "to": "D0",
+      "strength": 0.59
+    },
+    {
+      "from": "G14",
+      "to": "D18",
+      "strength": 0.22
+    },
+    {
+      "from": "G15",
+      "to": "D7",
+      "strength": 0.07
+    },
+    {
+      "from": "G15",
+      "to": "D10",
+      "strength": 0.07
+    },
+    {
+      "from": "G15",
+      "to": "D8",
+      "strength": 0.67
+    },
+    {
+      "from": "G16",
+      "to": "D18",
+      "strength": 0.58
+    },
+    {
+      "from": "G16",
+      "to": "D15",
+      "strength": 0.81
+    },
+    {
+      "from": "G16",
+      "to": "D3",
+      "strength": 0.1
+    },
+    {
+      "from": "G16",
+      "to": "D11",
+      "strength": 0.42
+    },
+    {
+      "from": "G16",
+      "to": "D1",
+      "strength": 0.67
+    },
+    {
+      "from": "G17",
+      "to": "D12",
+      "strength": 0.73
+    },
+    {
+      "from": "G17",
+      "to": "D7",
+      "strength": 0.19
+    },
+    {
+      "from": "G17",
+      "to": "D4",
+      "strength": 0.42
+    },
+    {
+      "from": "G17",
+      "to": "D14",
+      "strength": 0.25
+    },
+    {
+      "from": "G18",
+      "to": "D17",
+      "strength": 0.1
+    },
+    {
+      "from": "G18",
+      "to": "D2",
+      "strength": 0.93
+    },
+    {
+      "from": "G18",
+      "to": "D5",
+      "strength": 0.41
+    },
+    {
+      "from": "G18",
+      "to": "D6",
+      "strength": 0.86
+    },
+    {
+      "from": "G19",
+      "to": "D12",
+      "strength": 0.0
+    },
+    {
+      "from": "G19",
+      "to": "D8",
+      "strength": 0.93
+    },
+    {
+      "from": "G19",
+      "to": "D9",
+      "strength": 0.42
+    },
+    {
+      "from": "G19",
+      "to": "D4",
+      "strength": 0.19
+    },
+    {
+      "from": "G18",
+      "to": "D0",
+      "strength": 0.74
+    },
+    {
+      "from": "G10",
+      "to": "D0",
+      "strength": 0.06
+    },
+    {
+      "from": "G1",
+      "to": "D0",
+      "strength": 0.96
+    },
+    {
+      "from": "G2",
+      "to": "D1",
+      "strength": 0.6
+    },
+    {
+      "from": "G12",
+      "to": "D1",
+      "strength": 0.12
+    },
+    {
+      "from": "G8",
+      "to": "D3",
+      "strength": 0.2
+    },
+    {
+      "from": "G7",
+      "to": "D3",
+      "strength": 0.27
+    },
+    {
+      "from": "G14",
+      "to": "D4",
+      "strength": 0.32
+    },
+    {
+      "from": "G14",
+      "to": "D5",
+      "strength": 0.62
+    },
+    {
+      "from": "G4",
+      "to": "D5",
+      "strength": 0.93
+    },
+    {
+      "from": "G11",
+      "to": "D6",
+      "strength": 0.28
+    },
+    {
+      "from": "G17",
+      "to": "D6",
+      "strength": 0.7
+    },
+    {
+      "from": "G3",
+      "to": "D7",
+      "strength": 0.94
+    },
+    {
+      "from": "G19",
+      "to": "D9",
+      "strength": 0.21
+    },
+    {
+      "from": "G6",
+      "to": "D9",
+      "strength": 0.69
+    },
+    {
+      "from": "G13",
+      "to": "D10",
+      "strength": 0.83
+    },
+    {
+      "from": "G4",
+      "to": "D12",
+      "strength": 0.64
+    },
+    {
+      "from": "G5",
+      "to": "D12",
+      "strength": 0.74
+    },
+    {
+      "from": "G11",
+      "to": "D13",
+      "strength": 0.58
+    },
+    {
+      "from": "G13",
+      "to": "D13",
+      "strength": 0.13
+    },
+    {
+      "from": "G6",
+      "to": "D14",
+      "strength": 0.68
+    },
+    {
+      "from": "G7",
+      "to": "D15",
+      "strength": 0.86
+    },
+    {
+      "from": "G10",
+      "to": "D16",
+      "strength": 0.78
+    },
+    {
+      "from": "G5",
+      "to": "D16",
+      "strength": 0.79
+    },
+    {
+      "from": "G1",
+      "to": "D17",
+      "strength": 0.86
+    },
+    {
+      "from": "G0",
+      "to": "D19",
+      "strength": 0.66
+    },
+    {
+      "from": "G10",
+      "to": "D19",
+      "strength": 0.28
+    },
+    {
+      "from": "G0",
+      "to": "D19",
+      "strength": 0.12
+    },
+    {
+      "from": "G5",
+      "to": "D19",
+      "strength": 0.58
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "constraints": {
+      "defined_counts": {
+        "passed": true,
+        "message": ""
+      },
+      "valid_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "degree_constraints": {
+        "passed": true,
+        "message": ""
+      },
+      "duplicate_associations": {
+        "passed": false,
+        "message": "Duplicate association found between 'G8' and 'D3'. Duplicate association found between 'G3' and 'D7'. Duplicate association found between 'G19' and 'D9'. Duplicate association found between 'G6' and 'D14'. Duplicate association found between 'G10' and 'D16'. Duplicate association found between 'G0' and 'D19'."
+      },
+      "bipartite_constraint": {
+        "passed": true,
+        "message": ""
+      }
+    },
+    "overall_passed": false,
+    "errors": [
+      "Duplicate Associations Check Failed."
+    ]
+  }
+}

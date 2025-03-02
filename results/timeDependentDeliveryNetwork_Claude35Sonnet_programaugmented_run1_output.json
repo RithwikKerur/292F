@@ -1,0 +1,356 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 500,
+            "time_window": [
+                8,
+                17
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 300,
+            "time_window": [
+                9,
+                16
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 250,
+            "time_window": [
+                10,
+                15
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 200,
+            "time_window": [
+                9,
+                14
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 350,
+            "time_window": [
+                8,
+                18
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 150,
+            "time_window": [
+                11,
+                16
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 400,
+            "time_window": [
+                7,
+                19
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 180,
+            "time_window": [
+                10,
+                17
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 220,
+            "time_window": [
+                9,
+                15
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 280,
+            "time_window": [
+                8,
+                16
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 320,
+            "time_window": [
+                7,
+                20
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 190,
+            "time_window": [
+                10,
+                14
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 270,
+            "time_window": [
+                9,
+                17
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 230,
+            "time_window": [
+                8,
+                15
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 340,
+            "time_window": [
+                9,
+                18
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 100,
+            "speed": 60
+        },
+        {
+            "id": "V2",
+            "capacity": 150,
+            "speed": 55
+        },
+        {
+            "id": "V3",
+            "capacity": 200,
+            "speed": 50
+        },
+        {
+            "id": "V4",
+            "capacity": 250,
+            "speed": 45
+        },
+        {
+            "id": "V5",
+            "capacity": 300,
+            "speed": 40
+        },
+        {
+            "id": "V6",
+            "capacity": 350,
+            "speed": 35
+        },
+        {
+            "id": "V7",
+            "capacity": 400,
+            "speed": 30
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 30,
+            "hourly_adjust": {
+                "8-10": 15,
+                "16-18": 20
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L0",
+            "to": "L4",
+            "base_time": 25,
+            "hourly_adjust": {
+                "7-9": 10,
+                "17-19": 15
+            },
+            "max_weight": 450
+        },
+        {
+            "from": "L0",
+            "to": "L6",
+            "base_time": 35,
+            "hourly_adjust": {
+                "8-10": 20,
+                "15-17": 25
+            },
+            "max_weight": 500
+        },
+        {
+            "from": "L1",
+            "to": "L2",
+            "base_time": 20,
+            "hourly_adjust": {
+                "11-14": 15
+            },
+            "max_weight": 300
+        },
+        {
+            "from": "L1",
+            "to": "L5",
+            "base_time": 25,
+            "hourly_adjust": {
+                "12-15": 10
+            },
+            "max_weight": 250
+        },
+        {
+            "from": "L2",
+            "to": "L3",
+            "base_time": 30,
+            "hourly_adjust": {
+                "9-11": 20
+            },
+            "max_weight": 280
+        },
+        {
+            "from": "L3",
+            "to": "L8",
+            "base_time": 40,
+            "hourly_adjust": {
+                "8-11": 15,
+                "13-16": 20
+            },
+            "max_weight": 350
+        },
+        {
+            "from": "L3",
+            "to": "L13",
+            "base_time": 35,
+            "hourly_adjust": {
+                "7-10": 25
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L4",
+            "to": "L7",
+            "base_time": 30,
+            "hourly_adjust": {
+                "10-13": 15
+            },
+            "max_weight": 320
+        },
+        {
+            "from": "L4",
+            "to": "L9",
+            "base_time": 25,
+            "hourly_adjust": {
+                "9-12": 20
+            },
+            "max_weight": 380
+        },
+        {
+            "from": "L4",
+            "to": "L14",
+            "base_time": 45,
+            "hourly_adjust": {
+                "8-11": 30,
+                "14-17": 25
+            },
+            "max_weight": 450
+        },
+        {
+            "from": "L6",
+            "to": "L10",
+            "base_time": 35,
+            "hourly_adjust": {
+                "8-10": 20,
+                "15-18": 25
+            },
+            "max_weight": 500
+        },
+        {
+            "from": "L6",
+            "to": "L12",
+            "base_time": 30,
+            "hourly_adjust": {
+                "9-12": 15
+            },
+            "max_weight": 400
+        },
+        {
+            "from": "L7",
+            "to": "L11",
+            "base_time": 25,
+            "hourly_adjust": {
+                "10-13": 20
+            },
+            "max_weight": 300
+        },
+        {
+            "from": "L9",
+            "to": "L12",
+            "base_time": 30,
+            "hourly_adjust": {
+                "11-14": 15
+            },
+            "max_weight": 350
+        },
+        {
+            "from": "L10",
+            "to": "L13",
+            "base_time": 40,
+            "hourly_adjust": {
+                "8-11": 25,
+                "14-17": 20
+            },
+            "max_weight": 450
+        },
+        {
+            "from": "L11",
+            "to": "L14",
+            "base_time": 35,
+            "hourly_adjust": {
+                "9-12": 20
+            },
+            "max_weight": 320
+        },
+        {
+            "from": "L12",
+            "to": "L14",
+            "base_time": 30,
+            "hourly_adjust": {
+                "10-13": 15
+            },
+            "max_weight": 400
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "storage_capacity_compliance": {
+            "passed": false,
+            "message": "Total incoming 'max_weight' to location 'L1' is 400 kg, exceeding its storage capacity of 300 kg. Total incoming 'max_weight' to location 'L4' is 450 kg, exceeding its storage capacity of 350 kg. Total incoming 'max_weight' to location 'L6' is 500 kg, exceeding its storage capacity of 400 kg. Total incoming 'max_weight' to location 'L2' is 300 kg, exceeding its storage capacity of 250 kg. Total incoming 'max_weight' to location 'L5' is 250 kg, exceeding its storage capacity of 150 kg. Total incoming 'max_weight' to location 'L3' is 280 kg, exceeding its storage capacity of 200 kg. Total incoming 'max_weight' to location 'L8' is 350 kg, exceeding its storage capacity of 220 kg. Total incoming 'max_weight' to location 'L13' is 850 kg, exceeding its storage capacity of 230 kg. Total incoming 'max_weight' to location 'L7' is 320 kg, exceeding its storage capacity of 180 kg. Total incoming 'max_weight' to location 'L9' is 380 kg, exceeding its storage capacity of 280 kg. Total incoming 'max_weight' to location 'L14' is 1170 kg, exceeding its storage capacity of 340 kg. Total incoming 'max_weight' to location 'L10' is 500 kg, exceeding its storage capacity of 320 kg. Total incoming 'max_weight' to location 'L12' is 750 kg, exceeding its storage capacity of 270 kg. Total incoming 'max_weight' to location 'L11' is 300 kg, exceeding its storage capacity of 190 kg."
+        },
+        "vehicle_capacity_compliance": {
+            "passed": false,
+            "message": "Edge from 'L1' to 'L2' has 'max_weight' 300 kg, which is less than the maximum vehicle capacity of 400 kg. Edge from 'L1' to 'L5' has 'max_weight' 250 kg, which is less than the maximum vehicle capacity of 400 kg. Edge from 'L2' to 'L3' has 'max_weight' 280 kg, which is less than the maximum vehicle capacity of 400 kg. Edge from 'L3' to 'L8' has 'max_weight' 350 kg, which is less than the maximum vehicle capacity of 400 kg. Edge from 'L4' to 'L7' has 'max_weight' 320 kg, which is less than the maximum vehicle capacity of 400 kg. Edge from 'L4' to 'L9' has 'max_weight' 380 kg, which is less than the maximum vehicle capacity of 400 kg. Edge from 'L7' to 'L11' has 'max_weight' 300 kg, which is less than the maximum vehicle capacity of 400 kg. Edge from 'L9' to 'L12' has 'max_weight' 350 kg, which is less than the maximum vehicle capacity of 400 kg. Edge from 'L11' to 'L14' has 'max_weight' 320 kg, which is less than the maximum vehicle capacity of 400 kg."
+        },
+        "time_window_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": false,
+        "errors": [
+            "Storage Capacity Compliance Check Failed.",
+            "Vehicle Capacity Compliance Check Failed."
+        ]
+    }
+}

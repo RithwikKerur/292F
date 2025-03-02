@@ -1,433 +1,437 @@
 {
-    "genes": [
-        {
-            "id": "G0",
-            "name": "BRCA1",
-            "function": "DNA repair"
-        },
-        {
-            "id": "G1",
-            "name": "TP53",
-            "function": "Tumor suppression"
-        },
-        {
-            "id": "G2",
-            "name": "EGFR",
-            "function": "Cell cycle regulation"
-        },
-        {
-            "id": "G3",
-            "name": "PIK3CA",
-            "function": "Signaling pathways"
-        },
-        {
-            "id": "G4",
-            "name": "Rb",
-            "function": "Cell cycle arrest"
-        },
-        {
-            "id": "G5",
-            "name": "PIGF",
-            "function": "Metabolism"
-        },
-        {
-            "id": "G6",
-            "name": "SMAD4",
-            "function": "Signaling pathways"
-        },
-        {
-            "id": "G7",
-            "name": "JUN",
-            "function": "Cell proliferation"
-        },
-        {
-            "id": "G8",
-            "name": "FOSL1",
-            "function": "Immune response"
-        },
-        {
-            "id": "G9",
-            "name": "MYC",
-            "function": "Cell growth"
-        },
-        {
-            "id": "G10",
-            "name": "NF-YA",
-            "function": "Immune response"
-        },
-        {
-            "id": "G11",
-            "name": "TNF receptor",
-            "function": "Inflammation"
-        },
-        {
-            "id": "G12",
-            "name": "IL-6",
-            "function": "Immune response"
-        },
-        {
-            "id": "G13",
-            "name": "VEGF",
-            "function": "Angiogenesis"
-        },
-        {
-            "id": "G14",
-            "name": "EGF receptor",
-            "function": "Cell signaling"
-        },
-        {
-            "id": "G15",
-            "name": "CD20",
-            "function": "Immune response"
-        },
-        {
-            "id": "G16",
-            "name": "HER2",
-            "function": "Cancer signaling"
-        },
-        {
-            "id": "G17",
-            "name": "TGF-beta",
-            "function": "Signaling pathways"
-        },
-        {
-            "id": "G18",
-            "name": "Notch",
-            "function": "Cell communication"
-        },
-        {
-            "id": "G19",
-            "name": "Wnt",
-            "function": "Signaling pathways"
-        }
-    ],
-    "diseases": [
-        {
-            "id": "D0",
-            "name": "Breast cancer",
-            "severity": "high"
-        },
-        {
-            "id": "D1",
-            "name": "Lung cancer",
-            "severity": "low"
-        },
-        {
-            "id": "D2",
-            "name": "Colon cancer",
-            "severity": "high"
-        },
-        {
-            "id": "D3",
-            "name": "Ovarian cancer",
-            "severity": "medium"
-        },
-        {
-            "id": "D4",
-            "name": "Prostate cancer",
-            "severity": "low"
-        },
-        {
-            "id": "D5",
-            "name": "Pancreatic cancer",
-            "severity": "high"
-        },
-        {
-            "id": "D6",
-            "name": "Hodakin syndrome",
-            "severity": "low"
-        },
-        {
-            "id": "D7",
-            "name": "Melanoma",
-            "severity": "high"
-        },
-        {
-            "id": "D8",
-            "name": "Brain cancer",
-            "severity": "medium"
-        },
-        {
-            "id": "D9",
-            "name": "Skin cancer",
-            "severity": "low"
-        },
-        {
-            "id": "D10",
-            "name": "Meningiomas",
-            "severity": "high"
-        },
-        {
-            "id": "D11",
-            "name": "Gliomas",
-            "severity": "medium"
-        },
-        {
-            "id": "D12",
-            "name": "Myeloma",
-            "severity": "low"
-        },
-        {
-            "id": "D13",
-            "name": " Hodgkin lymphoma",
-            "severity": "high"
-        },
-        {
-            "id": "D14",
-            "name": "Non-Hodgkin lymphoma",
-            "severity": "medium"
-        },
-        {
-            "id": "D15",
-            "name": "Melanoblastic nevus",
-            "severity": "low"
-        },
-        {
-            "id": "D16",
-            "name": "Acute myeloid leukemia",
-            "severity": "high"
-        },
-        {
-            "id": "D17",
-            "name": "Chronic myeloid leukemia",
-            "severity": "medium"
-        },
-        {
-            "id": "D18",
-            "name": "Lymphocytes",
-            "severity": "low"
-        },
-        {
-            "id": "D19",
-            "name": "Myelophthisis",
-            "severity": "high"
-        }
-    ],
-    "associations": [
-        {
-            "from": "G0",
-            "to": "D0",
-            "strength": 0.8
-        },
-        {
-            "from": "G0",
-            "to": "D2",
-            "strength": 0.7
-        },
-        {
-            "from": "G1",
-            "to": "D5",
-            "strength": 0.9
-        },
-        {
-            "from": "G1",
-            "to": "D6",
-            "strength": 0.6
-        },
-        {
-            "from": "G2",
-            "to": "D8",
-            "strength": 0.5
-        },
-        {
-            "from": "G2",
-            "to": "D7",
-            "strength": 0.4
-        },
-        {
-            "from": "G3",
-            "to": "D1",
-            "strength": 0.9
-        },
-        {
-            "from": "G3",
-            "to": "D8",
-            "strength": 0.6
-        },
-        {
-            "from": "G4",
-            "to": "D5",
-            "strength": 0.7
-        },
-        {
-            "from": "G4",
-            "to": "D12",
-            "strength": 0.8
-        },
-        {
-            "from": "G5",
-            "to": "D9",
-            "strength": 0.6
-        },
-        {
-            "from": "G5",
-            "to": "D13",
-            "strength": 0.7
-        },
-        {
-            "from": "G6",
-            "to": "D4",
-            "strength": 0.8
-        },
-        {
-            "from": "G6",
-            "to": "D19",
-            "strength": 0.5
-        },
-        {
-            "from": "G7",
-            "to": "D3",
-            "strength": 0.9
-        },
-        {
-            "from": "G7",
-            "to": "D14",
-            "strength": 0.6
-        },
-        {
-            "from": "G8",
-            "to": "D2",
-            "strength": 0.5
-        },
-        {
-            "from": "G8",
-            "to": "D3",
-            "strength": 0.4
-        },
-        {
-            "from": "G9",
-            "to": "D17",
-            "strength": 0.7
-        },
-        {
-            "from": "G9",
-            "to": "D16",
-            "strength": 0.6
-        },
-        {
-            "from": "G10",
-            "to": "D0",
-            "strength": 0.8
-        },
-        {
-            "from": "G10",
-            "to": "D4",
-            "strength": 0.7
-        },
-        {
-            "from": "G11",
-            "to": "D5",
-            "strength": 0.9
-        },
-        {
-            "from": "G11",
-            "to": "D6",
-            "strength": 0.6
-        },
-        {
-            "from": "G12",
-            "to": "D8",
-            "strength": 0.5
-        },
-        {
-            "from": "G12",
-            "to": "D7",
-            "strength": 0.4
-        },
-        {
-            "from": "G13",
-            "to": "D9",
-            "strength": 0.6
-        },
-        {
-            "from": "G13",
-            "to": "D13",
-            "strength": 0.7
-        },
-        {
-            "from": "G14",
-            "to": "D2",
-            "strength": 0.8
-        },
-        {
-            "from": "G14",
-            "to": "D5",
-            "strength": 0.9
-        },
-        {
-            "from": "G15",
-            "to": "D6",
-            "strength": 0.7
-        },
-        {
-            "from": "G15",
-            "to": "D12",
-            "strength": 0.8
-        },
-        {
-            "from": "G16",
-            "to": "D4",
-            "strength": 0.9
-        },
-        {
-            "from": "G16",
-            "to": "D7",
-            "strength": 0.6
-        },
-        {
-            "from": "G17",
-            "to": "D3",
-            "strength": 0.8
-        },
-        {
-            "from": "G17",
-            "to": "D8",
-            "strength": 0.5
-        },
-        {
-            "from": "G18",
-            "to": "D2",
-            "strength": 0.6
-        },
-        {
-            "from": "G18",
-            "to": "D3",
-            "strength": 0.4
-        },
-        {
-            "from": "G19",
-            "to": "D17",
-            "strength": 0.7
-        },
-        {
-            "from": "G19",
-            "to": "D16",
-            "strength": 0.8
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "constraints": {
-            "defined_counts": {
-                "passed": true,
-                "message": ""
-            },
-            "valid_associations": {
-                "passed": true,
-                "message": ""
-            },
-            "degree_constraints": {
-                "passed": false,
-                "message": "Disease 'D0' has 2 associations; expected between 3 and 10. Disease 'D1' has 1 associations; expected between 3 and 10. Disease 'D9' has 2 associations; expected between 3 and 10. Disease 'D10' has 0 associations; expected between 3 and 10. Disease 'D11' has 0 associations; expected between 3 and 10. Disease 'D12' has 2 associations; expected between 3 and 10. Disease 'D13' has 2 associations; expected between 3 and 10. Disease 'D14' has 1 associations; expected between 3 and 10. Disease 'D15' has 0 associations; expected between 3 and 10. Disease 'D16' has 2 associations; expected between 3 and 10. Disease 'D17' has 2 associations; expected between 3 and 10. Disease 'D18' has 0 associations; expected between 3 and 10. Disease 'D19' has 1 associations; expected between 3 and 10."
-            },
-            "duplicate_associations": {
-                "passed": true,
-                "message": ""
-            }
-        },
-        "overall_passed": false,
-        "errors": [
-            "Degree Constraints Check Failed."
-        ]
+  "genes": [
+    {
+      "id": "G0",
+      "name": "BRCA1",
+      "function": "DNA repair"
+    },
+    {
+      "id": "G1",
+      "name": "TP53",
+      "function": "Tumor suppression"
+    },
+    {
+      "id": "G2",
+      "name": "EGFR",
+      "function": "Cell cycle regulation"
+    },
+    {
+      "id": "G3",
+      "name": "PIK3CA",
+      "function": "Signaling pathways"
+    },
+    {
+      "id": "G4",
+      "name": "Rb",
+      "function": "Cell cycle arrest"
+    },
+    {
+      "id": "G5",
+      "name": "PIGF",
+      "function": "Metabolism"
+    },
+    {
+      "id": "G6",
+      "name": "SMAD4",
+      "function": "Signaling pathways"
+    },
+    {
+      "id": "G7",
+      "name": "JUN",
+      "function": "Cell proliferation"
+    },
+    {
+      "id": "G8",
+      "name": "FOSL1",
+      "function": "Immune response"
+    },
+    {
+      "id": "G9",
+      "name": "MYC",
+      "function": "Cell growth"
+    },
+    {
+      "id": "G10",
+      "name": "NF-YA",
+      "function": "Immune response"
+    },
+    {
+      "id": "G11",
+      "name": "TNF receptor",
+      "function": "Inflammation"
+    },
+    {
+      "id": "G12",
+      "name": "IL-6",
+      "function": "Immune response"
+    },
+    {
+      "id": "G13",
+      "name": "VEGF",
+      "function": "Angiogenesis"
+    },
+    {
+      "id": "G14",
+      "name": "EGF receptor",
+      "function": "Cell signaling"
+    },
+    {
+      "id": "G15",
+      "name": "CD20",
+      "function": "Immune response"
+    },
+    {
+      "id": "G16",
+      "name": "HER2",
+      "function": "Cancer signaling"
+    },
+    {
+      "id": "G17",
+      "name": "TGF-beta",
+      "function": "Signaling pathways"
+    },
+    {
+      "id": "G18",
+      "name": "Notch",
+      "function": "Cell communication"
+    },
+    {
+      "id": "G19",
+      "name": "Wnt",
+      "function": "Signaling pathways"
     }
+  ],
+  "diseases": [
+    {
+      "id": "D0",
+      "name": "Breast cancer",
+      "severity": "high"
+    },
+    {
+      "id": "D1",
+      "name": "Lung cancer",
+      "severity": "low"
+    },
+    {
+      "id": "D2",
+      "name": "Colon cancer",
+      "severity": "high"
+    },
+    {
+      "id": "D3",
+      "name": "Ovarian cancer",
+      "severity": "medium"
+    },
+    {
+      "id": "D4",
+      "name": "Prostate cancer",
+      "severity": "low"
+    },
+    {
+      "id": "D5",
+      "name": "Pancreatic cancer",
+      "severity": "high"
+    },
+    {
+      "id": "D6",
+      "name": "Hodakin syndrome",
+      "severity": "low"
+    },
+    {
+      "id": "D7",
+      "name": "Melanoma",
+      "severity": "high"
+    },
+    {
+      "id": "D8",
+      "name": "Brain cancer",
+      "severity": "medium"
+    },
+    {
+      "id": "D9",
+      "name": "Skin cancer",
+      "severity": "low"
+    },
+    {
+      "id": "D10",
+      "name": "Meningiomas",
+      "severity": "high"
+    },
+    {
+      "id": "D11",
+      "name": "Gliomas",
+      "severity": "medium"
+    },
+    {
+      "id": "D12",
+      "name": "Myeloma",
+      "severity": "low"
+    },
+    {
+      "id": "D13",
+      "name": " Hodgkin lymphoma",
+      "severity": "high"
+    },
+    {
+      "id": "D14",
+      "name": "Non-Hodgkin lymphoma",
+      "severity": "medium"
+    },
+    {
+      "id": "D15",
+      "name": "Melanoblastic nevus",
+      "severity": "low"
+    },
+    {
+      "id": "D16",
+      "name": "Acute myeloid leukemia",
+      "severity": "high"
+    },
+    {
+      "id": "D17",
+      "name": "Chronic myeloid leukemia",
+      "severity": "medium"
+    },
+    {
+      "id": "D18",
+      "name": "Lymphocytes",
+      "severity": "low"
+    },
+    {
+      "id": "D19",
+      "name": "Myelophthisis",
+      "severity": "high"
+    }
+  ],
+  "associations": [
+    {
+      "from": "G0",
+      "to": "D0",
+      "strength": 0.8
+    },
+    {
+      "from": "G0",
+      "to": "D2",
+      "strength": 0.7
+    },
+    {
+      "from": "G1",
+      "to": "D5",
+      "strength": 0.9
+    },
+    {
+      "from": "G1",
+      "to": "D6",
+      "strength": 0.6
+    },
+    {
+      "from": "G2",
+      "to": "D8",
+      "strength": 0.5
+    },
+    {
+      "from": "G2",
+      "to": "D7",
+      "strength": 0.4
+    },
+    {
+      "from": "G3",
+      "to": "D1",
+      "strength": 0.9
+    },
+    {
+      "from": "G3",
+      "to": "D8",
+      "strength": 0.6
+    },
+    {
+      "from": "G4",
+      "to": "D5",
+      "strength": 0.7
+    },
+    {
+      "from": "G4",
+      "to": "D12",
+      "strength": 0.8
+    },
+    {
+      "from": "G5",
+      "to": "D9",
+      "strength": 0.6
+    },
+    {
+      "from": "G5",
+      "to": "D13",
+      "strength": 0.7
+    },
+    {
+      "from": "G6",
+      "to": "D4",
+      "strength": 0.8
+    },
+    {
+      "from": "G6",
+      "to": "D19",
+      "strength": 0.5
+    },
+    {
+      "from": "G7",
+      "to": "D3",
+      "strength": 0.9
+    },
+    {
+      "from": "G7",
+      "to": "D14",
+      "strength": 0.6
+    },
+    {
+      "from": "G8",
+      "to": "D2",
+      "strength": 0.5
+    },
+    {
+      "from": "G8",
+      "to": "D3",
+      "strength": 0.4
+    },
+    {
+      "from": "G9",
+      "to": "D17",
+      "strength": 0.7
+    },
+    {
+      "from": "G9",
+      "to": "D16",
+      "strength": 0.6
+    },
+    {
+      "from": "G10",
+      "to": "D0",
+      "strength": 0.8
+    },
+    {
+      "from": "G10",
+      "to": "D4",
+      "strength": 0.7
+    },
+    {
+      "from": "G11",
+      "to": "D5",
+      "strength": 0.9
+    },
+    {
+      "from": "G11",
+      "to": "D6",
+      "strength": 0.6
+    },
+    {
+      "from": "G12",
+      "to": "D8",
+      "strength": 0.5
+    },
+    {
+      "from": "G12",
+      "to": "D7",
+      "strength": 0.4
+    },
+    {
+      "from": "G13",
+      "to": "D9",
+      "strength": 0.6
+    },
+    {
+      "from": "G13",
+      "to": "D13",
+      "strength": 0.7
+    },
+    {
+      "from": "G14",
+      "to": "D2",
+      "strength": 0.8
+    },
+    {
+      "from": "G14",
+      "to": "D5",
+      "strength": 0.9
+    },
+    {
+      "from": "G15",
+      "to": "D6",
+      "strength": 0.7
+    },
+    {
+      "from": "G15",
+      "to": "D12",
+      "strength": 0.8
+    },
+    {
+      "from": "G16",
+      "to": "D4",
+      "strength": 0.9
+    },
+    {
+      "from": "G16",
+      "to": "D7",
+      "strength": 0.6
+    },
+    {
+      "from": "G17",
+      "to": "D3",
+      "strength": 0.8
+    },
+    {
+      "from": "G17",
+      "to": "D8",
+      "strength": 0.5
+    },
+    {
+      "from": "G18",
+      "to": "D2",
+      "strength": 0.6
+    },
+    {
+      "from": "G18",
+      "to": "D3",
+      "strength": 0.4
+    },
+    {
+      "from": "G19",
+      "to": "D17",
+      "strength": 0.7
+    },
+    {
+      "from": "G19",
+      "to": "D16",
+      "strength": 0.8
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "constraints": {
+      "defined_counts": {
+        "passed": true,
+        "message": ""
+      },
+      "valid_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "degree_constraints": {
+        "passed": false,
+        "message": "Disease 'D0' has 2 associations; expected between 3 and 10. Disease 'D1' has 1 associations; expected between 3 and 10. Disease 'D9' has 2 associations; expected between 3 and 10. Disease 'D10' has 0 associations; expected between 3 and 10. Disease 'D11' has 0 associations; expected between 3 and 10. Disease 'D12' has 2 associations; expected between 3 and 10. Disease 'D13' has 2 associations; expected between 3 and 10. Disease 'D14' has 1 associations; expected between 3 and 10. Disease 'D15' has 0 associations; expected between 3 and 10. Disease 'D16' has 2 associations; expected between 3 and 10. Disease 'D17' has 2 associations; expected between 3 and 10. Disease 'D18' has 0 associations; expected between 3 and 10. Disease 'D19' has 1 associations; expected between 3 and 10."
+      },
+      "duplicate_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "bipartite_constraint": {
+        "passed": true,
+        "message": ""
+      }
+    },
+    "overall_passed": false,
+    "errors": [
+      "Degree Constraints Check Failed."
+    ]
+  }
 }

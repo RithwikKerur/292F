@@ -1,0 +1,282 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 200,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 120,
+            "time_window": [
+                0,
+                24
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 20,
+            "speed": 50
+        },
+        {
+            "id": "V2",
+            "capacity": 40,
+            "speed": 50
+        },
+        {
+            "id": "V3",
+            "capacity": 60,
+            "speed": 50
+        },
+        {
+            "id": "V4",
+            "capacity": 80,
+            "speed": 50
+        },
+        {
+            "id": "V5",
+            "capacity": 90,
+            "speed": 60
+        },
+        {
+            "id": "V6",
+            "capacity": 100,
+            "speed": 70
+        },
+        {
+            "id": "V7",
+            "capacity": 110,
+            "speed": 80
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L1",
+            "to": "L2",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L2",
+            "to": "L3",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L3",
+            "to": "L4",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L4",
+            "to": "L5",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L5",
+            "to": "L6",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L6",
+            "to": "L7",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L7",
+            "to": "L8",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L8",
+            "to": "L9",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L9",
+            "to": "L10",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L10",
+            "to": "L11",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L11",
+            "to": "L12",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L12",
+            "to": "L13",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        },
+        {
+            "from": "L13",
+            "to": "L14",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 110
+        }
+    ],
+    "result": true,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "storage_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "vehicle_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "time_window_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": true,
+        "errors": []
+    }
+}

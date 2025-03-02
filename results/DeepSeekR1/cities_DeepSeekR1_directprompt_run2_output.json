@@ -1,442 +1,429 @@
 {
-    "cities": [
-        {
-            "id": "C0",
-            "population": 1000
-        },
-        {
-            "id": "C1",
-            "population": 500
-        },
-        {
-            "id": "C2",
-            "population": 800
-        },
-        {
-            "id": "C3",
-            "population": 700
-        },
-        {
-            "id": "C4",
-            "population": 600
-        },
-        {
-            "id": "C5",
-            "population": 900
-        },
-        {
-            "id": "C6",
-            "population": 400
-        },
-        {
-            "id": "C7",
-            "population": 300
-        },
-        {
-            "id": "C8",
-            "population": 1600
-        },
-        {
-            "id": "C9",
-            "population": 1400
-        },
-        {
-            "id": "C10",
-            "population": 1200
-        },
-        {
-            "id": "C11",
-            "population": 1000
-        },
-        {
-            "id": "C12",
-            "population": 800
-        },
-        {
-            "id": "C13",
-            "population": 600
-        },
-        {
-            "id": "C14",
-            "population": 400
-        },
-        {
-            "id": "C15",
-            "population": 200
-        }
-    ],
-    "roads": [
-        {
-            "from": "C0",
-            "to": "C1",
-            "distance": 750.5,
-            "cost": 600.3
-        },
-        {
-            "from": "C1",
-            "to": "C2",
-            "distance": 820.4,
-            "cost": 750.1
-        },
-        {
-            "from": "C2",
-            "to": "C3",
-            "distance": 600.0,
-            "cost": 500.0
-        },
-        {
-            "from": "C3",
-            "to": "C4",
-            "distance": 900.0,
-            "cost": 700.0
-        },
-        {
-            "from": "C4",
-            "to": "C5",
-            "distance": 1200.0,
-            "cost": 900.0
-        },
-        {
-            "from": "C5",
-            "to": "C6",
-            "distance": 450.0,
-            "cost": 300.0
-        },
-        {
-            "from": "C6",
-            "to": "C7",
-            "distance": 1000.0,
-            "cost": 800.0
-        },
-        {
-            "from": "C7",
-            "to": "C8",
-            "distance": 500.0,
-            "cost": 400.0
-        },
-        {
-            "from": "C8",
-            "to": "C9",
-            "distance": 1200.0,
-            "cost": 850.0
-        },
-        {
-            "from": "C9",
-            "to": "C10",
-            "distance": 700.0,
-            "cost": 500.0
-        },
-        {
-            "from": "C10",
-            "to": "C11",
-            "distance": 300.0,
-            "cost": 200.0
-        },
-        {
-            "from": "C11",
-            "to": "C12",
-            "distance": 850.0,
-            "cost": 600.0
-        },
-        {
-            "from": "C12",
-            "to": "C13",
-            "distance": 900.0,
-            "cost": 700.0
-        },
-        {
-            "from": "C13",
-            "to": "C14",
-            "distance": 550.0,
-            "cost": 400.0
-        },
-        {
-            "from": "C14",
-            "to": "C15",
-            "distance": 200.0,
-            "cost": 100.0
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "output_structure": {
-            "passed": true,
-            "message": ""
-        },
-        "connectivity": {
-            "passed": false,
-            "message": "The network is not strongly connected."
-        },
-        "road_capacity": {
-            "passed": false,
-            "message": "Road from 'C0' to 'C1' has invalid distance 750.5 km (must be <= 300 km).; Road from 'C1' to 'C2' has invalid distance 820.4 km (must be <= 300 km).; Road from 'C2' to 'C3' has invalid distance 600.0 km (must be <= 300 km).; Road from 'C3' to 'C4' has invalid distance 900.0 km (must be <= 300 km).; Road from 'C4' to 'C5' has invalid distance 1200.0 km (must be <= 300 km).; Road from 'C5' to 'C6' has invalid distance 450.0 km (must be <= 300 km).; Road from 'C6' to 'C7' has invalid distance 1000.0 km (must be <= 300 km).; Road from 'C7' to 'C8' has invalid distance 500.0 km (must be <= 300 km).; Road from 'C8' to 'C9' has invalid distance 1200.0 km (must be <= 300 km).; Road from 'C9' to 'C10' has invalid distance 700.0 km (must be <= 300 km).; Road from 'C11' to 'C12' has invalid distance 850.0 km (must be <= 300 km).; Road from 'C12' to 'C13' has invalid distance 900.0 km (must be <= 300 km).; Road from 'C13' to 'C14' has invalid distance 550.0 km (must be <= 300 km)."
-        },
-        "cost_optimization": {
-            "passed": true,
-            "message": ""
-        },
-        "population_accessibility": {
-            "passed": false,
-            "message": ""
-        },
-        "strategic_road_placement": {
-            "passed": false,
-            "message": ""
-        },
-        "redundancy": {
-            "passed": false,
-            "message": "Insufficient redundancy due to connectivity or population accessibility issues."
-        },
-        "max_edges_constraint": {
-            "passed": false,
-            "message": "City 'C0' is not reachable from 'C1' in at most 3 edges.; City 'C12' is not reachable from 'C1' in at most 3 edges.; City 'C5' is not reachable from 'C1' in at most 3 edges.; City 'C9' is not reachable from 'C1' in at most 3 edges.; City 'C14' is not reachable from 'C1' in at most 3 edges.; City 'C10' is not reachable from 'C1' in at most 3 edges.; City 'C6' is not reachable from 'C1' in at most 3 edges.; City 'C8' is not reachable from 'C1' in at most 3 edges.; City 'C11' is not reachable from 'C1' in at most 3 edges.; City 'C7' is not reachable from 'C1' in at most 3 edges.; City 'C15' is not reachable from 'C1' in at most 3 edges.; City 'C13' is not reachable from 'C1' in at most 3 edges.; City 'C1' is not reachable from 'C4' in at most 3 edges.; City 'C0' is not reachable from 'C4' in at most 3 edges.; City 'C12' is not reachable from 'C4' in at most 3 edges.; City 'C9' is not reachable from 'C4' in at most 3 edges.; City 'C14' is not reachable from 'C4' in at most 3 edges.; City 'C10' is not reachable from 'C4' in at most 3 edges.; City 'C8' is not reachable from 'C4' in at most 3 edges.; City 'C2' is not reachable from 'C4' in at most 3 edges.; City 'C11' is not reachable from 'C4' in at most 3 edges.; City 'C3' is not reachable from 'C4' in at most 3 edges.; City 'C15' is not reachable from 'C4' in at most 3 edges.; City 'C13' is not reachable from 'C4' in at most 3 edges.; City 'C4' is not reachable from 'C0' in at most 3 edges.; City 'C12' is not reachable from 'C0' in at most 3 edges.; City 'C5' is not reachable from 'C0' in at most 3 edges.; City 'C9' is not reachable from 'C0' in at most 3 edges.; City 'C14' is not reachable from 'C0' in at most 3 edges.; City 'C10' is not reachable from 'C0' in at most 3 edges.; City 'C6' is not reachable from 'C0' in at most 3 edges.; City 'C8' is not reachable from 'C0' in at most 3 edges.; City 'C11' is not reachable from 'C0' in at most 3 edges.; City 'C7' is not reachable from 'C0' in at most 3 edges.; City 'C15' is not reachable from 'C0' in at most 3 edges.; City 'C13' is not reachable from 'C0' in at most 3 edges.; City 'C1' is not reachable from 'C12' in at most 3 edges.; City 'C4' is not reachable from 'C12' in at most 3 edges.; City 'C0' is not reachable from 'C12' in at most 3 edges.; City 'C5' is not reachable from 'C12' in at most 3 edges.; City 'C9' is not reachable from 'C12' in at most 3 edges.; City 'C10' is not reachable from 'C12' in at most 3 edges.; City 'C6' is not reachable from 'C12' in at most 3 edges.; City 'C8' is not reachable from 'C12' in at most 3 edges.; City 'C2' is not reachable from 'C12' in at most 3 edges.; City 'C11' is not reachable from 'C12' in at most 3 edges.; City 'C7' is not reachable from 'C12' in at most 3 edges.; City 'C3' is not reachable from 'C12' in at most 3 edges.; City 'C1' is not reachable from 'C5' in at most 3 edges.; City 'C4' is not reachable from 'C5' in at most 3 edges.; City 'C0' is not reachable from 'C5' in at most 3 edges.; City 'C12' is not reachable from 'C5' in at most 3 edges.; City 'C9' is not reachable from 'C5' in at most 3 edges.; City 'C14' is not reachable from 'C5' in at most 3 edges.; City 'C10' is not reachable from 'C5' in at most 3 edges.; City 'C2' is not reachable from 'C5' in at most 3 edges.; City 'C11' is not reachable from 'C5' in at most 3 edges.; City 'C3' is not reachable from 'C5' in at most 3 edges.; City 'C15' is not reachable from 'C5' in at most 3 edges.; City 'C13' is not reachable from 'C5' in at most 3 edges.; City 'C1' is not reachable from 'C9' in at most 3 edges.; City 'C4' is not reachable from 'C9' in at most 3 edges.; City 'C0' is not reachable from 'C9' in at most 3 edges.; City 'C5' is not reachable from 'C9' in at most 3 edges.; City 'C14' is not reachable from 'C9' in at most 3 edges.; City 'C6' is not reachable from 'C9' in at most 3 edges.; City 'C8' is not reachable from 'C9' in at most 3 edges.; City 'C2' is not reachable from 'C9' in at most 3 edges.; City 'C7' is not reachable from 'C9' in at most 3 edges.; City 'C3' is not reachable from 'C9' in at most 3 edges.; City 'C15' is not reachable from 'C9' in at most 3 edges.; City 'C13' is not reachable from 'C9' in at most 3 edges.; City 'C1' is not reachable from 'C14' in at most 3 edges.; City 'C4' is not reachable from 'C14' in at most 3 edges.; City 'C0' is not reachable from 'C14' in at most 3 edges.; City 'C12' is not reachable from 'C14' in at most 3 edges.; City 'C5' is not reachable from 'C14' in at most 3 edges.; City 'C9' is not reachable from 'C14' in at most 3 edges.; City 'C10' is not reachable from 'C14' in at most 3 edges.; City 'C6' is not reachable from 'C14' in at most 3 edges.; City 'C8' is not reachable from 'C14' in at most 3 edges.; City 'C2' is not reachable from 'C14' in at most 3 edges.; City 'C11' is not reachable from 'C14' in at most 3 edges.; City 'C7' is not reachable from 'C14' in at most 3 edges.; City 'C3' is not reachable from 'C14' in at most 3 edges.; City 'C13' is not reachable from 'C14' in at most 3 edges.; City 'C1' is not reachable from 'C10' in at most 3 edges.; City 'C4' is not reachable from 'C10' in at most 3 edges.; City 'C0' is not reachable from 'C10' in at most 3 edges.; City 'C5' is not reachable from 'C10' in at most 3 edges.; City 'C9' is not reachable from 'C10' in at most 3 edges.; City 'C14' is not reachable from 'C10' in at most 3 edges.; City 'C6' is not reachable from 'C10' in at most 3 edges.; City 'C8' is not reachable from 'C10' in at most 3 edges.; City 'C2' is not reachable from 'C10' in at most 3 edges.; City 'C7' is not reachable from 'C10' in at most 3 edges.; City 'C3' is not reachable from 'C10' in at most 3 edges.; City 'C15' is not reachable from 'C10' in at most 3 edges.; City 'C1' is not reachable from 'C6' in at most 3 edges.; City 'C4' is not reachable from 'C6' in at most 3 edges.; City 'C0' is not reachable from 'C6' in at most 3 edges.; City 'C12' is not reachable from 'C6' in at most 3 edges.; City 'C5' is not reachable from 'C6' in at most 3 edges.; City 'C14' is not reachable from 'C6' in at most 3 edges.; City 'C10' is not reachable from 'C6' in at most 3 edges.; City 'C2' is not reachable from 'C6' in at most 3 edges.; City 'C11' is not reachable from 'C6' in at most 3 edges.; City 'C3' is not reachable from 'C6' in at most 3 edges.; City 'C15' is not reachable from 'C6' in at most 3 edges.; City 'C13' is not reachable from 'C6' in at most 3 edges.; City 'C1' is not reachable from 'C8' in at most 3 edges.; City 'C4' is not reachable from 'C8' in at most 3 edges.; City 'C0' is not reachable from 'C8' in at most 3 edges.; City 'C12' is not reachable from 'C8' in at most 3 edges.; City 'C5' is not reachable from 'C8' in at most 3 edges.; City 'C14' is not reachable from 'C8' in at most 3 edges.; City 'C6' is not reachable from 'C8' in at most 3 edges.; City 'C2' is not reachable from 'C8' in at most 3 edges.; City 'C7' is not reachable from 'C8' in at most 3 edges.; City 'C3' is not reachable from 'C8' in at most 3 edges.; City 'C15' is not reachable from 'C8' in at most 3 edges.; City 'C13' is not reachable from 'C8' in at most 3 edges.; City 'C1' is not reachable from 'C2' in at most 3 edges.; City 'C0' is not reachable from 'C2' in at most 3 edges.; City 'C12' is not reachable from 'C2' in at most 3 edges.; City 'C9' is not reachable from 'C2' in at most 3 edges.; City 'C14' is not reachable from 'C2' in at most 3 edges.; City 'C10' is not reachable from 'C2' in at most 3 edges.; City 'C6' is not reachable from 'C2' in at most 3 edges.; City 'C8' is not reachable from 'C2' in at most 3 edges.; City 'C11' is not reachable from 'C2' in at most 3 edges.; City 'C7' is not reachable from 'C2' in at most 3 edges.; City 'C15' is not reachable from 'C2' in at most 3 edges.; City 'C13' is not reachable from 'C2' in at most 3 edges.; City 'C1' is not reachable from 'C11' in at most 3 edges.; City 'C4' is not reachable from 'C11' in at most 3 edges.; City 'C0' is not reachable from 'C11' in at most 3 edges.; City 'C5' is not reachable from 'C11' in at most 3 edges.; City 'C9' is not reachable from 'C11' in at most 3 edges.; City 'C10' is not reachable from 'C11' in at most 3 edges.; City 'C6' is not reachable from 'C11' in at most 3 edges.; City 'C8' is not reachable from 'C11' in at most 3 edges.; City 'C2' is not reachable from 'C11' in at most 3 edges.; City 'C7' is not reachable from 'C11' in at most 3 edges.; City 'C3' is not reachable from 'C11' in at most 3 edges.; City 'C15' is not reachable from 'C11' in at most 3 edges.; City 'C1' is not reachable from 'C7' in at most 3 edges.; City 'C4' is not reachable from 'C7' in at most 3 edges.; City 'C0' is not reachable from 'C7' in at most 3 edges.; City 'C12' is not reachable from 'C7' in at most 3 edges.; City 'C5' is not reachable from 'C7' in at most 3 edges.; City 'C14' is not reachable from 'C7' in at most 3 edges.; City 'C6' is not reachable from 'C7' in at most 3 edges.; City 'C2' is not reachable from 'C7' in at most 3 edges.; City 'C11' is not reachable from 'C7' in at most 3 edges.; City 'C3' is not reachable from 'C7' in at most 3 edges.; City 'C15' is not reachable from 'C7' in at most 3 edges.; City 'C13' is not reachable from 'C7' in at most 3 edges.; City 'C1' is not reachable from 'C3' in at most 3 edges.; City 'C0' is not reachable from 'C3' in at most 3 edges.; City 'C12' is not reachable from 'C3' in at most 3 edges.; City 'C9' is not reachable from 'C3' in at most 3 edges.; City 'C14' is not reachable from 'C3' in at most 3 edges.; City 'C10' is not reachable from 'C3' in at most 3 edges.; City 'C8' is not reachable from 'C3' in at most 3 edges.; City 'C2' is not reachable from 'C3' in at most 3 edges.; City 'C11' is not reachable from 'C3' in at most 3 edges.; City 'C7' is not reachable from 'C3' in at most 3 edges.; City 'C15' is not reachable from 'C3' in at most 3 edges.; City 'C13' is not reachable from 'C3' in at most 3 edges.; City 'C1' is not reachable from 'C15' in at most 3 edges.; City 'C4' is not reachable from 'C15' in at most 3 edges.; City 'C0' is not reachable from 'C15' in at most 3 edges.; City 'C12' is not reachable from 'C15' in at most 3 edges.; City 'C5' is not reachable from 'C15' in at most 3 edges.; City 'C9' is not reachable from 'C15' in at most 3 edges.; City 'C14' is not reachable from 'C15' in at most 3 edges.; City 'C10' is not reachable from 'C15' in at most 3 edges.; City 'C6' is not reachable from 'C15' in at most 3 edges.; City 'C8' is not reachable from 'C15' in at most 3 edges.; City 'C2' is not reachable from 'C15' in at most 3 edges.; City 'C11' is not reachable from 'C15' in at most 3 edges.; City 'C7' is not reachable from 'C15' in at most 3 edges.; City 'C3' is not reachable from 'C15' in at most 3 edges.; City 'C13' is not reachable from 'C15' in at most 3 edges.; City 'C1' is not reachable from 'C13' in at most 3 edges.; City 'C4' is not reachable from 'C13' in at most 3 edges.; City 'C0' is not reachable from 'C13' in at most 3 edges.; City 'C12' is not reachable from 'C13' in at most 3 edges.; City 'C5' is not reachable from 'C13' in at most 3 edges.; City 'C9' is not reachable from 'C13' in at most 3 edges.; City 'C10' is not reachable from 'C13' in at most 3 edges.; City 'C6' is not reachable from 'C13' in at most 3 edges.; City 'C8' is not reachable from 'C13' in at most 3 edges.; City 'C2' is not reachable from 'C13' in at most 3 edges.; City 'C11' is not reachable from 'C13' in at most 3 edges.; City 'C7' is not reachable from 'C13' in at most 3 edges.; City 'C3' is not reachable from 'C13' in at most 3 edges."
-        },
-        "overall_passed": false,
-        "errors": [
-            "Road from 'C0' to 'C1' has invalid distance 750.5 km (must be <= 300 km).",
-            "Road from 'C1' to 'C2' has invalid distance 820.4 km (must be <= 300 km).",
-            "Road from 'C2' to 'C3' has invalid distance 600.0 km (must be <= 300 km).",
-            "Road from 'C3' to 'C4' has invalid distance 900.0 km (must be <= 300 km).",
-            "Road from 'C4' to 'C5' has invalid distance 1200.0 km (must be <= 300 km).",
-            "Road from 'C5' to 'C6' has invalid distance 450.0 km (must be <= 300 km).",
-            "Road from 'C6' to 'C7' has invalid distance 1000.0 km (must be <= 300 km).",
-            "Road from 'C7' to 'C8' has invalid distance 500.0 km (must be <= 300 km).",
-            "Road from 'C8' to 'C9' has invalid distance 1200.0 km (must be <= 300 km).",
-            "Road from 'C9' to 'C10' has invalid distance 700.0 km (must be <= 300 km).",
-            "Road from 'C11' to 'C12' has invalid distance 850.0 km (must be <= 300 km).",
-            "Road from 'C12' to 'C13' has invalid distance 900.0 km (must be <= 300 km).",
-            "Road from 'C13' to 'C14' has invalid distance 550.0 km (must be <= 300 km).",
-            "Road from 'C0' to 'C1' has invalid distance 750.5 km (must be <= 300 km).",
-            "Road from 'C1' to 'C2' has invalid distance 820.4 km (must be <= 300 km).",
-            "Road from 'C2' to 'C3' has invalid distance 600.0 km (must be <= 300 km).",
-            "Road from 'C3' to 'C4' has invalid distance 900.0 km (must be <= 300 km).",
-            "Road from 'C4' to 'C5' has invalid distance 1200.0 km (must be <= 300 km).",
-            "Road from 'C5' to 'C6' has invalid distance 450.0 km (must be <= 300 km).",
-            "Road from 'C6' to 'C7' has invalid distance 1000.0 km (must be <= 300 km).",
-            "Road from 'C7' to 'C8' has invalid distance 500.0 km (must be <= 300 km).",
-            "Road from 'C8' to 'C9' has invalid distance 1200.0 km (must be <= 300 km).",
-            "Road from 'C9' to 'C10' has invalid distance 700.0 km (must be <= 300 km).",
-            "Road from 'C11' to 'C12' has invalid distance 850.0 km (must be <= 300 km).",
-            "Road from 'C12' to 'C13' has invalid distance 900.0 km (must be <= 300 km).",
-            "Road from 'C13' to 'C14' has invalid distance 550.0 km (must be <= 300 km).",
-            "The network is not strongly connected.",
-            "City 'C1' has only 1 incoming road(s); requires at least two.",
-            "City 'C4' has only 1 incoming road(s); requires at least two.",
-            "City 'C0' has only 0 incoming road(s); requires at least two.",
-            "City 'C12' has only 1 incoming road(s); requires at least two.",
-            "City 'C5' has only 1 incoming road(s); requires at least two.",
-            "City 'C9' has only 1 incoming road(s); requires at least two.",
-            "City 'C14' has only 1 incoming road(s); requires at least two.",
-            "City 'C10' has only 1 incoming road(s); requires at least two.",
-            "City 'C6' has only 1 incoming road(s); requires at least two.",
-            "City 'C8' has only 1 incoming road(s); requires at least two.",
-            "City 'C2' has only 1 incoming road(s); requires at least two.",
-            "City 'C11' has only 1 incoming road(s); requires at least two.",
-            "City 'C7' has only 1 incoming road(s); requires at least two.",
-            "City 'C3' has only 1 incoming road(s); requires at least two.",
-            "City 'C15' has only 1 incoming road(s); requires at least two.",
-            "City 'C13' has only 1 incoming road(s); requires at least two.",
-            "Critical city 'C0' has only 1 outgoing road(s); requires at least three.",
-            "Critical city 'C7' has only 1 outgoing road(s); requires at least three.",
-            "Insufficient redundancy due to connectivity or population accessibility issues.",
-            "City 'C0' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C12' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C9' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C14' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C10' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C8' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C11' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C15' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C13' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C12' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C9' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C14' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C10' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C8' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C11' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C15' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C13' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C12' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C9' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C14' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C10' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C8' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C11' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C15' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C13' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C12' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C12' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C12' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C12' in at most 3 edges.",
-            "City 'C9' is not reachable from 'C12' in at most 3 edges.",
-            "City 'C10' is not reachable from 'C12' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C12' in at most 3 edges.",
-            "City 'C8' is not reachable from 'C12' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C12' in at most 3 edges.",
-            "City 'C11' is not reachable from 'C12' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C12' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C12' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C12' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C9' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C14' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C10' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C11' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C15' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C13' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C9' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C9' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C9' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C9' in at most 3 edges.",
-            "City 'C14' is not reachable from 'C9' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C9' in at most 3 edges.",
-            "City 'C8' is not reachable from 'C9' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C9' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C9' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C9' in at most 3 edges.",
-            "City 'C15' is not reachable from 'C9' in at most 3 edges.",
-            "City 'C13' is not reachable from 'C9' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C12' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C9' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C10' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C8' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C11' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C13' is not reachable from 'C14' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C10' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C10' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C10' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C10' in at most 3 edges.",
-            "City 'C9' is not reachable from 'C10' in at most 3 edges.",
-            "City 'C14' is not reachable from 'C10' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C10' in at most 3 edges.",
-            "City 'C8' is not reachable from 'C10' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C10' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C10' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C10' in at most 3 edges.",
-            "City 'C15' is not reachable from 'C10' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C12' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C14' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C10' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C11' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C15' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C13' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C8' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C8' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C8' in at most 3 edges.",
-            "City 'C12' is not reachable from 'C8' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C8' in at most 3 edges.",
-            "City 'C14' is not reachable from 'C8' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C8' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C8' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C8' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C8' in at most 3 edges.",
-            "City 'C15' is not reachable from 'C8' in at most 3 edges.",
-            "City 'C13' is not reachable from 'C8' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C12' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C9' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C14' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C10' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C8' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C11' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C15' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C13' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C11' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C11' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C11' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C11' in at most 3 edges.",
-            "City 'C9' is not reachable from 'C11' in at most 3 edges.",
-            "City 'C10' is not reachable from 'C11' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C11' in at most 3 edges.",
-            "City 'C8' is not reachable from 'C11' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C11' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C11' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C11' in at most 3 edges.",
-            "City 'C15' is not reachable from 'C11' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C12' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C14' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C11' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C15' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C13' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C12' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C9' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C14' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C10' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C8' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C11' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C15' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C13' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C12' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C9' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C14' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C10' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C8' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C11' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C13' is not reachable from 'C15' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C13' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C13' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C13' in at most 3 edges.",
-            "City 'C12' is not reachable from 'C13' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C13' in at most 3 edges.",
-            "City 'C9' is not reachable from 'C13' in at most 3 edges.",
-            "City 'C10' is not reachable from 'C13' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C13' in at most 3 edges.",
-            "City 'C8' is not reachable from 'C13' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C13' in at most 3 edges.",
-            "City 'C11' is not reachable from 'C13' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C13' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C13' in at most 3 edges."
-        ]
+  "cities": [
+    {
+      "id": "C0",
+      "population": 1000
+    },
+    {
+      "id": "C1",
+      "population": 500
+    },
+    {
+      "id": "C2",
+      "population": 800
+    },
+    {
+      "id": "C3",
+      "population": 700
+    },
+    {
+      "id": "C4",
+      "population": 600
+    },
+    {
+      "id": "C5",
+      "population": 900
+    },
+    {
+      "id": "C6",
+      "population": 400
+    },
+    {
+      "id": "C7",
+      "population": 300
+    },
+    {
+      "id": "C8",
+      "population": 1600
+    },
+    {
+      "id": "C9",
+      "population": 1400
+    },
+    {
+      "id": "C10",
+      "population": 1200
+    },
+    {
+      "id": "C11",
+      "population": 1000
+    },
+    {
+      "id": "C12",
+      "population": 800
+    },
+    {
+      "id": "C13",
+      "population": 600
+    },
+    {
+      "id": "C14",
+      "population": 400
+    },
+    {
+      "id": "C15",
+      "population": 200
     }
+  ],
+  "roads": [
+    {
+      "from": "C0",
+      "to": "C1",
+      "distance": 750.5,
+      "cost": 600.3
+    },
+    {
+      "from": "C1",
+      "to": "C2",
+      "distance": 820.4,
+      "cost": 750.1
+    },
+    {
+      "from": "C2",
+      "to": "C3",
+      "distance": 600.0,
+      "cost": 500.0
+    },
+    {
+      "from": "C3",
+      "to": "C4",
+      "distance": 900.0,
+      "cost": 700.0
+    },
+    {
+      "from": "C4",
+      "to": "C5",
+      "distance": 1200.0,
+      "cost": 900.0
+    },
+    {
+      "from": "C5",
+      "to": "C6",
+      "distance": 450.0,
+      "cost": 300.0
+    },
+    {
+      "from": "C6",
+      "to": "C7",
+      "distance": 1000.0,
+      "cost": 800.0
+    },
+    {
+      "from": "C7",
+      "to": "C8",
+      "distance": 500.0,
+      "cost": 400.0
+    },
+    {
+      "from": "C8",
+      "to": "C9",
+      "distance": 1200.0,
+      "cost": 850.0
+    },
+    {
+      "from": "C9",
+      "to": "C10",
+      "distance": 700.0,
+      "cost": 500.0
+    },
+    {
+      "from": "C10",
+      "to": "C11",
+      "distance": 300.0,
+      "cost": 200.0
+    },
+    {
+      "from": "C11",
+      "to": "C12",
+      "distance": 850.0,
+      "cost": 600.0
+    },
+    {
+      "from": "C12",
+      "to": "C13",
+      "distance": 900.0,
+      "cost": 700.0
+    },
+    {
+      "from": "C13",
+      "to": "C14",
+      "distance": 550.0,
+      "cost": 400.0
+    },
+    {
+      "from": "C14",
+      "to": "C15",
+      "distance": 200.0,
+      "cost": 100.0
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "output_structure": {
+      "passed": true,
+      "message": ""
+    },
+    "connectivity": {
+      "passed": false,
+      "message": "The network is not strongly connected."
+    },
+    "road_capacity": {
+      "passed": false,
+      "message": "Road from 'C0' to 'C1' has invalid distance 750.5 km (must be <= 300).; Road from 'C1' to 'C2' has invalid distance 820.4 km (must be <= 300).; Road from 'C2' to 'C3' has invalid distance 600.0 km (must be <= 300).; Road from 'C3' to 'C4' has invalid distance 900.0 km (must be <= 300).; Road from 'C4' to 'C5' has invalid distance 1200.0 km (must be <= 300).; Road from 'C5' to 'C6' has invalid distance 450.0 km (must be <= 300).; Road from 'C6' to 'C7' has invalid distance 1000.0 km (must be <= 300).; Road from 'C7' to 'C8' has invalid distance 500.0 km (must be <= 300).; Road from 'C8' to 'C9' has invalid distance 1200.0 km (must be <= 300).; Road from 'C9' to 'C10' has invalid distance 700.0 km (must be <= 300).; Road from 'C11' to 'C12' has invalid distance 850.0 km (must be <= 300).; Road from 'C12' to 'C13' has invalid distance 900.0 km (must be <= 300).; Road from 'C13' to 'C14' has invalid distance 550.0 km (must be <= 300)."
+    },
+    "cost_optimization": {
+      "passed": true,
+      "message": ""
+    },
+    "population_accessibility": {
+      "passed": false,
+      "message": "City 'C13' has only 1 incoming roads; needs >=2. City 'C8' has only 1 incoming roads; needs >=2. City 'C0' has only 0 incoming roads; needs >=2. City 'C3' has only 1 incoming roads; needs >=2. City 'C6' has only 1 incoming roads; needs >=2. City 'C2' has only 1 incoming roads; needs >=2. City 'C7' has only 1 incoming roads; needs >=2. City 'C9' has only 1 incoming roads; needs >=2. City 'C10' has only 1 incoming roads; needs >=2. City 'C12' has only 1 incoming roads; needs >=2. City 'C14' has only 1 incoming roads; needs >=2. City 'C15' has only 1 incoming roads; needs >=2. City 'C4' has only 1 incoming roads; needs >=2. City 'C5' has only 1 incoming roads; needs >=2. City 'C1' has only 1 incoming roads; needs >=2. City 'C11' has only 1 incoming roads; needs >=2."
+    },
+    "strategic_road_placement": {
+      "passed": false,
+      "message": "Critical city 'C0' has only 1 outgoing road(s); requires >=3. Critical city 'C7' has only 1 outgoing road(s); requires >=3."
+    },
+    "redundancy": {
+      "passed": false,
+      "message": "Insufficient redundancy due to failing connectivity or population accessibility."
+    },
+    "max_edges_constraint": {
+      "passed": false,
+      "message": "City 'C8' not reachable from 'C13' in <=3 edges. City 'C0' not reachable from 'C13' in <=3 edges. City 'C3' not reachable from 'C13' in <=3 edges. City 'C6' not reachable from 'C13' in <=3 edges. City 'C2' not reachable from 'C13' in <=3 edges. City 'C7' not reachable from 'C13' in <=3 edges. City 'C9' not reachable from 'C13' in <=3 edges. City 'C10' not reachable from 'C13' in <=3 edges. City 'C12' not reachable from 'C13' in <=3 edges. City 'C4' not reachable from 'C13' in <=3 edges. City 'C5' not reachable from 'C13' in <=3 edges. City 'C1' not reachable from 'C13' in <=3 edges. City 'C11' not reachable from 'C13' in <=3 edges. City 'C13' not reachable from 'C8' in <=3 edges. City 'C0' not reachable from 'C8' in <=3 edges. City 'C3' not reachable from 'C8' in <=3 edges. City 'C6' not reachable from 'C8' in <=3 edges. City 'C2' not reachable from 'C8' in <=3 edges. City 'C7' not reachable from 'C8' in <=3 edges. City 'C12' not reachable from 'C8' in <=3 edges. City 'C14' not reachable from 'C8' in <=3 edges. City 'C15' not reachable from 'C8' in <=3 edges. City 'C4' not reachable from 'C8' in <=3 edges. City 'C5' not reachable from 'C8' in <=3 edges. City 'C1' not reachable from 'C8' in <=3 edges. City 'C13' not reachable from 'C0' in <=3 edges. City 'C8' not reachable from 'C0' in <=3 edges. City 'C6' not reachable from 'C0' in <=3 edges. City 'C7' not reachable from 'C0' in <=3 edges. City 'C9' not reachable from 'C0' in <=3 edges. City 'C10' not reachable from 'C0' in <=3 edges. City 'C12' not reachable from 'C0' in <=3 edges. City 'C14' not reachable from 'C0' in <=3 edges. City 'C15' not reachable from 'C0' in <=3 edges. City 'C4' not reachable from 'C0' in <=3 edges. City 'C5' not reachable from 'C0' in <=3 edges. City 'C11' not reachable from 'C0' in <=3 edges. City 'C13' not reachable from 'C3' in <=3 edges. City 'C8' not reachable from 'C3' in <=3 edges. City 'C0' not reachable from 'C3' in <=3 edges. City 'C2' not reachable from 'C3' in <=3 edges. City 'C7' not reachable from 'C3' in <=3 edges. City 'C9' not reachable from 'C3' in <=3 edges. City 'C10' not reachable from 'C3' in <=3 edges. City 'C12' not reachable from 'C3' in <=3 edges. City 'C14' not reachable from 'C3' in <=3 edges. City 'C15' not reachable from 'C3' in <=3 edges. City 'C1' not reachable from 'C3' in <=3 edges. City 'C11' not reachable from 'C3' in <=3 edges. City 'C13' not reachable from 'C6' in <=3 edges. City 'C0' not reachable from 'C6' in <=3 edges. City 'C3' not reachable from 'C6' in <=3 edges. City 'C2' not reachable from 'C6' in <=3 edges. City 'C10' not reachable from 'C6' in <=3 edges. City 'C12' not reachable from 'C6' in <=3 edges. City 'C14' not reachable from 'C6' in <=3 edges. City 'C15' not reachable from 'C6' in <=3 edges. City 'C4' not reachable from 'C6' in <=3 edges. City 'C5' not reachable from 'C6' in <=3 edges. City 'C1' not reachable from 'C6' in <=3 edges. City 'C11' not reachable from 'C6' in <=3 edges. City 'C13' not reachable from 'C2' in <=3 edges. City 'C8' not reachable from 'C2' in <=3 edges. City 'C0' not reachable from 'C2' in <=3 edges. City 'C6' not reachable from 'C2' in <=3 edges. City 'C7' not reachable from 'C2' in <=3 edges. City 'C9' not reachable from 'C2' in <=3 edges. City 'C10' not reachable from 'C2' in <=3 edges. City 'C12' not reachable from 'C2' in <=3 edges. City 'C14' not reachable from 'C2' in <=3 edges. City 'C15' not reachable from 'C2' in <=3 edges. City 'C1' not reachable from 'C2' in <=3 edges. City 'C11' not reachable from 'C2' in <=3 edges. City 'C13' not reachable from 'C7' in <=3 edges. City 'C0' not reachable from 'C7' in <=3 edges. City 'C3' not reachable from 'C7' in <=3 edges. City 'C6' not reachable from 'C7' in <=3 edges. City 'C2' not reachable from 'C7' in <=3 edges. City 'C12' not reachable from 'C7' in <=3 edges. City 'C14' not reachable from 'C7' in <=3 edges. City 'C15' not reachable from 'C7' in <=3 edges. City 'C4' not reachable from 'C7' in <=3 edges. City 'C5' not reachable from 'C7' in <=3 edges. City 'C1' not reachable from 'C7' in <=3 edges. City 'C11' not reachable from 'C7' in <=3 edges. City 'C13' not reachable from 'C9' in <=3 edges. City 'C8' not reachable from 'C9' in <=3 edges. City 'C0' not reachable from 'C9' in <=3 edges. City 'C3' not reachable from 'C9' in <=3 edges. City 'C6' not reachable from 'C9' in <=3 edges. City 'C2' not reachable from 'C9' in <=3 edges. City 'C7' not reachable from 'C9' in <=3 edges. City 'C14' not reachable from 'C9' in <=3 edges. City 'C15' not reachable from 'C9' in <=3 edges. City 'C4' not reachable from 'C9' in <=3 edges. City 'C5' not reachable from 'C9' in <=3 edges. City 'C1' not reachable from 'C9' in <=3 edges. City 'C8' not reachable from 'C10' in <=3 edges. City 'C0' not reachable from 'C10' in <=3 edges. City 'C3' not reachable from 'C10' in <=3 edges. City 'C6' not reachable from 'C10' in <=3 edges. City 'C2' not reachable from 'C10' in <=3 edges. City 'C7' not reachable from 'C10' in <=3 edges. City 'C9' not reachable from 'C10' in <=3 edges. City 'C14' not reachable from 'C10' in <=3 edges. City 'C15' not reachable from 'C10' in <=3 edges. City 'C4' not reachable from 'C10' in <=3 edges. City 'C5' not reachable from 'C10' in <=3 edges. City 'C1' not reachable from 'C10' in <=3 edges. City 'C8' not reachable from 'C12' in <=3 edges. City 'C0' not reachable from 'C12' in <=3 edges. City 'C3' not reachable from 'C12' in <=3 edges. City 'C6' not reachable from 'C12' in <=3 edges. City 'C2' not reachable from 'C12' in <=3 edges. City 'C7' not reachable from 'C12' in <=3 edges. City 'C9' not reachable from 'C12' in <=3 edges. City 'C10' not reachable from 'C12' in <=3 edges. City 'C4' not reachable from 'C12' in <=3 edges. City 'C5' not reachable from 'C12' in <=3 edges. City 'C1' not reachable from 'C12' in <=3 edges. City 'C11' not reachable from 'C12' in <=3 edges. City 'C13' not reachable from 'C14' in <=3 edges. City 'C8' not reachable from 'C14' in <=3 edges. City 'C0' not reachable from 'C14' in <=3 edges. City 'C3' not reachable from 'C14' in <=3 edges. City 'C6' not reachable from 'C14' in <=3 edges. City 'C2' not reachable from 'C14' in <=3 edges. City 'C7' not reachable from 'C14' in <=3 edges. City 'C9' not reachable from 'C14' in <=3 edges. City 'C10' not reachable from 'C14' in <=3 edges. City 'C12' not reachable from 'C14' in <=3 edges. City 'C4' not reachable from 'C14' in <=3 edges. City 'C5' not reachable from 'C14' in <=3 edges. City 'C1' not reachable from 'C14' in <=3 edges. City 'C11' not reachable from 'C14' in <=3 edges. City 'C13' not reachable from 'C15' in <=3 edges. City 'C8' not reachable from 'C15' in <=3 edges. City 'C0' not reachable from 'C15' in <=3 edges. City 'C3' not reachable from 'C15' in <=3 edges. City 'C6' not reachable from 'C15' in <=3 edges. City 'C2' not reachable from 'C15' in <=3 edges. City 'C7' not reachable from 'C15' in <=3 edges. City 'C9' not reachable from 'C15' in <=3 edges. City 'C10' not reachable from 'C15' in <=3 edges. City 'C12' not reachable from 'C15' in <=3 edges. City 'C14' not reachable from 'C15' in <=3 edges. City 'C4' not reachable from 'C15' in <=3 edges. City 'C5' not reachable from 'C15' in <=3 edges. City 'C1' not reachable from 'C15' in <=3 edges. City 'C11' not reachable from 'C15' in <=3 edges. City 'C13' not reachable from 'C4' in <=3 edges. City 'C8' not reachable from 'C4' in <=3 edges. City 'C0' not reachable from 'C4' in <=3 edges. City 'C3' not reachable from 'C4' in <=3 edges. City 'C2' not reachable from 'C4' in <=3 edges. City 'C9' not reachable from 'C4' in <=3 edges. City 'C10' not reachable from 'C4' in <=3 edges. City 'C12' not reachable from 'C4' in <=3 edges. City 'C14' not reachable from 'C4' in <=3 edges. City 'C15' not reachable from 'C4' in <=3 edges. City 'C1' not reachable from 'C4' in <=3 edges. City 'C11' not reachable from 'C4' in <=3 edges. City 'C13' not reachable from 'C5' in <=3 edges. City 'C0' not reachable from 'C5' in <=3 edges. City 'C3' not reachable from 'C5' in <=3 edges. City 'C2' not reachable from 'C5' in <=3 edges. City 'C9' not reachable from 'C5' in <=3 edges. City 'C10' not reachable from 'C5' in <=3 edges. City 'C12' not reachable from 'C5' in <=3 edges. City 'C14' not reachable from 'C5' in <=3 edges. City 'C15' not reachable from 'C5' in <=3 edges. City 'C4' not reachable from 'C5' in <=3 edges. City 'C1' not reachable from 'C5' in <=3 edges. City 'C11' not reachable from 'C5' in <=3 edges. City 'C13' not reachable from 'C1' in <=3 edges. City 'C8' not reachable from 'C1' in <=3 edges. City 'C0' not reachable from 'C1' in <=3 edges. City 'C6' not reachable from 'C1' in <=3 edges. City 'C7' not reachable from 'C1' in <=3 edges. City 'C9' not reachable from 'C1' in <=3 edges. City 'C10' not reachable from 'C1' in <=3 edges. City 'C12' not reachable from 'C1' in <=3 edges. City 'C14' not reachable from 'C1' in <=3 edges. City 'C15' not reachable from 'C1' in <=3 edges. City 'C5' not reachable from 'C1' in <=3 edges. City 'C11' not reachable from 'C1' in <=3 edges. City 'C8' not reachable from 'C11' in <=3 edges. City 'C0' not reachable from 'C11' in <=3 edges. City 'C3' not reachable from 'C11' in <=3 edges. City 'C6' not reachable from 'C11' in <=3 edges. City 'C2' not reachable from 'C11' in <=3 edges. City 'C7' not reachable from 'C11' in <=3 edges. City 'C9' not reachable from 'C11' in <=3 edges. City 'C10' not reachable from 'C11' in <=3 edges. City 'C15' not reachable from 'C11' in <=3 edges. City 'C4' not reachable from 'C11' in <=3 edges. City 'C5' not reachable from 'C11' in <=3 edges. City 'C1' not reachable from 'C11' in <=3 edges."
+    },
+    "overall_passed": false,
+    "errors": [
+      "Road from 'C0' to 'C1' has invalid distance 750.5 km (must be <= 300).",
+      "Road from 'C1' to 'C2' has invalid distance 820.4 km (must be <= 300).",
+      "Road from 'C2' to 'C3' has invalid distance 600.0 km (must be <= 300).",
+      "Road from 'C3' to 'C4' has invalid distance 900.0 km (must be <= 300).",
+      "Road from 'C4' to 'C5' has invalid distance 1200.0 km (must be <= 300).",
+      "Road from 'C5' to 'C6' has invalid distance 450.0 km (must be <= 300).",
+      "Road from 'C6' to 'C7' has invalid distance 1000.0 km (must be <= 300).",
+      "Road from 'C7' to 'C8' has invalid distance 500.0 km (must be <= 300).",
+      "Road from 'C8' to 'C9' has invalid distance 1200.0 km (must be <= 300).",
+      "Road from 'C9' to 'C10' has invalid distance 700.0 km (must be <= 300).",
+      "Road from 'C11' to 'C12' has invalid distance 850.0 km (must be <= 300).",
+      "Road from 'C12' to 'C13' has invalid distance 900.0 km (must be <= 300).",
+      "Road from 'C13' to 'C14' has invalid distance 550.0 km (must be <= 300).",
+      "The network is not strongly connected.",
+      "City 'C13' has only 1 incoming roads; needs >=2.",
+      "City 'C8' has only 1 incoming roads; needs >=2.",
+      "City 'C0' has only 0 incoming roads; needs >=2.",
+      "City 'C3' has only 1 incoming roads; needs >=2.",
+      "City 'C6' has only 1 incoming roads; needs >=2.",
+      "City 'C2' has only 1 incoming roads; needs >=2.",
+      "City 'C7' has only 1 incoming roads; needs >=2.",
+      "City 'C9' has only 1 incoming roads; needs >=2.",
+      "City 'C10' has only 1 incoming roads; needs >=2.",
+      "City 'C12' has only 1 incoming roads; needs >=2.",
+      "City 'C14' has only 1 incoming roads; needs >=2.",
+      "City 'C15' has only 1 incoming roads; needs >=2.",
+      "City 'C4' has only 1 incoming roads; needs >=2.",
+      "City 'C5' has only 1 incoming roads; needs >=2.",
+      "City 'C1' has only 1 incoming roads; needs >=2.",
+      "City 'C11' has only 1 incoming roads; needs >=2.",
+      "Critical city 'C0' has only 1 outgoing road(s); requires >=3.",
+      "Critical city 'C7' has only 1 outgoing road(s); requires >=3.",
+      "Insufficient redundancy due to failing connectivity or population accessibility.",
+      "City 'C8' not reachable from 'C13' in <=3 edges.",
+      "City 'C0' not reachable from 'C13' in <=3 edges.",
+      "City 'C3' not reachable from 'C13' in <=3 edges.",
+      "City 'C6' not reachable from 'C13' in <=3 edges.",
+      "City 'C2' not reachable from 'C13' in <=3 edges.",
+      "City 'C7' not reachable from 'C13' in <=3 edges.",
+      "City 'C9' not reachable from 'C13' in <=3 edges.",
+      "City 'C10' not reachable from 'C13' in <=3 edges.",
+      "City 'C12' not reachable from 'C13' in <=3 edges.",
+      "City 'C4' not reachable from 'C13' in <=3 edges.",
+      "City 'C5' not reachable from 'C13' in <=3 edges.",
+      "City 'C1' not reachable from 'C13' in <=3 edges.",
+      "City 'C11' not reachable from 'C13' in <=3 edges.",
+      "City 'C13' not reachable from 'C8' in <=3 edges.",
+      "City 'C0' not reachable from 'C8' in <=3 edges.",
+      "City 'C3' not reachable from 'C8' in <=3 edges.",
+      "City 'C6' not reachable from 'C8' in <=3 edges.",
+      "City 'C2' not reachable from 'C8' in <=3 edges.",
+      "City 'C7' not reachable from 'C8' in <=3 edges.",
+      "City 'C12' not reachable from 'C8' in <=3 edges.",
+      "City 'C14' not reachable from 'C8' in <=3 edges.",
+      "City 'C15' not reachable from 'C8' in <=3 edges.",
+      "City 'C4' not reachable from 'C8' in <=3 edges.",
+      "City 'C5' not reachable from 'C8' in <=3 edges.",
+      "City 'C1' not reachable from 'C8' in <=3 edges.",
+      "City 'C13' not reachable from 'C0' in <=3 edges.",
+      "City 'C8' not reachable from 'C0' in <=3 edges.",
+      "City 'C6' not reachable from 'C0' in <=3 edges.",
+      "City 'C7' not reachable from 'C0' in <=3 edges.",
+      "City 'C9' not reachable from 'C0' in <=3 edges.",
+      "City 'C10' not reachable from 'C0' in <=3 edges.",
+      "City 'C12' not reachable from 'C0' in <=3 edges.",
+      "City 'C14' not reachable from 'C0' in <=3 edges.",
+      "City 'C15' not reachable from 'C0' in <=3 edges.",
+      "City 'C4' not reachable from 'C0' in <=3 edges.",
+      "City 'C5' not reachable from 'C0' in <=3 edges.",
+      "City 'C11' not reachable from 'C0' in <=3 edges.",
+      "City 'C13' not reachable from 'C3' in <=3 edges.",
+      "City 'C8' not reachable from 'C3' in <=3 edges.",
+      "City 'C0' not reachable from 'C3' in <=3 edges.",
+      "City 'C2' not reachable from 'C3' in <=3 edges.",
+      "City 'C7' not reachable from 'C3' in <=3 edges.",
+      "City 'C9' not reachable from 'C3' in <=3 edges.",
+      "City 'C10' not reachable from 'C3' in <=3 edges.",
+      "City 'C12' not reachable from 'C3' in <=3 edges.",
+      "City 'C14' not reachable from 'C3' in <=3 edges.",
+      "City 'C15' not reachable from 'C3' in <=3 edges.",
+      "City 'C1' not reachable from 'C3' in <=3 edges.",
+      "City 'C11' not reachable from 'C3' in <=3 edges.",
+      "City 'C13' not reachable from 'C6' in <=3 edges.",
+      "City 'C0' not reachable from 'C6' in <=3 edges.",
+      "City 'C3' not reachable from 'C6' in <=3 edges.",
+      "City 'C2' not reachable from 'C6' in <=3 edges.",
+      "City 'C10' not reachable from 'C6' in <=3 edges.",
+      "City 'C12' not reachable from 'C6' in <=3 edges.",
+      "City 'C14' not reachable from 'C6' in <=3 edges.",
+      "City 'C15' not reachable from 'C6' in <=3 edges.",
+      "City 'C4' not reachable from 'C6' in <=3 edges.",
+      "City 'C5' not reachable from 'C6' in <=3 edges.",
+      "City 'C1' not reachable from 'C6' in <=3 edges.",
+      "City 'C11' not reachable from 'C6' in <=3 edges.",
+      "City 'C13' not reachable from 'C2' in <=3 edges.",
+      "City 'C8' not reachable from 'C2' in <=3 edges.",
+      "City 'C0' not reachable from 'C2' in <=3 edges.",
+      "City 'C6' not reachable from 'C2' in <=3 edges.",
+      "City 'C7' not reachable from 'C2' in <=3 edges.",
+      "City 'C9' not reachable from 'C2' in <=3 edges.",
+      "City 'C10' not reachable from 'C2' in <=3 edges.",
+      "City 'C12' not reachable from 'C2' in <=3 edges.",
+      "City 'C14' not reachable from 'C2' in <=3 edges.",
+      "City 'C15' not reachable from 'C2' in <=3 edges.",
+      "City 'C1' not reachable from 'C2' in <=3 edges.",
+      "City 'C11' not reachable from 'C2' in <=3 edges.",
+      "City 'C13' not reachable from 'C7' in <=3 edges.",
+      "City 'C0' not reachable from 'C7' in <=3 edges.",
+      "City 'C3' not reachable from 'C7' in <=3 edges.",
+      "City 'C6' not reachable from 'C7' in <=3 edges.",
+      "City 'C2' not reachable from 'C7' in <=3 edges.",
+      "City 'C12' not reachable from 'C7' in <=3 edges.",
+      "City 'C14' not reachable from 'C7' in <=3 edges.",
+      "City 'C15' not reachable from 'C7' in <=3 edges.",
+      "City 'C4' not reachable from 'C7' in <=3 edges.",
+      "City 'C5' not reachable from 'C7' in <=3 edges.",
+      "City 'C1' not reachable from 'C7' in <=3 edges.",
+      "City 'C11' not reachable from 'C7' in <=3 edges.",
+      "City 'C13' not reachable from 'C9' in <=3 edges.",
+      "City 'C8' not reachable from 'C9' in <=3 edges.",
+      "City 'C0' not reachable from 'C9' in <=3 edges.",
+      "City 'C3' not reachable from 'C9' in <=3 edges.",
+      "City 'C6' not reachable from 'C9' in <=3 edges.",
+      "City 'C2' not reachable from 'C9' in <=3 edges.",
+      "City 'C7' not reachable from 'C9' in <=3 edges.",
+      "City 'C14' not reachable from 'C9' in <=3 edges.",
+      "City 'C15' not reachable from 'C9' in <=3 edges.",
+      "City 'C4' not reachable from 'C9' in <=3 edges.",
+      "City 'C5' not reachable from 'C9' in <=3 edges.",
+      "City 'C1' not reachable from 'C9' in <=3 edges.",
+      "City 'C8' not reachable from 'C10' in <=3 edges.",
+      "City 'C0' not reachable from 'C10' in <=3 edges.",
+      "City 'C3' not reachable from 'C10' in <=3 edges.",
+      "City 'C6' not reachable from 'C10' in <=3 edges.",
+      "City 'C2' not reachable from 'C10' in <=3 edges.",
+      "City 'C7' not reachable from 'C10' in <=3 edges.",
+      "City 'C9' not reachable from 'C10' in <=3 edges.",
+      "City 'C14' not reachable from 'C10' in <=3 edges.",
+      "City 'C15' not reachable from 'C10' in <=3 edges.",
+      "City 'C4' not reachable from 'C10' in <=3 edges.",
+      "City 'C5' not reachable from 'C10' in <=3 edges.",
+      "City 'C1' not reachable from 'C10' in <=3 edges.",
+      "City 'C8' not reachable from 'C12' in <=3 edges.",
+      "City 'C0' not reachable from 'C12' in <=3 edges.",
+      "City 'C3' not reachable from 'C12' in <=3 edges.",
+      "City 'C6' not reachable from 'C12' in <=3 edges.",
+      "City 'C2' not reachable from 'C12' in <=3 edges.",
+      "City 'C7' not reachable from 'C12' in <=3 edges.",
+      "City 'C9' not reachable from 'C12' in <=3 edges.",
+      "City 'C10' not reachable from 'C12' in <=3 edges.",
+      "City 'C4' not reachable from 'C12' in <=3 edges.",
+      "City 'C5' not reachable from 'C12' in <=3 edges.",
+      "City 'C1' not reachable from 'C12' in <=3 edges.",
+      "City 'C11' not reachable from 'C12' in <=3 edges.",
+      "City 'C13' not reachable from 'C14' in <=3 edges.",
+      "City 'C8' not reachable from 'C14' in <=3 edges.",
+      "City 'C0' not reachable from 'C14' in <=3 edges.",
+      "City 'C3' not reachable from 'C14' in <=3 edges.",
+      "City 'C6' not reachable from 'C14' in <=3 edges.",
+      "City 'C2' not reachable from 'C14' in <=3 edges.",
+      "City 'C7' not reachable from 'C14' in <=3 edges.",
+      "City 'C9' not reachable from 'C14' in <=3 edges.",
+      "City 'C10' not reachable from 'C14' in <=3 edges.",
+      "City 'C12' not reachable from 'C14' in <=3 edges.",
+      "City 'C4' not reachable from 'C14' in <=3 edges.",
+      "City 'C5' not reachable from 'C14' in <=3 edges.",
+      "City 'C1' not reachable from 'C14' in <=3 edges.",
+      "City 'C11' not reachable from 'C14' in <=3 edges.",
+      "City 'C13' not reachable from 'C15' in <=3 edges.",
+      "City 'C8' not reachable from 'C15' in <=3 edges.",
+      "City 'C0' not reachable from 'C15' in <=3 edges.",
+      "City 'C3' not reachable from 'C15' in <=3 edges.",
+      "City 'C6' not reachable from 'C15' in <=3 edges.",
+      "City 'C2' not reachable from 'C15' in <=3 edges.",
+      "City 'C7' not reachable from 'C15' in <=3 edges.",
+      "City 'C9' not reachable from 'C15' in <=3 edges.",
+      "City 'C10' not reachable from 'C15' in <=3 edges.",
+      "City 'C12' not reachable from 'C15' in <=3 edges.",
+      "City 'C14' not reachable from 'C15' in <=3 edges.",
+      "City 'C4' not reachable from 'C15' in <=3 edges.",
+      "City 'C5' not reachable from 'C15' in <=3 edges.",
+      "City 'C1' not reachable from 'C15' in <=3 edges.",
+      "City 'C11' not reachable from 'C15' in <=3 edges.",
+      "City 'C13' not reachable from 'C4' in <=3 edges.",
+      "City 'C8' not reachable from 'C4' in <=3 edges.",
+      "City 'C0' not reachable from 'C4' in <=3 edges.",
+      "City 'C3' not reachable from 'C4' in <=3 edges.",
+      "City 'C2' not reachable from 'C4' in <=3 edges.",
+      "City 'C9' not reachable from 'C4' in <=3 edges.",
+      "City 'C10' not reachable from 'C4' in <=3 edges.",
+      "City 'C12' not reachable from 'C4' in <=3 edges.",
+      "City 'C14' not reachable from 'C4' in <=3 edges.",
+      "City 'C15' not reachable from 'C4' in <=3 edges.",
+      "City 'C1' not reachable from 'C4' in <=3 edges.",
+      "City 'C11' not reachable from 'C4' in <=3 edges.",
+      "City 'C13' not reachable from 'C5' in <=3 edges.",
+      "City 'C0' not reachable from 'C5' in <=3 edges.",
+      "City 'C3' not reachable from 'C5' in <=3 edges.",
+      "City 'C2' not reachable from 'C5' in <=3 edges.",
+      "City 'C9' not reachable from 'C5' in <=3 edges.",
+      "City 'C10' not reachable from 'C5' in <=3 edges.",
+      "City 'C12' not reachable from 'C5' in <=3 edges.",
+      "City 'C14' not reachable from 'C5' in <=3 edges.",
+      "City 'C15' not reachable from 'C5' in <=3 edges.",
+      "City 'C4' not reachable from 'C5' in <=3 edges.",
+      "City 'C1' not reachable from 'C5' in <=3 edges.",
+      "City 'C11' not reachable from 'C5' in <=3 edges.",
+      "City 'C13' not reachable from 'C1' in <=3 edges.",
+      "City 'C8' not reachable from 'C1' in <=3 edges.",
+      "City 'C0' not reachable from 'C1' in <=3 edges.",
+      "City 'C6' not reachable from 'C1' in <=3 edges.",
+      "City 'C7' not reachable from 'C1' in <=3 edges.",
+      "City 'C9' not reachable from 'C1' in <=3 edges.",
+      "City 'C10' not reachable from 'C1' in <=3 edges.",
+      "City 'C12' not reachable from 'C1' in <=3 edges.",
+      "City 'C14' not reachable from 'C1' in <=3 edges.",
+      "City 'C15' not reachable from 'C1' in <=3 edges.",
+      "City 'C5' not reachable from 'C1' in <=3 edges.",
+      "City 'C11' not reachable from 'C1' in <=3 edges.",
+      "City 'C8' not reachable from 'C11' in <=3 edges.",
+      "City 'C0' not reachable from 'C11' in <=3 edges.",
+      "City 'C3' not reachable from 'C11' in <=3 edges.",
+      "City 'C6' not reachable from 'C11' in <=3 edges.",
+      "City 'C2' not reachable from 'C11' in <=3 edges.",
+      "City 'C7' not reachable from 'C11' in <=3 edges.",
+      "City 'C9' not reachable from 'C11' in <=3 edges.",
+      "City 'C10' not reachable from 'C11' in <=3 edges.",
+      "City 'C15' not reachable from 'C11' in <=3 edges.",
+      "City 'C4' not reachable from 'C11' in <=3 edges.",
+      "City 'C5' not reachable from 'C11' in <=3 edges.",
+      "City 'C1' not reachable from 'C11' in <=3 edges."
+    ]
+  }
 }

@@ -1,0 +1,306 @@
+{
+  "users": [
+    {
+      "id": "U0",
+      "trust_score": 40,
+      "category": "regular"
+    },
+    {
+      "id": "U1",
+      "trust_score": 63,
+      "category": "regular"
+    },
+    {
+      "id": "U2",
+      "trust_score": 84,
+      "category": "celebrity"
+    },
+    {
+      "id": "U3",
+      "trust_score": 68,
+      "category": "expert"
+    },
+    {
+      "id": "U4",
+      "trust_score": 11,
+      "category": "regular"
+    },
+    {
+      "id": "U5",
+      "trust_score": 97,
+      "category": "celebrity"
+    },
+    {
+      "id": "U6",
+      "trust_score": 8,
+      "category": "regular"
+    },
+    {
+      "id": "U7",
+      "trust_score": 70,
+      "category": "expert"
+    },
+    {
+      "id": "U8",
+      "trust_score": 36,
+      "category": "regular"
+    },
+    {
+      "id": "U9",
+      "trust_score": 69,
+      "category": "expert"
+    },
+    {
+      "id": "U10",
+      "trust_score": 61,
+      "category": "expert"
+    },
+    {
+      "id": "U11",
+      "trust_score": 24,
+      "category": "regular"
+    },
+    {
+      "id": "U12",
+      "trust_score": 90,
+      "category": "celebrity"
+    },
+    {
+      "id": "U13",
+      "trust_score": 83,
+      "category": "celebrity"
+    },
+    {
+      "id": "U14",
+      "trust_score": 97,
+      "category": "celebrity"
+    },
+    {
+      "id": "U15",
+      "trust_score": 21,
+      "category": "regular"
+    },
+    {
+      "id": "U16",
+      "trust_score": 22,
+      "category": "regular"
+    },
+    {
+      "id": "U17",
+      "trust_score": 60,
+      "category": "regular"
+    },
+    {
+      "id": "U18",
+      "trust_score": 34,
+      "category": "regular"
+    },
+    {
+      "id": "U19",
+      "trust_score": 23,
+      "category": "regular"
+    }
+  ],
+  "edges": [
+    {
+      "from": "U0",
+      "to": "U11"
+    },
+    {
+      "from": "U1",
+      "to": "U18"
+    },
+    {
+      "from": "U2",
+      "to": "U10"
+    },
+    {
+      "from": "U2",
+      "to": "U17"
+    },
+    {
+      "from": "U2",
+      "to": "U12"
+    },
+    {
+      "from": "U2",
+      "to": "U3"
+    },
+    {
+      "from": "U2",
+      "to": "U15"
+    },
+    {
+      "from": "U3",
+      "to": "U14"
+    },
+    {
+      "from": "U4",
+      "to": "U14"
+    },
+    {
+      "from": "U5",
+      "to": "U1"
+    },
+    {
+      "from": "U5",
+      "to": "U10"
+    },
+    {
+      "from": "U5",
+      "to": "U12"
+    },
+    {
+      "from": "U5",
+      "to": "U14"
+    },
+    {
+      "from": "U5",
+      "to": "U4"
+    },
+    {
+      "from": "U6",
+      "to": "U17"
+    },
+    {
+      "from": "U7",
+      "to": "U15"
+    },
+    {
+      "from": "U8",
+      "to": "U19"
+    },
+    {
+      "from": "U9",
+      "to": "U13"
+    },
+    {
+      "from": "U10",
+      "to": "U0"
+    },
+    {
+      "from": "U11",
+      "to": "U18"
+    },
+    {
+      "from": "U12",
+      "to": "U16"
+    },
+    {
+      "from": "U12",
+      "to": "U14"
+    },
+    {
+      "from": "U12",
+      "to": "U9"
+    },
+    {
+      "from": "U12",
+      "to": "U7"
+    },
+    {
+      "from": "U12",
+      "to": "U3"
+    },
+    {
+      "from": "U13",
+      "to": "U2"
+    },
+    {
+      "from": "U13",
+      "to": "U18"
+    },
+    {
+      "from": "U13",
+      "to": "U1"
+    },
+    {
+      "from": "U13",
+      "to": "U9"
+    },
+    {
+      "from": "U13",
+      "to": "U16"
+    },
+    {
+      "from": "U14",
+      "to": "U3"
+    },
+    {
+      "from": "U14",
+      "to": "U12"
+    },
+    {
+      "from": "U14",
+      "to": "U4"
+    },
+    {
+      "from": "U14",
+      "to": "U8"
+    },
+    {
+      "from": "U14",
+      "to": "U7"
+    },
+    {
+      "from": "U15",
+      "to": "U2"
+    },
+    {
+      "from": "U16",
+      "to": "U14"
+    },
+    {
+      "from": "U17",
+      "to": "U2"
+    },
+    {
+      "from": "U18",
+      "to": "U12"
+    },
+    {
+      "from": "U19",
+      "to": "U17"
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "valid_no_self_loops": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_celebrity_outgoing": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_regular_to_expert": {
+      "passed": false,
+      "message": "Regular user 'U4' is influencing expert 'U14'. Regular user 'U15' is influencing expert 'U2'. Regular user 'U16' is influencing expert 'U14'. Regular user 'U17' is influencing expert 'U2'. Regular user 'U18' is influencing expert 'U12'."
+    },
+    "valid_acyclic": {
+      "passed": false,
+      "message": "Cycle detected in the network; the graph must be acyclic."
+    },
+    "valid_user_attributes": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_edge_structure": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_total_users": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_categories": {
+      "passed": false,
+      "message": "User 'U17' has trust_score 60 which is between 50 and 70; no valid category defined."
+    },
+    "valid_trust_scores": {
+      "passed": true,
+      "message": ""
+    },
+    "overall_passed": false
+  }
+}

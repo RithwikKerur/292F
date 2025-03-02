@@ -1,108 +1,146 @@
 {
-    "circuit": [
-        {
-            "gate": "H",
-            "qubits": [
-                "Q0"
-            ],
-            "time": 1
-        },
-        {
-            "gate": "H",
-            "qubits": [
-                "Q2"
-            ],
-            "time": 1
-        },
-        {
-            "gate": "SWAP",
-            "qubits": [
-                "Q1",
-                "Q3"
-            ],
-            "time": 1
-        },
-        {
-            "gate": "CNOT",
-            "qubits": [
-                "Q0",
-                "Q2"
-            ],
-            "time": 2
-        },
-        {
-            "gate": "X",
-            "qubits": [
-                "Q2"
-            ],
-            "time": 3
-        },
-        {
-            "gate": "Z",
-            "qubits": [
-                "Q4"
-            ],
-            "time": 3
-        },
-        {
-            "gate": "H",
-            "qubits": [
-                "Q5"
-            ],
-            "time": 3
-        },
-        {
-            "gate": "Measure",
-            "qubits": [
-                "Q0"
-            ],
-            "time": 4
-        },
-        {
-            "gate": "Measure",
-            "qubits": [
-                "Q1"
-            ],
-            "time": 4
-        },
-        {
-            "gate": "Measure",
-            "qubits": [
-                "Q2"
-            ],
-            "time": 4
-        },
-        {
-            "gate": "Measure",
-            "qubits": [
-                "Q3"
-            ],
-            "time": 4
-        },
-        {
-            "gate": "Measure",
-            "qubits": [
-                "Q5"
-            ],
-            "time": 4
-        }
-    ],
-    "result": true,
-    "fullOutput": {
-        "valid_output_structure": true,
-        "valid_gate_types": true,
-        "valid_qubits": true,
-        "valid_dag": true,
-        "valid_gate_precedences": true,
-        "valid_cnot_adjacency": true,
-        "valid_swap_constraints": true,
-        "valid_measurements": true,
-        "valid_gate_restrictions": true,
-        "layered_operations": true,
-        "depth_constraint": true,
-        "gate_optimization": true,
-        "final_state_compliance": true,
-        "errors": [],
-        "overall_passed": true
+  "circuit": [
+    {
+      "gate": "H",
+      "qubits": [
+        "Q0"
+      ],
+      "time": 1
+    },
+    {
+      "gate": "H",
+      "qubits": [
+        "Q2"
+      ],
+      "time": 1
+    },
+    {
+      "gate": "SWAP",
+      "qubits": [
+        "Q1",
+        "Q3"
+      ],
+      "time": 1
+    },
+    {
+      "gate": "CNOT",
+      "qubits": [
+        "Q0",
+        "Q2"
+      ],
+      "time": 2
+    },
+    {
+      "gate": "X",
+      "qubits": [
+        "Q2"
+      ],
+      "time": 3
+    },
+    {
+      "gate": "Z",
+      "qubits": [
+        "Q4"
+      ],
+      "time": 3
+    },
+    {
+      "gate": "H",
+      "qubits": [
+        "Q5"
+      ],
+      "time": 3
+    },
+    {
+      "gate": "Measure",
+      "qubits": [
+        "Q0"
+      ],
+      "time": 4
+    },
+    {
+      "gate": "Measure",
+      "qubits": [
+        "Q1"
+      ],
+      "time": 4
+    },
+    {
+      "gate": "Measure",
+      "qubits": [
+        "Q2"
+      ],
+      "time": 4
+    },
+    {
+      "gate": "Measure",
+      "qubits": [
+        "Q3"
+      ],
+      "time": 4
+    },
+    {
+      "gate": "Measure",
+      "qubits": [
+        "Q5"
+      ],
+      "time": 4
     }
+  ],
+  "result": false,
+  "fullOutput": {
+    "valid_output_structure": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_gate_types": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_qubits": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_dag": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_gate_precedences": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_cnot_adjacency": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_swap_constraints": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_measurements": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_gate_restrictions": {
+      "passed": true,
+      "message": ""
+    },
+    "layered_operations": {
+      "passed": true,
+      "message": ""
+    },
+    "depth_constraint": {
+      "passed": true,
+      "message": ""
+    },
+    "gate_optimization": {
+      "passed": true,
+      "message": ""
+    },
+    "final_state_compliance": {
+      "passed": false,
+      "message": "Qubit 'Q4' does not end with a Measurement (or resetting gate)."
+    },
+    "overall_passed": false
+  }
 }

@@ -1,165 +1,169 @@
 {
-    "genes": [
-        {
-            "id": "G0",
-            "name": "Gene 1",
-            "function": "Function G0"
-        },
-        {
-            "id": "G1",
-            "name": "Gene 2",
-            "function": "Function G1"
-        },
-        {
-            "id": "G2",
-            "name": "Gene 3",
-            "function": "Function G2"
-        }
-    ],
-    "diseases": [
-        {
-            "id": "D0",
-            "name": "Breast invasive carcinoma",
-            "description": "Cancer characterized by invasion of breast tissue",
-            "associated_genes": [
-                "G0",
-                "G2",
-                "G5"
-            ]
-        },
-        {
-            "id": "D1",
-            "name": "Ovarian serous carcinoma",
-            "description": "Serous ovarian cancer, often aggressive",
-            "associated_genes": [
-                "G4",
-                "G8",
-                "G13"
-            ]
-        },
-        {
-            "id": "D2",
-            "name": "Pancreatic ductal adenocarcinoma",
-            "description": "Common type of pancreatic cancer, typically primitive neuroectodermal origin",
-            "associated_genes": [
-                "G10",
-                "G15",
-                "G17"
-            ]
-        },
-        {
-            "id": "D3",
-            "name": "Lung small cell carcinoma",
-            "description": "Aggressive lung cancer with high mutation load",
-            "associated_genes": [
-                "G6",
-                "G9",
-                "G16"
-            ]
-        },
-        {
-            "id": "D4",
-            "name": "Prostate adenocarcinoma",
-            "description": "Common prostate cancer subtype, arises from urothelial cells",
-            "associated_genes": [
-                "G3",
-                "G7",
-                "G12"
-            ]
-        },
-        {
-            "id": "D5",
-            "name": "Carcinoid tumors",
-            "description": "Benign or malignant tumors arising from neuroectodermal cells",
-            "associated_genes": [
-                "G14",
-                "G18",
-                "G19"
-            ]
-        }
-    ],
-    "associations": [
-        {
-            "disease_id": "D0",
-            "gene_ids": [
-                "G0",
-                "G2"
-            ],
-            "description": "BRCA1 and BRCA2 mutations are frequently observed in breast invasive carcinoma",
-            "reference": "Han et al. (2018)"
-        },
-        {
-            "disease_id": "D1",
-            "gene_ids": [
-                "G4",
-                "G8"
-            ],
-            "description": "p53 and EGFR mutations are common in serous ovarian carcinomas",
-            "reference": "Jones et al. (2020)"
-        },
-        {
-            "disease_id": "D2",
-            "gene_ids": [
-                "G10",
-                "G17"
-            ],
-            "description": "AKT1 and POLD1 mutations are linked to pancreatic ductal adenocarcinoma",
-            "reference": "Braun et al. (2021)"
-        },
-        {
-            "disease_id": "D3",
-            "gene_ids": [
-                "G6",
-                "G9"
-            ],
-            "description": "CDKN1A and NFATC1 mutations predispose to small cell lung cancer",
-            "reference": "Zhao et al. (2022)"
-        },
-        {
-            "disease_id": "D4",
-            "gene_ids": [
-                "G3",
-                "G7"
-            ],
-            "description": "EGFR and BRAF mutations are common in prostate adenocarcinoma",
-            "reference": "Lee et al. (2023)"
-        },
-        {
-            "disease_id": "D5",
-            "gene_ids": [
-                "G14",
-                "G18"
-            ],
-            "description": "SOD1 and POLD2 mutations are associated with carcinoid tumors",
-            "reference": "Wang et al. (2023)"
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "constraints": {
-            "defined_counts": {
-                "passed": false,
-                "message": "genes count is 3; expected 20. diseases count is 6; expected 20."
-            },
-            "valid_associations": {
-                "passed": false,
-                "message": "Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0)."
-            },
-            "degree_constraints": {
-                "passed": false,
-                "message": "Gene 'G0' has 0 associations; expected between 2 and 5. Gene 'G1' has 0 associations; expected between 2 and 5. Gene 'G2' has 0 associations; expected between 2 and 5. Disease 'D0' has 0 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 0 associations; expected between 3 and 10. Disease 'D3' has 0 associations; expected between 3 and 10. Disease 'D4' has 0 associations; expected between 3 and 10. Disease 'D5' has 0 associations; expected between 3 and 10."
-            },
-            "duplicate_associations": {
-                "passed": false,
-                "message": "Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'."
-            }
-        },
-        "overall_passed": false,
-        "errors": [
-            "Defined Counts Check Failed.",
-            "Valid Associations Check Failed.",
-            "Degree Constraints Check Failed.",
-            "Duplicate Associations Check Failed."
-        ]
+  "genes": [
+    {
+      "id": "G0",
+      "name": "Gene 1",
+      "function": "Function G0"
+    },
+    {
+      "id": "G1",
+      "name": "Gene 2",
+      "function": "Function G1"
+    },
+    {
+      "id": "G2",
+      "name": "Gene 3",
+      "function": "Function G2"
     }
+  ],
+  "diseases": [
+    {
+      "id": "D0",
+      "name": "Breast invasive carcinoma",
+      "description": "Cancer characterized by invasion of breast tissue",
+      "associated_genes": [
+        "G0",
+        "G2",
+        "G5"
+      ]
+    },
+    {
+      "id": "D1",
+      "name": "Ovarian serous carcinoma",
+      "description": "Serous ovarian cancer, often aggressive",
+      "associated_genes": [
+        "G4",
+        "G8",
+        "G13"
+      ]
+    },
+    {
+      "id": "D2",
+      "name": "Pancreatic ductal adenocarcinoma",
+      "description": "Common type of pancreatic cancer, typically primitive neuroectodermal origin",
+      "associated_genes": [
+        "G10",
+        "G15",
+        "G17"
+      ]
+    },
+    {
+      "id": "D3",
+      "name": "Lung small cell carcinoma",
+      "description": "Aggressive lung cancer with high mutation load",
+      "associated_genes": [
+        "G6",
+        "G9",
+        "G16"
+      ]
+    },
+    {
+      "id": "D4",
+      "name": "Prostate adenocarcinoma",
+      "description": "Common prostate cancer subtype, arises from urothelial cells",
+      "associated_genes": [
+        "G3",
+        "G7",
+        "G12"
+      ]
+    },
+    {
+      "id": "D5",
+      "name": "Carcinoid tumors",
+      "description": "Benign or malignant tumors arising from neuroectodermal cells",
+      "associated_genes": [
+        "G14",
+        "G18",
+        "G19"
+      ]
+    }
+  ],
+  "associations": [
+    {
+      "disease_id": "D0",
+      "gene_ids": [
+        "G0",
+        "G2"
+      ],
+      "description": "BRCA1 and BRCA2 mutations are frequently observed in breast invasive carcinoma",
+      "reference": "Han et al. (2018)"
+    },
+    {
+      "disease_id": "D1",
+      "gene_ids": [
+        "G4",
+        "G8"
+      ],
+      "description": "p53 and EGFR mutations are common in serous ovarian carcinomas",
+      "reference": "Jones et al. (2020)"
+    },
+    {
+      "disease_id": "D2",
+      "gene_ids": [
+        "G10",
+        "G17"
+      ],
+      "description": "AKT1 and POLD1 mutations are linked to pancreatic ductal adenocarcinoma",
+      "reference": "Braun et al. (2021)"
+    },
+    {
+      "disease_id": "D3",
+      "gene_ids": [
+        "G6",
+        "G9"
+      ],
+      "description": "CDKN1A and NFATC1 mutations predispose to small cell lung cancer",
+      "reference": "Zhao et al. (2022)"
+    },
+    {
+      "disease_id": "D4",
+      "gene_ids": [
+        "G3",
+        "G7"
+      ],
+      "description": "EGFR and BRAF mutations are common in prostate adenocarcinoma",
+      "reference": "Lee et al. (2023)"
+    },
+    {
+      "disease_id": "D5",
+      "gene_ids": [
+        "G14",
+        "G18"
+      ],
+      "description": "SOD1 and POLD2 mutations are associated with carcinoid tumors",
+      "reference": "Wang et al. (2023)"
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "constraints": {
+      "defined_counts": {
+        "passed": false,
+        "message": "genes count is 3; expected 20. diseases count is 6; expected 20."
+      },
+      "valid_associations": {
+        "passed": false,
+        "message": "Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0)."
+      },
+      "degree_constraints": {
+        "passed": false,
+        "message": "Gene 'G0' has 0 associations; expected between 2 and 5. Gene 'G1' has 0 associations; expected between 2 and 5. Gene 'G2' has 0 associations; expected between 2 and 5. Disease 'D0' has 0 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 0 associations; expected between 3 and 10. Disease 'D3' has 0 associations; expected between 3 and 10. Disease 'D4' has 0 associations; expected between 3 and 10. Disease 'D5' has 0 associations; expected between 3 and 10."
+      },
+      "duplicate_associations": {
+        "passed": false,
+        "message": "Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'."
+      },
+      "bipartite_constraint": {
+        "passed": true,
+        "message": ""
+      }
+    },
+    "overall_passed": false,
+    "errors": [
+      "Defined Counts Check Failed.",
+      "Valid Associations Check Failed.",
+      "Degree Constraints Check Failed.",
+      "Duplicate Associations Check Failed."
+    ]
+  }
 }

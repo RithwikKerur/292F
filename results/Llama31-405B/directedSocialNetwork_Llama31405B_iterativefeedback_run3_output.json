@@ -1,207 +1,234 @@
 {
-    "users": [
-        {
-            "id": "U0",
-            "trust_score": 90,
-            "category": "celebrity"
-        },
-        {
-            "id": "U1",
-            "trust_score": 40,
-            "category": "regular"
-        },
-        {
-            "id": "U2",
-            "trust_score": 75,
-            "category": "expert"
-        },
-        {
-            "id": "U3",
-            "trust_score": 30,
-            "category": "regular"
-        },
-        {
-            "id": "U4",
-            "trust_score": 85,
-            "category": "celebrity"
-        },
-        {
-            "id": "U5",
-            "trust_score": 20,
-            "category": "regular"
-        },
-        {
-            "id": "U6",
-            "trust_score": 70,
-            "category": "expert"
-        },
-        {
-            "id": "U7",
-            "trust_score": 10,
-            "category": "regular"
-        },
-        {
-            "id": "U8",
-            "trust_score": 60,
-            "category": "regular"
-        },
-        {
-            "id": "U9",
-            "trust_score": 50,
-            "category": "regular"
-        },
-        {
-            "id": "U10",
-            "trust_score": 80,
-            "category": "celebrity"
-        },
-        {
-            "id": "U11",
-            "trust_score": 45,
-            "category": "regular"
-        },
-        {
-            "id": "U12",
-            "trust_score": 65,
-            "category": "regular"
-        },
-        {
-            "id": "U13",
-            "trust_score": 55,
-            "category": "regular"
-        },
-        {
-            "id": "U14",
-            "trust_score": 35,
-            "category": "regular"
-        },
-        {
-            "id": "U15",
-            "trust_score": 25,
-            "category": "regular"
-        },
-        {
-            "id": "U16",
-            "trust_score": 15,
-            "category": "regular"
-        },
-        {
-            "id": "U17",
-            "trust_score": 5,
-            "category": "regular"
-        },
-        {
-            "id": "U18",
-            "trust_score": 78,
-            "category": "expert"
-        },
-        {
-            "id": "U19",
-            "trust_score": 98,
-            "category": "celebrity"
-        }
-    ],
-    "edges": [
-        {
-            "from": "U0",
-            "to": "U1"
-        },
-        {
-            "from": "U0",
-            "to": "U2"
-        },
-        {
-            "from": "U0",
-            "to": "U3"
-        },
-        {
-            "from": "U0",
-            "to": "U5"
-        },
-        {
-            "from": "U0",
-            "to": "U8"
-        },
-        {
-            "from": "U4",
-            "to": "U6"
-        },
-        {
-            "from": "U4",
-            "to": "U7"
-        },
-        {
-            "from": "U4",
-            "to": "U9"
-        },
-        {
-            "from": "U4",
-            "to": "U11"
-        },
-        {
-            "from": "U4",
-            "to": "U12"
-        },
-        {
-            "from": "U10",
-            "to": "U13"
-        },
-        {
-            "from": "U10",
-            "to": "U14"
-        },
-        {
-            "from": "U10",
-            "to": "U15"
-        },
-        {
-            "from": "U10",
-            "to": "U16"
-        },
-        {
-            "from": "U10",
-            "to": "U17"
-        },
-        {
-            "from": "U2",
-            "to": "U18"
-        },
-        {
-            "from": "U18",
-            "to": "U19"
-        },
-        {
-            "from": "U19",
-            "to": "U1"
-        },
-        {
-            "from": "U19",
-            "to": "U3"
-        },
-        {
-            "from": "U19",
-            "to": "U5"
-        },
-        {
-            "from": "U19",
-            "to": "U8"
-        },
-        {
-            "from": "U19",
-            "to": "U9"
-        }
-    ],
-    "result": true,
-    "fullOutput": {
-        "valid_no_self_loops": true,
-        "valid_celebrity_outgoing": true,
-        "valid_regular_to_expert": true,
-        "valid_acyclic": true,
-        "valid_user_attributes": true,
-        "valid_edge_structure": true,
-        "valid_total_users": true,
-        "valid_categories": true,
-        "valid_trust_scores": true,
-        "errors": []
+  "users": [
+    {
+      "id": "U0",
+      "trust_score": 90,
+      "category": "celebrity"
+    },
+    {
+      "id": "U1",
+      "trust_score": 40,
+      "category": "regular"
+    },
+    {
+      "id": "U2",
+      "trust_score": 75,
+      "category": "expert"
+    },
+    {
+      "id": "U3",
+      "trust_score": 30,
+      "category": "regular"
+    },
+    {
+      "id": "U4",
+      "trust_score": 85,
+      "category": "celebrity"
+    },
+    {
+      "id": "U5",
+      "trust_score": 20,
+      "category": "regular"
+    },
+    {
+      "id": "U6",
+      "trust_score": 70,
+      "category": "expert"
+    },
+    {
+      "id": "U7",
+      "trust_score": 10,
+      "category": "regular"
+    },
+    {
+      "id": "U8",
+      "trust_score": 60,
+      "category": "regular"
+    },
+    {
+      "id": "U9",
+      "trust_score": 50,
+      "category": "regular"
+    },
+    {
+      "id": "U10",
+      "trust_score": 80,
+      "category": "celebrity"
+    },
+    {
+      "id": "U11",
+      "trust_score": 45,
+      "category": "regular"
+    },
+    {
+      "id": "U12",
+      "trust_score": 65,
+      "category": "regular"
+    },
+    {
+      "id": "U13",
+      "trust_score": 55,
+      "category": "regular"
+    },
+    {
+      "id": "U14",
+      "trust_score": 35,
+      "category": "regular"
+    },
+    {
+      "id": "U15",
+      "trust_score": 25,
+      "category": "regular"
+    },
+    {
+      "id": "U16",
+      "trust_score": 15,
+      "category": "regular"
+    },
+    {
+      "id": "U17",
+      "trust_score": 5,
+      "category": "regular"
+    },
+    {
+      "id": "U18",
+      "trust_score": 78,
+      "category": "expert"
+    },
+    {
+      "id": "U19",
+      "trust_score": 98,
+      "category": "celebrity"
     }
+  ],
+  "edges": [
+    {
+      "from": "U0",
+      "to": "U1"
+    },
+    {
+      "from": "U0",
+      "to": "U2"
+    },
+    {
+      "from": "U0",
+      "to": "U3"
+    },
+    {
+      "from": "U0",
+      "to": "U5"
+    },
+    {
+      "from": "U0",
+      "to": "U8"
+    },
+    {
+      "from": "U4",
+      "to": "U6"
+    },
+    {
+      "from": "U4",
+      "to": "U7"
+    },
+    {
+      "from": "U4",
+      "to": "U9"
+    },
+    {
+      "from": "U4",
+      "to": "U11"
+    },
+    {
+      "from": "U4",
+      "to": "U12"
+    },
+    {
+      "from": "U10",
+      "to": "U13"
+    },
+    {
+      "from": "U10",
+      "to": "U14"
+    },
+    {
+      "from": "U10",
+      "to": "U15"
+    },
+    {
+      "from": "U10",
+      "to": "U16"
+    },
+    {
+      "from": "U10",
+      "to": "U17"
+    },
+    {
+      "from": "U2",
+      "to": "U18"
+    },
+    {
+      "from": "U18",
+      "to": "U19"
+    },
+    {
+      "from": "U19",
+      "to": "U1"
+    },
+    {
+      "from": "U19",
+      "to": "U3"
+    },
+    {
+      "from": "U19",
+      "to": "U5"
+    },
+    {
+      "from": "U19",
+      "to": "U8"
+    },
+    {
+      "from": "U19",
+      "to": "U9"
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "valid_no_self_loops": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_celebrity_outgoing": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_regular_to_expert": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_acyclic": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_user_attributes": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_edge_structure": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_total_users": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_categories": {
+      "passed": false,
+      "message": "User 'U13' has trust_score 55 which is between 50 and 70; no valid category defined."
+    },
+    "valid_trust_scores": {
+      "passed": true,
+      "message": ""
+    },
+    "overall_passed": false
+  }
 }

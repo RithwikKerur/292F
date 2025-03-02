@@ -1,0 +1,553 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 500,
+            "time_window": [
+                6,
+                20
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 350,
+            "time_window": [
+                7,
+                19
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 400,
+            "time_window": [
+                6,
+                18
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 100,
+            "time_window": [
+                9,
+                17
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 120,
+            "time_window": [
+                9,
+                18
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 80,
+            "time_window": [
+                10,
+                20
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 150,
+            "time_window": [
+                8,
+                16
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 200,
+            "time_window": [
+                7,
+                15
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 90,
+            "time_window": [
+                11,
+                19
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 60,
+            "time_window": [
+                8,
+                17
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 250,
+            "time_window": [
+                5,
+                14
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 180,
+            "time_window": [
+                12,
+                22
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 70,
+            "time_window": [
+                9,
+                16
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 110,
+            "time_window": [
+                10,
+                18
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 300,
+            "time_window": [
+                0,
+                23
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 100,
+            "speed": 60
+        },
+        {
+            "id": "V2",
+            "capacity": 200,
+            "speed": 55
+        },
+        {
+            "id": "V3",
+            "capacity": 350,
+            "speed": 50
+        },
+        {
+            "id": "V4",
+            "capacity": 400,
+            "speed": 45
+        },
+        {
+            "id": "V5",
+            "capacity": 500,
+            "speed": 40
+        },
+        {
+            "id": "V6",
+            "capacity": 600,
+            "speed": 35
+        },
+        {
+            "id": "V7",
+            "capacity": 800,
+            "speed": 30
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 30,
+            "hourly_adjust": {
+                "7-9": 15,
+                "16-18": 20
+            },
+            "max_weight": 250
+        },
+        {
+            "from": "L0",
+            "to": "L2",
+            "base_time": 35,
+            "hourly_adjust": {
+                "7-9": 20,
+                "16-18": 25
+            },
+            "max_weight": 300
+        },
+        {
+            "from": "L0",
+            "to": "L7",
+            "base_time": 40,
+            "hourly_adjust": {
+                "7-9": 25,
+                "16-18": 30
+            },
+            "max_weight": 150
+        },
+        {
+            "from": "L0",
+            "to": "L11",
+            "base_time": 35,
+            "hourly_adjust": {
+                "16-18": 25,
+                "19-21": 10
+            },
+            "max_weight": 150
+        },
+        {
+            "from": "L0",
+            "to": "L14",
+            "base_time": 45,
+            "hourly_adjust": {
+                "0-6": 5,
+                "22-23": 0
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L1",
+            "to": "L3",
+            "base_time": 20,
+            "hourly_adjust": {
+                "8-10": 10,
+                "17-19": 15
+            },
+            "max_weight": 80
+        },
+        {
+            "from": "L1",
+            "to": "L4",
+            "base_time": 25,
+            "hourly_adjust": {
+                "8-10": 15,
+                "17-19": 20
+            },
+            "max_weight": 100
+        },
+        {
+            "from": "L1",
+            "to": "L12",
+            "base_time": 20,
+            "hourly_adjust": {
+                "8-9": 15,
+                "15-16": 15
+            },
+            "max_weight": 60
+        },
+        {
+            "from": "L1",
+            "to": "L0",
+            "base_time": 35,
+            "hourly_adjust": {
+                "7-9": 25,
+                "16-18": 15
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L2",
+            "to": "L5",
+            "base_time": 15,
+            "hourly_adjust": {
+                "8-10": 10,
+                "17-19": 15
+            },
+            "max_weight": 70
+        },
+        {
+            "from": "L2",
+            "to": "L6",
+            "base_time": 30,
+            "hourly_adjust": {
+                "8-10": 25,
+                "17-19": 30
+            },
+            "max_weight": 130
+        },
+        {
+            "from": "L2",
+            "to": "L13",
+            "base_time": 25,
+            "hourly_adjust": {
+                "8-10": 10,
+                "16-18": 15
+            },
+            "max_weight": 100
+        },
+        {
+            "from": "L2",
+            "to": "L0",
+            "base_time": 40,
+            "hourly_adjust": {
+                "7-9": 30,
+                "16-18": 20
+            },
+            "max_weight": 150
+        },
+        {
+            "from": "L3",
+            "to": "L4",
+            "base_time": 15,
+            "hourly_adjust": {
+                "12-14": 10
+            },
+            "max_weight": 80
+        },
+        {
+            "from": "L3",
+            "to": "L1",
+            "base_time": 25,
+            "hourly_adjust": {
+                "8-10": 15,
+                "17-19": 10
+            },
+            "max_weight": 70
+        },
+        {
+            "from": "L4",
+            "to": "L5",
+            "base_time": 20,
+            "hourly_adjust": {
+                "12-14": 15
+            },
+            "max_weight": 60
+        },
+        {
+            "from": "L4",
+            "to": "L1",
+            "base_time": 30,
+            "hourly_adjust": {
+                "8-10": 20,
+                "17-19": 15
+            },
+            "max_weight": 80
+        },
+        {
+            "from": "L5",
+            "to": "L6",
+            "base_time": 25,
+            "hourly_adjust": {
+                "12-14": 10
+            },
+            "max_weight": 80
+        },
+        {
+            "from": "L5",
+            "to": "L2",
+            "base_time": 20,
+            "hourly_adjust": {
+                "8-10": 15,
+                "17-19": 10
+            },
+            "max_weight": 50
+        },
+        {
+            "from": "L6",
+            "to": "L9",
+            "base_time": 30,
+            "hourly_adjust": {
+                "8-10": 20,
+                "17-19": 25
+            },
+            "max_weight": 50
+        },
+        {
+            "from": "L6",
+            "to": "L2",
+            "base_time": 35,
+            "hourly_adjust": {
+                "8-10": 25,
+                "16-18": 20
+            },
+            "max_weight": 100
+        },
+        {
+            "from": "L7",
+            "to": "L8",
+            "base_time": 30,
+            "hourly_adjust": {
+                "8-10": 15,
+                "17-19": 20
+            },
+            "max_weight": 80
+        },
+        {
+            "from": "L7",
+            "to": "L0",
+            "base_time": 45,
+            "hourly_adjust": {
+                "7-9": 30,
+                "16-18": 25
+            },
+            "max_weight": 150
+        },
+        {
+            "from": "L8",
+            "to": "L9",
+            "base_time": 15,
+            "hourly_adjust": {
+                "12-14": 10
+            },
+            "max_weight": 50
+        },
+        {
+            "from": "L8",
+            "to": "L7",
+            "base_time": 35,
+            "hourly_adjust": {
+                "8-10": 20,
+                "17-19": 15
+            },
+            "max_weight": 50
+        },
+        {
+            "from": "L9",
+            "to": "L12",
+            "base_time": 25,
+            "hourly_adjust": {
+                "8-9": 10,
+                "15-16": 10
+            },
+            "max_weight": 40
+        },
+        {
+            "from": "L9",
+            "to": "L6",
+            "base_time": 35,
+            "hourly_adjust": {
+                "8-10": 25,
+                "16-18": 20
+            },
+            "max_weight": 40
+        },
+        {
+            "from": "L10",
+            "to": "L0",
+            "base_time": 25,
+            "hourly_adjust": {
+                "5-7": 0,
+                "7-9": 20
+            },
+            "max_weight": 150
+        },
+        {
+            "from": "L10",
+            "to": "L7",
+            "base_time": 30,
+            "hourly_adjust": {
+                "5-7": 5,
+                "7-9": 15
+            },
+            "max_weight": 150
+        },
+        {
+            "from": "L11",
+            "to": "L10",
+            "base_time": 50,
+            "hourly_adjust": {
+                "21-22": 5,
+                "18-20": 15
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L11",
+            "to": "L14",
+            "base_time": 40,
+            "hourly_adjust": {
+                "21-22": 0,
+                "18-20": 10
+            },
+            "max_weight": 150
+        },
+        {
+            "from": "L12",
+            "to": "L13",
+            "base_time": 20,
+            "hourly_adjust": {
+                "8-10": 15,
+                "14-16": 20
+            },
+            "max_weight": 70
+        },
+        {
+            "from": "L12",
+            "to": "L1",
+            "base_time": 25,
+            "hourly_adjust": {
+                "8-9": 20,
+                "15-16": 15
+            },
+            "max_weight": 50
+        },
+        {
+            "from": "L13",
+            "to": "L14",
+            "base_time": 35,
+            "hourly_adjust": {
+                "7-9": 20,
+                "16-18": 25
+            },
+            "max_weight": 100
+        },
+        {
+            "from": "L13",
+            "to": "L2",
+            "base_time": 30,
+            "hourly_adjust": {
+                "8-10": 15,
+                "16-18": 20
+            },
+            "max_weight": 80
+        },
+        {
+            "from": "L14",
+            "to": "L11",
+            "base_time": 40,
+            "hourly_adjust": {
+                "19-21": 5,
+                "21-22": 0
+            },
+            "max_weight": 150
+        },
+        {
+            "from": "L14",
+            "to": "L0",
+            "base_time": 50,
+            "hourly_adjust": {
+                "22-23": 0,
+                "0-6": 5
+            },
+            "max_weight": 150
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "storage_capacity_compliance": {
+            "passed": false,
+            "message": "Total incoming 'max_weight' to location 'L1' is 450 kg, exceeding its storage capacity of 350 kg. Total incoming 'max_weight' to location 'L2' is 530 kg, exceeding its storage capacity of 400 kg. Total incoming 'max_weight' to location 'L7' is 350 kg, exceeding its storage capacity of 200 kg. Total incoming 'max_weight' to location 'L11' is 300 kg, exceeding its storage capacity of 180 kg. Total incoming 'max_weight' to location 'L14' is 450 kg, exceeding its storage capacity of 300 kg. Total incoming 'max_weight' to location 'L4' is 180 kg, exceeding its storage capacity of 120 kg. Total incoming 'max_weight' to location 'L12' is 100 kg, exceeding its storage capacity of 70 kg. Total incoming 'max_weight' to location 'L0' is 800 kg, exceeding its storage capacity of 500 kg. Total incoming 'max_weight' to location 'L5' is 130 kg, exceeding its storage capacity of 80 kg. Total incoming 'max_weight' to location 'L6' is 250 kg, exceeding its storage capacity of 150 kg. Total incoming 'max_weight' to location 'L13' is 170 kg, exceeding its storage capacity of 110 kg. Total incoming 'max_weight' to location 'L9' is 100 kg, exceeding its storage capacity of 60 kg."
+        },
+        "vehicle_capacity_compliance": {
+            "passed": false,
+            "message": "Edge from 'L0' to 'L1' has 'max_weight' 250 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L0' to 'L2' has 'max_weight' 300 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L0' to 'L7' has 'max_weight' 150 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L0' to 'L11' has 'max_weight' 150 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L0' to 'L14' has 'max_weight' 200 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L1' to 'L3' has 'max_weight' 80 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L1' to 'L4' has 'max_weight' 100 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L1' to 'L12' has 'max_weight' 60 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L1' to 'L0' has 'max_weight' 200 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L2' to 'L5' has 'max_weight' 70 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L2' to 'L6' has 'max_weight' 130 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L2' to 'L13' has 'max_weight' 100 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L2' to 'L0' has 'max_weight' 150 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L3' to 'L4' has 'max_weight' 80 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L3' to 'L1' has 'max_weight' 70 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L4' to 'L5' has 'max_weight' 60 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L4' to 'L1' has 'max_weight' 80 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L5' to 'L6' has 'max_weight' 80 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L5' to 'L2' has 'max_weight' 50 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L6' to 'L9' has 'max_weight' 50 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L6' to 'L2' has 'max_weight' 100 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L7' to 'L8' has 'max_weight' 80 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L7' to 'L0' has 'max_weight' 150 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L8' to 'L9' has 'max_weight' 50 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L8' to 'L7' has 'max_weight' 50 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L9' to 'L12' has 'max_weight' 40 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L9' to 'L6' has 'max_weight' 40 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L10' to 'L0' has 'max_weight' 150 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L10' to 'L7' has 'max_weight' 150 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L11' to 'L10' has 'max_weight' 200 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L11' to 'L14' has 'max_weight' 150 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L12' to 'L13' has 'max_weight' 70 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L12' to 'L1' has 'max_weight' 50 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L13' to 'L14' has 'max_weight' 100 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L13' to 'L2' has 'max_weight' 80 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L14' to 'L11' has 'max_weight' 150 kg, which is less than the maximum vehicle capacity of 800 kg. Edge from 'L14' to 'L0' has 'max_weight' 150 kg, which is less than the maximum vehicle capacity of 800 kg."
+        },
+        "time_window_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": false,
+        "errors": [
+            "Storage Capacity Compliance Check Failed.",
+            "Vehicle Capacity Compliance Check Failed."
+        ]
+    }
+}

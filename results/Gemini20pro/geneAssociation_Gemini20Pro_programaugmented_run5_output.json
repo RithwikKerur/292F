@@ -1,608 +1,612 @@
 {
-    "genes": [
-        {
-            "id": "G0",
-            "name": "BRCA1",
-            "function": "DNA repair"
-        },
-        {
-            "id": "G1",
-            "name": "TP53",
-            "function": "Tumor suppression"
-        },
-        {
-            "id": "G2",
-            "name": "EGFR",
-            "function": "Cell growth"
-        },
-        {
-            "id": "G3",
-            "name": "VEGF",
-            "function": "Angiogenesis"
-        },
-        {
-            "id": "G4",
-            "name": "AKT1",
-            "function": "Cell survival"
-        },
-        {
-            "id": "G5",
-            "name": "PIK3CA",
-            "function": "Cell proliferation"
-        },
-        {
-            "id": "G6",
-            "name": "KRAS",
-            "function": "Signal transduction"
-        },
-        {
-            "id": "G7",
-            "name": "MYC",
-            "function": "Transcription"
-        },
-        {
-            "id": "G8",
-            "name": "ERBB2",
-            "function": "Receptor tyrosine kinase"
-        },
-        {
-            "id": "G9",
-            "name": "PTEN",
-            "function": "Tumor suppression"
-        },
-        {
-            "id": "G10",
-            "name": "STAT3",
-            "function": "Immune response"
-        },
-        {
-            "id": "G11",
-            "name": "HIF1A",
-            "function": "Oxygen homeostasis"
-        },
-        {
-            "id": "G12",
-            "name": "FOXO3",
-            "function": "Apoptosis"
-        },
-        {
-            "id": "G13",
-            "name": "NOTCH1",
-            "function": "Cell fate"
-        },
-        {
-            "id": "G14",
-            "name": "SMAD4",
-            "function": "TGF-beta signaling"
-        },
-        {
-            "id": "G15",
-            "name": "RB1",
-            "function": "Cell cycle control"
-        },
-        {
-            "id": "G16",
-            "name": "VHL",
-            "function": "Hypoxia response"
-        },
-        {
-            "id": "G17",
-            "name": "APC",
-            "function": "Wnt signaling"
-        },
-        {
-            "id": "G18",
-            "name": "CTNNB1",
-            "function": "Cell adhesion"
-        },
-        {
-            "id": "G19",
-            "name": "NRAS",
-            "function": "Signal transduction"
-        }
-    ],
-    "diseases": [
-        {
-            "id": "D0",
-            "name": "Breast Cancer",
-            "severity_level": "High"
-        },
-        {
-            "id": "D1",
-            "name": "Lung Cancer",
-            "severity_level": "High"
-        },
-        {
-            "id": "D2",
-            "name": "Colon Cancer",
-            "severity_level": "High"
-        },
-        {
-            "id": "D3",
-            "name": "Prostate Cancer",
-            "severity_level": "High"
-        },
-        {
-            "id": "D4",
-            "name": "Melanoma",
-            "severity_level": "High"
-        },
-        {
-            "id": "D5",
-            "name": "Leukemia",
-            "severity_level": "High"
-        },
-        {
-            "id": "D6",
-            "name": "Alzheimer's Disease",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D7",
-            "name": "Parkinson's Disease",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D8",
-            "name": "Type 2 Diabetes",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D9",
-            "name": "Heart Disease",
-            "severity_level": "High"
-        },
-        {
-            "id": "D10",
-            "name": "Asthma",
-            "severity_level": "Low"
-        },
-        {
-            "id": "D11",
-            "name": "Arthritis",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D12",
-            "name": "Osteoporosis",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D13",
-            "name": "Depression",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D14",
-            "name": "Schizophrenia",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D15",
-            "name": "Crohn's Disease",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D16",
-            "name": "Multiple Sclerosis",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D17",
-            "name": "Psoriasis",
-            "severity_level": "Low"
-        },
-        {
-            "id": "D18",
-            "name": "Eczema",
-            "severity_level": "Low"
-        },
-        {
-            "id": "D19",
-            "name": "Migraine",
-            "severity_level": "Medium"
-        }
-    ],
-    "associations": [
-        {
-            "from": "G0",
-            "to": "D0",
-            "strength": 0.85
-        },
-        {
-            "from": "G0",
-            "to": "D2",
-            "strength": 0.6
-        },
-        {
-            "from": "G0",
-            "to": "D1",
-            "strength": 0.7
-        },
-        {
-            "from": "G0",
-            "to": "D3",
-            "strength": 0.55
-        },
-        {
-            "from": "G1",
-            "to": "D0",
-            "strength": 0.9
-        },
-        {
-            "from": "G1",
-            "to": "D1",
-            "strength": 0.75
-        },
-        {
-            "from": "G1",
-            "to": "D4",
-            "strength": 0.65
-        },
-        {
-            "from": "G1",
-            "to": "D5",
-            "strength": 0.8
-        },
-        {
-            "from": "G2",
-            "to": "D1",
-            "strength": 0.82
-        },
-        {
-            "from": "G2",
-            "to": "D2",
-            "strength": 0.78
-        },
-        {
-            "from": "G2",
-            "to": "D3",
-            "strength": 0.68
-        },
-        {
-            "from": "G2",
-            "to": "D9",
-            "strength": 0.52
-        },
-        {
-            "from": "G3",
-            "to": "D2",
-            "strength": 0.95
-        },
-        {
-            "from": "G3",
-            "to": "D3",
-            "strength": 0.88
-        },
-        {
-            "from": "G3",
-            "to": "D4",
-            "strength": 0.72
-        },
-        {
-            "from": "G4",
-            "to": "D3",
-            "strength": 0.77
-        },
-        {
-            "from": "G4",
-            "to": "D4",
-            "strength": 0.89
-        },
-        {
-            "from": "G4",
-            "to": "D5",
-            "strength": 0.63
-        },
-        {
-            "from": "G4",
-            "to": "D6",
-            "strength": 0.58
-        },
-        {
-            "from": "G5",
-            "to": "D4",
-            "strength": 0.92
-        },
-        {
-            "from": "G5",
-            "to": "D5",
-            "strength": 0.79
-        },
-        {
-            "from": "G5",
-            "to": "D6",
-            "strength": 0.61
-        },
-        {
-            "from": "G5",
-            "to": "D7",
-            "strength": 0.84
-        },
-        {
-            "from": "G6",
-            "to": "D5",
-            "strength": 0.87
-        },
-        {
-            "from": "G6",
-            "to": "D6",
-            "strength": 0.91
-        },
-        {
-            "from": "G6",
-            "to": "D7",
-            "strength": 0.73
-        },
-        {
-            "from": "G6",
-            "to": "D8",
-            "strength": 0.66
-        },
-        {
-            "from": "G7",
-            "to": "D6",
-            "strength": 0.71
-        },
-        {
-            "from": "G7",
-            "to": "D7",
-            "strength": 0.83
-        },
-        {
-            "from": "G7",
-            "to": "D8",
-            "strength": 0.94
-        },
-        {
-            "from": "G7",
-            "to": "D9",
-            "strength": 0.59
-        },
-        {
-            "from": "G8",
-            "to": "D7",
-            "strength": 0.64
-        },
-        {
-            "from": "G8",
-            "to": "D8",
-            "strength": 0.76
-        },
-        {
-            "from": "G8",
-            "to": "D9",
-            "strength": 0.81
-        },
-        {
-            "from": "G9",
-            "to": "D8",
-            "strength": 0.93
-        },
-        {
-            "from": "G9",
-            "to": "D9",
-            "strength": 0.86
-        },
-        {
-            "from": "G9",
-            "to": "D10",
-            "strength": 0.74
-        },
-        {
-            "from": "G9",
-            "to": "D11",
-            "strength": 0.62
-        },
-        {
-            "from": "G10",
-            "to": "D9",
-            "strength": 0.67
-        },
-        {
-            "from": "G10",
-            "to": "D10",
-            "strength": 0.85
-        },
-        {
-            "from": "G10",
-            "to": "D11",
-            "strength": 0.96
-        },
-        {
-            "from": "G10",
-            "to": "D12",
-            "strength": 0.7
-        },
-        {
-            "from": "G11",
-            "to": "D10",
-            "strength": 0.78
-        },
-        {
-            "from": "G11",
-            "to": "D11",
-            "strength": 0.82
-        },
-        {
-            "from": "G11",
-            "to": "D12",
-            "strength": 0.9
-        },
-        {
-            "from": "G12",
-            "to": "D11",
-            "strength": 0.84
-        },
-        {
-            "from": "G12",
-            "to": "D12",
-            "strength": 0.76
-        },
-        {
-            "from": "G12",
-            "to": "D13",
-            "strength": 0.69
-        },
-        {
-            "from": "G12",
-            "to": "D14",
-            "strength": 0.57
-        },
-        {
-            "from": "G13",
-            "to": "D12",
-            "strength": 0.51
-        },
-        {
-            "from": "G13",
-            "to": "D13",
-            "strength": 0.98
-        },
-        {
-            "from": "G13",
-            "to": "D14",
-            "strength": 0.87
-        },
-        {
-            "from": "G13",
-            "to": "D15",
-            "strength": 0.75
-        },
-        {
-            "from": "G14",
-            "to": "D13",
-            "strength": 0.65
-        },
-        {
-            "from": "G14",
-            "to": "D14",
-            "strength": 0.73
-        },
-        {
-            "from": "G14",
-            "to": "D15",
-            "strength": 0.89
-        },
-        {
-            "from": "G14",
-            "to": "D16",
-            "strength": 0.92
-        },
-        {
-            "from": "G15",
-            "to": "D14",
-            "strength": 0.79
-        },
-        {
-            "from": "G15",
-            "to": "D15",
-            "strength": 0.67
-        },
-        {
-            "from": "G15",
-            "to": "D16",
-            "strength": 0.81
-        },
-        {
-            "from": "G16",
-            "to": "D15",
-            "strength": 0.91
-        },
-        {
-            "from": "G16",
-            "to": "D16",
-            "strength": 0.77
-        },
-        {
-            "from": "G16",
-            "to": "D17",
-            "strength": 0.83
-        },
-        {
-            "from": "G16",
-            "to": "D18",
-            "strength": 0.68
-        },
-        {
-            "from": "G17",
-            "to": "D16",
-            "strength": 0.88
-        },
-        {
-            "from": "G17",
-            "to": "D17",
-            "strength": 0.95
-        },
-        {
-            "from": "G17",
-            "to": "D18",
-            "strength": 0.71
-        },
-        {
-            "from": "G17",
-            "to": "D19",
-            "strength": 0.64
-        },
-        {
-            "from": "G18",
-            "to": "D17",
-            "strength": 0.76
-        },
-        {
-            "from": "G18",
-            "to": "D18",
-            "strength": 0.84
-        },
-        {
-            "from": "G18",
-            "to": "D19",
-            "strength": 0.97
-        },
-        {
-            "from": "G19",
-            "to": "D18",
-            "strength": 0.72
-        },
-        {
-            "from": "G19",
-            "to": "D19",
-            "strength": 0.8
-        },
-        {
-            "from": "G19",
-            "to": "D1",
-            "strength": 0.5
-        },
-        {
-            "from": "G19",
-            "to": "D2",
-            "strength": 0.99
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "constraints": {
-            "defined_counts": {
-                "passed": true,
-                "message": ""
-            },
-            "valid_associations": {
-                "passed": true,
-                "message": ""
-            },
-            "degree_constraints": {
-                "passed": false,
-                "message": "Disease 'D0' has 2 associations; expected between 3 and 10."
-            },
-            "duplicate_associations": {
-                "passed": true,
-                "message": ""
-            }
-        },
-        "overall_passed": false,
-        "errors": [
-            "Degree Constraints Check Failed."
-        ]
+  "genes": [
+    {
+      "id": "G0",
+      "name": "BRCA1",
+      "function": "DNA repair"
+    },
+    {
+      "id": "G1",
+      "name": "TP53",
+      "function": "Tumor suppression"
+    },
+    {
+      "id": "G2",
+      "name": "EGFR",
+      "function": "Cell growth"
+    },
+    {
+      "id": "G3",
+      "name": "VEGF",
+      "function": "Angiogenesis"
+    },
+    {
+      "id": "G4",
+      "name": "AKT1",
+      "function": "Cell survival"
+    },
+    {
+      "id": "G5",
+      "name": "PIK3CA",
+      "function": "Cell proliferation"
+    },
+    {
+      "id": "G6",
+      "name": "KRAS",
+      "function": "Signal transduction"
+    },
+    {
+      "id": "G7",
+      "name": "MYC",
+      "function": "Transcription"
+    },
+    {
+      "id": "G8",
+      "name": "ERBB2",
+      "function": "Receptor tyrosine kinase"
+    },
+    {
+      "id": "G9",
+      "name": "PTEN",
+      "function": "Tumor suppression"
+    },
+    {
+      "id": "G10",
+      "name": "STAT3",
+      "function": "Immune response"
+    },
+    {
+      "id": "G11",
+      "name": "HIF1A",
+      "function": "Oxygen homeostasis"
+    },
+    {
+      "id": "G12",
+      "name": "FOXO3",
+      "function": "Apoptosis"
+    },
+    {
+      "id": "G13",
+      "name": "NOTCH1",
+      "function": "Cell fate"
+    },
+    {
+      "id": "G14",
+      "name": "SMAD4",
+      "function": "TGF-beta signaling"
+    },
+    {
+      "id": "G15",
+      "name": "RB1",
+      "function": "Cell cycle control"
+    },
+    {
+      "id": "G16",
+      "name": "VHL",
+      "function": "Hypoxia response"
+    },
+    {
+      "id": "G17",
+      "name": "APC",
+      "function": "Wnt signaling"
+    },
+    {
+      "id": "G18",
+      "name": "CTNNB1",
+      "function": "Cell adhesion"
+    },
+    {
+      "id": "G19",
+      "name": "NRAS",
+      "function": "Signal transduction"
     }
+  ],
+  "diseases": [
+    {
+      "id": "D0",
+      "name": "Breast Cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D1",
+      "name": "Lung Cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D2",
+      "name": "Colon Cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D3",
+      "name": "Prostate Cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D4",
+      "name": "Melanoma",
+      "severity_level": "High"
+    },
+    {
+      "id": "D5",
+      "name": "Leukemia",
+      "severity_level": "High"
+    },
+    {
+      "id": "D6",
+      "name": "Alzheimer's Disease",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D7",
+      "name": "Parkinson's Disease",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D8",
+      "name": "Type 2 Diabetes",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D9",
+      "name": "Heart Disease",
+      "severity_level": "High"
+    },
+    {
+      "id": "D10",
+      "name": "Asthma",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D11",
+      "name": "Arthritis",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D12",
+      "name": "Osteoporosis",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D13",
+      "name": "Depression",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D14",
+      "name": "Schizophrenia",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D15",
+      "name": "Crohn's Disease",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D16",
+      "name": "Multiple Sclerosis",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D17",
+      "name": "Psoriasis",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D18",
+      "name": "Eczema",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D19",
+      "name": "Migraine",
+      "severity_level": "Medium"
+    }
+  ],
+  "associations": [
+    {
+      "from": "G0",
+      "to": "D0",
+      "strength": 0.85
+    },
+    {
+      "from": "G0",
+      "to": "D2",
+      "strength": 0.6
+    },
+    {
+      "from": "G0",
+      "to": "D1",
+      "strength": 0.7
+    },
+    {
+      "from": "G0",
+      "to": "D3",
+      "strength": 0.55
+    },
+    {
+      "from": "G1",
+      "to": "D0",
+      "strength": 0.9
+    },
+    {
+      "from": "G1",
+      "to": "D1",
+      "strength": 0.75
+    },
+    {
+      "from": "G1",
+      "to": "D4",
+      "strength": 0.65
+    },
+    {
+      "from": "G1",
+      "to": "D5",
+      "strength": 0.8
+    },
+    {
+      "from": "G2",
+      "to": "D1",
+      "strength": 0.82
+    },
+    {
+      "from": "G2",
+      "to": "D2",
+      "strength": 0.78
+    },
+    {
+      "from": "G2",
+      "to": "D3",
+      "strength": 0.68
+    },
+    {
+      "from": "G2",
+      "to": "D9",
+      "strength": 0.52
+    },
+    {
+      "from": "G3",
+      "to": "D2",
+      "strength": 0.95
+    },
+    {
+      "from": "G3",
+      "to": "D3",
+      "strength": 0.88
+    },
+    {
+      "from": "G3",
+      "to": "D4",
+      "strength": 0.72
+    },
+    {
+      "from": "G4",
+      "to": "D3",
+      "strength": 0.77
+    },
+    {
+      "from": "G4",
+      "to": "D4",
+      "strength": 0.89
+    },
+    {
+      "from": "G4",
+      "to": "D5",
+      "strength": 0.63
+    },
+    {
+      "from": "G4",
+      "to": "D6",
+      "strength": 0.58
+    },
+    {
+      "from": "G5",
+      "to": "D4",
+      "strength": 0.92
+    },
+    {
+      "from": "G5",
+      "to": "D5",
+      "strength": 0.79
+    },
+    {
+      "from": "G5",
+      "to": "D6",
+      "strength": 0.61
+    },
+    {
+      "from": "G5",
+      "to": "D7",
+      "strength": 0.84
+    },
+    {
+      "from": "G6",
+      "to": "D5",
+      "strength": 0.87
+    },
+    {
+      "from": "G6",
+      "to": "D6",
+      "strength": 0.91
+    },
+    {
+      "from": "G6",
+      "to": "D7",
+      "strength": 0.73
+    },
+    {
+      "from": "G6",
+      "to": "D8",
+      "strength": 0.66
+    },
+    {
+      "from": "G7",
+      "to": "D6",
+      "strength": 0.71
+    },
+    {
+      "from": "G7",
+      "to": "D7",
+      "strength": 0.83
+    },
+    {
+      "from": "G7",
+      "to": "D8",
+      "strength": 0.94
+    },
+    {
+      "from": "G7",
+      "to": "D9",
+      "strength": 0.59
+    },
+    {
+      "from": "G8",
+      "to": "D7",
+      "strength": 0.64
+    },
+    {
+      "from": "G8",
+      "to": "D8",
+      "strength": 0.76
+    },
+    {
+      "from": "G8",
+      "to": "D9",
+      "strength": 0.81
+    },
+    {
+      "from": "G9",
+      "to": "D8",
+      "strength": 0.93
+    },
+    {
+      "from": "G9",
+      "to": "D9",
+      "strength": 0.86
+    },
+    {
+      "from": "G9",
+      "to": "D10",
+      "strength": 0.74
+    },
+    {
+      "from": "G9",
+      "to": "D11",
+      "strength": 0.62
+    },
+    {
+      "from": "G10",
+      "to": "D9",
+      "strength": 0.67
+    },
+    {
+      "from": "G10",
+      "to": "D10",
+      "strength": 0.85
+    },
+    {
+      "from": "G10",
+      "to": "D11",
+      "strength": 0.96
+    },
+    {
+      "from": "G10",
+      "to": "D12",
+      "strength": 0.7
+    },
+    {
+      "from": "G11",
+      "to": "D10",
+      "strength": 0.78
+    },
+    {
+      "from": "G11",
+      "to": "D11",
+      "strength": 0.82
+    },
+    {
+      "from": "G11",
+      "to": "D12",
+      "strength": 0.9
+    },
+    {
+      "from": "G12",
+      "to": "D11",
+      "strength": 0.84
+    },
+    {
+      "from": "G12",
+      "to": "D12",
+      "strength": 0.76
+    },
+    {
+      "from": "G12",
+      "to": "D13",
+      "strength": 0.69
+    },
+    {
+      "from": "G12",
+      "to": "D14",
+      "strength": 0.57
+    },
+    {
+      "from": "G13",
+      "to": "D12",
+      "strength": 0.51
+    },
+    {
+      "from": "G13",
+      "to": "D13",
+      "strength": 0.98
+    },
+    {
+      "from": "G13",
+      "to": "D14",
+      "strength": 0.87
+    },
+    {
+      "from": "G13",
+      "to": "D15",
+      "strength": 0.75
+    },
+    {
+      "from": "G14",
+      "to": "D13",
+      "strength": 0.65
+    },
+    {
+      "from": "G14",
+      "to": "D14",
+      "strength": 0.73
+    },
+    {
+      "from": "G14",
+      "to": "D15",
+      "strength": 0.89
+    },
+    {
+      "from": "G14",
+      "to": "D16",
+      "strength": 0.92
+    },
+    {
+      "from": "G15",
+      "to": "D14",
+      "strength": 0.79
+    },
+    {
+      "from": "G15",
+      "to": "D15",
+      "strength": 0.67
+    },
+    {
+      "from": "G15",
+      "to": "D16",
+      "strength": 0.81
+    },
+    {
+      "from": "G16",
+      "to": "D15",
+      "strength": 0.91
+    },
+    {
+      "from": "G16",
+      "to": "D16",
+      "strength": 0.77
+    },
+    {
+      "from": "G16",
+      "to": "D17",
+      "strength": 0.83
+    },
+    {
+      "from": "G16",
+      "to": "D18",
+      "strength": 0.68
+    },
+    {
+      "from": "G17",
+      "to": "D16",
+      "strength": 0.88
+    },
+    {
+      "from": "G17",
+      "to": "D17",
+      "strength": 0.95
+    },
+    {
+      "from": "G17",
+      "to": "D18",
+      "strength": 0.71
+    },
+    {
+      "from": "G17",
+      "to": "D19",
+      "strength": 0.64
+    },
+    {
+      "from": "G18",
+      "to": "D17",
+      "strength": 0.76
+    },
+    {
+      "from": "G18",
+      "to": "D18",
+      "strength": 0.84
+    },
+    {
+      "from": "G18",
+      "to": "D19",
+      "strength": 0.97
+    },
+    {
+      "from": "G19",
+      "to": "D18",
+      "strength": 0.72
+    },
+    {
+      "from": "G19",
+      "to": "D19",
+      "strength": 0.8
+    },
+    {
+      "from": "G19",
+      "to": "D1",
+      "strength": 0.5
+    },
+    {
+      "from": "G19",
+      "to": "D2",
+      "strength": 0.99
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "constraints": {
+      "defined_counts": {
+        "passed": true,
+        "message": ""
+      },
+      "valid_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "degree_constraints": {
+        "passed": false,
+        "message": "Disease 'D0' has 2 associations; expected between 3 and 10."
+      },
+      "duplicate_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "bipartite_constraint": {
+        "passed": true,
+        "message": ""
+      }
+    },
+    "overall_passed": false,
+    "errors": [
+      "Degree Constraints Check Failed."
+    ]
+  }
 }

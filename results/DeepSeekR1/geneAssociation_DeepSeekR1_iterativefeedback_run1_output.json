@@ -1,333 +1,337 @@
 {
-    "genes": [
-        {
-            "id": "G0",
-            "name": "Gene 1",
-            "function": "General Function 1"
-        },
-        {
-            "id": "G1",
-            "name": "Gene 2",
-            "function": "General Function 2"
-        },
-        {
-            "id": "G2",
-            "name": "Gene 3",
-            "function": "General Function 3"
-        },
-        {
-            "id": "G3",
-            "name": "Gene 4",
-            "function": "General Function 4"
-        },
-        {
-            "id": "G4",
-            "name": "Gene 5",
-            "function": "General Function 5"
-        },
-        {
-            "id": "G5",
-            "name": "Gene 6",
-            "function": "General Function 6"
-        },
-        {
-            "id": "G6",
-            "name": "Gene 7",
-            "function": "General Function 7"
-        },
-        {
-            "id": "G7",
-            "name": "Gene 8",
-            "function": "General Function 8"
-        },
-        {
-            "id": "G8",
-            "name": "Gene 9",
-            "function": "General Function 9"
-        },
-        {
-            "id": "G9",
-            "name": "Gene 10",
-            "function": "General Function 10"
-        },
-        {
-            "id": "G10",
-            "name": "Gene 11",
-            "function": "General Function 11"
-        },
-        {
-            "id": "G11",
-            "name": "Gene 12",
-            "function": "General Function 12"
-        },
-        {
-            "id": "G12",
-            "name": "Gene 13",
-            "function": "General Function 13"
-        },
-        {
-            "id": "G13",
-            "name": "Gene 14",
-            "function": "General Function 14"
-        },
-        {
-            "id": "G14",
-            "name": "Gene 15",
-            "function": "General Function 15"
-        },
-        {
-            "id": "G15",
-            "name": "Gene 16",
-            "function": "General Function 16"
-        },
-        {
-            "id": "G16",
-            "name": "Gene 17",
-            "function": "General Function 17"
-        },
-        {
-            "id": "G17",
-            "name": "Gene 18",
-            "function": "General Function 18"
-        },
-        {
-            "id": "G18",
-            "name": "Gene 19",
-            "function": "General Function 19"
-        },
-        {
-            "id": "G19",
-            "name": "Gene 20",
-            "function": "General Function 20"
-        }
-    ],
-    "diseases": [
-        {
-            "id": "D0",
-            "name": "Disease 1",
-            "severity_level": "High"
-        },
-        {
-            "id": "D1",
-            "name": "Disease 2",
-            "severity_level": "High"
-        },
-        {
-            "id": "D2",
-            "name": "Disease 3",
-            "severity_level": "Moderate"
-        },
-        {
-            "id": "D3",
-            "name": "Disease 4",
-            "severity_level": "Low"
-        },
-        {
-            "id": "D4",
-            "name": "Disease 5",
-            "severity_level": "High"
-        },
-        {
-            "id": "D5",
-            "name": "Disease 6",
-            "severity_level": "Moderate"
-        },
-        {
-            "id": "D6",
-            "name": "Disease 7",
-            "severity_level": "Low"
-        },
-        {
-            "id": "D7",
-            "name": "Disease 8",
-            "severity_level": "High"
-        },
-        {
-            "id": "D8",
-            "name": "Disease 9",
-            "severity_level": "Moderate"
-        },
-        {
-            "id": "D9",
-            "name": "Disease 10",
-            "severity_level": "Low"
-        },
-        {
-            "id": "D10",
-            "name": "Disease 11",
-            "severity_level": "High"
-        },
-        {
-            "id": "D11",
-            "name": "Disease 12",
-            "severity_level": "Moderate"
-        },
-        {
-            "id": "D12",
-            "name": "Disease 13",
-            "severity_level": "Low"
-        },
-        {
-            "id": "D13",
-            "name": "Disease 14",
-            "severity_level": "High"
-        },
-        {
-            "id": "D14",
-            "name": "Disease 15",
-            "severity_level": "Moderate"
-        },
-        {
-            "id": "D15",
-            "name": "Disease 16",
-            "severity_level": "Low"
-        },
-        {
-            "id": "D16",
-            "name": "Disease 17",
-            "severity_level": "High"
-        },
-        {
-            "id": "D17",
-            "name": "Disease 18",
-            "severity_level": "Moderate"
-        },
-        {
-            "id": "D18",
-            "name": "Disease 19",
-            "severity_level": "Low"
-        },
-        {
-            "id": "D19",
-            "name": "Disease 20",
-            "severity_level": "High"
-        }
-    ],
-    "associations": [
-        {
-            "from": "G0",
-            "to": "D0",
-            "strength": 0.85
-        },
-        {
-            "from": "G1",
-            "to": "D2",
-            "strength": 0.6
-        },
-        {
-            "from": "G2",
-            "to": "D4",
-            "strength": 0.7
-        },
-        {
-            "from": "G3",
-            "to": "D1",
-            "strength": 0.95
-        },
-        {
-            "from": "G4",
-            "to": "D6",
-            "strength": 0.8
-        },
-        {
-            "from": "G5",
-            "to": "D3",
-            "strength": 0.75
-        },
-        {
-            "from": "G6",
-            "to": "D5",
-            "strength": 0.9
-        },
-        {
-            "from": "G7",
-            "to": "D7",
-            "strength": 0.85
-        },
-        {
-            "from": "G8",
-            "to": "D9",
-            "strength": 0.65
-        },
-        {
-            "from": "G9",
-            "to": "D11",
-            "strength": 0.8
-        },
-        {
-            "from": "G10",
-            "to": "D13",
-            "strength": 0.7
-        },
-        {
-            "from": "G11",
-            "to": "D15",
-            "strength": 0.9
-        },
-        {
-            "from": "G12",
-            "to": "D17",
-            "strength": 0.85
-        },
-        {
-            "from": "G13",
-            "to": "D19",
-            "strength": 0.6
-        },
-        {
-            "from": "G14",
-            "to": "D2",
-            "strength": 0.75
-        },
-        {
-            "from": "G15",
-            "to": "D4",
-            "strength": 0.8
-        },
-        {
-            "from": "G16",
-            "to": "D6",
-            "strength": 0.9
-        },
-        {
-            "from": "G17",
-            "to": "D8",
-            "strength": 0.85
-        },
-        {
-            "from": "G18",
-            "to": "D10",
-            "strength": 0.65
-        },
-        {
-            "from": "G19",
-            "to": "D12",
-            "strength": 0.7
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "constraints": {
-            "defined_counts": {
-                "passed": true,
-                "message": ""
-            },
-            "valid_associations": {
-                "passed": true,
-                "message": ""
-            },
-            "degree_constraints": {
-                "passed": false,
-                "message": "Gene 'G0' has 1 associations; expected between 2 and 5. Gene 'G1' has 1 associations; expected between 2 and 5. Gene 'G2' has 1 associations; expected between 2 and 5. Gene 'G3' has 1 associations; expected between 2 and 5. Gene 'G4' has 1 associations; expected between 2 and 5. Gene 'G5' has 1 associations; expected between 2 and 5. Gene 'G6' has 1 associations; expected between 2 and 5. Gene 'G7' has 1 associations; expected between 2 and 5. Gene 'G8' has 1 associations; expected between 2 and 5. Gene 'G9' has 1 associations; expected between 2 and 5. Gene 'G10' has 1 associations; expected between 2 and 5. Gene 'G11' has 1 associations; expected between 2 and 5. Gene 'G12' has 1 associations; expected between 2 and 5. Gene 'G13' has 1 associations; expected between 2 and 5. Gene 'G14' has 1 associations; expected between 2 and 5. Gene 'G15' has 1 associations; expected between 2 and 5. Gene 'G16' has 1 associations; expected between 2 and 5. Gene 'G17' has 1 associations; expected between 2 and 5. Gene 'G18' has 1 associations; expected between 2 and 5. Gene 'G19' has 1 associations; expected between 2 and 5. Disease 'D0' has 1 associations; expected between 3 and 10. Disease 'D1' has 1 associations; expected between 3 and 10. Disease 'D2' has 2 associations; expected between 3 and 10. Disease 'D3' has 1 associations; expected between 3 and 10. Disease 'D4' has 2 associations; expected between 3 and 10. Disease 'D5' has 1 associations; expected between 3 and 10. Disease 'D6' has 2 associations; expected between 3 and 10. Disease 'D7' has 1 associations; expected between 3 and 10. Disease 'D8' has 1 associations; expected between 3 and 10. Disease 'D9' has 1 associations; expected between 3 and 10. Disease 'D10' has 1 associations; expected between 3 and 10. Disease 'D11' has 1 associations; expected between 3 and 10. Disease 'D12' has 1 associations; expected between 3 and 10. Disease 'D13' has 1 associations; expected between 3 and 10. Disease 'D14' has 0 associations; expected between 3 and 10. Disease 'D15' has 1 associations; expected between 3 and 10. Disease 'D16' has 0 associations; expected between 3 and 10. Disease 'D17' has 1 associations; expected between 3 and 10. Disease 'D18' has 0 associations; expected between 3 and 10. Disease 'D19' has 1 associations; expected between 3 and 10."
-            },
-            "duplicate_associations": {
-                "passed": true,
-                "message": ""
-            }
-        },
-        "overall_passed": false,
-        "errors": [
-            "Degree Constraints Check Failed."
-        ]
+  "genes": [
+    {
+      "id": "G0",
+      "name": "Gene 1",
+      "function": "General Function 1"
+    },
+    {
+      "id": "G1",
+      "name": "Gene 2",
+      "function": "General Function 2"
+    },
+    {
+      "id": "G2",
+      "name": "Gene 3",
+      "function": "General Function 3"
+    },
+    {
+      "id": "G3",
+      "name": "Gene 4",
+      "function": "General Function 4"
+    },
+    {
+      "id": "G4",
+      "name": "Gene 5",
+      "function": "General Function 5"
+    },
+    {
+      "id": "G5",
+      "name": "Gene 6",
+      "function": "General Function 6"
+    },
+    {
+      "id": "G6",
+      "name": "Gene 7",
+      "function": "General Function 7"
+    },
+    {
+      "id": "G7",
+      "name": "Gene 8",
+      "function": "General Function 8"
+    },
+    {
+      "id": "G8",
+      "name": "Gene 9",
+      "function": "General Function 9"
+    },
+    {
+      "id": "G9",
+      "name": "Gene 10",
+      "function": "General Function 10"
+    },
+    {
+      "id": "G10",
+      "name": "Gene 11",
+      "function": "General Function 11"
+    },
+    {
+      "id": "G11",
+      "name": "Gene 12",
+      "function": "General Function 12"
+    },
+    {
+      "id": "G12",
+      "name": "Gene 13",
+      "function": "General Function 13"
+    },
+    {
+      "id": "G13",
+      "name": "Gene 14",
+      "function": "General Function 14"
+    },
+    {
+      "id": "G14",
+      "name": "Gene 15",
+      "function": "General Function 15"
+    },
+    {
+      "id": "G15",
+      "name": "Gene 16",
+      "function": "General Function 16"
+    },
+    {
+      "id": "G16",
+      "name": "Gene 17",
+      "function": "General Function 17"
+    },
+    {
+      "id": "G17",
+      "name": "Gene 18",
+      "function": "General Function 18"
+    },
+    {
+      "id": "G18",
+      "name": "Gene 19",
+      "function": "General Function 19"
+    },
+    {
+      "id": "G19",
+      "name": "Gene 20",
+      "function": "General Function 20"
     }
+  ],
+  "diseases": [
+    {
+      "id": "D0",
+      "name": "Disease 1",
+      "severity_level": "High"
+    },
+    {
+      "id": "D1",
+      "name": "Disease 2",
+      "severity_level": "High"
+    },
+    {
+      "id": "D2",
+      "name": "Disease 3",
+      "severity_level": "Moderate"
+    },
+    {
+      "id": "D3",
+      "name": "Disease 4",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D4",
+      "name": "Disease 5",
+      "severity_level": "High"
+    },
+    {
+      "id": "D5",
+      "name": "Disease 6",
+      "severity_level": "Moderate"
+    },
+    {
+      "id": "D6",
+      "name": "Disease 7",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D7",
+      "name": "Disease 8",
+      "severity_level": "High"
+    },
+    {
+      "id": "D8",
+      "name": "Disease 9",
+      "severity_level": "Moderate"
+    },
+    {
+      "id": "D9",
+      "name": "Disease 10",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D10",
+      "name": "Disease 11",
+      "severity_level": "High"
+    },
+    {
+      "id": "D11",
+      "name": "Disease 12",
+      "severity_level": "Moderate"
+    },
+    {
+      "id": "D12",
+      "name": "Disease 13",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D13",
+      "name": "Disease 14",
+      "severity_level": "High"
+    },
+    {
+      "id": "D14",
+      "name": "Disease 15",
+      "severity_level": "Moderate"
+    },
+    {
+      "id": "D15",
+      "name": "Disease 16",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D16",
+      "name": "Disease 17",
+      "severity_level": "High"
+    },
+    {
+      "id": "D17",
+      "name": "Disease 18",
+      "severity_level": "Moderate"
+    },
+    {
+      "id": "D18",
+      "name": "Disease 19",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D19",
+      "name": "Disease 20",
+      "severity_level": "High"
+    }
+  ],
+  "associations": [
+    {
+      "from": "G0",
+      "to": "D0",
+      "strength": 0.85
+    },
+    {
+      "from": "G1",
+      "to": "D2",
+      "strength": 0.6
+    },
+    {
+      "from": "G2",
+      "to": "D4",
+      "strength": 0.7
+    },
+    {
+      "from": "G3",
+      "to": "D1",
+      "strength": 0.95
+    },
+    {
+      "from": "G4",
+      "to": "D6",
+      "strength": 0.8
+    },
+    {
+      "from": "G5",
+      "to": "D3",
+      "strength": 0.75
+    },
+    {
+      "from": "G6",
+      "to": "D5",
+      "strength": 0.9
+    },
+    {
+      "from": "G7",
+      "to": "D7",
+      "strength": 0.85
+    },
+    {
+      "from": "G8",
+      "to": "D9",
+      "strength": 0.65
+    },
+    {
+      "from": "G9",
+      "to": "D11",
+      "strength": 0.8
+    },
+    {
+      "from": "G10",
+      "to": "D13",
+      "strength": 0.7
+    },
+    {
+      "from": "G11",
+      "to": "D15",
+      "strength": 0.9
+    },
+    {
+      "from": "G12",
+      "to": "D17",
+      "strength": 0.85
+    },
+    {
+      "from": "G13",
+      "to": "D19",
+      "strength": 0.6
+    },
+    {
+      "from": "G14",
+      "to": "D2",
+      "strength": 0.75
+    },
+    {
+      "from": "G15",
+      "to": "D4",
+      "strength": 0.8
+    },
+    {
+      "from": "G16",
+      "to": "D6",
+      "strength": 0.9
+    },
+    {
+      "from": "G17",
+      "to": "D8",
+      "strength": 0.85
+    },
+    {
+      "from": "G18",
+      "to": "D10",
+      "strength": 0.65
+    },
+    {
+      "from": "G19",
+      "to": "D12",
+      "strength": 0.7
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "constraints": {
+      "defined_counts": {
+        "passed": true,
+        "message": ""
+      },
+      "valid_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "degree_constraints": {
+        "passed": false,
+        "message": "Gene 'G0' has 1 associations; expected between 2 and 5. Gene 'G1' has 1 associations; expected between 2 and 5. Gene 'G2' has 1 associations; expected between 2 and 5. Gene 'G3' has 1 associations; expected between 2 and 5. Gene 'G4' has 1 associations; expected between 2 and 5. Gene 'G5' has 1 associations; expected between 2 and 5. Gene 'G6' has 1 associations; expected between 2 and 5. Gene 'G7' has 1 associations; expected between 2 and 5. Gene 'G8' has 1 associations; expected between 2 and 5. Gene 'G9' has 1 associations; expected between 2 and 5. Gene 'G10' has 1 associations; expected between 2 and 5. Gene 'G11' has 1 associations; expected between 2 and 5. Gene 'G12' has 1 associations; expected between 2 and 5. Gene 'G13' has 1 associations; expected between 2 and 5. Gene 'G14' has 1 associations; expected between 2 and 5. Gene 'G15' has 1 associations; expected between 2 and 5. Gene 'G16' has 1 associations; expected between 2 and 5. Gene 'G17' has 1 associations; expected between 2 and 5. Gene 'G18' has 1 associations; expected between 2 and 5. Gene 'G19' has 1 associations; expected between 2 and 5. Disease 'D0' has 1 associations; expected between 3 and 10. Disease 'D1' has 1 associations; expected between 3 and 10. Disease 'D2' has 2 associations; expected between 3 and 10. Disease 'D3' has 1 associations; expected between 3 and 10. Disease 'D4' has 2 associations; expected between 3 and 10. Disease 'D5' has 1 associations; expected between 3 and 10. Disease 'D6' has 2 associations; expected between 3 and 10. Disease 'D7' has 1 associations; expected between 3 and 10. Disease 'D8' has 1 associations; expected between 3 and 10. Disease 'D9' has 1 associations; expected between 3 and 10. Disease 'D10' has 1 associations; expected between 3 and 10. Disease 'D11' has 1 associations; expected between 3 and 10. Disease 'D12' has 1 associations; expected between 3 and 10. Disease 'D13' has 1 associations; expected between 3 and 10. Disease 'D14' has 0 associations; expected between 3 and 10. Disease 'D15' has 1 associations; expected between 3 and 10. Disease 'D16' has 0 associations; expected between 3 and 10. Disease 'D17' has 1 associations; expected between 3 and 10. Disease 'D18' has 0 associations; expected between 3 and 10. Disease 'D19' has 1 associations; expected between 3 and 10."
+      },
+      "duplicate_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "bipartite_constraint": {
+        "passed": true,
+        "message": ""
+      }
+    },
+    "overall_passed": false,
+    "errors": [
+      "Degree Constraints Check Failed."
+    ]
+  }
 }

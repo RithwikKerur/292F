@@ -1,83 +1,120 @@
 {
-    "circuit": [
-        {
-            "gate": "H",
-            "qubits": [
-                "Q0"
-            ],
-            "time": 1
-        },
-        {
-            "gate": "H",
-            "qubits": [
-                "Q2"
-            ],
-            "time": 1
-        },
-        {
-            "gate": "H",
-            "qubits": [
-                "Q4"
-            ],
-            "time": 1
-        },
-        {
-            "gate": "CNOT",
-            "qubits": [
-                "Q0",
-                "Q3"
-            ],
-            "time": 2
-        },
-        {
-            "gate": "CNOT",
-            "qubits": [
-                "Q2",
-                "Q5"
-            ],
-            "time": 2
-        },
-        {
-            "gate": "X",
-            "qubits": [
-                "Q1"
-            ],
-            "time": 3
-        },
-        {
-            "gate": "X",
-            "qubits": [
-                "Q6"
-            ],
-            "time": 3
-        },
-        {
-            "gate": "Measure",
-            "qubits": [
-                "Q7",
-                "Q8",
-                "Q9"
-            ],
-            "time": 4
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "valid_output_structure": false,
-        "valid_gate_types": true,
-        "valid_qubits": true,
-        "valid_dag": true,
-        "valid_gate_precedences": true,
-        "valid_cnot_adjacency": true,
-        "valid_swap_constraints": true,
-        "valid_measurements": true,
-        "valid_gate_restrictions": true,
-        "layered_operations": true,
-        "depth_constraint": true,
-        "gate_optimization": true,
-        "final_state_compliance": true,
-        "errors": [
-            "Measure gate at index 7 must operate on exactly one qubit."
-        ]
+  "circuit": [
+    {
+      "gate": "H",
+      "qubits": [
+        "Q0"
+      ],
+      "time": 1
+    },
+    {
+      "gate": "H",
+      "qubits": [
+        "Q2"
+      ],
+      "time": 1
+    },
+    {
+      "gate": "H",
+      "qubits": [
+        "Q4"
+      ],
+      "time": 1
+    },
+    {
+      "gate": "CNOT",
+      "qubits": [
+        "Q0",
+        "Q3"
+      ],
+      "time": 2
+    },
+    {
+      "gate": "CNOT",
+      "qubits": [
+        "Q2",
+        "Q5"
+      ],
+      "time": 2
+    },
+    {
+      "gate": "X",
+      "qubits": [
+        "Q1"
+      ],
+      "time": 3
+    },
+    {
+      "gate": "X",
+      "qubits": [
+        "Q6"
+      ],
+      "time": 3
+    },
+    {
+      "gate": "Measure",
+      "qubits": [
+        "Q7",
+        "Q8",
+        "Q9"
+      ],
+      "time": 4
     }
+  ],
+  "result": false,
+  "fullOutput": {
+    "valid_output_structure": {
+      "passed": false,
+      "message": "Measure gate at index 7 must operate on 1 qubit."
+    },
+    "valid_gate_types": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_qubits": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_dag": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_gate_precedences": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_cnot_adjacency": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_swap_constraints": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_measurements": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_gate_restrictions": {
+      "passed": true,
+      "message": ""
+    },
+    "layered_operations": {
+      "passed": true,
+      "message": ""
+    },
+    "depth_constraint": {
+      "passed": true,
+      "message": ""
+    },
+    "gate_optimization": {
+      "passed": true,
+      "message": ""
+    },
+    "final_state_compliance": {
+      "passed": false,
+      "message": "Qubit 'Q0' does not end with a Measurement (or resetting gate). Qubit 'Q2' does not end with a Measurement (or resetting gate). Qubit 'Q4' does not end with a Measurement (or resetting gate). Qubit 'Q3' does not end with a Measurement (or resetting gate). Qubit 'Q5' does not end with a Measurement (or resetting gate). Qubit 'Q1' does not end with a Measurement (or resetting gate). Qubit 'Q6' does not end with a Measurement (or resetting gate)."
+    },
+    "overall_passed": false
+  }
 }

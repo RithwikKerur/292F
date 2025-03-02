@@ -1,0 +1,535 @@
+{
+  "genes": [
+    {
+      "id": "G0",
+      "name": "BRCA1",
+      "function": "DNA repair"
+    },
+    {
+      "id": "G1",
+      "name": "TP53",
+      "function": "Tumor suppression"
+    },
+    {
+      "id": "G2",
+      "name": "CFTR",
+      "function": "Ion transport"
+    },
+    {
+      "id": "G3",
+      "name": "APC",
+      "function": "Cell adhesion"
+    },
+    {
+      "id": "G4",
+      "name": "EGFR",
+      "function": "Cell growth regulation"
+    },
+    {
+      "id": "G5",
+      "name": "VHL",
+      "function": "Hypoxia response"
+    },
+    {
+      "id": "G6",
+      "name": "RB1",
+      "function": "Cell cycle control"
+    },
+    {
+      "id": "G7",
+      "name": "PTEN",
+      "function": "Apoptosis regulation"
+    },
+    {
+      "id": "G8",
+      "name": "BRCA2",
+      "function": "DNA repair"
+    },
+    {
+      "id": "G9",
+      "name": "ATM",
+      "function": "DNA damage response"
+    },
+    {
+      "id": "G10",
+      "name": "ALK",
+      "function": "Receptor tyrosine kinase"
+    },
+    {
+      "id": "G11",
+      "name": "KRAS",
+      "function": "Signal transduction"
+    },
+    {
+      "id": "G12",
+      "name": "MYC",
+      "function": "Transcription factor"
+    },
+    {
+      "id": "G13",
+      "name": "HER2",
+      "function": "Cell surface receptor"
+    },
+    {
+      "id": "G14",
+      "name": "BRAF",
+      "function": "Serine/threonine kinase"
+    },
+    {
+      "id": "G15",
+      "name": "JAK2",
+      "function": "Tyrosine kinase"
+    },
+    {
+      "id": "G16",
+      "name": "NOTCH1",
+      "function": "Cell differentiation"
+    },
+    {
+      "id": "G17",
+      "name": "SMAD4",
+      "function": "TGF-beta signaling"
+    },
+    {
+      "id": "G18",
+      "name": "RET",
+      "function": "Cell growth signaling"
+    },
+    {
+      "id": "G19",
+      "name": "P53",
+      "function": "Tumor suppression"
+    }
+  ],
+  "diseases": [
+    {
+      "id": "D0",
+      "name": "Breast Cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D1",
+      "name": "Lung Cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D2",
+      "name": "Colorectal Cancer",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D3",
+      "name": "Melanoma",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D4",
+      "name": "Diabetes Type 1",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D5",
+      "name": "Alzheimer's Disease",
+      "severity_level": "High"
+    },
+    {
+      "id": "D6",
+      "name": "Parkinson's Disease",
+      "severity_level": "High"
+    },
+    {
+      "id": "D7",
+      "name": "Cystic Fibrosis",
+      "severity_level": "High"
+    },
+    {
+      "id": "D8",
+      "name": "Asthma",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D9",
+      "name": "Hypertension",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D10",
+      "name": "Rheumatoid Arthritis",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D11",
+      "name": "Osteoporosis",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D12",
+      "name": "HIV/AIDS",
+      "severity_level": "High"
+    },
+    {
+      "id": "D13",
+      "name": "Hepatitis C",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D14",
+      "name": "Malaria",
+      "severity_level": "High"
+    },
+    {
+      "id": "D15",
+      "name": "Influenza",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D16",
+      "name": "Tuberculosis",
+      "severity_level": "High"
+    },
+    {
+      "id": "D17",
+      "name": "Schizophrenia",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D18",
+      "name": "Bipolar Disorder",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D19",
+      "name": "Autism Spectrum Disorder",
+      "severity_level": "Low"
+    }
+  ],
+  "associations": [
+    {
+      "from": "G0",
+      "to": "D0",
+      "strength": 0.85
+    },
+    {
+      "from": "G0",
+      "to": "D1",
+      "strength": 0.6
+    },
+    {
+      "from": "G0",
+      "to": "D2",
+      "strength": 0.9
+    },
+    {
+      "from": "G1",
+      "to": "D1",
+      "strength": 0.85
+    },
+    {
+      "from": "G1",
+      "to": "D2",
+      "strength": 0.6
+    },
+    {
+      "from": "G1",
+      "to": "D3",
+      "strength": 0.9
+    },
+    {
+      "from": "G2",
+      "to": "D2",
+      "strength": 0.85
+    },
+    {
+      "from": "G2",
+      "to": "D3",
+      "strength": 0.6
+    },
+    {
+      "from": "G2",
+      "to": "D4",
+      "strength": 0.9
+    },
+    {
+      "from": "G3",
+      "to": "D3",
+      "strength": 0.85
+    },
+    {
+      "from": "G3",
+      "to": "D4",
+      "strength": 0.6
+    },
+    {
+      "from": "G3",
+      "to": "D5",
+      "strength": 0.9
+    },
+    {
+      "from": "G4",
+      "to": "D4",
+      "strength": 0.85
+    },
+    {
+      "from": "G4",
+      "to": "D5",
+      "strength": 0.6
+    },
+    {
+      "from": "G4",
+      "to": "D6",
+      "strength": 0.9
+    },
+    {
+      "from": "G5",
+      "to": "D5",
+      "strength": 0.85
+    },
+    {
+      "from": "G5",
+      "to": "D6",
+      "strength": 0.6
+    },
+    {
+      "from": "G5",
+      "to": "D7",
+      "strength": 0.9
+    },
+    {
+      "from": "G6",
+      "to": "D6",
+      "strength": 0.85
+    },
+    {
+      "from": "G6",
+      "to": "D7",
+      "strength": 0.6
+    },
+    {
+      "from": "G6",
+      "to": "D8",
+      "strength": 0.9
+    },
+    {
+      "from": "G7",
+      "to": "D7",
+      "strength": 0.85
+    },
+    {
+      "from": "G7",
+      "to": "D8",
+      "strength": 0.6
+    },
+    {
+      "from": "G7",
+      "to": "D9",
+      "strength": 0.9
+    },
+    {
+      "from": "G8",
+      "to": "D8",
+      "strength": 0.85
+    },
+    {
+      "from": "G8",
+      "to": "D9",
+      "strength": 0.6
+    },
+    {
+      "from": "G8",
+      "to": "D10",
+      "strength": 0.9
+    },
+    {
+      "from": "G9",
+      "to": "D9",
+      "strength": 0.85
+    },
+    {
+      "from": "G9",
+      "to": "D10",
+      "strength": 0.6
+    },
+    {
+      "from": "G9",
+      "to": "D11",
+      "strength": 0.9
+    },
+    {
+      "from": "G10",
+      "to": "D10",
+      "strength": 0.85
+    },
+    {
+      "from": "G10",
+      "to": "D11",
+      "strength": 0.6
+    },
+    {
+      "from": "G10",
+      "to": "D12",
+      "strength": 0.9
+    },
+    {
+      "from": "G11",
+      "to": "D11",
+      "strength": 0.85
+    },
+    {
+      "from": "G11",
+      "to": "D12",
+      "strength": 0.6
+    },
+    {
+      "from": "G11",
+      "to": "D13",
+      "strength": 0.9
+    },
+    {
+      "from": "G12",
+      "to": "D12",
+      "strength": 0.85
+    },
+    {
+      "from": "G12",
+      "to": "D13",
+      "strength": 0.6
+    },
+    {
+      "from": "G12",
+      "to": "D14",
+      "strength": 0.9
+    },
+    {
+      "from": "G13",
+      "to": "D13",
+      "strength": 0.85
+    },
+    {
+      "from": "G13",
+      "to": "D14",
+      "strength": 0.6
+    },
+    {
+      "from": "G13",
+      "to": "D15",
+      "strength": 0.9
+    },
+    {
+      "from": "G14",
+      "to": "D14",
+      "strength": 0.85
+    },
+    {
+      "from": "G14",
+      "to": "D15",
+      "strength": 0.6
+    },
+    {
+      "from": "G14",
+      "to": "D16",
+      "strength": 0.9
+    },
+    {
+      "from": "G15",
+      "to": "D15",
+      "strength": 0.85
+    },
+    {
+      "from": "G15",
+      "to": "D16",
+      "strength": 0.6
+    },
+    {
+      "from": "G15",
+      "to": "D17",
+      "strength": 0.9
+    },
+    {
+      "from": "G16",
+      "to": "D16",
+      "strength": 0.85
+    },
+    {
+      "from": "G16",
+      "to": "D17",
+      "strength": 0.6
+    },
+    {
+      "from": "G16",
+      "to": "D18",
+      "strength": 0.9
+    },
+    {
+      "from": "G17",
+      "to": "D17",
+      "strength": 0.85
+    },
+    {
+      "from": "G17",
+      "to": "D18",
+      "strength": 0.6
+    },
+    {
+      "from": "G17",
+      "to": "D19",
+      "strength": 0.9
+    },
+    {
+      "from": "G18",
+      "to": "D18",
+      "strength": 0.85
+    },
+    {
+      "from": "G18",
+      "to": "D19",
+      "strength": 0.6
+    },
+    {
+      "from": "G18",
+      "to": "D0",
+      "strength": 0.9
+    },
+    {
+      "from": "G19",
+      "to": "D19",
+      "strength": 0.85
+    },
+    {
+      "from": "G19",
+      "to": "D0",
+      "strength": 0.6
+    },
+    {
+      "from": "G19",
+      "to": "D1",
+      "strength": 0.9
+    }
+  ],
+  "result": true,
+  "fullOutput": {
+    "constraints": {
+      "defined_counts": {
+        "passed": true,
+        "message": ""
+      },
+      "valid_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "degree_constraints": {
+        "passed": true,
+        "message": ""
+      },
+      "duplicate_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "bipartite_constraint": {
+        "passed": true,
+        "message": ""
+      }
+    },
+    "overall_passed": true,
+    "errors": []
+  }
+}

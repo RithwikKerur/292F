@@ -1,0 +1,336 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 500,
+            "time_window": [
+                8,
+                18
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 300,
+            "time_window": [
+                9,
+                17
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 250,
+            "time_window": [
+                8,
+                16
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 200,
+            "time_window": [
+                9,
+                15
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 350,
+            "time_window": [
+                10,
+                18
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 275,
+            "time_window": [
+                8,
+                17
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 225,
+            "time_window": [
+                9,
+                16
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 400,
+            "time_window": [
+                8,
+                18
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 320,
+            "time_window": [
+                9,
+                17
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 280,
+            "time_window": [
+                10,
+                16
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 310,
+            "time_window": [
+                8,
+                17
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 290,
+            "time_window": [
+                9,
+                16
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 270,
+            "time_window": [
+                8,
+                15
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 330,
+            "time_window": [
+                10,
+                18
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 260,
+            "time_window": [
+                9,
+                17
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 100,
+            "speed": 60
+        },
+        {
+            "id": "V2",
+            "capacity": 120,
+            "speed": 55
+        },
+        {
+            "id": "V3",
+            "capacity": 150,
+            "speed": 50
+        },
+        {
+            "id": "V4",
+            "capacity": 140,
+            "speed": 52
+        },
+        {
+            "id": "V5",
+            "capacity": 130,
+            "speed": 58
+        },
+        {
+            "id": "V6",
+            "capacity": 110,
+            "speed": 56
+        },
+        {
+            "id": "V7",
+            "capacity": 125,
+            "speed": 54
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 30,
+            "hourly_adjust": {
+                "8-10": 15,
+                "16-18": 20
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L0",
+            "to": "L2",
+            "base_time": 25,
+            "hourly_adjust": {
+                "8-10": 10,
+                "16-18": 15
+            },
+            "max_weight": 180
+        },
+        {
+            "from": "L0",
+            "to": "L3",
+            "base_time": 35,
+            "hourly_adjust": {
+                "8-10": 20,
+                "16-18": 25
+            },
+            "max_weight": 170
+        },
+        {
+            "from": "L1",
+            "to": "L4",
+            "base_time": 20,
+            "hourly_adjust": {
+                "9-11": 10,
+                "15-17": 15
+            },
+            "max_weight": 160
+        },
+        {
+            "from": "L2",
+            "to": "L5",
+            "base_time": 40,
+            "hourly_adjust": {
+                "8-10": 15,
+                "15-17": 20
+            },
+            "max_weight": 175
+        },
+        {
+            "from": "L3",
+            "to": "L6",
+            "base_time": 30,
+            "hourly_adjust": {
+                "9-11": 15,
+                "14-16": 20
+            },
+            "max_weight": 165
+        },
+        {
+            "from": "L4",
+            "to": "L7",
+            "base_time": 25,
+            "hourly_adjust": {
+                "10-12": 10,
+                "16-18": 15
+            },
+            "max_weight": 190
+        },
+        {
+            "from": "L5",
+            "to": "L8",
+            "base_time": 35,
+            "hourly_adjust": {
+                "8-10": 20,
+                "15-17": 25
+            },
+            "max_weight": 185
+        },
+        {
+            "from": "L6",
+            "to": "L9",
+            "base_time": 30,
+            "hourly_adjust": {
+                "9-11": 15,
+                "14-16": 20
+            },
+            "max_weight": 155
+        },
+        {
+            "from": "L7",
+            "to": "L10",
+            "base_time": 45,
+            "hourly_adjust": {
+                "8-10": 25,
+                "16-18": 30
+            },
+            "max_weight": 195
+        },
+        {
+            "from": "L8",
+            "to": "L11",
+            "base_time": 40,
+            "hourly_adjust": {
+                "9-11": 20,
+                "15-17": 25
+            },
+            "max_weight": 180
+        },
+        {
+            "from": "L9",
+            "to": "L12",
+            "base_time": 35,
+            "hourly_adjust": {
+                "10-12": 15,
+                "14-16": 20
+            },
+            "max_weight": 170
+        },
+        {
+            "from": "L10",
+            "to": "L13",
+            "base_time": 30,
+            "hourly_adjust": {
+                "10-12": 15,
+                "16-18": 20
+            },
+            "max_weight": 200
+        },
+        {
+            "from": "L11",
+            "to": "L14",
+            "base_time": 25,
+            "hourly_adjust": {
+                "9-11": 10,
+                "15-17": 15
+            },
+            "max_weight": 175
+        },
+        {
+            "from": "L12",
+            "to": "L14",
+            "base_time": 35,
+            "hourly_adjust": {
+                "8-10": 20,
+                "14-16": 25
+            },
+            "max_weight": 160
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "storage_capacity_compliance": {
+            "passed": false,
+            "message": "Total incoming 'max_weight' to location 'L14' is 335 kg, exceeding its storage capacity of 260 kg."
+        },
+        "vehicle_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "time_window_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": false,
+        "errors": [
+            "Storage Capacity Compliance Check Failed."
+        ]
+    }
+}

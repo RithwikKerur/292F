@@ -1,240 +1,244 @@
 {
-    "genes": [
-        {
-            "id": "G0",
-            "name": "BRCA1",
-            "function": "DNA repair"
-        },
-        {
-            "id": "G1",
-            "name": "TP53",
-            "function": "Tumor suppression"
-        },
-        {
-            "id": "G2",
-            "name": "EGFR",
-            "function": "Signaling pathway disruption"
-        },
-        {
-            "id": "G3",
-            "name": "KRAS",
-            "function": "Cancer oncogene"
-        },
-        {
-            "id": "G4",
-            "name": "PIK3CA",
-            "function": "Mutated in various cancers"
-        },
-        {
-            "id": "G5",
-            "name": "EGFR",
-            "function": "Signaling pathway disruption"
-        },
-        {
-            "id": "G6",
-            "name": "MMT Cooperase",
-            "function": "Enzyme for digestion of proteinogenetic materials"
-        },
-        {
-            "id": "G7",
-            "name": "H2A.Z",
-            "function": "DNA repair"
-        },
-        {
-            "id": "G8",
-            "name": "ATM kinase",
-            "function": "Inhibits DNA damage checkpoint response"
-        },
-        {
-            "id": "G9",
-            "name": "BCL2L1A",
-            "function": "Resistant to DNA replication and apoptosis"
-        },
-        {
-            "id": "G10",
-            "name": "MLKL Kinase",
-            "function": "Involved in NF-kB signaling pathway"
-        },
-        {
-            "id": "G11",
-            "name": "MYC",
-            "function": "Cell cycle progression and DNA repair"
-        },
-        {
-            "id": "G12",
-            "name": "RB1",
-            "function": "Tumor suppressor gene"
-        },
-        {
-            "id": "G13",
-            "name": "PIGF",
-            "function": "Formation of Glycogenesis and Angiogenesis"
-        },
-        {
-            "id": "G14",
-            "name": "VEGF",
-            "function": "Endothelial cell migration, proliferation, and angiogenesis"
-        },
-        {
-            "id": "G15",
-            "name": "EGFR",
-            "function": "Signaling pathway disruption"
-        },
-        {
-            "id": "G16",
-            "name": "PIK3CA",
-            "function": "Mutated in various cancers"
-        },
-        {
-            "id": "G17",
-            "name": "MMT Cooperase",
-            "function": "Enzyme for digestion of proteinogenetic materials"
-        },
-        {
-            "id": "G18",
-            "name": "H2A.Z",
-            "function": "DNA repair"
-        },
-        {
-            "id": "G19",
-            "name": "ATM kinase",
-            "function": "Inhibits DNA damage checkpoint response"
-        }
-    ],
-    "diseases": [
-        {
-            "id": "D0",
-            "name": "Breast Cancer",
-            "description": "Malignant tumor arising from breast epithelial cells, often associated with ERBB2 overexpression."
-        },
-        {
-            "id": "D1",
-            "name": "Melanoma",
-            "description": "Chromosomal anaplasma of diploid hyperchromic melanocytes characterized by primitive neuroectodermal cells."
-        },
-        {
-            "id": "D2",
-            "name": "Carcinoma",
-            "description": "General term for cancer that arises in a specific tissue or organ, e.g., lung carcinoma, ovary carcinoma, etc."
-        },
-        {
-            "id": "D3",
-            "name": "Sarcomas",
-            "description": "Malignant tumors arising from soft tissues (e.g., muscles, tendons, and ligaments) composed of mesenchymal cells."
-        },
-        {
-            "id": "D4",
-            "name": "Acute Lymphoblastic Leukemia",
-            "description": "Chronic lymphocyte leukemia characterized by acute leukemia in the bone marrow due to chronic antigen exposure."
-        },
-        {
-            "id": "D5",
-            "name": "Inflammatory Bowel Disease",
-            "description": "Group of related diseases involving chronic inflammation of the gastrointestinal tract and/or its secondary complications."
-        },
-        {
-            "id": "D6",
-            "name": "Diabetes Mellitus",
-            "description": "A group of metabolic disorders characterized by chronic hyperglycemia, usually due to insulin resistance or deficiency."
-        },
-        {
-            "id": "D7",
-            "name": "Cardiovascular Diseases",
-            "description": "Group of diseases affecting the heart and circulatory system, including hypertension, atherosclerosis, and heart attacks."
-        },
-        {
-            "id": "D8",
-            "name": "Neurodegenerative Diseases",
-            "description": "Chronic brain disorders characterized by progressive decline in cognitive function due to the degeneration of neurons within the central nervous system."
-        },
-        {
-            "id": "D9",
-            "name": "Cystic Fibrosis",
-            "description": "Genetic disorder causing thick, sticky mucus in the lungs and digestive tract; typically results from mutations in the CFTR gene."
-        }
-    ],
-    "associations": [
-        {
-            "from_gene_id": "G0",
-            "to_disease_id": "D0",
-            "weight": 0.95,
-            "description": "BRCA1 mutation is a known predisposition factor for breast cancer."
-        },
-        {
-            "from_gene_id": "G0",
-            "to_disease_id": "D2",
-            "weight": 0.75,
-            "description": "BRCA1 mutation is associated with increased risk of sarcomas."
-        },
-        {
-            "from_gene_id": "G1",
-            "to_disease_id": "D0",
-            "weight": 0.9,
-            "description": "TP53 mutation is a known predisposition factor for breast cancer and other cancers."
-        },
-        {
-            "from_gene_id": "G2",
-            "to_disease_id": "D1",
-            "weight": 0.85,
-            "description": "EGFR mutation is associated with melanoma, particularly in BRAF-mutated or tyrosine kinase inhibitor-naive settings."
-        },
-        {
-            "from_gene_id": "G3",
-            "to_disease_id": "D4",
-            "weight": 0.8,
-            "description": "KRAS mutation is a known predisposition factor for acute lymphoblastic leukemia (ALL)."
-        },
-        {
-            "from_gene_id": "G4",
-            "to_disease_id": "D5",
-            "weight": 0.75,
-            "description": "PIK3CA mutation is associated with inflammatory bowel disease (IBD)."
-        },
-        {
-            "from_gene_id": "G5",
-            "to_disease_id": "D6",
-            "weight": 0.85,
-            "description": "EGFR mutation is a known predisposition factor for type 2 diabetes mellitus."
-        },
-        {
-            "from_gene_id": "G18",
-            "to_disease_id": "D7",
-            "weight": 0.9,
-            "description": "ATM kinase mutations are associated with cardiovascular diseases in certain contexts."
-        },
-        {
-            "from_gene_id": "G19",
-            "to_disease_id": "D8",
-            "weight": 0.85,
-            "description": "H2A.Z mutation is a known predisposition factor for neurodegenerative diseases."
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "constraints": {
-            "defined_counts": {
-                "passed": false,
-                "message": "diseases count is 10; expected 20."
-            },
-            "valid_associations": {
-                "passed": false,
-                "message": "Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0)."
-            },
-            "degree_constraints": {
-                "passed": false,
-                "message": "Gene 'G0' has 0 associations; expected between 2 and 5. Gene 'G1' has 0 associations; expected between 2 and 5. Gene 'G2' has 0 associations; expected between 2 and 5. Gene 'G3' has 0 associations; expected between 2 and 5. Gene 'G4' has 0 associations; expected between 2 and 5. Gene 'G5' has 0 associations; expected between 2 and 5. Gene 'G6' has 0 associations; expected between 2 and 5. Gene 'G7' has 0 associations; expected between 2 and 5. Gene 'G8' has 0 associations; expected between 2 and 5. Gene 'G9' has 0 associations; expected between 2 and 5. Gene 'G10' has 0 associations; expected between 2 and 5. Gene 'G11' has 0 associations; expected between 2 and 5. Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D0' has 0 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 0 associations; expected between 3 and 10. Disease 'D3' has 0 associations; expected between 3 and 10. Disease 'D4' has 0 associations; expected between 3 and 10. Disease 'D5' has 0 associations; expected between 3 and 10. Disease 'D6' has 0 associations; expected between 3 and 10. Disease 'D7' has 0 associations; expected between 3 and 10. Disease 'D8' has 0 associations; expected between 3 and 10. Disease 'D9' has 0 associations; expected between 3 and 10."
-            },
-            "duplicate_associations": {
-                "passed": false,
-                "message": "Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'."
-            }
-        },
-        "overall_passed": false,
-        "errors": [
-            "Defined Counts Check Failed.",
-            "Valid Associations Check Failed.",
-            "Degree Constraints Check Failed.",
-            "Duplicate Associations Check Failed."
-        ]
+  "genes": [
+    {
+      "id": "G0",
+      "name": "BRCA1",
+      "function": "DNA repair"
+    },
+    {
+      "id": "G1",
+      "name": "TP53",
+      "function": "Tumor suppression"
+    },
+    {
+      "id": "G2",
+      "name": "EGFR",
+      "function": "Signaling pathway disruption"
+    },
+    {
+      "id": "G3",
+      "name": "KRAS",
+      "function": "Cancer oncogene"
+    },
+    {
+      "id": "G4",
+      "name": "PIK3CA",
+      "function": "Mutated in various cancers"
+    },
+    {
+      "id": "G5",
+      "name": "EGFR",
+      "function": "Signaling pathway disruption"
+    },
+    {
+      "id": "G6",
+      "name": "MMT Cooperase",
+      "function": "Enzyme for digestion of proteinogenetic materials"
+    },
+    {
+      "id": "G7",
+      "name": "H2A.Z",
+      "function": "DNA repair"
+    },
+    {
+      "id": "G8",
+      "name": "ATM kinase",
+      "function": "Inhibits DNA damage checkpoint response"
+    },
+    {
+      "id": "G9",
+      "name": "BCL2L1A",
+      "function": "Resistant to DNA replication and apoptosis"
+    },
+    {
+      "id": "G10",
+      "name": "MLKL Kinase",
+      "function": "Involved in NF-kB signaling pathway"
+    },
+    {
+      "id": "G11",
+      "name": "MYC",
+      "function": "Cell cycle progression and DNA repair"
+    },
+    {
+      "id": "G12",
+      "name": "RB1",
+      "function": "Tumor suppressor gene"
+    },
+    {
+      "id": "G13",
+      "name": "PIGF",
+      "function": "Formation of Glycogenesis and Angiogenesis"
+    },
+    {
+      "id": "G14",
+      "name": "VEGF",
+      "function": "Endothelial cell migration, proliferation, and angiogenesis"
+    },
+    {
+      "id": "G15",
+      "name": "EGFR",
+      "function": "Signaling pathway disruption"
+    },
+    {
+      "id": "G16",
+      "name": "PIK3CA",
+      "function": "Mutated in various cancers"
+    },
+    {
+      "id": "G17",
+      "name": "MMT Cooperase",
+      "function": "Enzyme for digestion of proteinogenetic materials"
+    },
+    {
+      "id": "G18",
+      "name": "H2A.Z",
+      "function": "DNA repair"
+    },
+    {
+      "id": "G19",
+      "name": "ATM kinase",
+      "function": "Inhibits DNA damage checkpoint response"
     }
+  ],
+  "diseases": [
+    {
+      "id": "D0",
+      "name": "Breast Cancer",
+      "description": "Malignant tumor arising from breast epithelial cells, often associated with ERBB2 overexpression."
+    },
+    {
+      "id": "D1",
+      "name": "Melanoma",
+      "description": "Chromosomal anaplasma of diploid hyperchromic melanocytes characterized by primitive neuroectodermal cells."
+    },
+    {
+      "id": "D2",
+      "name": "Carcinoma",
+      "description": "General term for cancer that arises in a specific tissue or organ, e.g., lung carcinoma, ovary carcinoma, etc."
+    },
+    {
+      "id": "D3",
+      "name": "Sarcomas",
+      "description": "Malignant tumors arising from soft tissues (e.g., muscles, tendons, and ligaments) composed of mesenchymal cells."
+    },
+    {
+      "id": "D4",
+      "name": "Acute Lymphoblastic Leukemia",
+      "description": "Chronic lymphocyte leukemia characterized by acute leukemia in the bone marrow due to chronic antigen exposure."
+    },
+    {
+      "id": "D5",
+      "name": "Inflammatory Bowel Disease",
+      "description": "Group of related diseases involving chronic inflammation of the gastrointestinal tract and/or its secondary complications."
+    },
+    {
+      "id": "D6",
+      "name": "Diabetes Mellitus",
+      "description": "A group of metabolic disorders characterized by chronic hyperglycemia, usually due to insulin resistance or deficiency."
+    },
+    {
+      "id": "D7",
+      "name": "Cardiovascular Diseases",
+      "description": "Group of diseases affecting the heart and circulatory system, including hypertension, atherosclerosis, and heart attacks."
+    },
+    {
+      "id": "D8",
+      "name": "Neurodegenerative Diseases",
+      "description": "Chronic brain disorders characterized by progressive decline in cognitive function due to the degeneration of neurons within the central nervous system."
+    },
+    {
+      "id": "D9",
+      "name": "Cystic Fibrosis",
+      "description": "Genetic disorder causing thick, sticky mucus in the lungs and digestive tract; typically results from mutations in the CFTR gene."
+    }
+  ],
+  "associations": [
+    {
+      "from_gene_id": "G0",
+      "to_disease_id": "D0",
+      "weight": 0.95,
+      "description": "BRCA1 mutation is a known predisposition factor for breast cancer."
+    },
+    {
+      "from_gene_id": "G0",
+      "to_disease_id": "D2",
+      "weight": 0.75,
+      "description": "BRCA1 mutation is associated with increased risk of sarcomas."
+    },
+    {
+      "from_gene_id": "G1",
+      "to_disease_id": "D0",
+      "weight": 0.9,
+      "description": "TP53 mutation is a known predisposition factor for breast cancer and other cancers."
+    },
+    {
+      "from_gene_id": "G2",
+      "to_disease_id": "D1",
+      "weight": 0.85,
+      "description": "EGFR mutation is associated with melanoma, particularly in BRAF-mutated or tyrosine kinase inhibitor-naive settings."
+    },
+    {
+      "from_gene_id": "G3",
+      "to_disease_id": "D4",
+      "weight": 0.8,
+      "description": "KRAS mutation is a known predisposition factor for acute lymphoblastic leukemia (ALL)."
+    },
+    {
+      "from_gene_id": "G4",
+      "to_disease_id": "D5",
+      "weight": 0.75,
+      "description": "PIK3CA mutation is associated with inflammatory bowel disease (IBD)."
+    },
+    {
+      "from_gene_id": "G5",
+      "to_disease_id": "D6",
+      "weight": 0.85,
+      "description": "EGFR mutation is a known predisposition factor for type 2 diabetes mellitus."
+    },
+    {
+      "from_gene_id": "G18",
+      "to_disease_id": "D7",
+      "weight": 0.9,
+      "description": "ATM kinase mutations are associated with cardiovascular diseases in certain contexts."
+    },
+    {
+      "from_gene_id": "G19",
+      "to_disease_id": "D8",
+      "weight": 0.85,
+      "description": "H2A.Z mutation is a known predisposition factor for neurodegenerative diseases."
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "constraints": {
+      "defined_counts": {
+        "passed": false,
+        "message": "diseases count is 10; expected 20."
+      },
+      "valid_associations": {
+        "passed": false,
+        "message": "Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0). Association from undefined gene 'None' to 'None'. Association from 'None' to undefined disease 'None'. Association strength None for 'None' -> 'None' is out of bounds (0.0 - 1.0)."
+      },
+      "degree_constraints": {
+        "passed": false,
+        "message": "Gene 'G0' has 0 associations; expected between 2 and 5. Gene 'G1' has 0 associations; expected between 2 and 5. Gene 'G2' has 0 associations; expected between 2 and 5. Gene 'G3' has 0 associations; expected between 2 and 5. Gene 'G4' has 0 associations; expected between 2 and 5. Gene 'G5' has 0 associations; expected between 2 and 5. Gene 'G6' has 0 associations; expected between 2 and 5. Gene 'G7' has 0 associations; expected between 2 and 5. Gene 'G8' has 0 associations; expected between 2 and 5. Gene 'G9' has 0 associations; expected between 2 and 5. Gene 'G10' has 0 associations; expected between 2 and 5. Gene 'G11' has 0 associations; expected between 2 and 5. Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D0' has 0 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 0 associations; expected between 3 and 10. Disease 'D3' has 0 associations; expected between 3 and 10. Disease 'D4' has 0 associations; expected between 3 and 10. Disease 'D5' has 0 associations; expected between 3 and 10. Disease 'D6' has 0 associations; expected between 3 and 10. Disease 'D7' has 0 associations; expected between 3 and 10. Disease 'D8' has 0 associations; expected between 3 and 10. Disease 'D9' has 0 associations; expected between 3 and 10."
+      },
+      "duplicate_associations": {
+        "passed": false,
+        "message": "Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'. Duplicate association found between 'None' and 'None'."
+      },
+      "bipartite_constraint": {
+        "passed": true,
+        "message": ""
+      }
+    },
+    "overall_passed": false,
+    "errors": [
+      "Defined Counts Check Failed.",
+      "Valid Associations Check Failed.",
+      "Degree Constraints Check Failed.",
+      "Duplicate Associations Check Failed."
+    ]
+  }
 }

@@ -1,0 +1,276 @@
+{
+    "locations": [
+        {
+            "id": "L0",
+            "capacity": 10000,
+            "time_window": [
+                9,
+                11
+            ]
+        },
+        {
+            "id": "L1",
+            "capacity": 15000,
+            "time_window": [
+                8,
+                10
+            ]
+        },
+        {
+            "id": "L2",
+            "capacity": 20000,
+            "time_window": [
+                7,
+                9
+            ]
+        },
+        {
+            "id": "L3",
+            "capacity": 10000,
+            "time_window": [
+                12,
+                14
+            ]
+        },
+        {
+            "id": "L4",
+            "capacity": 15000,
+            "time_window": [
+                11,
+                13
+            ]
+        },
+        {
+            "id": "L5",
+            "capacity": 20000,
+            "time_window": [
+                10,
+                12
+            ]
+        },
+        {
+            "id": "L6",
+            "capacity": 10000,
+            "time_window": [
+                7,
+                9
+            ]
+        },
+        {
+            "id": "L7",
+            "capacity": 15000,
+            "time_window": [
+                8,
+                10
+            ]
+        },
+        {
+            "id": "L8",
+            "capacity": 20000,
+            "time_window": [
+                9,
+                11
+            ]
+        },
+        {
+            "id": "L9",
+            "capacity": 10000,
+            "time_window": [
+                6,
+                8
+            ]
+        },
+        {
+            "id": "L10",
+            "capacity": 15000,
+            "time_window": [
+                5,
+                7
+            ]
+        },
+        {
+            "id": "L11",
+            "capacity": 20000,
+            "time_window": [
+                4,
+                6
+            ]
+        },
+        {
+            "id": "L12",
+            "capacity": 10000,
+            "time_window": [
+                3,
+                5
+            ]
+        },
+        {
+            "id": "L13",
+            "capacity": 15000,
+            "time_window": [
+                2,
+                4
+            ]
+        },
+        {
+            "id": "L14",
+            "capacity": 20000,
+            "time_window": [
+                1,
+                3
+            ]
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "V1",
+            "capacity": 400,
+            "speed": 60
+        },
+        {
+            "id": "V2",
+            "capacity": 500,
+            "speed": 70
+        },
+        {
+            "id": "V3",
+            "capacity": 600,
+            "speed": 80
+        },
+        {
+            "id": "V4",
+            "capacity": 800,
+            "speed": 90
+        },
+        {
+            "id": "V5",
+            "capacity": 1000,
+            "speed": 100
+        }
+    ],
+    "edges": [
+        {
+            "from": "L0",
+            "to": "L1",
+            "base_time": 40,
+            "hourly_adjust": {},
+            "max_weight": 200
+        },
+        {
+            "from": "L1",
+            "to": "L2",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 300
+        },
+        {
+            "from": "L0",
+            "to": "L3",
+            "base_time": 40,
+            "hourly_adjust": {},
+            "max_weight": 200
+        },
+        {
+            "from": "L1",
+            "to": "L4",
+            "base_time": 35,
+            "hourly_adjust": {},
+            "max_weight": 250
+        },
+        {
+            "from": "L2",
+            "to": "L5",
+            "base_time": 25,
+            "hourly_adjust": {},
+            "max_weight": 350
+        },
+        {
+            "from": "L3",
+            "to": "L6",
+            "base_time": 45,
+            "hourly_adjust": {},
+            "max_weight": 220
+        },
+        {
+            "from": "L4",
+            "to": "L7",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 300
+        },
+        {
+            "from": "L5",
+            "to": "L8",
+            "base_time": 20,
+            "hourly_adjust": {},
+            "max_weight": 400
+        },
+        {
+            "from": "L6",
+            "to": "L9",
+            "base_time": 40,
+            "hourly_adjust": {},
+            "max_weight": 200
+        },
+        {
+            "from": "L7",
+            "to": "L10",
+            "base_time": 35,
+            "hourly_adjust": {},
+            "max_weight": 250
+        },
+        {
+            "from": "L8",
+            "to": "L11",
+            "base_time": 25,
+            "hourly_adjust": {},
+            "max_weight": 350
+        },
+        {
+            "from": "L9",
+            "to": "L12",
+            "base_time": 45,
+            "hourly_adjust": {},
+            "max_weight": 220
+        },
+        {
+            "from": "L10",
+            "to": "L13",
+            "base_time": 30,
+            "hourly_adjust": {},
+            "max_weight": 300
+        },
+        {
+            "from": "L11",
+            "to": "L14",
+            "base_time": 20,
+            "hourly_adjust": {},
+            "max_weight": 400
+        }
+    ],
+    "result": false,
+    "fullOutput": {
+        "output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "storage_capacity_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "vehicle_capacity_compliance": {
+            "passed": false,
+            "message": "No valid vehicle capacities found."
+        },
+        "time_window_compliance": {
+            "passed": false,
+            "message": "Edge from 'L0' to 'L3' with total travel time 40 minutes does not fit within the time windows of 'L0' [9-11] and 'L3' [12-14]. Edge from 'L1' to 'L4' with total travel time 35 minutes does not fit within the time windows of 'L1' [8-10] and 'L4' [11-13]. Edge from 'L2' to 'L5' with total travel time 25 minutes does not fit within the time windows of 'L2' [7-9] and 'L5' [10-12]. Edge from 'L3' to 'L6' with total travel time 45 minutes does not fit within the time windows of 'L3' [12-14] and 'L6' [7-9]. Edge from 'L4' to 'L7' with total travel time 30 minutes does not fit within the time windows of 'L4' [11-13] and 'L7' [8-10]. Edge from 'L7' to 'L10' with total travel time 35 minutes does not fit within the time windows of 'L7' [8-10] and 'L10' [5-7]. Edge from 'L8' to 'L11' with total travel time 25 minutes does not fit within the time windows of 'L8' [9-11] and 'L11' [4-6]. Edge from 'L9' to 'L12' with total travel time 45 minutes does not fit within the time windows of 'L9' [6-8] and 'L12' [3-5]. Edge from 'L10' to 'L13' with total travel time 30 minutes does not fit within the time windows of 'L10' [5-7] and 'L13' [2-4]. Edge from 'L11' to 'L14' with total travel time 20 minutes does not fit within the time windows of 'L11' [4-6] and 'L14' [1-3]."
+        },
+        "overall_passed": false,
+        "errors": [
+            "Number of vehicles is 5; expected 7.",
+            "Vehicle Capacity Compliance Check Failed.",
+            "Time Window Compliance Check Failed."
+        ]
+    }
+}

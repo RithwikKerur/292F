@@ -1,0 +1,178 @@
+{
+  "users": [
+    {
+      "id": "U0",
+      "trust_score": 95,
+      "category": "celebrity"
+    },
+    {
+      "id": "U1",
+      "trust_score": 28,
+      "category": "regular"
+    },
+    {
+      "id": "U2",
+      "trust_score": 85,
+      "category": "celebrity"
+    },
+    {
+      "id": "U3",
+      "trust_score": 78,
+      "category": "expert"
+    },
+    {
+      "id": "U4",
+      "trust_score": 31,
+      "category": "regular"
+    },
+    {
+      "id": "U5",
+      "trust_score": 92,
+      "category": "celebrity"
+    },
+    {
+      "id": "U6",
+      "trust_score": 22,
+      "category": "regular"
+    },
+    {
+      "id": "U7",
+      "trust_score": 67,
+      "category": "expert"
+    },
+    {
+      "id": "U8",
+      "trust_score": 91,
+      "category": "celebrity"
+    },
+    {
+      "id": "U9",
+      "trust_score": 49,
+      "category": "regular"
+    },
+    {
+      "id": "U10",
+      "trust_score": 75,
+      "category": "expert"
+    },
+    {
+      "id": "U11",
+      "trust_score": 88,
+      "category": "celebrity"
+    },
+    {
+      "id": "U12",
+      "trust_score": 25,
+      "category": "regular"
+    },
+    {
+      "id": "U13",
+      "trust_score": 82,
+      "category": "celebrity"
+    },
+    {
+      "id": "U14",
+      "trust_score": 93,
+      "category": "celebrity"
+    },
+    {
+      "id": "U15",
+      "trust_score": 18,
+      "category": "regular"
+    },
+    {
+      "id": "U16",
+      "trust_score": 65,
+      "category": "expert"
+    },
+    {
+      "id": "U17",
+      "trust_score": 84,
+      "category": "celebrity"
+    },
+    {
+      "id": "U18",
+      "trust_score": 27,
+      "category": "regular"
+    },
+    {
+      "id": "U19",
+      "trust_score": 71,
+      "category": "expert"
+    }
+  ],
+  "edges": [
+    {
+      "from": "U0",
+      "to": "U1"
+    },
+    {
+      "from": "U2",
+      "to": "U3"
+    },
+    {
+      "from": "U5",
+      "to": "U4"
+    },
+    {
+      "from": "U17",
+      "to": "U18"
+    },
+    {
+      "from": "U17",
+      "to": "U19"
+    },
+    {
+      "from": "U11",
+      "to": "U12"
+    },
+    {
+      "from": "U14",
+      "to": "U15"
+    },
+    {
+      "from": "U16",
+      "to": "U18"
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "valid_no_self_loops": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_celebrity_outgoing": {
+      "passed": false,
+      "message": "Celebrity 'U0' has 1 outgoing edges; expected at least 5. Celebrity 'U2' has 1 outgoing edges; expected at least 5. Celebrity 'U5' has 1 outgoing edges; expected at least 5. Celebrity 'U8' has 0 outgoing edges; expected at least 5. Celebrity 'U11' has 1 outgoing edges; expected at least 5. Celebrity 'U13' has 0 outgoing edges; expected at least 5. Celebrity 'U14' has 1 outgoing edges; expected at least 5. Celebrity 'U17' has 2 outgoing edges; expected at least 5."
+    },
+    "valid_regular_to_expert": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_acyclic": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_user_attributes": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_edge_structure": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_total_users": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_categories": {
+      "passed": false,
+      "message": "User 'U16' has trust_score 65 which is between 50 and 70; no valid category defined."
+    },
+    "valid_trust_scores": {
+      "passed": true,
+      "message": ""
+    },
+    "overall_passed": false
+  }
+}

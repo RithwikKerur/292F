@@ -1,76 +1,80 @@
 {
-    "genes": [
-        {
-            "id": "G0",
-            "name": "Gene 1",
-            "function": "Function G0"
-        },
-        {
-            "id": "G1",
-            "name": "Gene 2",
-            "function": "Function G1"
-        },
-        {
-            "id": "G2",
-            "name": "Gene 3",
-            "function": "Function G2"
-        }
-    ],
-    "diseases": [
-        {
-            "id": "D0",
-            "name": "Disease 1",
-            "severity_level": "Severe"
-        },
-        {
-            "id": "D1",
-            "name": "Disease 2",
-            "severity_level": "Moderate"
-        },
-        {
-            "id": "D2",
-            "name": "Disease 3",
-            "severity_level": "Mild"
-        }
-    ],
-    "associations": [
-        {
-            "from": "G0",
-            "to": "D0",
-            "strength": 0.85,
-            "description": "Association between Gene 1 and Disease 1 with strength 0.85"
-        },
-        {
-            "from": "G0",
-            "to": "D2",
-            "strength": 0.63,
-            "description": "Another association between Gene 1 and Disease 3 with strength 0.63"
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "constraints": {
-            "defined_counts": {
-                "passed": false,
-                "message": "genes count is 3; expected 20. diseases count is 3; expected 20."
-            },
-            "valid_associations": {
-                "passed": true,
-                "message": ""
-            },
-            "degree_constraints": {
-                "passed": false,
-                "message": "Gene 'G1' has 0 associations; expected between 2 and 5. Gene 'G2' has 0 associations; expected between 2 and 5. Disease 'D0' has 1 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 1 associations; expected between 3 and 10."
-            },
-            "duplicate_associations": {
-                "passed": true,
-                "message": ""
-            }
-        },
-        "overall_passed": false,
-        "errors": [
-            "Defined Counts Check Failed.",
-            "Degree Constraints Check Failed."
-        ]
+  "genes": [
+    {
+      "id": "G0",
+      "name": "Gene 1",
+      "function": "Function G0"
+    },
+    {
+      "id": "G1",
+      "name": "Gene 2",
+      "function": "Function G1"
+    },
+    {
+      "id": "G2",
+      "name": "Gene 3",
+      "function": "Function G2"
     }
+  ],
+  "diseases": [
+    {
+      "id": "D0",
+      "name": "Disease 1",
+      "severity_level": "Severe"
+    },
+    {
+      "id": "D1",
+      "name": "Disease 2",
+      "severity_level": "Moderate"
+    },
+    {
+      "id": "D2",
+      "name": "Disease 3",
+      "severity_level": "Mild"
+    }
+  ],
+  "associations": [
+    {
+      "from": "G0",
+      "to": "D0",
+      "strength": 0.85,
+      "description": "Association between Gene 1 and Disease 1 with strength 0.85"
+    },
+    {
+      "from": "G0",
+      "to": "D2",
+      "strength": 0.63,
+      "description": "Another association between Gene 1 and Disease 3 with strength 0.63"
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "constraints": {
+      "defined_counts": {
+        "passed": false,
+        "message": "genes count is 3; expected 20. diseases count is 3; expected 20."
+      },
+      "valid_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "degree_constraints": {
+        "passed": false,
+        "message": "Gene 'G1' has 0 associations; expected between 2 and 5. Gene 'G2' has 0 associations; expected between 2 and 5. Disease 'D0' has 1 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 1 associations; expected between 3 and 10."
+      },
+      "duplicate_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "bipartite_constraint": {
+        "passed": true,
+        "message": ""
+      }
+    },
+    "overall_passed": false,
+    "errors": [
+      "Defined Counts Check Failed.",
+      "Degree Constraints Check Failed."
+    ]
+  }
 }

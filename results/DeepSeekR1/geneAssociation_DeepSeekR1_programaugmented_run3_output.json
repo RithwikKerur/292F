@@ -1,277 +1,281 @@
 {
-    "genes": [
-        {
-            "id": "G0",
-            "name": "BRCA1",
-            "function": "DNA repair"
-        },
-        {
-            "id": "G1",
-            "name": "TP53",
-            "function": "Tumor suppression"
-        },
-        {
-            "id": "G2",
-            "name": "EGFR",
-            "function": "Cell cycle regulation"
-        },
-        {
-            "id": "G3",
-            "name": "KRAS",
-            "function": "Tumorigenesis pathways"
-        },
-        {
-            "id": "G4",
-            "name": "PIK3CA",
-            "function": "Metabolic diseases"
-        },
-        {
-            "id": "G5",
-            "name": "NF-YA",
-            "function": "Lymphocyte activation"
-        },
-        {
-            "id": "G6",
-            "name": "SMAD2/3",
-            "function": "Vascular tone"
-        },
-        {
-            "id": "G7",
-            "name": "TNF receptor",
-            "function": "Inflammation"
-        },
-        {
-            "id": "G8",
-            "name": "EGFR",
-            "function": "Cell cycle regulation"
-        },
-        {
-            "id": "G9",
-            "name": "BCL2",
-            "function": "Cancer suppression"
-        },
-        {
-            "id": "G10",
-            "name": "STAT5",
-            "function": "Tumor growth"
-        },
-        {
-            "id": "G11",
-            "name": "AKT",
-            "function": "Cell survival"
-        },
-        {
-            "id": "G12",
-            "name": "KRAS",
-            "function": "Tumorigenesis pathways"
-        },
-        {
-            "id": "G13",
-            "name": "BCL2L1",
-            "function": "Apoptosis"
-        },
-        {
-            "id": "G14",
-            "name": "EGFR",
-            "function": "Cell cycle regulation"
-        },
-        {
-            "id": "G15",
-            "name": "BCL2L1",
-            "function": "Apoptosis"
-        },
-        {
-            "id": "G16",
-            "name": "AKT",
-            "function": "Cell survival"
-        },
-        {
-            "id": "G17",
-            "name": "SMAD2/3",
-            "function": "Vascular tone"
-        },
-        {
-            "id": "G18",
-            "name": "TNF receptor",
-            "function": "Inflammation"
-        },
-        {
-            "id": "G19",
-            "name": "BCL2L1",
-            "function": "Apoptosis"
-        }
-    ],
-    "diseases": [
-        {
-            "id": "D0",
-            "name": "Breast cancer",
-            "severity_level": "High"
-        },
-        {
-            "id": "D1",
-            "name": "Lung cancer",
-            "severity_level": "High"
-        },
-        {
-            "id": "D2",
-            "name": "Melanoma",
-            "severity_level": "High"
-        },
-        {
-            "id": "D3",
-            "name": "Pancreatic ductal adenocarcinoma",
-            "severity_level": "High"
-        },
-        {
-            "id": "D4",
-            "name": "Prostate cancer",
-            "severity_level": "High"
-        },
-        {
-            "id": "D5",
-            "name": "Ovarian serous cystadenomorphism",
-            "severity_level": "High"
-        },
-        {
-            "id": "D6",
-            "name": "Osteophyte unions",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D7",
-            "name": "HIV",
-            "severity_level": "Low"
-        },
-        {
-            "id": "D8",
-            "name": "HPV",
-            "severity_level": "Low"
-        },
-        {
-            "id": "D9",
-            "name": "COVID-19",
-            "severity_level": "High"
-        },
-        {
-            "id": "D10",
-            "name": "Breast ductal carcinoma in situ",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D11",
-            "name": "Lung adenocarcinoma",
-            "severity_level": "High"
-        },
-        {
-            "id": "D12",
-            "name": "Prostate adenocarcinoma",
-            "severity_level": "High"
-        },
-        {
-            "id": "D13",
-            "name": "Serous ovarian cancer",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D14",
-            "name": "Adenocarcinoma of the thyroid gland",
-            "severity_level": "High"
-        },
-        {
-            "id": "D15",
-            "name": "Breast invasive ductal carcinoma",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D16",
-            "name": "Small cell lung cancer",
-            "severity_level": "High"
-        },
-        {
-            "id": "D17",
-            "name": "Pancreatic cancer",
-            "severity_level": "High"
-        },
-        {
-            "id": "D18",
-            "name": "Serous parapneumonic effusion",
-            "severity_level": "Low"
-        }
-    ],
-    "associations": [
-        {
-            "from": "G0",
-            "to": "D0",
-            "strength": 0.85,
-            "comment": "(BRCA1 linked to breast cancer)"
-        },
-        {
-            "from": "G0",
-            "to": "D9",
-            "strength": 0.78,
-            "comment": "(BRCA1 linked to COVID-19)"
-        },
-        {
-            "from": "G1",
-            "to": "D2",
-            "strength": 0.92,
-            "comment": "(TP53 linked to melanoma)"
-        },
-        {
-            "from": "G1",
-            "to": "D7",
-            "strength": 0.65,
-            "comment": "(TP53 linked to HIV)"
-        },
-        {
-            "from": "G2",
-            "to": "D8",
-            "strength": 0.76,
-            "comment": "(EGFR linked to COVID-19)"
-        },
-        {
-            "from": "G3",
-            "to": "D4",
-            "strength": 0.89,
-            "comment": "(KRAS linked to prostate cancer)"
-        },
-        {
-            "from": "G4",
-            "to": "D6",
-            "strength": 0.72,
-            "comment": "(BCL2L1 linked to osteophyte unions)"
-        },
-        {
-            "from": "G5",
-            "to": "D3",
-            "strength": 0.8,
-            "comment": "(HPV to pancreatic ductal adenocarcinoma)"
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "constraints": {
-            "defined_counts": {
-                "passed": false,
-                "message": "diseases count is 19; expected 20."
-            },
-            "valid_associations": {
-                "passed": true,
-                "message": ""
-            },
-            "degree_constraints": {
-                "passed": false,
-                "message": "Gene 'G2' has 1 associations; expected between 2 and 5. Gene 'G3' has 1 associations; expected between 2 and 5. Gene 'G4' has 1 associations; expected between 2 and 5. Gene 'G5' has 1 associations; expected between 2 and 5. Gene 'G6' has 0 associations; expected between 2 and 5. Gene 'G7' has 0 associations; expected between 2 and 5. Gene 'G8' has 0 associations; expected between 2 and 5. Gene 'G9' has 0 associations; expected between 2 and 5. Gene 'G10' has 0 associations; expected between 2 and 5. Gene 'G11' has 0 associations; expected between 2 and 5. Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D0' has 1 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 1 associations; expected between 3 and 10. Disease 'D3' has 1 associations; expected between 3 and 10. Disease 'D4' has 1 associations; expected between 3 and 10. Disease 'D5' has 0 associations; expected between 3 and 10. Disease 'D6' has 1 associations; expected between 3 and 10. Disease 'D7' has 1 associations; expected between 3 and 10. Disease 'D8' has 1 associations; expected between 3 and 10. Disease 'D9' has 1 associations; expected between 3 and 10. Disease 'D10' has 0 associations; expected between 3 and 10. Disease 'D11' has 0 associations; expected between 3 and 10. Disease 'D12' has 0 associations; expected between 3 and 10. Disease 'D13' has 0 associations; expected between 3 and 10. Disease 'D14' has 0 associations; expected between 3 and 10. Disease 'D15' has 0 associations; expected between 3 and 10. Disease 'D16' has 0 associations; expected between 3 and 10. Disease 'D17' has 0 associations; expected between 3 and 10. Disease 'D18' has 0 associations; expected between 3 and 10."
-            },
-            "duplicate_associations": {
-                "passed": true,
-                "message": ""
-            }
-        },
-        "overall_passed": false,
-        "errors": [
-            "Defined Counts Check Failed.",
-            "Degree Constraints Check Failed."
-        ]
+  "genes": [
+    {
+      "id": "G0",
+      "name": "BRCA1",
+      "function": "DNA repair"
+    },
+    {
+      "id": "G1",
+      "name": "TP53",
+      "function": "Tumor suppression"
+    },
+    {
+      "id": "G2",
+      "name": "EGFR",
+      "function": "Cell cycle regulation"
+    },
+    {
+      "id": "G3",
+      "name": "KRAS",
+      "function": "Tumorigenesis pathways"
+    },
+    {
+      "id": "G4",
+      "name": "PIK3CA",
+      "function": "Metabolic diseases"
+    },
+    {
+      "id": "G5",
+      "name": "NF-YA",
+      "function": "Lymphocyte activation"
+    },
+    {
+      "id": "G6",
+      "name": "SMAD2/3",
+      "function": "Vascular tone"
+    },
+    {
+      "id": "G7",
+      "name": "TNF receptor",
+      "function": "Inflammation"
+    },
+    {
+      "id": "G8",
+      "name": "EGFR",
+      "function": "Cell cycle regulation"
+    },
+    {
+      "id": "G9",
+      "name": "BCL2",
+      "function": "Cancer suppression"
+    },
+    {
+      "id": "G10",
+      "name": "STAT5",
+      "function": "Tumor growth"
+    },
+    {
+      "id": "G11",
+      "name": "AKT",
+      "function": "Cell survival"
+    },
+    {
+      "id": "G12",
+      "name": "KRAS",
+      "function": "Tumorigenesis pathways"
+    },
+    {
+      "id": "G13",
+      "name": "BCL2L1",
+      "function": "Apoptosis"
+    },
+    {
+      "id": "G14",
+      "name": "EGFR",
+      "function": "Cell cycle regulation"
+    },
+    {
+      "id": "G15",
+      "name": "BCL2L1",
+      "function": "Apoptosis"
+    },
+    {
+      "id": "G16",
+      "name": "AKT",
+      "function": "Cell survival"
+    },
+    {
+      "id": "G17",
+      "name": "SMAD2/3",
+      "function": "Vascular tone"
+    },
+    {
+      "id": "G18",
+      "name": "TNF receptor",
+      "function": "Inflammation"
+    },
+    {
+      "id": "G19",
+      "name": "BCL2L1",
+      "function": "Apoptosis"
     }
+  ],
+  "diseases": [
+    {
+      "id": "D0",
+      "name": "Breast cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D1",
+      "name": "Lung cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D2",
+      "name": "Melanoma",
+      "severity_level": "High"
+    },
+    {
+      "id": "D3",
+      "name": "Pancreatic ductal adenocarcinoma",
+      "severity_level": "High"
+    },
+    {
+      "id": "D4",
+      "name": "Prostate cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D5",
+      "name": "Ovarian serous cystadenomorphism",
+      "severity_level": "High"
+    },
+    {
+      "id": "D6",
+      "name": "Osteophyte unions",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D7",
+      "name": "HIV",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D8",
+      "name": "HPV",
+      "severity_level": "Low"
+    },
+    {
+      "id": "D9",
+      "name": "COVID-19",
+      "severity_level": "High"
+    },
+    {
+      "id": "D10",
+      "name": "Breast ductal carcinoma in situ",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D11",
+      "name": "Lung adenocarcinoma",
+      "severity_level": "High"
+    },
+    {
+      "id": "D12",
+      "name": "Prostate adenocarcinoma",
+      "severity_level": "High"
+    },
+    {
+      "id": "D13",
+      "name": "Serous ovarian cancer",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D14",
+      "name": "Adenocarcinoma of the thyroid gland",
+      "severity_level": "High"
+    },
+    {
+      "id": "D15",
+      "name": "Breast invasive ductal carcinoma",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D16",
+      "name": "Small cell lung cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D17",
+      "name": "Pancreatic cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D18",
+      "name": "Serous parapneumonic effusion",
+      "severity_level": "Low"
+    }
+  ],
+  "associations": [
+    {
+      "from": "G0",
+      "to": "D0",
+      "strength": 0.85,
+      "comment": "(BRCA1 linked to breast cancer)"
+    },
+    {
+      "from": "G0",
+      "to": "D9",
+      "strength": 0.78,
+      "comment": "(BRCA1 linked to COVID-19)"
+    },
+    {
+      "from": "G1",
+      "to": "D2",
+      "strength": 0.92,
+      "comment": "(TP53 linked to melanoma)"
+    },
+    {
+      "from": "G1",
+      "to": "D7",
+      "strength": 0.65,
+      "comment": "(TP53 linked to HIV)"
+    },
+    {
+      "from": "G2",
+      "to": "D8",
+      "strength": 0.76,
+      "comment": "(EGFR linked to COVID-19)"
+    },
+    {
+      "from": "G3",
+      "to": "D4",
+      "strength": 0.89,
+      "comment": "(KRAS linked to prostate cancer)"
+    },
+    {
+      "from": "G4",
+      "to": "D6",
+      "strength": 0.72,
+      "comment": "(BCL2L1 linked to osteophyte unions)"
+    },
+    {
+      "from": "G5",
+      "to": "D3",
+      "strength": 0.8,
+      "comment": "(HPV to pancreatic ductal adenocarcinoma)"
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "constraints": {
+      "defined_counts": {
+        "passed": false,
+        "message": "diseases count is 19; expected 20."
+      },
+      "valid_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "degree_constraints": {
+        "passed": false,
+        "message": "Gene 'G2' has 1 associations; expected between 2 and 5. Gene 'G3' has 1 associations; expected between 2 and 5. Gene 'G4' has 1 associations; expected between 2 and 5. Gene 'G5' has 1 associations; expected between 2 and 5. Gene 'G6' has 0 associations; expected between 2 and 5. Gene 'G7' has 0 associations; expected between 2 and 5. Gene 'G8' has 0 associations; expected between 2 and 5. Gene 'G9' has 0 associations; expected between 2 and 5. Gene 'G10' has 0 associations; expected between 2 and 5. Gene 'G11' has 0 associations; expected between 2 and 5. Gene 'G12' has 0 associations; expected between 2 and 5. Gene 'G13' has 0 associations; expected between 2 and 5. Gene 'G14' has 0 associations; expected between 2 and 5. Gene 'G15' has 0 associations; expected between 2 and 5. Gene 'G16' has 0 associations; expected between 2 and 5. Gene 'G17' has 0 associations; expected between 2 and 5. Gene 'G18' has 0 associations; expected between 2 and 5. Gene 'G19' has 0 associations; expected between 2 and 5. Disease 'D0' has 1 associations; expected between 3 and 10. Disease 'D1' has 0 associations; expected between 3 and 10. Disease 'D2' has 1 associations; expected between 3 and 10. Disease 'D3' has 1 associations; expected between 3 and 10. Disease 'D4' has 1 associations; expected between 3 and 10. Disease 'D5' has 0 associations; expected between 3 and 10. Disease 'D6' has 1 associations; expected between 3 and 10. Disease 'D7' has 1 associations; expected between 3 and 10. Disease 'D8' has 1 associations; expected between 3 and 10. Disease 'D9' has 1 associations; expected between 3 and 10. Disease 'D10' has 0 associations; expected between 3 and 10. Disease 'D11' has 0 associations; expected between 3 and 10. Disease 'D12' has 0 associations; expected between 3 and 10. Disease 'D13' has 0 associations; expected between 3 and 10. Disease 'D14' has 0 associations; expected between 3 and 10. Disease 'D15' has 0 associations; expected between 3 and 10. Disease 'D16' has 0 associations; expected between 3 and 10. Disease 'D17' has 0 associations; expected between 3 and 10. Disease 'D18' has 0 associations; expected between 3 and 10."
+      },
+      "duplicate_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "bipartite_constraint": {
+        "passed": true,
+        "message": ""
+      }
+    },
+    "overall_passed": false,
+    "errors": [
+      "Defined Counts Check Failed.",
+      "Degree Constraints Check Failed."
+    ]
+  }
 }

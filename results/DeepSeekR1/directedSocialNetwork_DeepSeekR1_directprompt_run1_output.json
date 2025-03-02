@@ -1,52 +1,73 @@
 {
-    "users": [
-        {
-            "id": "U0",
-            "trust_score": 42,
-            "category": "celebrity"
-        },
-        {
-            "id": "U1",
-            "trust_score": 89,
-            "category": "regular"
-        },
-        {
-            "id": "U2",
-            "trust_score": 75,
-            "category": "expert"
-        }
-    ],
-    "edges": [
-        {
-            "from": "U0",
-            "to": "U1"
-        },
-        {
-            "from": "U0",
-            "to": "U2"
-        },
-        {
-            "from": "U2",
-            "to": "U3"
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "valid_no_self_loops": true,
-        "valid_celebrity_outgoing": false,
-        "valid_regular_to_expert": true,
-        "valid_acyclic": true,
-        "valid_user_attributes": true,
-        "valid_edge_structure": true,
-        "valid_total_users": false,
-        "valid_categories": false,
-        "valid_trust_scores": true,
-        "errors": [
-            "Number of users is 3; expected 20.",
-            "User 'U0' has 'trust_score' 42 but category 'celebrity'. Should be 'regular'.",
-            "User 'U1' has 'trust_score' 89 but category 'regular'. Should be 'celebrity'.",
-            "Missing user IDs: {'U9', 'U13', 'U10', 'U18', 'U3', 'U4', 'U14', 'U17', 'U12', 'U7', 'U15', 'U19', 'U6', 'U16', 'U8', 'U5', 'U11'}.",
-            "Celebrity 'U0' has 2 outgoing edges; expected at least 5."
-        ]
+  "users": [
+    {
+      "id": "U0",
+      "trust_score": 42,
+      "category": "celebrity"
+    },
+    {
+      "id": "U1",
+      "trust_score": 89,
+      "category": "regular"
+    },
+    {
+      "id": "U2",
+      "trust_score": 75,
+      "category": "expert"
     }
+  ],
+  "edges": [
+    {
+      "from": "U0",
+      "to": "U1"
+    },
+    {
+      "from": "U0",
+      "to": "U2"
+    },
+    {
+      "from": "U2",
+      "to": "U3"
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "valid_no_self_loops": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_celebrity_outgoing": {
+      "passed": false,
+      "message": "Celebrity 'U0' has 2 outgoing edges; expected at least 5."
+    },
+    "valid_regular_to_expert": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_acyclic": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_user_attributes": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_edge_structure": {
+      "passed": true,
+      "message": ""
+    },
+    "valid_total_users": {
+      "passed": false,
+      "message": "Missing user IDs: {'U3', 'U18', 'U13', 'U15', 'U4', 'U11', 'U17', 'U16', 'U10', 'U19', 'U14', 'U7', 'U6', 'U9', 'U8', 'U12', 'U5'}."
+    },
+    "valid_categories": {
+      "passed": false,
+      "message": "User 'U1' has trust_score 89 but category 'regular'; should be 'celebrity'."
+    },
+    "valid_trust_scores": {
+      "passed": true,
+      "message": ""
+    },
+    "overall_passed": false
+  }
 }

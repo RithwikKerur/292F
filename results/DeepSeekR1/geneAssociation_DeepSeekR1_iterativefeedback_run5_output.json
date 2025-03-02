@@ -1,110 +1,114 @@
 {
-    "genes": [
-        {
-            "id": "G0",
-            "name": "BRCA1",
-            "function": "DNA repair"
-        },
-        {
-            "id": "G1",
-            "name": "TP53",
-            "function": "Tumor suppression"
-        },
-        {
-            "id": "G2",
-            "name": "ATM",
-            "function": "Cell cycle regulation; promotes DNA repair"
-        },
-        {
-            "id": "G3",
-            "name": "BRCA2",
-            "function": "DNA repair"
-        }
-    ],
-    "diseases": [
-        {
-            "id": "D0",
-            "name": "Breast Cancer",
-            "severity_level": "High"
-        },
-        {
-            "id": "D1",
-            "name": "Lung Cancer",
-            "severity_level": "High"
-        },
-        {
-            "id": "D2",
-            "name": "Colon Cancer",
-            "severity_level": "Medium"
-        },
-        {
-            "id": "D3",
-            "name": "Endometrial Cancer",
-            "severity_level": "High"
-        }
-    ],
-    "associations": [
-        {
-            "from": "G0",
-            "to": "D0",
-            "strength": 0.85
-        },
-        {
-            "from": "G0",
-            "to": "D2",
-            "strength": 0.65
-        },
-        {
-            "from": "G2",
-            "to": "D2",
-            "strength": 0.7
-        },
-        {
-            "from": "G2",
-            "to": "D4",
-            "strength": 0.58
-        },
-        {
-            "from": "G3",
-            "to": "D1",
-            "strength": 0.6
-        },
-        {
-            "from": "G3",
-            "to": "D2",
-            "strength": 0.55
-        },
-        {
-            "from": "G3",
-            "to": "D3",
-            "strength": 0.62
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "constraints": {
-            "defined_counts": {
-                "passed": false,
-                "message": "genes count is 4; expected 20. diseases count is 4; expected 20."
-            },
-            "valid_associations": {
-                "passed": false,
-                "message": "Association from 'G2' to undefined disease 'D4'."
-            },
-            "degree_constraints": {
-                "passed": false,
-                "message": "Gene 'G1' has 0 associations; expected between 2 and 5. Disease 'D0' has 1 associations; expected between 3 and 10. Disease 'D1' has 1 associations; expected between 3 and 10. Disease 'D3' has 1 associations; expected between 3 and 10."
-            },
-            "duplicate_associations": {
-                "passed": true,
-                "message": ""
-            }
-        },
-        "overall_passed": false,
-        "errors": [
-            "Defined Counts Check Failed.",
-            "Valid Associations Check Failed.",
-            "Degree Constraints Check Failed."
-        ]
+  "genes": [
+    {
+      "id": "G0",
+      "name": "BRCA1",
+      "function": "DNA repair"
+    },
+    {
+      "id": "G1",
+      "name": "TP53",
+      "function": "Tumor suppression"
+    },
+    {
+      "id": "G2",
+      "name": "ATM",
+      "function": "Cell cycle regulation; promotes DNA repair"
+    },
+    {
+      "id": "G3",
+      "name": "BRCA2",
+      "function": "DNA repair"
     }
+  ],
+  "diseases": [
+    {
+      "id": "D0",
+      "name": "Breast Cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D1",
+      "name": "Lung Cancer",
+      "severity_level": "High"
+    },
+    {
+      "id": "D2",
+      "name": "Colon Cancer",
+      "severity_level": "Medium"
+    },
+    {
+      "id": "D3",
+      "name": "Endometrial Cancer",
+      "severity_level": "High"
+    }
+  ],
+  "associations": [
+    {
+      "from": "G0",
+      "to": "D0",
+      "strength": 0.85
+    },
+    {
+      "from": "G0",
+      "to": "D2",
+      "strength": 0.65
+    },
+    {
+      "from": "G2",
+      "to": "D2",
+      "strength": 0.7
+    },
+    {
+      "from": "G2",
+      "to": "D4",
+      "strength": 0.58
+    },
+    {
+      "from": "G3",
+      "to": "D1",
+      "strength": 0.6
+    },
+    {
+      "from": "G3",
+      "to": "D2",
+      "strength": 0.55
+    },
+    {
+      "from": "G3",
+      "to": "D3",
+      "strength": 0.62
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "constraints": {
+      "defined_counts": {
+        "passed": false,
+        "message": "genes count is 4; expected 20. diseases count is 4; expected 20."
+      },
+      "valid_associations": {
+        "passed": false,
+        "message": "Association from 'G2' to undefined disease 'D4'."
+      },
+      "degree_constraints": {
+        "passed": false,
+        "message": "Gene 'G1' has 0 associations; expected between 2 and 5. Disease 'D0' has 1 associations; expected between 3 and 10. Disease 'D1' has 1 associations; expected between 3 and 10. Disease 'D3' has 1 associations; expected between 3 and 10."
+      },
+      "duplicate_associations": {
+        "passed": true,
+        "message": ""
+      },
+      "bipartite_constraint": {
+        "passed": true,
+        "message": ""
+      }
+    },
+    "overall_passed": false,
+    "errors": [
+      "Defined Counts Check Failed.",
+      "Valid Associations Check Failed.",
+      "Degree Constraints Check Failed."
+    ]
+  }
 }

@@ -1,170 +1,170 @@
 {
-    "cities": [
-        {
-            "id": "C0",
-            "population": 1000
-        },
-        {
-            "id": "C1",
-            "population": 950
-        },
-        {
-            "id": "C2",
-            "population": 900
-        },
-        {
-            "id": "C3",
-            "population": 850
-        },
-        {
-            "id": "C4",
-            "population": 800
-        },
-        {
-            "id": "C5",
-            "population": 750
-        },
-        {
-            "id": "C6",
-            "population": 700
-        },
-        {
-            "id": "C7",
-            "population": 650
-        }
-    ],
-    "roads": [
-        {
-            "from": "C0",
-            "to": "C1",
-            "distance": 12.5,
-            "cost": 475.0
-        },
-        {
-            "from": "C1",
-            "to": "C2",
-            "distance": 14.3,
-            "cost": 450.0
-        },
-        {
-            "from": "C2",
-            "to": "C3",
-            "distance": 16.7,
-            "cost": 425.0
-        },
-        {
-            "from": "C3",
-            "to": "C4",
-            "distance": 11.2,
-            "cost": 400.0
-        },
-        {
-            "from": "C4",
-            "to": "C5",
-            "distance": 18.9,
-            "cost": 775.0
-        },
-        {
-            "from": "C6",
-            "to": "C5",
-            "distance": 13.4,
-            "cost": 725.0
-        },
-        {
-            "from": "C7",
-            "to": "C6",
-            "distance": 19.8,
-            "cost": 675.0
-        }
-    ],
-    "result": false,
-    "fullOutput": {
-        "output_structure": {
-            "passed": true,
-            "message": ""
-        },
-        "connectivity": {
-            "passed": false,
-            "message": "The network is not strongly connected."
-        },
-        "road_capacity": {
-            "passed": true,
-            "message": ""
-        },
-        "cost_optimization": {
-            "passed": true,
-            "message": ""
-        },
-        "population_accessibility": {
-            "passed": false,
-            "message": ""
-        },
-        "strategic_road_placement": {
-            "passed": false,
-            "message": ""
-        },
-        "redundancy": {
-            "passed": false,
-            "message": "Insufficient redundancy due to connectivity or population accessibility issues."
-        },
-        "max_edges_constraint": {
-            "passed": false,
-            "message": "City 'C0' is not reachable from 'C1' in at most 3 edges.; City 'C5' is not reachable from 'C1' in at most 3 edges.; City 'C6' is not reachable from 'C1' in at most 3 edges.; City 'C7' is not reachable from 'C1' in at most 3 edges.; City 'C1' is not reachable from 'C4' in at most 3 edges.; City 'C0' is not reachable from 'C4' in at most 3 edges.; City 'C6' is not reachable from 'C4' in at most 3 edges.; City 'C2' is not reachable from 'C4' in at most 3 edges.; City 'C7' is not reachable from 'C4' in at most 3 edges.; City 'C3' is not reachable from 'C4' in at most 3 edges.; City 'C4' is not reachable from 'C0' in at most 3 edges.; City 'C5' is not reachable from 'C0' in at most 3 edges.; City 'C6' is not reachable from 'C0' in at most 3 edges.; City 'C7' is not reachable from 'C0' in at most 3 edges.; City 'C1' is not reachable from 'C5' in at most 3 edges.; City 'C4' is not reachable from 'C5' in at most 3 edges.; City 'C0' is not reachable from 'C5' in at most 3 edges.; City 'C6' is not reachable from 'C5' in at most 3 edges.; City 'C2' is not reachable from 'C5' in at most 3 edges.; City 'C7' is not reachable from 'C5' in at most 3 edges.; City 'C3' is not reachable from 'C5' in at most 3 edges.; City 'C1' is not reachable from 'C6' in at most 3 edges.; City 'C4' is not reachable from 'C6' in at most 3 edges.; City 'C0' is not reachable from 'C6' in at most 3 edges.; City 'C2' is not reachable from 'C6' in at most 3 edges.; City 'C7' is not reachable from 'C6' in at most 3 edges.; City 'C3' is not reachable from 'C6' in at most 3 edges.; City 'C1' is not reachable from 'C2' in at most 3 edges.; City 'C0' is not reachable from 'C2' in at most 3 edges.; City 'C6' is not reachable from 'C2' in at most 3 edges.; City 'C7' is not reachable from 'C2' in at most 3 edges.; City 'C1' is not reachable from 'C7' in at most 3 edges.; City 'C4' is not reachable from 'C7' in at most 3 edges.; City 'C0' is not reachable from 'C7' in at most 3 edges.; City 'C2' is not reachable from 'C7' in at most 3 edges.; City 'C3' is not reachable from 'C7' in at most 3 edges.; City 'C1' is not reachable from 'C3' in at most 3 edges.; City 'C0' is not reachable from 'C3' in at most 3 edges.; City 'C6' is not reachable from 'C3' in at most 3 edges.; City 'C2' is not reachable from 'C3' in at most 3 edges.; City 'C7' is not reachable from 'C3' in at most 3 edges."
-        },
-        "overall_passed": false,
-        "errors": [
-            "The network is not strongly connected.",
-            "City 'C1' has only 1 incoming road(s); requires at least two.",
-            "City 'C4' has only 1 incoming road(s); requires at least two.",
-            "City 'C0' has only 0 incoming road(s); requires at least two.",
-            "City 'C6' has only 1 incoming road(s); requires at least two.",
-            "City 'C2' has only 1 incoming road(s); requires at least two.",
-            "City 'C7' has only 0 incoming road(s); requires at least two.",
-            "City 'C3' has only 1 incoming road(s); requires at least two.",
-            "Critical city 'C0' has only 1 outgoing road(s); requires at least three.",
-            "Critical city 'C7' has only 1 outgoing road(s); requires at least three.",
-            "Insufficient redundancy due to connectivity or population accessibility issues.",
-            "City 'C0' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C1' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C4' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C5' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C0' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C5' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C6' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C2' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C4' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C3' is not reachable from 'C7' in at most 3 edges.",
-            "City 'C1' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C0' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C6' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C2' is not reachable from 'C3' in at most 3 edges.",
-            "City 'C7' is not reachable from 'C3' in at most 3 edges."
-        ]
+  "cities": [
+    {
+      "id": "C0",
+      "population": 1000
+    },
+    {
+      "id": "C1",
+      "population": 950
+    },
+    {
+      "id": "C2",
+      "population": 900
+    },
+    {
+      "id": "C3",
+      "population": 850
+    },
+    {
+      "id": "C4",
+      "population": 800
+    },
+    {
+      "id": "C5",
+      "population": 750
+    },
+    {
+      "id": "C6",
+      "population": 700
+    },
+    {
+      "id": "C7",
+      "population": 650
     }
+  ],
+  "roads": [
+    {
+      "from": "C0",
+      "to": "C1",
+      "distance": 12.5,
+      "cost": 475.0
+    },
+    {
+      "from": "C1",
+      "to": "C2",
+      "distance": 14.3,
+      "cost": 450.0
+    },
+    {
+      "from": "C2",
+      "to": "C3",
+      "distance": 16.7,
+      "cost": 425.0
+    },
+    {
+      "from": "C3",
+      "to": "C4",
+      "distance": 11.2,
+      "cost": 400.0
+    },
+    {
+      "from": "C4",
+      "to": "C5",
+      "distance": 18.9,
+      "cost": 775.0
+    },
+    {
+      "from": "C6",
+      "to": "C5",
+      "distance": 13.4,
+      "cost": 725.0
+    },
+    {
+      "from": "C7",
+      "to": "C6",
+      "distance": 19.8,
+      "cost": 675.0
+    }
+  ],
+  "result": false,
+  "fullOutput": {
+    "output_structure": {
+      "passed": true,
+      "message": ""
+    },
+    "connectivity": {
+      "passed": false,
+      "message": "The network is not strongly connected."
+    },
+    "road_capacity": {
+      "passed": true,
+      "message": ""
+    },
+    "cost_optimization": {
+      "passed": true,
+      "message": ""
+    },
+    "population_accessibility": {
+      "passed": false,
+      "message": "City 'C0' has only 0 incoming roads; needs >=2. City 'C3' has only 1 incoming roads; needs >=2. City 'C6' has only 1 incoming roads; needs >=2. City 'C2' has only 1 incoming roads; needs >=2. City 'C7' has only 0 incoming roads; needs >=2. City 'C4' has only 1 incoming roads; needs >=2. City 'C1' has only 1 incoming roads; needs >=2."
+    },
+    "strategic_road_placement": {
+      "passed": false,
+      "message": "Critical city 'C0' has only 1 outgoing road(s); requires >=3. Critical city 'C7' has only 1 outgoing road(s); requires >=3."
+    },
+    "redundancy": {
+      "passed": false,
+      "message": "Insufficient redundancy due to failing connectivity or population accessibility."
+    },
+    "max_edges_constraint": {
+      "passed": false,
+      "message": "City 'C6' not reachable from 'C0' in <=3 edges. City 'C7' not reachable from 'C0' in <=3 edges. City 'C4' not reachable from 'C0' in <=3 edges. City 'C5' not reachable from 'C0' in <=3 edges. City 'C0' not reachable from 'C3' in <=3 edges. City 'C6' not reachable from 'C3' in <=3 edges. City 'C2' not reachable from 'C3' in <=3 edges. City 'C7' not reachable from 'C3' in <=3 edges. City 'C1' not reachable from 'C3' in <=3 edges. City 'C0' not reachable from 'C6' in <=3 edges. City 'C3' not reachable from 'C6' in <=3 edges. City 'C2' not reachable from 'C6' in <=3 edges. City 'C7' not reachable from 'C6' in <=3 edges. City 'C4' not reachable from 'C6' in <=3 edges. City 'C1' not reachable from 'C6' in <=3 edges. City 'C0' not reachable from 'C2' in <=3 edges. City 'C6' not reachable from 'C2' in <=3 edges. City 'C7' not reachable from 'C2' in <=3 edges. City 'C1' not reachable from 'C2' in <=3 edges. City 'C0' not reachable from 'C7' in <=3 edges. City 'C3' not reachable from 'C7' in <=3 edges. City 'C2' not reachable from 'C7' in <=3 edges. City 'C4' not reachable from 'C7' in <=3 edges. City 'C1' not reachable from 'C7' in <=3 edges. City 'C0' not reachable from 'C4' in <=3 edges. City 'C3' not reachable from 'C4' in <=3 edges. City 'C6' not reachable from 'C4' in <=3 edges. City 'C2' not reachable from 'C4' in <=3 edges. City 'C7' not reachable from 'C4' in <=3 edges. City 'C1' not reachable from 'C4' in <=3 edges. City 'C0' not reachable from 'C5' in <=3 edges. City 'C3' not reachable from 'C5' in <=3 edges. City 'C6' not reachable from 'C5' in <=3 edges. City 'C2' not reachable from 'C5' in <=3 edges. City 'C7' not reachable from 'C5' in <=3 edges. City 'C4' not reachable from 'C5' in <=3 edges. City 'C1' not reachable from 'C5' in <=3 edges. City 'C0' not reachable from 'C1' in <=3 edges. City 'C6' not reachable from 'C1' in <=3 edges. City 'C7' not reachable from 'C1' in <=3 edges. City 'C5' not reachable from 'C1' in <=3 edges."
+    },
+    "overall_passed": false,
+    "errors": [
+      "The network is not strongly connected.",
+      "City 'C0' has only 0 incoming roads; needs >=2.",
+      "City 'C3' has only 1 incoming roads; needs >=2.",
+      "City 'C6' has only 1 incoming roads; needs >=2.",
+      "City 'C2' has only 1 incoming roads; needs >=2.",
+      "City 'C7' has only 0 incoming roads; needs >=2.",
+      "City 'C4' has only 1 incoming roads; needs >=2.",
+      "City 'C1' has only 1 incoming roads; needs >=2.",
+      "Critical city 'C0' has only 1 outgoing road(s); requires >=3.",
+      "Critical city 'C7' has only 1 outgoing road(s); requires >=3.",
+      "Insufficient redundancy due to failing connectivity or population accessibility.",
+      "City 'C6' not reachable from 'C0' in <=3 edges.",
+      "City 'C7' not reachable from 'C0' in <=3 edges.",
+      "City 'C4' not reachable from 'C0' in <=3 edges.",
+      "City 'C5' not reachable from 'C0' in <=3 edges.",
+      "City 'C0' not reachable from 'C3' in <=3 edges.",
+      "City 'C6' not reachable from 'C3' in <=3 edges.",
+      "City 'C2' not reachable from 'C3' in <=3 edges.",
+      "City 'C7' not reachable from 'C3' in <=3 edges.",
+      "City 'C1' not reachable from 'C3' in <=3 edges.",
+      "City 'C0' not reachable from 'C6' in <=3 edges.",
+      "City 'C3' not reachable from 'C6' in <=3 edges.",
+      "City 'C2' not reachable from 'C6' in <=3 edges.",
+      "City 'C7' not reachable from 'C6' in <=3 edges.",
+      "City 'C4' not reachable from 'C6' in <=3 edges.",
+      "City 'C1' not reachable from 'C6' in <=3 edges.",
+      "City 'C0' not reachable from 'C2' in <=3 edges.",
+      "City 'C6' not reachable from 'C2' in <=3 edges.",
+      "City 'C7' not reachable from 'C2' in <=3 edges.",
+      "City 'C1' not reachable from 'C2' in <=3 edges.",
+      "City 'C0' not reachable from 'C7' in <=3 edges.",
+      "City 'C3' not reachable from 'C7' in <=3 edges.",
+      "City 'C2' not reachable from 'C7' in <=3 edges.",
+      "City 'C4' not reachable from 'C7' in <=3 edges.",
+      "City 'C1' not reachable from 'C7' in <=3 edges.",
+      "City 'C0' not reachable from 'C4' in <=3 edges.",
+      "City 'C3' not reachable from 'C4' in <=3 edges.",
+      "City 'C6' not reachable from 'C4' in <=3 edges.",
+      "City 'C2' not reachable from 'C4' in <=3 edges.",
+      "City 'C7' not reachable from 'C4' in <=3 edges.",
+      "City 'C1' not reachable from 'C4' in <=3 edges.",
+      "City 'C0' not reachable from 'C5' in <=3 edges.",
+      "City 'C3' not reachable from 'C5' in <=3 edges.",
+      "City 'C6' not reachable from 'C5' in <=3 edges.",
+      "City 'C2' not reachable from 'C5' in <=3 edges.",
+      "City 'C7' not reachable from 'C5' in <=3 edges.",
+      "City 'C4' not reachable from 'C5' in <=3 edges.",
+      "City 'C1' not reachable from 'C5' in <=3 edges.",
+      "City 'C0' not reachable from 'C1' in <=3 edges.",
+      "City 'C6' not reachable from 'C1' in <=3 edges.",
+      "City 'C7' not reachable from 'C1' in <=3 edges.",
+      "City 'C5' not reachable from 'C1' in <=3 edges."
+    ]
+  }
 }

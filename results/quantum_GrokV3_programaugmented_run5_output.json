@@ -1,0 +1,232 @@
+{
+    "circuit": [
+        {
+            "gate": "H",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q2"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q4"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q6"
+            ],
+            "time": 1
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q0",
+                "Q2"
+            ],
+            "time": 2
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q4",
+                "Q6"
+            ],
+            "time": 2
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q8"
+            ],
+            "time": 2
+        },
+        {
+            "gate": "Z",
+            "qubits": [
+                "Q1"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q3"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "Z",
+            "qubits": [
+                "Q5"
+            ],
+            "time": 3
+        },
+        {
+            "gate": "SWAP",
+            "qubits": [
+                "Q2",
+                "Q4"
+            ],
+            "time": 4
+        },
+        {
+            "gate": "CNOT",
+            "qubits": [
+                "Q6",
+                "Q8"
+            ],
+            "time": 4
+        },
+        {
+            "gate": "H",
+            "qubits": [
+                "Q7"
+            ],
+            "time": 5
+        },
+        {
+            "gate": "X",
+            "qubits": [
+                "Q9"
+            ],
+            "time": 5
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q0"
+            ],
+            "time": 6
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q1"
+            ],
+            "time": 7
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q2"
+            ],
+            "time": 8
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q3"
+            ],
+            "time": 9
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q4"
+            ],
+            "time": 10
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q5"
+            ],
+            "time": 11
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q6"
+            ],
+            "time": 12
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q7"
+            ],
+            "time": 13
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q8"
+            ],
+            "time": 14
+        },
+        {
+            "gate": "Measure",
+            "qubits": [
+                "Q9"
+            ],
+            "time": 15
+        }
+    ],
+    "result": true,
+    "fullOutput": {
+        "valid_output_structure": {
+            "passed": true,
+            "message": ""
+        },
+        "valid_gate_types": {
+            "passed": true,
+            "message": ""
+        },
+        "valid_qubits": {
+            "passed": true,
+            "message": ""
+        },
+        "valid_dag": {
+            "passed": true,
+            "message": ""
+        },
+        "valid_gate_precedences": {
+            "passed": true,
+            "message": ""
+        },
+        "valid_cnot_adjacency": {
+            "passed": true,
+            "message": ""
+        },
+        "valid_swap_constraints": {
+            "passed": true,
+            "message": ""
+        },
+        "valid_measurements": {
+            "passed": true,
+            "message": ""
+        },
+        "valid_gate_restrictions": {
+            "passed": true,
+            "message": ""
+        },
+        "layered_operations": {
+            "passed": true,
+            "message": ""
+        },
+        "depth_constraint": {
+            "passed": true,
+            "message": ""
+        },
+        "gate_optimization": {
+            "passed": true,
+            "message": ""
+        },
+        "final_state_compliance": {
+            "passed": true,
+            "message": ""
+        },
+        "overall_passed": true
+    }
+}
